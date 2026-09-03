@@ -3,27 +3,57 @@
 import { useMemo, useState } from 'react';
 import { diffChars } from 'diff';
 import { CheckCircle2 } from 'lucide-react';
-import translation2023 from '../../../content/translation/2023.json';
+import YearPicker from '@/components/common/YearPicker';
+import { YEARS, getTranslation } from '@/content';
 
 export default function TranslationPage() {
-  const data = translation2023;
+  const years = YEARS.translation;
+  const [year, setYear] = useState<number>(years.includes(2023) ? 2023 : years[0]);
+  const data = getTranslation(year);
+
   const [inputs, setInputs] = useState<Record<number, string>>({});
   const [submitted, setSubmitted] = useState<Record<number, boolean>>({});
 
   const doneCount = Object.values(submitted).filter(Boolean).length;
 
+  const onResetYear = () => {
+    setInputs({});
+    setSubmitted({});
+  };
   const handleSubmit = (id: number) => {
     setSubmitted((s) => ({ ...s, [id]: true }));
   };
 
+  if (!data) {
+    return (
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <span className="font-semibold text-zinc-800">段落翻译 Diff 精修台</span>
+          <YearPicker years={years} value={year} onChange={(y) => { setYear(y); onResetYear(); }} />
+        </div>
+        <div className="bg-white border border-zinc-200 rounded p-8 text-center text-zinc-400">
+          该年份暂无翻译数据
+        </div>
+      </div>
+    );
+  }
+
   return (
     <section className="space-y-3">
-      <div className="bg-white border border-zinc-200 rounded p-3">
-        <div className="border-b border-zinc-100 pb-2 mb-3 flex justify-between items-center">
-          <span className="font-semibold text-zinc-800">{data.title}</span>
+      <div className="flex items-center justify-between">
+        <span className="font-semibold text-zinc-800">段落翻译 Diff 精修台</span>
+        <div className="flex items-center gap-2">
+          <YearPicker years={years} value={year} onChange={(y) => { setYear(y); onResetYear(); }} />
           <span className="text-zinc-400 font-mono text-[11px]">
             进度: {doneCount}/{data.segments.length} 句
           </span>
+        </div>
+      </div>
+
+      <div className="bg-white border border-zinc-200 rounded p-3">
+        <div className="border-b border-zinc-100 pb-2 mb-3 flex justify-between items-center">
+          <span className="font-semibold text-zinc-800">{data.title}</span>
+          <span className="text-zinc-400 font-mono text-[11px]">{data.intro}</span>
         </div>
 
         {data.segments.map((seg) => {
@@ -33,7 +63,7 @@ export default function TranslationPage() {
             <div
               key={seg.id}
               className="border border-zinc-200 rounded p-3 mb-3 bg-zinc-50/50"
-              data-source="2023 翻译"
+              data-source={`${year} 翻译`}
             >
               <div className="font-mono text-zinc-800 text-xs mb-2">
                 <strong>[英文原句 {seg.id}]</strong> {seg.en}
@@ -68,37 +98,54 @@ export default function TranslationPage() {
               </div>
 
               {isSubmitted && (
-                <div className="mt-3 pt-3 border-t border-zinc-200">
-                  <div className="font-semibold text-zinc-700 mb-1">
-                    译文差异比对 (Diff):
-                    <span className="ml-2 font-normal text-[11px] text-zinc-400">
-                      <span className="bg-emerald-100 text-emerald-800 px-1 rounded">绿色</span>{' '}
-                      官方更佳/漏翻 ·{' '}
-                      <span className="bg-rose-100 text-rose-800 line-through px-1 rounded">红色</span>{' '}
-                      多翻/冗余
-                    </span>
-                  </div>
-                  <div className="bg-white p-2 border border-zinc-200 rounded font-mono leading-relaxed">
-                    <DiffView userZh={userZh} refZh={seg.refZh} />
+                <div className="mt-3 pt-3 border-t border-zinc-200 space-y-2">
+                  <div>
+                    <div className="font-semibold text-zinc-700 mb-1">
+                      译文差异比对 (Diff):
+                      <span className="ml-2 font-normal text-[11px] text-zinc-400">
+                        <span className="bg-emerald-100 text-emerald-800 px-1 rounded">绿色</span>{' '}
+                        官方更佳/漏翻 ·{' '}
+                        <span className="bg-rose-100 text-rose-800 line-through px-1 rounded">红色</span>{' '}
+                        多翻/冗余
+                      </span>
+                    </div>
+                    <div className="bg-white p-2 border border-zinc-200 rounded font-mono leading-relaxed">
+                      <DiffView userZh={userZh} refZh={seg.refZh || '(参考译文待补)'} />
+                    </div>
                   </div>
 
-                  <div className="mt-2 text-zinc-600 bg-zinc-100 p-2 rounded leading-normal">
-                    <strong>考点解析:</strong>
-                    <ol className="list-decimal pl-5 mt-1 space-y-0.5">
-                      {seg.points.map((p, i) => (
-                        <li key={i}>{p}</li>
-                      ))}
-                    </ol>
-                  </div>
+                  {seg.refZh && (
+                    <div className="text-zinc-600 bg-zinc-50 p-2 rounded leading-normal border border-zinc-200">
+                      <strong>参考译文:</strong> {seg.refZh}
+                    </div>
+                  )}
+
+                  {seg.points.length > 0 && (
+                    <div className="text-zinc-600 bg-zinc-100 p-2 rounded leading-normal">
+                      <strong>考点解析:</strong>
+                      <ol className="list-decimal pl-5 mt-1 space-y-0.5">
+                        {seg.points.map((p, i) => (
+                          <li key={i}>{p}</li>
+                        ))}
+                      </ol>
+                    </div>
+                  )}
 
                   {seg.pitfalls.length > 0 && (
-                    <div className="mt-2 text-zinc-600 bg-amber-50 border border-amber-200 p-2 rounded leading-normal">
+                    <div className="text-zinc-600 bg-amber-50 border border-amber-200 p-2 rounded leading-normal">
                       <strong className="text-amber-800">易错陷阱:</strong>
                       <ol className="list-decimal pl-5 mt-1 space-y-0.5">
                         {seg.pitfalls.map((p, i) => (
                           <li key={i}>{p}</li>
                         ))}
                       </ol>
+                    </div>
+                  )}
+
+                  {seg.refZh === '' && (
+                    <div className="text-[11px] text-zinc-400 border border-dashed border-zinc-300 p-2 rounded">
+                      📌 该年份的参考译文/考点/陷阱暂未录入,已从真题 PDF 提取出英文原句。
+                      后续可在 content/translation/{year}.json 中补全 refZh/points/pitfalls 字段。
                     </div>
                   )}
                 </div>

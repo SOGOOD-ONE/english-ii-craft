@@ -1,20 +1,30 @@
 // ============================================================
-// FSRS 间隔重复调度(纯函数)
+// FSRS 官方调度(ts-fsrs)接入层
 // ============================================================
-//
-// ⚠️ 复习算法接入点(占位)
-// ------------------------------------------------------------
-// 用户需求:复习算法那块把空留出来 —— 此处为核心调度算法的占位区。
-// 当前 implementSchedule() 为简化占位逻辑,仅保证功能闭环。
-// 请在此替换为你们的自研 FSRS / 间隔重复算法。
-//
-// 已实现的掌握判定规则(产品需求,非占位):
-//   - 新词(state=0 新建 / 1 学习中):连续 3 次"认识"(Good/Easy)才算掌握
-//   - 复习(state=2 复习中):连续 2 次"认识"即算掌握
-// "认识"定义为评分 Rating.Good 或 Rating.Easy。
+// 接入官方 ts-fsrs 最新 FSRS v6 调度器。
+// 额外叠加产品侧的"掌握判定"规则:
+//   新词(state!=2): 连续 3 次认识 → 掌握 → 进入复习池
+//   复习(state==2): 连续 2 次认识 → 掌握
+// "认识" = Rating.Good / Rating.Easy
 // ============================================================
 
-import type { Rating, VocabCard, CardState } from '@/types';
+import {
+  fsrs,
+  createEmptyCard,
+  Rating as FsrsRating,
+  type FSRS as IFsrs,
+  type Card as FsrsCard,
+} from 'ts-fsrs';
+import type { Rating, VocabCard } from '@/types';
+
+const scheduler: IFsrs = fsrs();
+
+const FSRS_RATING: Record<Rating, FsrsRating> = {
+  1: FsrsRating.Again,
+  2: FsrsRating.Hard,
+  3: FsrsRating.Good,
+  4: FsrsRating.Easy,
+};
 
 export const RATING_LABEL: Record<Rating, string> = {
   1: 'Again',
@@ -23,102 +33,92 @@ export const RATING_LABEL: Record<Rating, string> = {
   4: 'Easy',
 };
 
-/** 判定一次评分是否算"认识"(通过) */
+/** 判定"认识"(Good/Easy)  */
 export function isRecognized(rating: Rating): boolean {
-  return rating === 3 || rating === 4; // Good / Easy
+  return rating === 3 || rating === 4;
 }
 
-/** 新词掌握阈值:3 次认识;复习掌握阈值:2 次认识 */
+// 产品层掌握阈值
 const NEW_MASTER_THRESHOLD = 3;
 const REVIEW_MASTER_THRESHOLD = 2;
 
-/** 是否已掌握(基于连续认识次数与状态) */
 export function isMastered(card: VocabCard): boolean {
-  if (card.state === 2) return card.consecutiveCorrect >= REVIEW_MASTER_THRESHOLD;
-  return card.consecutiveCorrect >= NEW_MASTER_THRESHOLD;
+  // state 2 是 FSRS 的 Review 状态,对应复习池
+  const isReview = card.state === 2;
+  return card.consecutiveCorrect >= (isReview ? REVIEW_MASTER_THRESHOLD : NEW_MASTER_THRESHOLD);
 }
 
-/**
- * 占位调度算法 —— 计算给定评分下的下次间隔(天)。
- * 🔧 请替换为自研 FSRS 算法。当前仅用 rating 做线性映射。
- */
-function implementSchedule(
-  rating: Rating,
-  stability: number,
-  difficulty: number
-): { intervalDays: number; nextStability: number; nextDifficulty: number } {
-  // 占位:基于评分与稳定性的简化映射
-  const factors: Record<Rating, number> = { 1: 0, 2: 1.2, 3: 2.5, 4: 4.0 };
-  const factor = factors[rating];
-  let nextStability = stability <= 0 ? 1 : stability * factor;
-  if (rating === 1) nextStability = Math.max(0.1, stability * 0.2); // 遗忘:稳定性骤降
-
-  let nextDifficulty = difficulty;
-  if (rating === 1) nextDifficulty = Math.min(10, difficulty + 1);
-  if (rating === 4) nextDifficulty = Math.max(0, difficulty - 0.5);
-
-  const intervalDays = rating === 1 ? 10 / 1440 : nextStability; // Again:10 分钟;其余按稳定性天数
-  return { intervalDays, nextStability, nextDifficulty };
+// 把 DB VocabCard 转成 ts-fsrs 内部的 Card
+// 注意:createEmptyCard() 产出当前 FSRS Card 完整结构,然后用数据覆盖
+function toFsrsCard(c: VocabCard): FsrsCard {
+  const base = createEmptyCard();
+  return {
+    ...base,
+    due: new Date(c.due),
+    stability: c.stability || base.stability,
+    difficulty: c.difficulty || base.difficulty,
+    elapsed_days: c.elapsed_days,
+    scheduled_days: c.scheduled_days,
+    reps: c.reps,
+    lapses: c.lapses,
+    state: c.state as FsrsCard['state'],
+    last_review: c.last_review ? new Date(c.last_review) : undefined,
+  };
 }
 
-/** 按钮上展示的下次复习时间标签 */
+function daysBetween(from: Date, to: Date): number {
+  return Math.max(0, Math.floor((to.getTime() - from.getTime()) / 86400000));
+}
+
+/** 预览某个评分对应的"下次复习时间"标签(<5分 / 1.2天 等) */
 export function previewNextLabel(rating: Rating, card: VocabCard): string {
-  const { intervalDays } = implementSchedule(rating, card.stability, card.difficulty);
-  if (intervalDays < 1) {
-    const mins = Math.max(1, Math.round(intervalDays * 1440));
-    return `<${mins}分`;
+  const fsrsCard = card.reps === 0 ? createEmptyCard() : toFsrsCard(card);
+  const now = new Date();
+  try {
+    const preview = scheduler.repeat(fsrsCard, now);
+    // @ts-expect-error ts-fsrs 的 IPreview 索引类型在不同版本不一致,运行时 key 为 FsrsRating 的数值
+    const next = preview[FSRS_RATING[rating]].card;
+    const days = daysBetween(now, next.due);
+    if (days < 1) {
+      const mins = Math.max(1, Math.ceil((next.due.getTime() - now.getTime()) / 60000));
+      return `<${mins}分`;
+    }
+    if (days < 30) return `${days.toFixed(1)}天`;
+    return `${Math.round(days / 30)}月`;
+  } catch {
+    return '—';
   }
-  if (intervalDays < 30) return `${intervalDays.toFixed(1)}天`;
-  return `${Math.round(intervalDays / 30)}月`;
 }
 
-/**
- * 核心调度:根据评分更新卡片全部调度字段。
- * 返回需要 patch 到数据库的新字段。
- */
+/** 应用评分并返回要写入数据库的 patch */
 export function scheduleCard(
   card: VocabCard,
   rating: Rating,
   now = new Date()
 ): Partial<VocabCard> {
-  const { intervalDays, nextStability, nextDifficulty } = implementSchedule(
-    rating,
-    card.stability,
-    card.difficulty
-  );
+  const fsrsCard = card.reps === 0 ? createEmptyCard() : toFsrsCard(card);
+  // Grade 类型是 1 | 2 | 3 | 4 的字面量联合;FSRS_RATING 枚举值与之等价
+  const result = scheduler.next(fsrsCard, now, FSRS_RATING[rating] as unknown as 1 | 2 | 3 | 4);
+  const next = result.card;
 
   const recognized = isRecognized(rating);
   const consecutiveCorrect = recognized ? card.consecutiveCorrect + 1 : 0;
 
-  // 状态流转
-  let state: CardState;
-  let lapses = card.lapses;
-  if (rating === 1) {
-    // 遗忘 -> 重学
-    state = 3;
-    lapses += 1;
-  } else if (card.state === 0 || card.state === 1) {
-    state = isMastered({ ...card, consecutiveCorrect, state: card.state })
-      ? 2 // 新词掌握 -> 进入复习池
-      : 1; // 仍在学习中
-  } else {
-    state = 2; // 维持复习
-  }
-
-  const due = new Date(now.getTime() + intervalDays * 86400000);
+  // lapses + product-level 掌握判定
+  const lapses = rating === 1 ? card.lapses + 1 : card.lapses;
+  const nextState = next.state as unknown as 0 | 1 | 2 | 3;
+  const state: 0 | 1 | 2 | 3 = nextState;
 
   return {
-    stability: nextStability,
-    difficulty: nextDifficulty,
-    reps: card.reps + 1,
+    stability: next.stability,
+    difficulty: next.difficulty,
+    reps: next.reps,
     lapses,
     state,
     consecutiveCorrect,
     last_review: now,
-    due,
-    scheduled_days: Math.round(intervalDays),
-    elapsed_days: card.last_review
-      ? Math.max(0, Math.round((now.getTime() - card.last_review.getTime()) / 86400000))
-      : 0,
+    due: next.due,
+    scheduled_days: next.scheduled_days,
+    elapsed_days: next.elapsed_days,
   };
 }

@@ -1,0 +1,27 @@
+{
+  "year": 2014,
+  "title": "2014年英语二写作(图表题干待提取)",
+  "prompt": "Section IV Writing\nPart A\n47. Directions:\nSuppose you are going to study abroad and share an apartment with John, a\nlocal student. Write him an email to\n1) tell him about your living habits, and\n2) ask for advice about living there.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB\n48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n图城 镇人 口乡 村人\n10 00\nI\n00 I\n834 807\n666 674\n�6 00\n过4 00\n:mt- I 300\n、\n200\n19 90年 2000年 201 0年\n20 年 间中 国城 镇人 口与 乡村 人口变 化图\n- 14 -",
+  "chartType": "",
+  "chartOption": {},
+  "keyPoints": [],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health"
+    ]
+  },
+  "sampleEssays": []
+}

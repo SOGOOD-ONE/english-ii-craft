@@ -1,56 +1,27 @@
 {
   "year": 2023,
-  "title": "居民体育锻炼方式调查",
-  "prompt": "Write an essay based on the following chart. In your essay, you should 1) interpret the chart and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points)",
-  "chartType": "bar",
-  "chartOption": {
-    "grid": { "top": 24, "right": 20, "bottom": 30, "left": 44 },
-    "tooltip": { "trigger": "axis", "formatter": "{b}: {c}%" },
-    "xAxis": {
-      "type": "category",
-      "data": ["独自锻炼", "朋友结伴", "参加团体", "其他方式"],
-      "axisLine": { "lineStyle": { "color": "#a1a1aa" } },
-      "axisLabel": { "color": "#52525b", "fontSize": 11 }
-    },
-    "yAxis": {
-      "type": "value",
-      "axisLabel": { "formatter": "{value}%", "color": "#71717a", "fontSize": 10 },
-      "splitLine": { "lineStyle": { "color": "#f4f4f5" } }
-    },
-    "series": [
-      {
-        "data": [45.2, 31.5, 15.8, 7.5],
-        "type": "bar",
-        "barWidth": "38%",
-        "itemStyle": { "color": "#18181b", "borderRadius": [3, 3, 0, 0] },
-        "label": { "show": true, "position": "top", "formatter": "{c}%", "color": "#3f3f46", "fontSize": 10 }
-      }
-    ]
-  },
-  "keyPoints": [
-    "独自锻炼占最大比例 (45.2%)。",
-    "与朋友一起次之 (31.5%),参加团体活动最少 (15.8%)。",
-    "归因:工作节奏加快、对灵活性与便利性 (flexibility) 的需求。"
-  ],
+  "title": "2023年英语二写作(图表题干待提取)",
+  "prompt": "Section IV Writing\nPart A\n47. Directions:\nAn art exhibition and a robot show are to be held on Sunday, and your friend David asks\nyou which one he should go to. Write him an email to\n1) make a suggestion, and\n2) give your reason(s).\nWrite your answer in about 100 words on the ANSWER SHEET.\nDo not use your own name in your email, use “Li Ming” instead. (10 points)",
+  "chartType": "",
+  "chartOption": {},
+  "keyPoints": [],
   "scaffolding": {
     "trends": [
       "account for the largest proportion of",
       "follow closely behind at",
       "take the lead in",
-      "make up a mere"
+      "witness a sharp increase / decrease"
     ],
     "comparisons": [
       "in contrast to",
-      "twice as many as",
-      "the gap between... and... is striking"
+      "the gap between... and... is striking",
+      "twice as many as"
     ],
     "reasons": [
+      "can be attributed to the accelerating pace of life",
       "hinge upon the increasing need for flexibility",
-      "can be attributed to the accelerating pace of modern life",
       "stem from a growing awareness of health"
     ]
   },
-  "sampleEssays": [
-    "As is vividly demonstrated in the bar chart above, physical exercise has become an increasingly popular lifestyle among urban residents. Specifically, individuals who exercise alone account for the largest proportion of the total surveyed, reaching 45.2%."
-  ]
+  "sampleEssays": []
 }
