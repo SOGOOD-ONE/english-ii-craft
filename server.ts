@@ -117,7 +117,7 @@ async function callAiService(
 // ----------------------------------------------------
 // 数据持久化存储 (JSON Storage)
 // ----------------------------------------------------
-const DATA_DIR = path.resolve(__dirname, 'data');
+const DATA_DIR = path.resolve(process.cwd(), 'data');
 const STORAGE_FILE = path.join(DATA_DIR, 'storage.json');
 
 if (!fs.existsSync(DATA_DIR)) {
@@ -401,11 +401,11 @@ function getOrCreateDevice(deviceId: string): DeviceRecord {
 
 function resolveContentFile(module: string, year: number): string | null {
   const paths = [
-    path.resolve(__dirname, 'src', 'content', 'eng2', module, `${year}.json`),
-    path.resolve(__dirname, 'content', 'eng2', module, `${year}.json`),
-    path.resolve(__dirname, 'src', 'content', module, `${year}.json`),
-    path.resolve(__dirname, 'content', module, `${year}.json`),
-    path.resolve(__dirname, 'frontend', 'src', 'content', module, `${year}.json`),
+    path.resolve(process.cwd(), 'src', 'content', 'eng2', module, `${year}.json`),
+    path.resolve(process.cwd(), 'content', 'eng2', module, `${year}.json`),
+    path.resolve(process.cwd(), 'src', 'content', module, `${year}.json`),
+    path.resolve(process.cwd(), 'content', module, `${year}.json`),
+    path.resolve(process.cwd(), 'frontend', 'src', 'content', module, `${year}.json`),
   ];
   for (const p of paths) {
     if (fs.existsSync(p)) return p;
@@ -415,10 +415,10 @@ function resolveContentFile(module: string, year: number): string | null {
 
 function listAvailableYears(module: string): number[] {
   const dirs = [
-    path.resolve(__dirname, 'src', 'content', 'eng2', module),
-    path.resolve(__dirname, 'content', 'eng2', module),
-    path.resolve(__dirname, 'src', 'content', module),
-    path.resolve(__dirname, 'content', module),
+    path.resolve(process.cwd(), 'src', 'content', 'eng2', module),
+    path.resolve(process.cwd(), 'content', 'eng2', module),
+    path.resolve(process.cwd(), 'src', 'content', module),
+    path.resolve(process.cwd(), 'content', module),
   ];
   const set = new Set<number>();
   for (const d of dirs) {
@@ -764,7 +764,7 @@ app.post('/api/v1/exam/upload-and-parse', upload.single('file'), async (req, res
     let savedFiles: string[] = [];
     const reqSubject = (req.body.subject as string) || (req.headers['x-exam-type'] as string) || 'eng2';
     if (autoSave) {
-      savedFiles = saveParsedExamData(targetYear, parsedData, __dirname, reqSubject);
+      savedFiles = saveParsedExamData(targetYear, parsedData, process.cwd(), reqSubject);
     }
 
     res.json({
@@ -841,7 +841,7 @@ app.post('/api/v1/exam/import-github', async (req, res) => {
     if (translationResult) parsedData.translation = translationResult;
     if (writingResult) parsedData.writing = writingResult;
 
-    const savedFiles = saveParsedExamData(targetYear, parsedData, __dirname, normSubject);
+    const savedFiles = saveParsedExamData(targetYear, parsedData, process.cwd(), normSubject);
 
     res.json({
       success: true,
@@ -865,7 +865,7 @@ app.post('/api/v1/exam/save-year', (req, res) => {
     return res.status(400).json({ detail: '请提供有效的真题年份 (2010-2040)' });
   }
 
-  const saved = saveParsedExamData(y, { reading, translation, writing }, __dirname, subject);
+  const saved = saveParsedExamData(y, { reading, translation, writing }, process.cwd(), subject);
   res.json({
     success: true,
     year: y,
@@ -934,7 +934,7 @@ app.delete('/api/v1/exam/year/:year', (req, res) => {
 
   const deleted: string[] = [];
   ['reading', 'translation', 'writing'].forEach(mod => {
-    const p = path.resolve(__dirname, 'src', 'content', mod, `${y}.json`);
+    const p = path.resolve(process.cwd(), 'src', 'content', mod, `${y}.json`);
     if (fs.existsSync(p)) {
       fs.unlinkSync(p);
       deleted.push(`${mod}/${y}.json`);
@@ -1401,8 +1401,8 @@ ${essay}`;
     logic_feedback: reviewResult.logicFeedback || '',
     summary: reviewResult.summary || '',
     corrections: reviewResult.corrections || [],
-    ai_base_url: baseUrl,
-    ai_model: model,
+    ai_base_url: dev.ai_base_url || 'https://api.deepseek.com',
+    ai_model: dev.ai_model || 'deepseek-chat',
     created_at: new Date().toISOString(),
   };
 
@@ -1496,12 +1496,14 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     // 生产模式: 托管 dist 目录中的静态资源
-    const distPath = path.resolve(__dirname, 'dist');
+    const distPath = path.resolve(process.cwd(), 'dist');
     if (fs.existsSync(distPath)) {
       app.use(express.static(distPath));
-      app.get('*', (_req, res) => {
+      app.get('*all', (_req, res) => {
         res.sendFile(path.join(distPath, 'index.html'));
       });
+    } else {
+      console.warn(`[Warning] Dist directory not found at ${distPath}`);
     }
   }
 
