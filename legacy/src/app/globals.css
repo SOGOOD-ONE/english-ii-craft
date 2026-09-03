@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 同义替换悬停高亮动画(新题型雷达核心) */
+.synonym-glow {
+  background-color: #fef08a !important;
+  color: #854d0e !important;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 0 3px rgba(254, 240, 138, 0.5);
+}
+
+/* 滚动条极简 */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 3px; }
+::-webkit-scrollbar-track { background: transparent; }

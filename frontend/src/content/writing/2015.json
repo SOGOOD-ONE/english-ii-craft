@@ -1,0 +1,27 @@
+{
+  "year": 2015,
+  "title": "2015年英语二写作(图表题干待提取)",
+  "prompt": "Section IV Writing\nPart A\n47. Directions:\nSuppose your university is going to host a summer camp for high school students.\nWrite a notice to\n1) briefly introduce the camp activities, and\n2) call for volunteers.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your name or the name of your university.\nDo not write your address. (10 points)\nPartB\n48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n其他\n20%\n新年礼物\n0%\n我国 某 市 居民 乔 节假期花销 比例\n- 14 -",
+  "chartType": "",
+  "chartOption": {},
+  "keyPoints": [],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health"
+    ]
+  },
+  "sampleEssays": []
+}

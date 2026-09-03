@@ -1,0 +1,69 @@
+{
+  "year": 2012,
+  "source": "When people in developing countries worry about migration, they are usually concerned at the prospect oftheir best and brightest departure to Silicon Valley or to hospitals and universities in the developed world. Theseare the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rulesthat privilege college graduates. Lots of studies have found that well-educated people from developing countries are particularly likely toemigrate. A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25. This \"brain drain\" has longbothered policymakers in poor countries. They fear that it hurts their economies, depriving them of much-neededskilled workers who could have taught at their universities, worked in their hospitals and come up with clevernew products for their factories to make.",
+  "slices": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 214,
+      "text": "When people in developing countries worry about migration, they are usually concerned at the prospect oftheir best and brightest departure to Silicon Valley or to hospitals and universities in the developed world.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s2",
+      "start": 214,
+      "end": 368,
+      "text": "Theseare the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rulesthat privilege college graduates.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s3",
+      "start": 368,
+      "end": 483,
+      "text": "Lots of studies have found that well-educated people from developing countries are particularly likely toemigrate.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s4",
+      "start": 483,
+      "end": 657,
+      "text": "A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s5",
+      "start": 657,
+      "end": 725,
+      "text": "This \"brain drain\" has longbothered policymakers in poor countries.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s6",
+      "start": 725,
+      "end": 946,
+      "text": "They fear that it hurts their economies, depriving them of much-neededskilled workers who could have taught at their universities, worked in their hospitals and come up with clevernew products for their factories to make.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    }
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
+}

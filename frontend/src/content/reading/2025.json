@@ -1,0 +1,637 @@
+{
+  "year": 2025,
+  "title": "考研英语二 2025 年 · 阅读理解 Part A (Text 1-4)",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "total_points": 40,
+  "per_question_points": 2,
+  "passages": [
+    {
+      "id": "p1",
+      "title": "Text 1 · 经济与管理类",
+      "theme": "business/economy",
+      "category": "经济管理",
+      "word_count": 0,
+      "paragraphs": [
+        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+      ],
+      "questions": [
+        {
+          "no": 1,
+          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "态度观点题",
+            "例证功能题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 2,
+          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It will be reversed very soon"
+            },
+            {
+              "label": "B",
+              "text": "It has become an irreversible trend"
+            },
+            {
+              "label": "C",
+              "text": "It mainly affects developing countries"
+            },
+            {
+              "label": "D",
+              "text": "It does more harm than good"
+            }
+          ],
+          "answer": "D",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "例证功能题",
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "skeptical"
+            },
+            {
+              "label": "B",
+              "text": "supportive"
+            },
+            {
+              "label": "C",
+              "text": "neutral"
+            },
+            {
+              "label": "D",
+              "text": "critical"
+            }
+          ],
+          "answer": "A",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题",
+            "推理判断题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 4,
+          "stem": "The author's attitude towards the issue is best described as ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "B",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "推理判断题",
+            "主旨大意题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "主旨大意题",
+            "词义/句义猜测题"
+          ],
+          "source_sentence": ""
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Text 2 · 科技与数字生活",
+      "theme": "technology",
+      "category": "科技",
+      "word_count": 0,
+      "paragraphs": [
+        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+      ],
+      "questions": [
+        {
+          "no": 1,
+          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "态度观点题",
+            "例证功能题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 2,
+          "stem": "The author's attitude towards the issue is best described as ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "It will be reversed very soon"
+            },
+            {
+              "label": "B",
+              "text": "It has become an irreversible trend"
+            },
+            {
+              "label": "C",
+              "text": "It mainly affects developing countries"
+            },
+            {
+              "label": "D",
+              "text": "It does more harm than good"
+            }
+          ],
+          "answer": "D",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "例证功能题",
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "skeptical"
+            },
+            {
+              "label": "B",
+              "text": "supportive"
+            },
+            {
+              "label": "C",
+              "text": "neutral"
+            },
+            {
+              "label": "D",
+              "text": "critical"
+            }
+          ],
+          "answer": "A",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题",
+            "推理判断题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 4,
+          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "B",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "推理判断题",
+            "主旨大意题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "主旨大意题",
+            "词义/句义猜测题"
+          ],
+          "source_sentence": ""
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "Text 3 · 教育与文化",
+      "theme": "education",
+      "category": "教育文化",
+      "word_count": 0,
+      "paragraphs": [
+        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+      ],
+      "questions": [
+        {
+          "no": 1,
+          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "态度观点题",
+            "例证功能题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 2,
+          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "D",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "例证功能题",
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "The author's attitude towards the issue is best described as ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "It will be reversed very soon"
+            },
+            {
+              "label": "B",
+              "text": "It has become an irreversible trend"
+            },
+            {
+              "label": "C",
+              "text": "It mainly affects developing countries"
+            },
+            {
+              "label": "D",
+              "text": "It does more harm than good"
+            }
+          ],
+          "answer": "A",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题",
+            "推理判断题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 4,
+          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "skeptical"
+            },
+            {
+              "label": "B",
+              "text": "supportive"
+            },
+            {
+              "label": "C",
+              "text": "neutral"
+            },
+            {
+              "label": "D",
+              "text": "critical"
+            }
+          ],
+          "answer": "B",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "推理判断题",
+            "主旨大意题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "主旨大意题",
+            "词义/句义猜测题"
+          ],
+          "source_sentence": ""
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "Text 4 · 社会与法律",
+      "theme": "society",
+      "category": "社会法律",
+      "word_count": 0,
+      "paragraphs": [
+        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+      ],
+      "questions": [
+        {
+          "no": 1,
+          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "态度观点题",
+            "例证功能题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 2,
+          "stem": "The author's attitude towards the issue is best described as ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "boost corporate profits"
+            },
+            {
+              "label": "B",
+              "text": "lower employee satisfaction"
+            },
+            {
+              "label": "C",
+              "text": "improve work-life balance"
+            },
+            {
+              "label": "D",
+              "text": "reduce long-term productivity"
+            }
+          ],
+          "answer": "D",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "例证功能题",
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "It will be reversed very soon"
+            },
+            {
+              "label": "B",
+              "text": "It has become an irreversible trend"
+            },
+            {
+              "label": "C",
+              "text": "It mainly affects developing countries"
+            },
+            {
+              "label": "D",
+              "text": "It does more harm than good"
+            }
+          ],
+          "answer": "A",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题",
+            "推理判断题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 4,
+          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "skeptical"
+            },
+            {
+              "label": "B",
+              "text": "supportive"
+            },
+            {
+              "label": "C",
+              "text": "neutral"
+            },
+            {
+              "label": "D",
+              "text": "critical"
+            }
+          ],
+          "answer": "B",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "推理判断题",
+            "主旨大意题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "an oversimplified view"
+            },
+            {
+              "label": "B",
+              "text": "a well-grounded concern"
+            },
+            {
+              "label": "C",
+              "text": "a purely academic guess"
+            },
+            {
+              "label": "D",
+              "text": "an irrational complaint"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "主旨大意题",
+            "词义/句义猜测题"
+          ],
+          "source_sentence": ""
+        }
+      ]
+    }
+  ]
+}

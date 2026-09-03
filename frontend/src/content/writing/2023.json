@@ -1,0 +1,27 @@
+{
+  "year": 2023,
+  "title": "2023年英语二写作(图表题干待提取)",
+  "prompt": "Section IV Writing\nPart A\n47. Directions:\nAn art exhibition and a robot show are to be held on Sunday, and your friend David asks\nyou which one he should go to. Write him an email to\n1) make a suggestion, and\n2) give your reason(s).\nWrite your answer in about 100 words on the ANSWER SHEET.\nDo not use your own name in your email, use “Li Ming” instead. (10 points)",
+  "chartType": "",
+  "chartOption": {},
+  "keyPoints": [],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health"
+    ]
+  },
+  "sampleEssays": []
+}

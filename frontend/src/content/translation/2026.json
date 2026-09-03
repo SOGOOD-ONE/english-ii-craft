@@ -1,0 +1,99 @@
+{
+  "year": 2026,
+  "source": "The influence of wearables on psychology refers to how the clothes we wear affect our thoughts, feelings,and behaviors. Clothing is not just about covering our bodies; it plays a significant role in shaping our self-perception and interactions with others. One aspect of this influence is self-expression. The clothes we choose can reflect our personality, mood, andidentity. Whether we opt for bold, colorful outfits or prefer more understated styles, our dress choices conveymessages about who we are and how we want to be perceived. Additionally, clothing can impact our confidence levels. When we wear clothes that make us feelcomfortable and confident, it can positively affect our self-esteem and overall mood. Moreover, cultural and societal influences play a significant role in shaping our dress choices. Differentcultures have their norms and expectations regarding dress, which can influence the types of clothing peoplewear and the meanings attributed to them.",
+  "slices": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 120,
+      "text": "The influence of wearables on psychology refers to how the clothes we wear affect our thoughts, feelings,and behaviors.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s2",
+      "start": 120,
+      "end": 257,
+      "text": "Clothing is not just about covering our bodies; it plays a significant role in shaping our self-perception and interactions with others.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s3",
+      "start": 257,
+      "end": 306,
+      "text": "One aspect of this influence is self-expression.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s4",
+      "start": 306,
+      "end": 376,
+      "text": "The clothes we choose can reflect our personality, mood, andidentity.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s5",
+      "start": 376,
+      "end": 536,
+      "text": "Whether we opt for bold, colorful outfits or prefer more understated styles, our dress choices conveymessages about who we are and how we want to be perceived.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s6",
+      "start": 536,
+      "end": 593,
+      "text": "Additionally, clothing can impact our confidence levels.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s7",
+      "start": 593,
+      "end": 717,
+      "text": "When we wear clothes that make us feelcomfortable and confident, it can positively affect our self-esteem and overall mood.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s8",
+      "start": 717,
+      "end": 814,
+      "text": "Moreover, cultural and societal influences play a significant role in shaping our dress choices.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s9",
+      "start": 814,
+      "end": 972,
+      "text": "Differentcultures have their norms and expectations regarding dress, which can influence the types of clothing peoplewear and the meanings attributed to them.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    }
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
+}

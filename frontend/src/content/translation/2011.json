@@ -1,0 +1,79 @@
+{
+  "year": 2011,
+  "source": "Who would have thought that, globally, the IT industry produces about the same volume of greenhousegases as the world's airlines do – roughly 2 percent of all CO2 emissions? Many everyday tasks take a surprising toll on the environment. A Google search can leak between 0.2 and7.0 grams of CO2, depending on how many attempts are needed to get the \"right\" answer. To deliver results toits users quickly, then, Google has to maintain vast data centres around the world, packed with powerfulcomputers. While producing large quantities of CO2, these computers emit a great deal of heat, so the centresneed to be well air-conditioned, which uses even more energy. However, Google and other big tech providers monitor their efficiency closely and make improvements. Monitoring is the first step on the road to reduction, but there is much more to be done, and not just by bigcompanies.",
+  "slices": [
+    {
+      "id": "s1",
+      "start": 0,
+      "end": 174,
+      "text": "Who would have thought that, globally, the IT industry produces about the same volume of greenhousegases as the world's airlines do – roughly 2 percent of all CO2 emissions?",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s2",
+      "start": 174,
+      "end": 237,
+      "text": "Many everyday tasks take a surprising toll on the environment.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s3",
+      "start": 237,
+      "end": 364,
+      "text": "A Google search can leak between 0.2 and7.0 grams of CO2, depending on how many attempts are needed to get the \"right\" answer.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s4",
+      "start": 364,
+      "end": 500,
+      "text": "To deliver results toits users quickly, then, Google has to maintain vast data centres around the world, packed with powerfulcomputers.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s5",
+      "start": 500,
+      "end": 660,
+      "text": "While producing large quantities of CO2, these computers emit a great deal of heat, so the centresneed to be well air-conditioned, which uses even more energy.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s6",
+      "start": 660,
+      "end": 761,
+      "text": "However, Google and other big tech providers monitor their efficiency closely and make improvements.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s7",
+      "start": 761,
+      "end": 880,
+      "text": "Monitoring is the first step on the road to reduction, but there is much more to be done, and not just by bigcompanies.",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
+    }
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
+}
