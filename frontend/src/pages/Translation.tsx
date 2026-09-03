@@ -14,7 +14,7 @@ export default function TranslationPage() {
   const [busy, setBusy] = useState(false);
 
   const { data: years } = useQuery({ queryKey: ['exam-years', MODULE], queryFn: () => api.exam.years(MODULE) });
-  const { data, error } = useQuery<TranslationData>({
+  const { data } = useQuery<TranslationData>({
     queryKey: ['exam-content', MODULE, year],
     queryFn: async () => {
       try { return await api.exam.content<TranslationData>(MODULE, year); } catch {
@@ -49,78 +49,76 @@ export default function TranslationPage() {
       const r = await api.translation.attemptCreate({
         year, slice_id: activeSlice, source_text: cur.text, user_translation: draft,
       });
-      setDiff(r.diff_report || null);
+      setDiff(r);
     } catch (e: any) {
-      alert(e?.response?.data?.detail || e?.message || '提交失败,未登录时不能保存翻译(但你可以在前端本地做参考)');
+      alert(e?.response?.data?.detail || '提交失败');
     } finally {
       setBusy(false);
     }
   }
 
-  const cur = slices.find(s => s.id === activeSlice);
-  const refZh = cur?.refZh || data?.refZh || '';
-
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between flex-wrap gap-4">
-        <div>
-          <h1 className="text-2xl font-bold">✍️ 段落翻译 · 逐句精修 Diff</h1>
-          <p className="text-slate-500 text-sm mt-1">逐句提交 · Diff 红绿高亮 · 后端入库跨设备</p>
+    <div className="space-y-3">
+      <div className="bg-white border border-zinc-200 rounded p-3">
+        <div className="border-b border-zinc-100 pb-2 mb-3 flex justify-between items-center">
+          <span className="font-semibold text-zinc-800">{year}年英语二真题翻译 · 句子切片精修</span>
+          <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={y => { setYear(y); setActiveSlice(null); setDiff(null); }} />
         </div>
-        <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={(y) => { setYear(y); setActiveSlice(null); }} />
-      </div>
 
-      <section className="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
-        <div className="text-xs uppercase tracking-wide text-slate-500 mb-2">{data?.title || `${year} 年英译汉真题`}</div>
-        <div className="text-[15px] leading-8 space-y-3">
-          {slices.length ? slices.map(s => (
-            <button key={s.id}
-              onClick={() => onFocusSlice(s)}
-              className={`block w-full text-left rounded-md px-3 -mx-3 py-1.5 transition ${activeSlice === s.id ? 'bg-violet-50 dark:bg-violet-900/30 ring-1 ring-violet-400' : 'hover:bg-slate-50 dark:hover:bg-slate-800/60'}`}>
-              <span className="mr-2 text-slate-400 text-xs">#{s.id}</span>
-              {s.text}
-              {s.refZh && <span className="ml-2 text-xs text-emerald-600 dark:text-emerald-400">有参考译文</span>}
-            </button>
-          )) : <div className="text-slate-500">{data?.source || '加载中…'}</div>}
-        </div>
-      </section>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <section className="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 space-y-3">
-          <div className="font-semibold">我的翻译{cur ? ` · 选中 #${cur.id}` : ''}</div>
-          {refZh && <div className="text-xs text-emerald-700 dark:text-emerald-300">📌 后端有参考译文,提交后自动比对</div>}
-          <textarea value={draft} onChange={e => setDraft(e.target.value)}
-            disabled={!activeSlice}
-            placeholder={activeSlice ? '在此输入这一句的中文翻译…' : '先点上方任意一句选中'}
-            className="w-full h-48 rounded-md border border-slate-300 dark:border-slate-600 p-3 bg-transparent text-sm leading-7" />
-          <button disabled={!activeSlice || busy} onClick={onSubmit}
-            className="w-full py-2 rounded-md bg-violet-600 text-white disabled:opacity-60">{busy ? '提交并比对中…' : '提交翻译并对比'}</button>
-        </section>
-
-        <section className="p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 space-y-3">
-          <div className="font-semibold">Diff 精修面板</div>
-          {cur && <div className="text-xs text-slate-500">原句: {cur.text}</div>}
-          {!diff ? <div className="text-slate-400 text-sm">翻译后点击提交,这里会显示你 vs 参考的字符级 Diff。
-            <br />{refZh ? '' : '⚠️ 该年份 refZh 仍待补,先拿你自己的译文练习即可。'}</div> : (
-              <div className="text-sm leading-7 p-3 rounded-md bg-slate-50 dark:bg-slate-800/70 space-y-1">
-                {(diff.diffs || []).map((d: any, i: number) => {
-                  const [op, text] = d as [number, string];
-                  const cls = op === -1 ? 'bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-200 line-through decoration-red-400' : op === 1 ? 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-200' : '';
-                  return <span key={i} className={cls}>{text}</span>;
-                })}
+        {slices.map((s, i) => (
+          <div key={s.id} className={`border rounded p-3 mb-3 ${activeSlice === s.id ? 'border-zinc-900 bg-zinc-50/70' : 'border-zinc-200 bg-zinc-50/50'}`}>
+            <div className="font-mono text-zinc-800 text-xs mb-2">
+              <strong>[英文原句 {i + 1}]</strong> {s.text}
+            </div>
+            {activeSlice === s.id ? (
+              <>
+                <div className="mb-2">
+                  <textarea value={draft} onChange={e => setDraft(e.target.value)}
+                    className="w-full p-2 border border-zinc-200 rounded focus:outline-none focus:border-zinc-900 text-xs" rows={2}
+                    placeholder="在此输入你的译文..." />
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-zinc-400 text-[11px]">点击提交即可查看字符级 Diff 对比与考点透视</span>
+                  <button disabled={busy} onClick={onSubmit}
+                    className="bg-zinc-900 text-white px-3 py-1 rounded text-xs disabled:opacity-60">
+                    {busy ? '提交中...' : '提交并对比差异'}
+                  </button>
+                </div>
+                {diff && (
+                  <div className="mt-3 pt-3 border-t border-zinc-200">
+                    <div className="font-semibold text-zinc-700 mb-1">译文差异比对 (Diff):</div>
+                    <div className="bg-white p-2 border border-zinc-200 rounded font-mono text-xs leading-relaxed">
+                      参考译文: {s.refZh || '(待补充)'}
+                    </div>
+                    {s.points.length > 0 && (
+                      <div className="mt-2 text-zinc-600 bg-zinc-100 p-2 rounded leading-normal text-xs">
+                        <strong>考点解析：</strong>
+                        {s.points.map((p, j) => <div key={j}>{j + 1}. {p}</div>)}
+                      </div>
+                    )}
+                    {s.pitfalls.length > 0 && (
+                      <div className="mt-1 text-amber-700 bg-amber-50 p-2 rounded leading-normal text-xs">
+                        <strong>易错陷阱：</strong>
+                        {s.pitfalls.map((p, j) => <div key={j}>{j + 1}. {p}</div>)}
+                      </div>
+                    )}
+                    {diff.diff_text && (
+                      <div className="mt-2 bg-white p-2 border border-zinc-200 rounded font-mono text-xs leading-relaxed whitespace-pre-wrap">
+                        {diff.diff_text}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="flex justify-between items-center">
+                <span className="text-zinc-400 text-[11px]">{s.refZh ? '参考译文: ' + s.refZh.slice(0, 40) + '…' : '点击下方按钮开始翻译'}</span>
+                <button onClick={() => onFocusSlice(s)} className="bg-zinc-900 text-white px-3 py-1 rounded text-xs">开始翻译</button>
               </div>
             )}
-          {refZh && (
-            <div>
-              <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">参考译文</div>
-              <div className="text-sm leading-7 p-3 rounded-md border border-slate-200 dark:border-slate-700">{refZh}</div>
-            </div>
-          )}
-        </section>
+          </div>
+        ))}
       </div>
-      {error && <div className="text-sm text-amber-600 p-3 rounded-md border border-amber-300 bg-amber-50 dark:bg-amber-900/20 dark:border-amber-800 dark:text-amber-200">
-        后端 API 不可用,已降级到前端本地副本。
-      </div>}
     </div>
   );
 }

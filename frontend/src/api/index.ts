@@ -33,7 +33,7 @@ export const api = {
       http.post<any>(`/api/v1/vocab/cards/${id}/review`, { rating }).then(r => r.data),
   },
   writing: {
-    aiConfig: () => http.get<{ available: boolean; effective_base: string; effective_model: string; using_user_key: boolean }>('/api/v1/writing/ai-config/available').then(r => r.data),
+    aiConfig: () => http.get<{ available: boolean; effective_base: string; effective_model: string; using_user_key: boolean }>('/api/v1/writing/ai-config/').then(r => r.data),
     reviewCreate: (p: { year: number; essay: string; chart_info?: string }) =>
       http.post<any>('/api/v1/writing/reviews', p).then(r => r.data),
     reviewsList: (params?: { year?: number; page?: number }) =>

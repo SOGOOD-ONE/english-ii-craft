@@ -51,101 +51,101 @@ export default function ReadingPage() {
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between flex-wrap gap-4">
-        <div>
-          <h1 className="text-2xl font-bold">📖 阅读理解 Part A (Text 1-4)</h1>
-          <p className="text-slate-500 text-sm mt-1">4 篇 × 5 题 × 2 分 = 40 分,年份切换 + 题型标签(细节/推断/主旨/态度)</p>
+    <div className="space-y-3">
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div className="flex items-center gap-3">
+          <span className="font-semibold text-zinc-800">阅读理解 Part A (Text 1-4)</span>
+          <span className="text-zinc-400 text-[11px]">4 篇 × 5 题 × 2 分 = 40 分</span>
         </div>
         <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={y => { setYear(y); setTab('p1'); }} />
       </div>
 
-      {data && <div className="text-sm text-slate-500">{data.intro}</div>}
+      {data?.intro && <div className="text-zinc-400 text-[11px]">{data.intro}</div>}
 
-      <div className="flex flex-wrap gap-2 border-b border-slate-200 dark:border-slate-700 pb-2">
+      <div className="flex flex-wrap gap-1 border-b border-zinc-200 pb-2">
         {PASSAGE_ORDER.map((pid, i) => {
           const p = data?.passages?.find(pp => pp.id === pid) || data?.passages?.[i];
           const title = p ? `${pid.toUpperCase()} · ${p.title}${p.category ? ' [' + p.category + ']' : ''}` : `Text ${i + 1}`;
           const active = (tab === pid || (!tab && i === 0));
           return (
             <button key={pid} onClick={() => setTab(pid)}
-              className={`px-3 py-1.5 rounded-md text-sm transition border ${active ? 'bg-violet-600 text-white border-violet-600' : 'border-slate-300 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-800'}`}>
+              className={`px-2.5 py-1 rounded text-xs font-medium transition ${active ? 'bg-zinc-900 text-white' : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100'}`}>
               {title}
             </button>
           );
         })}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {/* 左 3 列:文章 */}
-        <article className="lg:col-span-3 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 space-y-4">
+        <article className="lg:col-span-3 p-3 rounded border border-zinc-200 bg-white space-y-3">
           <div>
-            <div className="text-xs uppercase tracking-wide text-slate-500 mb-1">{passage?.category || 'Text'}</div>
-            <div className="font-semibold text-lg">{passage?.title || '加载中…'}</div>
+            <div className="text-[11px] uppercase tracking-wide text-zinc-500 mb-1">{passage?.category || 'Text'}</div>
+            <div className="font-semibold text-sm">{passage?.title || '加载中…'}</div>
           </div>
-          <div className="space-y-3 text-[15px] leading-8">
+          <div className="space-y-2 text-xs leading-7">
             {(passage?.paragraphs || ['(该年文本占位,后续从真题 PDF 填充。)']).map((para, i) => (
               <p key={i} className="indent-8 text-justify">{para}</p>
             ))}
           </div>
           {passage && (
-            <div className="pt-3 border-t border-slate-200 dark:border-slate-700 text-xs text-slate-500 flex gap-3 flex-wrap">
+            <div className="pt-2 border-t border-zinc-200 text-[11px] text-zinc-500 flex gap-3 flex-wrap">
               <span>主题: {passage.theme}</span>
               <span>· 词数: {passage.word_count || '(占位)'}</span>
-              <span>· 题型标签: {Array.from(new Set((passage.questions || []).flatMap(q => q.tags))).join(' / ') || '-'}</span>
+              <span>· 标签: {Array.from(new Set((passage.questions || []).flatMap(q => q.tags))).join(' / ') || '-'}</span>
             </div>
           )}
         </article>
 
         {/* 右 2 列:题目 */}
-        <section className="lg:col-span-2 p-5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 space-y-5">
+        <section className="lg:col-span-2 p-3 rounded border border-zinc-200 bg-white space-y-3">
           <div className="flex items-center justify-between">
-            <div className="font-semibold">题目 1-{passage?.questions?.length || 5}</div>
+            <div className="font-semibold text-xs">题目 1-{passage?.questions?.length || 5}</div>
             <button onClick={() => {
               const allShown = passage?.questions?.every(q => showAnswer[q.no]);
               const next: any = {};
               (passage?.questions || []).forEach(q => { next[q.no] = !allShown; });
               setShowAnswer(next);
-            }} className="text-xs px-2.5 py-1 rounded border border-slate-300 hover:bg-slate-100">
-              {passage?.questions?.every(q => showAnswer[q.no]) ? '全部隐藏答案' : '一键显示所有答案'}
+            }} className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 hover:bg-zinc-100">
+              {passage?.questions?.every(q => showAnswer[q.no]) ? '全部隐藏' : '一键显示答案'}
             </button>
           </div>
           {(passage?.questions || []).map(q => (
-            <div key={q.no} className="p-3 rounded-md border border-slate-200 dark:border-slate-700 space-y-2">
-              <div className="flex items-start gap-2">
-                <span className="px-1.5 text-xs rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300">{q.no}</span>
-                <div className="text-sm font-medium leading-6">{q.stem}</div>
+            <div key={q.no} className="p-2 rounded border border-zinc-200 space-y-1.5">
+              <div className="flex items-start gap-1.5">
+                <span className="px-1 text-[10px] rounded bg-zinc-100 text-zinc-600">{q.no}</span>
+                <div className="text-xs leading-5">{q.stem}</div>
               </div>
-              <div className="pl-7 space-y-1.5 text-sm">
+              <div className="pl-6 space-y-1 text-xs">
                 {q.options.map(o => (
-                  <div key={o.label} className={`flex gap-2 ${showAnswer[q.no] && o.label === q.answer ? 'text-emerald-600 dark:text-emerald-300 font-semibold' : ''}`}>
-                    <span className="w-6">{o.label}.</span>
+                  <div key={o.label} className={`flex gap-1.5 ${showAnswer[q.no] && o.label === q.answer ? 'text-emerald-700 font-semibold' : ''}`}>
+                    <span className="w-5">{o.label}.</span>
                     <span>{o.text}</span>
                   </div>
                 ))}
               </div>
-              <div className="pl-7 flex flex-wrap gap-1.5 text-xs">
+              <div className="pl-6 flex flex-wrap gap-1 text-[10px]">
                 {q.tags.map((t, i) => (
-                  <span key={i} className="px-2 py-0.5 rounded-full bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 border border-violet-200 dark:border-violet-800">{t}</span>
+                  <span key={i} className="px-1.5 py-0.5 rounded-full bg-zinc-100 text-zinc-600 border border-zinc-200">{t}</span>
                 ))}
-                <button onClick={() => toggleAnswer(q.no)} className="ml-auto text-xs underline text-slate-500 hover:text-violet-600">
-                  {showAnswer[q.no] ? '隐藏答案' : '查看答案 & 解析'}
+                <button onClick={() => toggleAnswer(q.no)} className="ml-auto text-[10px] underline text-zinc-500 hover:text-zinc-900">
+                  {showAnswer[q.no] ? '隐藏答案' : '查看答案'}
                 </button>
               </div>
               {showAnswer[q.no] && (
-                <div className="pl-7 mt-2 p-2 rounded-md bg-emerald-50 dark:bg-emerald-900/20 border border-emerald-200 dark:border-emerald-800 text-xs leading-5 space-y-1">
+                <div className="pl-6 mt-1.5 p-1.5 rounded bg-emerald-50 border border-emerald-200 text-[11px] leading-5 space-y-0.5">
                   <div>✅ 正确答案: <b>{q.answer}</b></div>
                   {q.source_sentence && <div>📌 原文线索句: {q.source_sentence}</div>}
-                  <div className="text-slate-600 dark:text-slate-300">💡 {q.explanation}</div>
+                  <div className="text-zinc-600">💡 {q.explanation}</div>
                 </div>
               )}
             </div>
           ))}
-          {(!passage?.questions?.length) && <div className="text-slate-400 text-sm">题目占位,后续从真题 PDF 提取。</div>}
+          {(!passage?.questions?.length) && <div className="text-zinc-400 text-xs">题目占位,后续从真题 PDF 提取。</div>}
         </section>
       </div>
 
-      {error && <div className="text-sm text-amber-600 p-3 rounded-md border border-amber-300 bg-amber-50 dark:bg-amber-900/20 dark:border-amber-800 dark:text-amber-200">
+      {error && <div className="text-xs text-amber-600 p-2 rounded border border-amber-200 bg-amber-50">
         后端 API 不可用,已降级到前端本地副本。
       </div>}
     </div>

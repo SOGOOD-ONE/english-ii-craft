@@ -5,6 +5,7 @@ from translation.views import AttemptViewSet, ContentTranslationView
 app_name = 'translation'
 
 router = DefaultRouter()
+router.trailing_slash = '/?'  # accept both with and without trailing slash
 router.register(r'attempts', AttemptViewSet, basename='attempt')
 
 urlpatterns = [

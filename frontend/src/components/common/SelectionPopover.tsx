@@ -1,5 +1,3 @@
-'use client';
-
 import { useEffect, useRef, useState } from 'react';
 import { captureFromSelection, getSourceLabel, isEnglishWord } from '@/lib/utils/selection';
 import { addCard } from '@/lib/db';
@@ -16,14 +14,8 @@ interface PopoverState {
 }
 
 const INITIAL: PopoverState = {
-  visible: false,
-  word: '',
-  sentence: '',
-  source: '',
-  x: 0,
-  y: 0,
-  saving: false,
-  saved: false,
+  visible: false, word: '', sentence: '', source: '',
+  x: 0, y: 0, saving: false, saved: false,
 };
 
 export default function SelectionPopover() {
@@ -32,11 +24,9 @@ export default function SelectionPopover() {
 
   useEffect(() => {
     const handleMouseUp = (e: MouseEvent) => {
-      // 点击浮窗内部不处理
       const target = e.target as HTMLElement;
       if (target.closest('[data-selection-popover]')) return;
 
-      // 延迟一帧让 selection 更新
       if (timerRef.current) clearTimeout(timerRef.current);
       timerRef.current = setTimeout(() => {
         const sel = window.getSelection();
@@ -49,14 +39,9 @@ export default function SelectionPopover() {
         if (!captured) return;
         const source = getSourceLabel(sel);
         setState({
-          visible: true,
-          word: captured.word,
-          sentence: captured.sentence,
-          source,
-          x: captured.rect.x,
-          y: captured.rect.y,
-          saving: false,
-          saved: false,
+          visible: true, word: captured.word, sentence: captured.sentence,
+          source, x: captured.rect.x, y: captured.rect.y,
+          saving: false, saved: false,
         });
       }, 30);
     };
@@ -84,15 +69,10 @@ export default function SelectionPopover() {
         if (def) definition = `${meaning.partOfSpeech ?? ''} ${def}`.trim();
         phonetic = entry?.phonetic || entry?.phonetics?.[0]?.text || '';
       }
-    } catch {
-      // 离线/无词典,保留占位释义
-    }
+    } catch { /* offline fallback */ }
     await addCard({
-      word: state.word,
-      phonetic: phonetic || undefined,
-      definition,
-      contextSentence: state.sentence,
-      source: state.source,
+      word: state.word, phonetic: phonetic || undefined, definition,
+      contextSentence: state.sentence, source: state.source,
     });
     setState((s) => ({ ...s, saving: false, saved: true }));
     setTimeout(() => setState(INITIAL), 900);

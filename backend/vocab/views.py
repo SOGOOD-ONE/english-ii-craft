@@ -44,7 +44,10 @@ class WordLookupView(APIView):
             })
         # 调 AI
         user = request.user if request.user and request.user.is_authenticated else None
-        result = lookup_word(user, word_raw, context)
+        try:
+            result = lookup_word(user, word_raw, context)
+        except RuntimeError as e:
+            return Response({'detail': str(e)}, status=status.HTTP_400_BAD_REQUEST)
         obj, _ = Word.objects.update_or_create(
             lemma=result.lemma or word_raw,
             defaults={

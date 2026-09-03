@@ -14,3 +14,9 @@
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-thumb { background: #d4d4d8; border-radius: 3px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+/* 选中高亮 */
+::selection { background-color: #18181b; color: #fff; }
+
+/* 单词悬停 - 完全不改变外观，只改 cursor */
+.wt { cursor: default; }

@@ -1,15 +1,11 @@
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
-import { lazy, Suspense } from 'react';
+import { useState, useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import HomePage from '@/pages/Home';
-import LoginPage from '@/pages/Login';
-import RegisterPage from '@/pages/Register';
+import AuthPage from '@/pages/Auth';
 import WritingPage from '@/pages/Writing';
 import TranslationPage from '@/pages/Translation';
 import ReadingPage from '@/pages/Reading';
 import VocabPage from '@/pages/Vocab';
 import SettingsPage from '@/pages/Settings';
-import ProtectedRoute from '@/router/ProtectedRoute';
 import WordHoverTip from '@/components/common/WordHoverTip';
 import '@/globals.css';
 
@@ -19,55 +15,65 @@ const queryClient = new QueryClient({
   },
 });
 
-function Navbar() {
-  const linkCls = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-1.5 rounded-md text-sm transition-colors ${
-      isActive ? 'bg-violet-600 text-white' : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800'
-    }`;
-  return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur dark:bg-slate-900/80 dark:border-slate-700">
-      <div className="max-w-7xl mx-auto px-6 h-14 flex items-center justify-between">
-        <NavLink to="/" className="flex items-center gap-2 font-semibold text-slate-900 dark:text-slate-50">
-          <span className="inline-block w-7 h-7 rounded-md bg-gradient-to-br from-violet-500 to-emerald-500 text-white grid place-items-center text-sm">E2</span>
-          English II Craft
-        </NavLink>
-        <nav className="flex items-center gap-1">
-          <NavLink to="/writing" className={linkCls}>图表写作</NavLink>
-          <NavLink to="/translation" className={linkCls}>段落翻译</NavLink>
-          <NavLink to="/reading" className={linkCls}>阅读理解</NavLink>
-          <NavLink to="/vocab" className={linkCls}>生词本 FSRS</NavLink>
-          <NavLink to="/settings" className={linkCls}>系统设置</NavLink>
-        </nav>
-      </div>
-    </header>
-  );
-}
+type TabId = 'writing' | 'translation' | 'reading' | 'vocab' | 'auth' | 'settings';
+
+const TABS: { id: TabId; label: string }[] = [
+  { id: 'writing', label: '图表写作' },
+  { id: 'translation', label: '段落翻译' },
+  { id: 'reading', label: '阅读理解' },
+  { id: 'vocab', label: 'FSRS复习' },
+  { id: 'auth', label: '账号接入' },
+  { id: 'settings', label: '系统设置' },
+];
 
 export default function App() {
+  const [tab, setTab] = useState<TabId>('writing');
+
+  useEffect(() => {
+    document.title = 'English-II-Craft 考研英语二攻坚工坊';
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
-        <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-          <Navbar />
-          <main className="max-w-7xl mx-auto px-6 py-8">
-            <Suspense fallback={<div className="text-center py-20 text-slate-500">加载中…</div>}>
-              <Routes>
-                <Route path="/" element={<HomePage />} />
-                <Route path="/login" element={<LoginPage />} />
-                <Route path="/register" element={<RegisterPage />} />
-                <Route path="/writing" element={<WritingPage />} />
-                <Route path="/translation" element={<TranslationPage />} />
-                <Route path="/reading" element={<ReadingPage />} />
-                <Route path="/vocab" element={<ProtectedRoute><VocabPage /></ProtectedRoute>} />
-                <Route path="/settings" element={<ProtectedRoute><SettingsPage /></ProtectedRoute>} />
-                <Route path="*" element={<HomePage />} />
-              </Routes>
-            </Suspense>
-          </main>
-          {/* hover 查词浮窗(全局挂载:在 React Router 内部,任意页面都生效) */}
-          <WordHoverTip />
-        </div>
-      </BrowserRouter>
+      <div className="min-h-screen bg-zinc-100 text-zinc-900 font-sans text-xs antialiased selection:bg-zinc-900 selection:text-white">
+        {/* 紧凑导航 */}
+        <header className="sticky top-0 z-40 bg-white border-b border-zinc-200 h-10 px-4 flex items-center justify-between">
+          <div className="flex items-center space-x-6">
+            <span className="font-bold tracking-tight text-sm">ENGLISH-II CRAFT</span>
+            <nav className="flex space-x-1">
+              {TABS.map(t => (
+                <button
+                  key={t.id}
+                  onClick={() => setTab(t.id)}
+                  className={`px-2.5 py-1 rounded font-medium ${
+                    tab === t.id
+                      ? 'bg-zinc-900 text-white'
+                      : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100'
+                  }`}
+                >
+                  {t.label}
+                </button>
+              ))}
+            </nav>
+          </div>
+          <div className="text-zinc-400 font-mono text-[11px]">
+            划词捕获已激活
+          </div>
+        </header>
+
+        {/* 主内容 */}
+        <main className="max-w-7xl mx-auto p-3">
+          {tab === 'auth' && <AuthPage />}
+          {tab === 'writing' && <WritingPage />}
+          {tab === 'translation' && <TranslationPage />}
+          {tab === 'reading' && <ReadingPage />}
+          {tab === 'vocab' && <VocabPage />}
+          {tab === 'settings' && <SettingsPage />}
+        </main>
+
+        {/* 全局单词悬停提示 */}
+        <WordHoverTip />
+      </div>
     </QueryClientProvider>
   );
 }

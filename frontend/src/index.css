@@ -1,4 +1,0 @@
-/* 让 vite 默认模板的 index.css 不干扰 tailwind:只做 reset */
-body { margin: 0; }
-*, *::before, *::after { box-sizing: border-box; }
-button { font: inherit; }
