@@ -7,7 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.GITHUB_PAGES ? '/english-ii-craft/' : '/',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
