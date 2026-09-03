@@ -49,6 +49,26 @@ export interface WritingData {
 }
 
 // ---------- 真题数据:段落翻译 ----------
+/** 逐句切片(新 schema:与 PDF 抽取脚本、写作/新题型一致) */
+export interface TranslationSlice {
+  id: string;
+  /** 句子在 source 中的起始字符偏移(0-based,按连写词还原后的 source 计算) */
+  start: number;
+  /** 句子在 source 中的结束偏移(不包含) */
+  end: number;
+  /** 英文原句(已做连写词还原,但可能仍存在极个别 OCR 连写) */
+  text: string;
+  /** 单句参考译文;空字符串代表"暂未录入" */
+  refZh: string;
+  /** 单句级考点解析(如:定语从句前置、被动转主动、增译范畴词等) */
+  points: string[];
+  /** 单句级易错陷阱 */
+  pitfalls: string[];
+  /** 从句中抽取并加入生词本的生词 id 列表 */
+  vocabIds: string[];
+}
+
+/** 遗留 schema(早期版本使用,兼容保留,渲染时会自动合并到 slices):旧的 seg {id,en} */
 export interface TranslationSegment {
   id: number;
   en: string;
@@ -59,9 +79,24 @@ export interface TranslationSegment {
 
 export interface TranslationData {
   year: number;
-  title: string;
-  intro: string;
-  segments: TranslationSegment[];
+  /** 整段英文原文(PDF 提取并归一化后的干净文本) */
+  source: string;
+  /** 整段中文参考译文;空字符串代表"未从 PDF 抽取到,待人工粘贴" */
+  refZh: string;
+  /** 整段级考点 */
+  points: string[];
+  /** 整段级易错陷阱 */
+  pitfalls: string[];
+  /** 逐句切片(新 schema,优先渲染) */
+  slices: TranslationSlice[];
+
+  // ===== 遗留字段 =====
+  /** 旧字段:卡片标题,渲染器会兜底使用 `{year} 年 · 英译汉原文` */
+  title?: string;
+  /** 旧字段:题干 intro */
+  intro?: string;
+  /** 旧字段:旧分段格式;若 slices 空则回退使用并补齐字段 */
+  segments?: TranslationSegment[];
 }
 
 // ---------- 真题数据:新题型 ----------

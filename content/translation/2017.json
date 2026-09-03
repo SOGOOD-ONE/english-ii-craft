@@ -1,49 +1,79 @@
 {
   "year": 2017,
-  "title": "2017年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "My dream has always been to work somewhere in an are a between fashion and publishing. Two yearsbefore graduating from secondary school, I took a sewing and design course thinking that I would move on to afashion design course. However, during that course I realized I was not good enough in this are a to competewith other creative personalities in the future, so I decided that it was not the right path for me. Before applyingfor university I told everyone that I would study journalism, because writing was, and still is, one of myfavourite activities. But, to be honest, I said it, because I thought that fashion and I together were just a dream –I knew that no one could imagine me in the fashion industry at all! So I decided to look for some fashion-related courses that included writing. This is when I noticed the course \"Fashion Media & Promotion.\"",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 87,
+      "text": "My dream has always been to work somewhere in an are a between fashion and publishing.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 87,
+      "end": 171,
+      "text": "Two yearsbefore graduating from secondary school, I took a sewing and design course",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) My dream has always been to work somewhere in an area between fashion and publishing.",
+      "id": "s3",
+      "start": 228,
+      "end": 414,
+      "text": "However, during that course I realized I was not good enough in this are a to competewith other creative personalities in the future, so I decided that it was not the right path for me.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "Two years before graduating from secondary school, I took a sewing and design course thinking that I would move on to a fashion design course.",
+      "id": "s4",
+      "start": 414,
+      "end": 557,
+      "text": "Before applyingfor university I told everyone that I would study journalism, because writing was, and still is, one of myfavourite activities.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "However, during that course I realized I was not good enough in this area to compete with other creative personalities in the future, so I decided that it was not the right path for me.",
+      "id": "s5",
+      "start": 557,
+      "end": 720,
+      "text": "But, to be honest, I said it, because I thought that fashion and I together were just a dream –I knew that no one could imagine me in the fashion industry at all!",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "Before applying for university I told everyone that I would study journalism, because",
+      "id": "s6",
+      "start": 720,
+      "end": 797,
+      "text": "So I decided to look for some fashion-related courses that included writing.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
+    },
+    {
+      "id": "s7",
+      "start": 797,
+      "end": 859,
+      "text": "This is when I noticed the course \"Fashion Media & Promotion.\"",
+      "refZh": "",
+      "points": [],
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

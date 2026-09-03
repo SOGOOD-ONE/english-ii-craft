@@ -1,70 +1,69 @@
 {
   "year": 2012,
-  "title": "2012年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "When people in developing countries worry about migration, they are usually concerned at the prospect oftheir best and brightest departure to Silicon Valley or to hospitals and universities in the developed world. Theseare the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rulesthat privilege college graduates. Lots of studies have found that well-educated people from developing countries are particularly likely toemigrate. A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25. This \"brain drain\" has longbothered policymakers in poor countries. They fear that it hurts their economies, depriving them of much-neededskilled workers who could have taught at their universities, worked in their hospitals and come up with clevernew products for their factories to make.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text from English into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 214,
+      "text": "When people in developing countries worry about migration, they are usually concerned at the prospect oftheir best and brightest departure to Silicon Valley or to hospitals and universities in the developed world.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on ANSWER SHEET 2.",
+      "id": "s2",
+      "start": 214,
+      "end": 368,
+      "text": "Theseare the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rulesthat privilege college graduates.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) When people in developing countries worry about migration, they are usually concerned at the prospect of their best and brightest departure to Silicon Valley or to hospitals and universities in the developed world.",
+      "id": "s3",
+      "start": 368,
+      "end": 483,
+      "text": "Lots of studies have found that well-educated people from developing countries are particularly likely toemigrate.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "These are the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rules that privilege college graduates.",
+      "id": "s4",
+      "start": 483,
+      "end": 657,
+      "text": "A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "Lots of studies have found that well-educated people from developing countries are particularly likely to emigrate.",
+      "id": "s5",
+      "start": 657,
+      "end": 725,
+      "text": "This \"brain drain\" has longbothered policymakers in poor countries.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25.",
+      "id": "s6",
+      "start": 725,
+      "end": 946,
+      "text": "They fear that it hurts their economies, depriving them of much-neededskilled workers who could have taught at their universities, worked in their hospitals and come up with clevernew products for their factories to make.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 7,
-      "en": "This \"brain drain\" has long bothered policymakers in poor countries.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 8,
-      "en": "They fear that it hurts their economies, depriving them of much-needed skilled workers who could have taught at their universities, worked in their hospitals and come up with clever new products for their factories to make.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 9,
-      "en": "- 13 Sec tion IV",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

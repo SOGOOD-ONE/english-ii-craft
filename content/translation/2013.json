@@ -1,91 +1,99 @@
 {
   "year": 2013,
-  "title": "2013年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "I can pick a date from the past 53 years and know instantly where I was, what happened in the news and even the day of the week. I've been able to do this since I was four. I never feel overwhelmed with the amount of information my brain absorbs. My mind seems to be able tocope and the information is stored away neatly. When I think of a sad memory, I do what everybody does – tryto put it to one side. I don't think it's harder for me just because my memory is clearer. Powerful memorydoesn't make my emotions any more acute or vivid. I can recall the day my grandfather died and the sadness Ifelt when we went to the hospital the day before. I also remember that the musical play Hair opened onBroadway on the same day – they both just pop into my mind in the same way.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 129,
+      "text": "I can pick a date from the past 53 years and know instantly where I was, what happened in the news and even the day of the week.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 129,
+      "end": 173,
+      "text": "I've been able to do this since I was four.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) I can pick a date from the past 53 years and know instantly where I was, what happened in the news and even the day of the week.",
+      "id": "s3",
+      "start": 173,
+      "end": 247,
+      "text": "I never feel overwhelmed with the amount of information my brain absorbs.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "I've been able to do this since I was four.",
+      "id": "s4",
+      "start": 247,
+      "end": 322,
+      "text": "My mind seems to be able tocope and the information is stored away neatly.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "I never feel overwhelmed with the amount of information my brain absorbs.",
+      "id": "s5",
+      "start": 322,
+      "end": 405,
+      "text": "When I think of a sad memory, I do what everybody does – tryto put it to one side.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "My mind seems to be able to cope and the information is stored away neatly.",
+      "id": "s6",
+      "start": 405,
+      "end": 473,
+      "text": "I don't think it's harder for me just because my memory is clearer.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "When I think of a sad memory, I do what everybody does - try to put it to one side.",
+      "id": "s7",
+      "start": 473,
+      "end": 538,
+      "text": "Powerful memorydoesn't make my emotions any more acute or vivid.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "I don't think it's harder for me just because my memory is clearer.",
+      "id": "s8",
+      "start": 538,
+      "end": 646,
+      "text": "I can recall the day my grandfather died and the sadness Ifelt when we went to the hospital the day before.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "Powerful memory doesn't make my emotions any more acute or vivid.",
+      "id": "s9",
+      "start": 646,
+      "end": 707,
+      "text": "I also remember that the musical play Hair opened onBroadway",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 10,
-      "en": "I can recall the day my grandfather died and the sadness I felt when we went to the hospital the day before.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "I also remember that the musical play Hair opened on Broadway on the same day — they both just pop into my mind in the same way.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "- 13 -",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

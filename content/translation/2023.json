@@ -1,91 +1,109 @@
 {
   "year": 2023,
-  "title": "2023年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "In the late 18th century, William Wordsworth became famous for his poems about nature. And he was oneof the founders of a movement called Romanticism, which celebrated the wonders of the natural world. Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and makethem see things differently. Through carefully selected words and phrases, poems can be dramatic, funny,beautiful, moving and inspiring. No one knows for sure when poetry began but it has been around for thousands of years, even beforepeople could write. It was a way to tell stories and pass down history. It is closely related to song and evenwhen written it is usually created to be performed out loud. Poems really come to life when they are recited. This can also help with understanding them too, because the rhythm and sounds of the words become clearer.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 87,
+      "text": "In the late 18th century, William Wordsworth became famous for his poems about nature.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 87,
+      "end": 202,
+      "text": "And he was oneof the founders of a movement called Romanticism, which celebrated the wonders of the natural world.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) In the late 18th century, William Wordsworth became famous for his poems about nature.",
+      "id": "s3",
+      "start": 202,
+      "end": 222,
+      "text": "Poetry is powerful.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world.",
+      "id": "s4",
+      "start": 222,
+      "end": 335,
+      "text": "Its energy and rhythm can capture a reader, transport them to another world and makethem see things differently.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "Poetry is powerful.",
+      "id": "s5",
+      "start": 335,
+      "end": 443,
+      "text": "Through carefully selected words and phrases, poems can be dramatic, funny,beautiful, moving and inspiring.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "Its energy and rhythm can capture a reader, transport them to another world and make them see things differently.",
+      "id": "s6",
+      "start": 443,
+      "end": 561,
+      "text": "No one knows for sure when poetry began but it has been around for thousands of years, even beforepeople could write.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring.",
+      "id": "s7",
+      "start": 561,
+      "end": 613,
+      "text": "It was a way to tell stories and pass down history.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "No one knows for sure when poetry began but it has been around for thousands of years, even before people could write.",
+      "id": "s8",
+      "start": 613,
+      "end": 712,
+      "text": "It is closely related to song and evenwhen written it is usually created to be performed out loud.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "It was a way to tell stories and pass down history.",
+      "id": "s9",
+      "start": 712,
+      "end": 761,
+      "text": "Poems really come to life when they are recited.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 10,
-      "en": "It is closely related to song and even when written it is usually created to be performed out loud.",
+      "id": "s10",
+      "start": 761,
+      "end": 867,
+      "text": "This can also help with understanding them too, because the rhythm and sounds of the words become clearer.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "Poems really come to life when they are recited.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "This can also help with understanding them too, because the rhythm and sounds of the words become clearer.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

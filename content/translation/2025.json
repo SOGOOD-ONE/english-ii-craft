@@ -1,91 +1,109 @@
 {
   "year": 2025,
-  "title": "2025年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "You know the moment—the conversation slows, then there's a pause. It's awkward, and so awkward that some people will panic and say anything. Do we all find such silences so stressful? Researchers analysed the frequency and impact of gaps greater than 2 seconds during conversations, including an overview of previous studies which indicate that the fear of awkward silences can be so extreme that people avoid talking to strangers, even though doing so is likely to be an enjoyable experience. During conversations with short gaps, people feel more connected to their conversation partners. But such feelings of connection markedly dip when entering a long gap. Long gaps between strangers are likely to be followed by a change in topic. But the opposite seems to be true for conversations between friends. Long gaps there saw increased connection. Between friends, longer gaps seem to provide natural moments for reflection and expression.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 66,
+      "text": "You know the moment—the conversation slows, then there's a pause.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 66,
+      "end": 141,
+      "text": "It's awkward, and so awkward that some people will panic and say anything.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) You know the moment — the conversation slows, then there’s a pause.",
+      "id": "s3",
+      "start": 141,
+      "end": 184,
+      "text": "Do we all find such silences so stressful?",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "It’s awkward, and so awkward that some people will panic and say anything.",
+      "id": "s4",
+      "start": 184,
+      "end": 494,
+      "text": "Researchers analysed the frequency and impact of gaps greater than 2 seconds during conversations, including an overview of previous studies which indicate that the fear of awkward silences can be so extreme that people avoid talking to strangers, even though doing so is likely to be an enjoyable experience.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "Do we all find such silences so stressful?",
+      "id": "s5",
+      "start": 494,
+      "end": 591,
+      "text": "During conversations with short gaps, people feel more connected to their conversation partners.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "Researchers analysed the frequency and impact of gaps greater than 2 seconds during conversations, including an overview of previous studies which indicate that the fear of awkward silences can be so extreme that people avoid talking to strangers, even though doing so is likely to be an enjoyable experience.",
+      "id": "s6",
+      "start": 591,
+      "end": 662,
+      "text": "But such feelings of connection markedly dip when entering a long gap.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "During conversations with short gaps, people feel more connected to their conversation partners.",
+      "id": "s7",
+      "start": 662,
+      "end": 738,
+      "text": "Long gaps between strangers are likely to be followed by a change in topic.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "But such feelings of connection markedly dip when entering a long gap.",
+      "id": "s8",
+      "start": 738,
+      "end": 807,
+      "text": "But the opposite seems to be true for conversations between friends.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "Long gaps between strangers are likely to be followed by a change in topic.",
+      "id": "s9",
+      "start": 807,
+      "end": 849,
+      "text": "Long gaps there saw increased connection.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 10,
-      "en": "But the opposite seems to be true for conversations between friends.",
+      "id": "s10",
+      "start": 849,
+      "end": 940,
+      "text": "Between friends, longer gaps seem to provide natural moments for reflection and expression.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "Long gaps there saw increased connection.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "Between friends, longer gaps seem to provide natural moments for reflection and expression.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

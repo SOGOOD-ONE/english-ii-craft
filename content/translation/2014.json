@@ -1,91 +1,109 @@
 {
   "year": 2014,
-  "title": "2014年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "Most people would define optimism as being endlessly happy, with a glass that's perpetually half full. Butthat's exactly the kind of false cheerfulness that positive psychologists wouldn't recommend. \"Healthy optimismmeans being in touch with reality,\" says Tal Ben-Shahar, a Harvard professor. According to Ben-Shahar, realisticoptimists are those who make the best of things that happen, but not those who believe everything happens for the best. Ben-Shahar uses three optimistic exercises. When he feels down – say, after giving a bad lecture – he grantshimself permission to be human. He reminds himself that not every lecture can be a Nobel winner; some will beless effective than others. Next is reconstruction. He analyzes the weak lecture, learning lessons for the futureabout what works and what doesn't. Finally, there is perspective, which involves acknowledging that in the grandscheme of life, one lecture really doesn't matter.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 103,
+      "text": "Most people would define optimism as being endlessly happy, with a glass that's perpetually half full.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.(15 points) Most people would define optimism as being endlessly happy, with a glass that's perpetually half full.",
+      "id": "s2",
+      "start": 103,
+      "end": 200,
+      "text": "Butthat's exactly the kind of false cheerfulness that positive psychologists wouldn't recommend.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "But that's exactly the kind of false cheerfulness that positive psychologists wouldn't recommend.",
+      "id": "s3",
+      "start": 201,
+      "end": 295,
+      "text": "Healthy optimismmeans being in touch with reality,\" says Tal Ben-Shahar, a Harvard professor.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "\"Healthy optimism means being in touch with reality,\" says Tal Ben-Shahar, a Harvard professor.",
+      "id": "s4",
+      "start": 295,
+      "end": 367,
+      "text": "According to Ben-Shahar, realisticoptimists are those who make the best",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "According to Ben­ Shahar, realistic optimists are those who make the best of things that happen, but not those who believe everything happens for the best.",
+      "id": "s5",
+      "start": 449,
+      "end": 493,
+      "text": "Ben-Shahar uses three optimistic exercises.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "Ben-Shahar uses three optimistic exercises.",
+      "id": "s6",
+      "start": 493,
+      "end": 589,
+      "text": "When he feels down – say, after giving a bad lecture – he grantshimself permission to be human.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "When he feels down — say, after giving a bad lecture — he grants himself permission to be human.",
+      "id": "s7",
+      "start": 589,
+      "end": 694,
+      "text": "He reminds himself that not every lecture can be a Nobel winner; some will beless effective than others.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "He reminds himself that not every lecture can be a Nobel winner; some will be less effective than others.",
+      "id": "s8",
+      "start": 694,
+      "end": 718,
+      "text": "Next is reconstruction.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "Next is reconstruction.",
+      "id": "s9",
+      "start": 718,
+      "end": 814,
+      "text": "He analyzes the weak lecture, learning lessons for the futureabout what works and what doesn't.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 10,
-      "en": "He analyzes the weak lecture, learning lessons for the future about what works and what doesn't.",
+      "id": "s10",
+      "start": 814,
+      "end": 941,
+      "text": "Finally, there is perspective, which involves acknowledging that in the grandscheme of life, one lecture really doesn't matter.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "Finally, there is perspective, which involves acknowledging that in the grand scheme of life, one lecture really doesn't matter.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "- 13 -",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

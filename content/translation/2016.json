@@ -1,77 +1,79 @@
 {
   "year": 2016,
-  "title": "2016年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "The supermarket is designed to lure customers into spending as much time as possible within its doors. Thereason for this is simple: The longer you stay in the store, the more stuff you'll see, and the more stuff you see,the more you'll buy. And supermarkets contain a lot of stuff. The average supermarket, according to the FoodMarketing Institute, carries some 44,000 different items, and many carry tens of thousands more. The sheervolume of available choice is enough to send shoppers into a state of information overload. According to brain-scan experiments, the demands of so much decision-making quickly become too much for us. After about 40minutes of shopping, most people stop struggling to be rationally selective, and instead begin shoppingemotionally – which is the point at which we accumulate the 50 percent of stuff in our cart that we neverintended buying.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 103,
+      "text": "The supermarket is designed to lure customers into spending as much time as possible within its doors.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 103,
+      "end": 242,
+      "text": "Thereason for this is simple: The longer you stay in the store, the more stuff you'll see, and the more stuff you see,the more you'll buy.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) The supermarket is designed to lure customers into spending as much time as possible within its doors.",
+      "id": "s3",
+      "start": 242,
+      "end": 283,
+      "text": "And supermarkets contain a lot of stuff.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "The reason for this is simple: The longer you stay in the store, the more stuff you'll see, and the more stuff you see, the more you'll buy.",
+      "id": "s4",
+      "start": 283,
+      "end": 426,
+      "text": "The average supermarket, according to the FoodMarketing Institute, carries some 44,000 different items, and many carry tens of thousands more.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "And supermarkets contain a lot of stuff.",
+      "id": "s5",
+      "start": 426,
+      "end": 527,
+      "text": "The sheervolume of available choice is enough to send shoppers into a state of information overload.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "The average supermarket, according to the Food Marketing Institute, carries some 44,000 different items, and many carry tens of thousands more.",
+      "id": "s6",
+      "start": 527,
+      "end": 635,
+      "text": "According to brain-scan experiments, the demands of so much decision-making quickly become too much for us.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "The sheer volume of available choice is enough to send shoppers into a state of information overload.",
+      "id": "s7",
+      "start": 635,
+      "end": 873,
+      "text": "After about 40minutes of shopping, most people stop struggling to be rationally selective, and instead begin shoppingemotionally – which is the point at which we accumulate the 50 percent of stuff in our cart that we neverintended buying.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 8,
-      "en": "According to brain-scan experiments, the demands of so much decision-making quickly become too much for us.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 9,
-      "en": "After about 40 minutes of shopping, most people stop struggling to be rationally selective, and instead begin shopping emotionally —w hich is the point at which we accumulate the 50 percent of stuff in our cart that we never intended buying.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 10,
-      "en": "- 13 -",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

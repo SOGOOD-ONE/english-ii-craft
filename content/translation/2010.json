@@ -1,98 +1,109 @@
 {
   "year": 2010,
-  "title": "2010年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "\"Sustainability\" has become a popular word these days, but to Ted Ning, the concept will always have personal meaning. Having endured a painful period of unsustainability in his own life made it clear to him that sustainability-oriented values must be expressed through everyday action and choice. Ning recalls spending a confusing year in the late 1990s selling insurance. He'd been through the dot-com boom and burst and, desperate for a job, signed on with a Boulder agency. It didn't go well. \"It was a really bad move because that's not my passion,\" says Ning, whose dilemma about the job translated, predictably, into a lack of sales. \"I was miserable. I had so much anxiety that I would wake up in the middle of the night and stare at the ceiling. I had no money and needed the job. Everyone said,'Just wait, you'll turn the corner, give it some time.'\"",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: In this section there is a text in English.",
+      "id": "s1",
+      "start": 1,
+      "end": 119,
+      "text": "Sustainability\" has become a popular word these days, but to Ted Ning, the concept will always have personal meaning.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Translate it into Chinese.",
+      "id": "s2",
+      "start": 119,
+      "end": 298,
+      "text": "Having endured a painful period of unsustainability in his own life made it clear to him that sustainability-oriented values must be expressed through everyday action and choice.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "Write your translation on ANSWER SHEET 2.",
+      "id": "s3",
+      "start": 298,
+      "end": 374,
+      "text": "Ning recalls spending a confusing year in the late 1990s selling insurance.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "(15 points) \"Sustainabi lity\" has become a popular word these days, but to Ted Ning, the concept will always have personal meaning.",
+      "id": "s4",
+      "start": 374,
+      "end": 478,
+      "text": "He'd been through the dot-com boom and burst and, desperate for a job, signed on with a Boulder agency.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "Having endured a painful period of unsustainability in his own life made it clear to him that sustainability-oriented values must be expressed through everyday action and choice.",
+      "id": "s5",
+      "start": 478,
+      "end": 497,
+      "text": "It didn't go well.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "Ning recalls spending a confusing year in the late 1990s selling insurance.",
+      "id": "s6",
+      "start": 498,
+      "end": 641,
+      "text": "It was a really bad move because that's not my passion,\" says Ning, whose dilemma about the job translated, predictably, into a lack of sales.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "He'd been through the dot-corn boom and burst and, desperate for a job, signed on with a Boulder agency.",
+      "id": "s7",
+      "start": 642,
+      "end": 659,
+      "text": "I was miserable.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "It didn't go well.",
+      "id": "s8",
+      "start": 659,
+      "end": 755,
+      "text": "I had so much anxiety that I would wake up in the middle of the night and stare at the ceiling.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "\"It was a really bad move because that's not my passion,\" says Ning, whose dilemma about the job translated, predictably, into a lack of sales.",
+      "id": "s9",
+      "start": 755,
+      "end": 790,
+      "text": "I had no money and needed the job.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 10,
-      "en": "\"I was miserable.",
+      "id": "s10",
+      "start": 790,
+      "end": 810,
+      "text": "Everyone said,'Just",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "I had so much anxiety that I would wake up in the middle of the night and stare at the ceiling.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "I had no money and needed the job.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 13,
-      "en": "Everyone said, 'Just wait, you'll turn the comer, give it some time.\"' - 13 -",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }

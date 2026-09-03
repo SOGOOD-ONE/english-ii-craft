@@ -1,91 +1,99 @@
 {
   "year": 2018,
-  "title": "2018年英语二真题翻译",
-  "intro": "",
-  "segments": [
+  "source": "A fifth grader gets a homework assignment to select his future career path from a list of occupations. Heticks \"astronaut\" but quickly adds \"scientist\" to the list and selects it as well. The boy is convinced that if hereads enough, he can explore as many career paths as he likes. And so he reads – everything from encyclopediasto science fiction novels. He reads so passionately that his parents have to institute a \"no reading policy\" at thedinner table. That boy was Bill Gates, and he hasn't stopped reading yet – not even after becoming one of the mostsuccessful people on the planet. Nowadays, his reading material has changed from science fiction and referencebooks: recently, he revealed that he reads at least 50 nonfiction books a year. Gates chooses nonfiction titlesbecause they explain how the world works. \"Each book opens up new avenues of knowledge to explore\", Gatessays.",
+  "slices": [
     {
-      "id": 1,
-      "en": "Directions: Translate the following text into Chinese.",
+      "id": "s1",
+      "start": 0,
+      "end": 103,
+      "text": "A fifth grader gets a homework assignment to select his future career path from a list of occupations.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 2,
-      "en": "Write your translation neatly on the ANSWER SHEET.",
+      "id": "s2",
+      "start": 103,
+      "end": 188,
+      "text": "Heticks \"astronaut\" but quickly adds \"scientist\" to the list and selects it as well.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 3,
-      "en": "(15 points) A fifth grader gets a homework assignment to select his future career path from a list of occupations.",
+      "id": "s3",
+      "start": 188,
+      "end": 282,
+      "text": "The boy is convinced that if hereads enough, he can explore as many career paths as he likes.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 4,
-      "en": "He ticks \"astronaut\" but quickl y adds \"scientist\" to the list and selects it as well.",
+      "id": "s4",
+      "start": 282,
+      "end": 356,
+      "text": "And so he reads – everything from encyclopediasto science fiction novels.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 5,
-      "en": "The boy is convinced that if he reads enough, he can explore as many career paths as he likes.",
+      "id": "s5",
+      "start": 356,
+      "end": 458,
+      "text": "He reads so passionately that his parents have to institute a \"no reading policy\" at thedinner table.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 6,
-      "en": "And so he reads - everything from encyclopedias to science fiction novels.",
+      "id": "s6",
+      "start": 458,
+      "end": 591,
+      "text": "That boy was Bill Gates, and he hasn't stopped reading yet – not even after becoming one of the mostsuccessful people on the planet.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 7,
-      "en": "He reads so passionately that his parents have to institute a \"no reading policy\" at the dinner table.",
+      "id": "s7",
+      "start": 591,
+      "end": 748,
+      "text": "Nowadays, his reading material has changed from science fiction and referencebooks: recently, he revealed that he reads at least 50 nonfiction books a year.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 8,
-      "en": "That boy was Bill Gates, and he hasn't stopped reading yet - not even after becoming one of the most successful people on the planet.",
+      "id": "s8",
+      "start": 748,
+      "end": 821,
+      "text": "Gates chooses nonfiction titlesbecause they explain how the world works.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     },
     {
-      "id": 9,
-      "en": "Nowadays, his reading material has changed from science fiction and reference books: recently, he revealed that he reads at least 50 nonfiction books a year.",
+      "id": "s9",
+      "start": 822,
+      "end": 889,
+      "text": "Each book opens up new avenues of knowledge to explore\", Gatessays.",
       "refZh": "",
       "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 10,
-      "en": "Gates chooses nonfiction titles because they explain how the world works.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 11,
-      "en": "\"Each book opens up new avenues of knowledge to explore\", Gates says.",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
-    },
-    {
-      "id": 12,
-      "en": "- 13 Section N",
-      "refZh": "",
-      "points": [],
-      "pitfalls": []
+      "pitfalls": [],
+      "vocabIds": []
     }
-  ]
+  ],
+  "refZh": "",
+  "points": [],
+  "pitfalls": []
 }
