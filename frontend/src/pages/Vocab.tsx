@@ -7,28 +7,73 @@ export default function VocabPage() {
   const [filter, setFilter] = useState<'due' | 'mastered' | 'all'>('due');
   const [idx, setIdx] = useState(0);
 
-  const { data: _raw = { results: [] } } = useQuery<any>({
-    queryKey: ['vocab-cards', filter],
-    queryFn: () => api.vocab.cardsList(
-      filter === 'due' ? { due: 1 } : filter === 'mastered' ? { mastered: 1 } : {}
-    ),
+  // Always query all cards to get correct counts
+  const { data: allRaw = { results: [] } } = useQuery<any>({
+    queryKey: ['vocab-cards-all'],
+    queryFn: () => api.vocab.cardsList({ page_size: 9999 }),
+    staleTime: 0,
   });
-  const cards = _raw.results ?? [];
+  const allCards = allRaw.results ?? [];
+
+  const { data: filteredRaw = { results: [] } } = useQuery<any>({
+    queryKey: ['vocab-cards', filter],
+    queryFn: () => api.vocab.cardsList({
+      ...(filter === 'due' ? { due: 1 } : filter === 'mastered' ? { mastered: 1 } : {}),
+      page_size: 9999,
+    }),
+    staleTime: 0,
+  });
+  const cards = filteredRaw.results ?? [];
 
   const reviewMut = useMutation({
     mutationFn: ({ id, rating }: { id: number; rating: 'Again' | 'Hard' | 'Good' | 'Easy' }) => api.vocab.cardsReview(id, rating),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['vocab-cards'] });
+      qc.invalidateQueries({ queryKey: ['vocab-cards-all'] });
       setIdx(i => i + 1);
+    },
+  });
+
+  const deleteMut = useMutation({
+    mutationFn: (id: number) => api.vocab.cardsDelete(id),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['vocab-cards'] });
+      qc.invalidateQueries({ queryKey: ['vocab-cards-all'] });
     },
   });
 
   const current = cards[Math.min(idx, cards.length - 1)];
 
   const counts = useMemo(() => {
-    const m = cards.filter((c: any) => c.mastered).length;
-    return { all: cards.length, mastered: m, due: cards.length - m };
-  }, [cards]);
+    const all = allCards.length;
+    const mastered = allCards.filter((c: any) => c.mastered).length;
+    const due = all - mastered;
+    return { all, mastered, due };
+  }, [allCards]);
+
+  // 导出为 CSV (兼容 Excel)
+  const exportToCSV = () => {
+    const header = ['单词', '音标', '释义', '掌握状态', '下次复习日期', '添加来源'];
+    const rows = allCards.map((c: any) => {
+      const word = c.word_detail?.lemma || c.word || '';
+      const phonetic = c.word_detail?.phonetic || '';
+      const meaning = senseText(c).replace(/"/g, '""');
+      const mastered = c.mastered ? '已掌握' : '未掌握';
+      const dueDate = c.due ? new Date(c.due).toLocaleString('zh-CN') : '';
+      const source = c.source_path || '';
+      return [word, phonetic, `"${meaning}"`, mastered, dueDate, source].join(',');
+    });
+    const csv = [header.join(','), ...rows].join('\n');
+    const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `english-vocab-${new Date().toISOString().slice(0, 10)}.csv`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
 
   // 从 word_detail.senses 提取释义文本
   const senseText = (c: any): string => {
@@ -54,6 +99,10 @@ export default function VocabPage() {
                 </button>
               ))}
             </div>
+            <button onClick={exportToCSV} title="导出全部词汇为 Excel"
+              className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 text-zinc-600 hover:bg-zinc-100">
+              导出
+            </button>
           </div>
         </div>
 

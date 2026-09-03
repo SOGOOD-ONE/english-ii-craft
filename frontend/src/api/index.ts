@@ -29,7 +29,7 @@ export const api = {
       http.post<{ id: number; lemma: string; phonetic: string; senses: any[]; collocations: string[]; from_cache: boolean }>(
         '/api/v1/vocab/words/lookup', { word, context }
       ).then(r => r.data),
-    cardsList: (params: { due?: 0 | 1; mastered?: 0 | 1 } = {}) =>
+    cardsList: (params: { due?: 0 | 1; mastered?: 0 | 1; page_size?: number } = {}) =>
       http.get<any[]>('/api/v1/vocab/cards/', { params }).then(r => r.data),
     cardsCreate: (p: any) => http.post<any>('/api/v1/vocab/cards/', p).then(r => r.data),
     cardsDelete: (id: number) => http.delete(`/api/v1/vocab/cards/${id}/`).then(r => r.data),
