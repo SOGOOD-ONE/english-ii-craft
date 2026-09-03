@@ -8,12 +8,13 @@ export default function VocabPage() {
   const [idx, setIdx] = useState(0);
   const [showBack, setShowBack] = useState(false);
 
-  const { data: cards = [] } = useQuery({
+  const { data: _raw = { results: [] } } = useQuery<any>({
     queryKey: ['vocab-cards', filter],
     queryFn: () => api.vocab.cardsList(
       filter === 'due' ? { due: 1 } : filter === 'mastered' ? { mastered: 1 } : {}
     ),
   });
+  const cards = _raw.results ?? [];
 
   const reviewMut = useMutation({
     mutationFn: ({ id, rating }: { id: number; rating: 'Again' | 'Hard' | 'Good' | 'Easy' }) => api.vocab.cardsReview(id, rating),

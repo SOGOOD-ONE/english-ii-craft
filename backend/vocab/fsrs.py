@@ -36,11 +36,12 @@ _scheduler = Scheduler()
 
 def _to_fsrs_card(card: VocabCard) -> Card:
     c = Card()
-    # py-fsrs v5 Card 支持 from_dict({state,stability,difficulty,due,last_review})
-    # 为了避免字段差异,直接对属性赋值
     c.state = int(card.state or c.state)
-    c.stability = float(card.stability) if card.stability else c.stability
-    c.difficulty = float(card.difficulty) if card.difficulty else c.difficulty
+    # 新卡(尚未复习过, stability=0): 不覆盖任何值, 交给 FSRS 自行初始化
+    if card.stability is not None and float(card.stability) > 0:
+        c.stability = float(card.stability)
+    if card.difficulty is not None and float(card.difficulty) > 0:
+        c.difficulty = float(card.difficulty)
     if card.due:
         c.due = card.due.replace(tzinfo=timezone.utc) if card.due.tzinfo is None else card.due
     if card.last_review:
@@ -51,15 +52,18 @@ def _to_fsrs_card(card: VocabCard) -> Card:
 
 def new_default_card_fields() -> dict[str, Any]:
     c = Card()
+    # py-fsrs v5 默认这些字段是 None → 但数据库要求 NOT NULL
+    if c.due is None:
+        c.due = datetime.now(timezone.utc)
     return {
         'due': c.due.replace(tzinfo=None),
-        'stability': c.stability,
-        'difficulty': c.difficulty,
+        'stability': c.stability if c.stability is not None else 0.0,
+        'difficulty': c.difficulty if c.difficulty is not None else 0.0,
         'elapsed_days': 0,
         'scheduled_days': 0,
         'reps': 0,
         'lapses': 0,
-        'state': int(c.state or 0),
+        'state': c.state,
         'last_review': None,
         'consecutive_correct': 0,
         'mastered': False,

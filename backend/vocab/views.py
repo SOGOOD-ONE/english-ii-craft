@@ -7,6 +7,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from accounts.models import Device
 from vocab.fsrs import schedule_card, new_default_card_fields
 from vocab.models import Word, VocabCard
 from vocab.serializers import (
@@ -42,7 +43,7 @@ class WordLookupView(APIView):
                 'from_cache': True,
             })
         # 调 AI
-        device: Word | None = getattr(request, 'device', None)
+        device: Device | None = getattr(request, 'device', None)
         try:
             result = lookup_word(device, word_raw, context)
         except RuntimeError as e:
@@ -80,7 +81,7 @@ class CardViewSet(mixins.ListModelMixin,
     lookup_field = 'pk'
 
     def get_queryset(self):
-        device: Word | None = getattr(self.request, 'device', None)
+        device: Device | None = getattr(self.request, 'device', None)
         if not device:
             return VocabCard.objects.none()
         qs = VocabCard.objects.filter(device=device).select_related('word')
@@ -94,7 +95,7 @@ class CardViewSet(mixins.ListModelMixin,
         return qs.order_by('due')
 
     def create(self, request, *args, **kwargs):
-        device: Word | None = getattr(request, 'device', None)
+        device: Device | None = getattr(request, 'device', None)
         if not device:
             return Response({'detail': '缺少 X-Device-Id 请求头'}, status=status.HTTP_400_BAD_REQUEST)
         s = CardCreateRequestSerializer(data=request.data)
