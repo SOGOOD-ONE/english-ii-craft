@@ -13,6 +13,7 @@ interface Passage {
   category: string;
   word_count: number;
   paragraphs: string[];
+  translations?: string[];
   questions: Array<{
     no: number;
     stem: string;
@@ -29,6 +30,36 @@ export default function ReadingPage() {
   const [year, setYear] = useState(2025);
   const [tab, setTab] = useState<string>('p1');
   const [showAnswer, setShowAnswer] = useState<Record<number, boolean>>({});
+  const [showTranslate, setShowTranslate] = useState(false);
+  const [translating, setTranslating] = useState(false);
+  const [aiTranslations, setAiTranslations] = useState<Record<string, string[]>>({});
+
+  // 调用AI翻译，完成后直接显示8:2分栏
+  async function doAITranslate() {
+    if (!passage || !passage.paragraphs || passage.paragraphs.length === 0) return;
+    const cacheKey = `${year}-${tab}`;
+    
+    // 如果已经翻译过了，直接显示
+    if (aiTranslations[cacheKey]) {
+      setShowTranslate(true);
+      return;
+    }
+    
+    setTranslating(true);
+    try {
+      const res = await api.exam.translate(passage.paragraphs);
+      if (res.error) {
+        alert(res.error);
+        return;
+      }
+      setAiTranslations(prev => ({ ...prev, [cacheKey]: res.translations }));
+      setShowTranslate(true);
+    } catch (e: any) {
+      alert(`翻译失败: ${e.message || e}`);
+    } finally {
+      setTranslating(false);
+    }
+  }
 
   const { data: years } = useQuery({ queryKey: ['exam-years', MODULE], queryFn: () => api.exam.years(MODULE) });
   const { data, error } = useQuery<ReadingData>({
@@ -64,8 +95,7 @@ export default function ReadingPage() {
 
       <div className="flex flex-wrap gap-1 border-b border-zinc-200 pb-2">
         {PASSAGE_ORDER.map((pid, i) => {
-          const p = data?.passages?.find(pp => pp.id === pid) || data?.passages?.[i];
-          const title = p ? `${pid.toUpperCase()} · ${p.title}${p.category ? ' [' + p.category + ']' : ''}` : `Text ${i + 1}`;
+          const title = `${pid.toUpperCase()} Text ${i+1}`;
           const active = (tab === pid || (!tab && i === 0));
           return (
             <button key={pid} onClick={() => setTab(pid)}
@@ -78,23 +108,70 @@ export default function ReadingPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {/* 左 3 列:文章 */}
-        <article className="lg:col-span-3 p-3 rounded border border-zinc-200 bg-white space-y-3">
-          <div>
-            <div className="text-[11px] uppercase tracking-wide text-zinc-500 mb-1">{passage?.category || 'Text'}</div>
-            <div className="font-semibold text-sm">{passage?.title || '加载中…'}</div>
-          </div>
-          <div className="space-y-2 text-xs leading-7">
-            {(passage?.paragraphs || ['(该年文本占位,后续从真题 PDF 填充。)']).map((para, i) => (
-              <p key={i} className="indent-8 text-justify">{para}</p>
-            ))}
-          </div>
-          {passage && (
-            <div className="pt-2 border-t border-zinc-200 text-[11px] text-zinc-500 flex gap-3 flex-wrap">
-              <span>主题: {passage.theme}</span>
-              <span>· 词数: {passage.word_count || '(占位)'}</span>
-              <span>· 标签: {Array.from(new Set((passage.questions || []).flatMap(q => q.tags))).join(' / ') || '-'}</span>
+        <article className="lg:col-span-3 p-3 rounded border border-zinc-200 bg-white">
+          {/* 标题 + 翻译按钮 */}
+          <div className="flex items-center justify-between mb-2">
+            <div className="font-semibold text-sm">{passage?.title || `Text ${tab}`}</div>
+            <div className="flex items-center gap-1.5">
+              {showTranslate && (
+                <button
+                  onClick={() => setShowTranslate(false)}
+                  className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 hover:bg-zinc-100"
+                >
+                  隐藏翻译
+                </button>
+              )}
+              <button
+                onClick={doAITranslate}
+                disabled={translating}
+                className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 hover:bg-zinc-100 disabled:opacity-50"
+              >
+                {translating ? '翻译中...' : '全文翻译'}
+              </button>
             </div>
-          )}
+          </div>
+          {/* 文章正文容器 */}
+          <div className="overflow-y-auto pr-2 -mr-2">
+            {/* 文章正文 - 根据翻译显示切换布局 */}
+            {!showTranslate ? (
+              // 单栏:只显示英文原文
+              <div className="space-y-2 text-xs leading-7">
+                {(passage?.paragraphs || ['(该年文本占位,后续从真题 PDF 填充。)']).map((para, i) => (
+                  <p key={i} className="indent-8 text-justify">{para}</p>
+                ))}
+              </div>
+            ) : (
+              // 上下排列:英文段落下面紧跟中文翻译
+              <div className="space-y-3 text-xs leading-7">
+                {(passage?.paragraphs || ['']).map((para, i) => {
+                  const cacheKey = `${year}-${tab}`;
+                  const cachedAi = aiTranslations[cacheKey]?.[i];
+                  const jsonTr = passage?.translations?.[i];
+                  const tr = jsonTr || cachedAi;
+                  return (
+                    <div key={i} className="space-y-2">
+                      {/* 英文原文 */}
+                      <p className="indent-8 text-justify text-zinc-900">{para}</p>
+                      {/* 中文翻译 */}
+                      <div className="pl-6 border-l-2 border-zinc-200 bg-zinc-50 py-1 pr-2 rounded">
+                        <p className="indent-4 text-justify text-zinc-600">
+                          {tr || <span className="text-zinc-300 italic">[待翻译]</span>}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {/* 始终显示底部统计信息 */}
+            {passage && (
+              <div className="pt-2 mt-3 border-t border-zinc-200 text-[11px] text-zinc-500 flex gap-3 flex-wrap">
+                <span>主题: {passage.theme}</span>
+                <span>· 词数: {passage.word_count || '(占位)'}</span>
+                <span>· 标签: {Array.from(new Set((passage.questions || []).flatMap(q => q.tags))).join(' / ') || '-'}</span>
+              </div>
+            )}
+          </div>
         </article>
 
         {/* 右 2 列:题目 */}

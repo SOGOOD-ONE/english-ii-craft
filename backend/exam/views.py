@@ -24,6 +24,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
+from ai_provider.services import translate_paragraphs
 from exam.models import PaperMetadata
 
 
@@ -116,3 +117,33 @@ class ExamContentView(APIView):
         except Exception as exc:
             return Response({'detail': f'JSON 解析失败: {exc}'}, status=500)
         return Response(data)
+
+
+class TranslateParagraphsSerializer(serializers.Serializer):
+    paragraphs = serializers.ListField(child=serializers.CharField())
+
+
+class AITranslateView(APIView):
+    """
+    POST /exam/translate  AI 逐段翻译英文文章
+    请求: {"paragraphs": ["para1", "para2", ...]}
+    返回: {"translations": ["trans1", "trans2", ...], "error": ""}
+    """
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        ser = TranslateParagraphsSerializer(data=request.data)
+        ser.is_valid(raise_exception=True)
+        paragraphs = ser.validated_data['paragraphs']
+        
+        if not paragraphs:
+            return Response({'translations': [], 'error': '没有段落需要翻译'}, status=400)
+        
+        try:
+            device = getattr(request, 'device', None)
+            results = translate_paragraphs(device, paragraphs)
+            return Response({'translations': results, 'error': ''})
+        except RuntimeError as exc:
+            return Response({'translations': [], 'error': str(exc)}, status=400)
+        except Exception as exc:
+            return Response({'translations': [], 'error': f'翻译失败: {exc}'}, status=500)

@@ -1,6 +1,7 @@
 """DeviceAuthMiddleware — 用 X-Device-Id 替代 JWT 认证"""
 from django.utils.deprecation import MiddlewareMixin
 from django.utils import timezone
+from django.core.exceptions import ValidationError
 from .models import Device
 
 
@@ -17,5 +18,5 @@ class DeviceAuthMiddleware(MiddlewareMixin):
             device.last_seen = timezone.now()
             device.save(update_fields=['last_seen'])
             request.device = device
-        except (Device.DoesNotExist, ValueError):
+        except (Device.DoesNotExist, ValueError, ValidationError):
             request.device = None

@@ -1,162 +1,162 @@
 {
   "year": 2012,
   "title": "考研英语二 2012 年 · 阅读理解 Part A (Text 1-4)",
-  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。",
   "total_points": 40,
   "per_question_points": 2,
   "passages": [
     {
       "id": "p1",
-      "title": "Text 1 · 经济与管理类",
-      "theme": "business/economy",
-      "category": "经济管理",
-      "word_count": 0,
+      "title": "Text 1 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 402,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "Homework has never been terribly popular with students and even many parents, but in recent years it has been particularly scorned. School districts across the country, most recently Los Angeles Unified, are revising their thinking on this educational ritual. Unfortunately, L.A. Unified has produced an inflexible policy which mandates that with the exception of some advanced courses, homework may no longer count for more than 10% of a student's academic grade. This rule is meant to address the difficulty that students from impoverished or chaotic homes might have in completing their homework.",
+        "But the policy is unclear and contradictory. Certainly, no homework should be assigned that students cannot complete on their own or that they cannot do without expensive equipment. But if the district is essentially g iving a pass to students who do not do their homework because of complicated family lives, it is going riskily close to the implication that standards need to be lowered for poor children. District administrators say that homework will still be a part of schooling; teachers are allowed to assign as much of it as they want.",
+        "But with homework counting for no more than 10% of their grades, students can easily skip half their homework and see very little difference on their report cards. Some students might do well on state tests without completing their homework, but what about the students who performed well on the tests and did their homework? It is quite possible that the homework helped. Yet rather than empowering teachers to find what works best for their students, the policy imposes a flat, across-the-board rule.",
+        "At the same time, the policy addresses none of the truly thorny questions about homework. If the district finds homework to be unimportant to its students' academic achievement, it should move to reduce or eliminate the assignments, not make them count for almost nothing. Conversely, if homework matters, it should account for a significant portion of the grade. Meanwhile, this policy does nothing to ensure that the homework students receive is meaningful or appropriate to their age and the subject, or that teachers are not assigning more than they are willing to review and correct.",
+        "The homework rules should be put on hold while the school board, which is responsible for setting educational policy, looks into the matter and conducts public hearings. It is not too late for L.A. Unified to do homework right. whether"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "It is implied in Paragraph 1 that nowadays homework .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "is receiving more criticism"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "is gaining more preferences"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "is no longer an educational ritual"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "is not required for advanced courses"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "L.A. Unified has made the rule about homework mainly because poor students",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "tend to have moderate expectations for their education"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "have asked for a different educational standard"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "may have problems finishing their homework"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "have voiced their complaints about homework"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "主旨大意题",
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "According to Paragraph 3, one problem with the policy is that it may .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "result in students' indifference to their report cards"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "undermine the authority of state tests"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "restrict teachers' power in education"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "discourage students from doing homework"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "As mentioned in Paragraph 4, a key question unanswered about homework 1s whether",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "it should be eliminated"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "it counts much in schooling"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "it places extra burdens on teachers"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "it is important for grades"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "A suitable title for this text could be",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "A Faulty Approach to Homework"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "A Welcomed Policy for Poor Students"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "Thorny Questions about Homework"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "Wrong Interpretations of an Educational Policy"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -164,156 +164,155 @@
     },
     {
       "id": "p2",
-      "title": "Text 2 · 科技与数字生活",
-      "theme": "technology",
-      "category": "科技",
-      "word_count": 0,
+      "title": "Text 2 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 416,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "Pretty in pink: adult women do not remember being so obsessed with the colour, yet it is pervasive in our young girls' lives. It is not that pink is intrinsically bad, but it is such a tinv slice of the rainbow and, though it may celebrate girlhood in one way, it also repeatedly and firmly fuses girls' identity to appearance. Then it presents that connection, even among two-year-olds, between girls as not onl y innocent but as evidence of innocence. Looking around, I despaired at the singular lack of imagination about girls' lives and interests.",
+        "Girls' attraction to pink may seem unavoidable, somehow encoded in their DNA, but according to Jo Paoletti, an associate professor of American Studies, it is not. Children were not colour-coded at all until the early 20th century: in the era before domestic washing machines all babies wore white as a practical matter, since the only way of getting clothes clean was to boil them. What's more, both boys and girls wore what were thought of as gender-neutral dresses. When nursery colours were introduced, pink was actually considered the more masculine colour, a pastel version of red, which was associated with strength.",
+        "Blue, with its intimations of the Virgin Mary, constancy and faithfulness, symbolised femininity. It was not until the mid-1980s, when amplifying age and sex differences became a dominant children's marketing strategy, that pink fully came into its own, when it began to seem inherentl y attractive to girls, part of what defined them as female, at least for the first few critical years. I had not realised how profoundly marketing trends dictated our perception of what is natural to kids, including our core beliefs about their psychological development. Take the toddler. I assumed that phase was something experts developed after years of research into children's behaviour: wrong.",
+        "Tums out, according to Daniel Cook, a historian of childhood consumerism, it was popularised as a marketing trick by clothing manufacturers in the 1930s. Trade publications counselled department stores that, in order to increase sales, they should create a \"third stepping stone\" between infant wear and older kids' clothes. It was only after \"toddler\" became a common shoppers' term that it evolved into a broadly accepted developmental stage. Splitting kids, or adults, into ever-tinier categories has proved a sure-fire way to boost profits.",
+        "And one of the easiest ways to segment a market is to magnify gender differences — or invent them where they did not previously exist. was much influenced by ."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "By saying \"it is…the rainbow\" (Line 3, Para. 1), the author means pink .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "cannot explain girls' lack ofimagination"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "should not be associated with girls'innocence"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "should not be the sole representation of girlhood"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "cannot influence girls' lives and interests"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "词义/句义猜测题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to Paragraph 2, which of the following is true of colours?",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "Colours are encoded in girls'DNA."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "Blue used to be regarded as the colour for girls."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "White is preferred by babies."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "Pink used to be a neutral colour in symbolising genders."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
-          "options": [
-            {
-              "label": "A",
-              "text": "It will be reversed very soon"
-            },
-            {
-              "label": "B",
-              "text": "It has become an irreversible trend"
-            },
-            {
-              "label": "C",
-              "text": "It mainly affects developing countries"
-            },
-            {
-              "label": "D",
-              "text": "It does more harm than good"
-            }
-          ],
-          "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "no": 3,
+          "stem": "The author suggests that our perception of children's psychological development was much influenced by .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "the observation of children's nature"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "the marketing of products for children"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "researches into children's behaviour"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "studies of childhood consumption"
             }
           ],
-          "answer": "A",
+          "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
             "推理判断题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "no": 4,
+          "stem": "We may learn from Paragraph 4 that department stores were advised to",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "classify consumers into smaller groups"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "attach equal importance to different genders"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "focus on infant wear and older kids'clothes"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "create some common shoppers'terms"
+            }
+          ],
+          "answer": "A",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "It can be concluded that girls' attraction to pink seems to be —·",
+          "options": [
+            {
+              "label": "A",
+              "text": "fully understood by clothing manufacturers"
+            },
+            {
+              "label": "B",
+              "text": "clearly explained by their inborn tendency"
+            },
+            {
+              "label": "C",
+              "text": "mainly imposed by profit-driven businessmen"
+            },
+            {
+              "label": "D",
+              "text": "well interpreted by psychological experts"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "推理判断题"
           ],
           "source_sentence": ""
         }
@@ -321,137 +320,138 @@
     },
     {
       "id": "p3",
-      "title": "Text 3 · 教育与文化",
-      "theme": "education",
-      "category": "教育文化",
-      "word_count": 0,
+      "title": "Text 3 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 408,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "In 2010, a federal judge shook America's biotech industry to its core. Companies had won patents for isolated DNA for decades — by 2005 some 20% of human genes were patented. But in March 2010 a judge ruled that genes were unpatentable. Executives were violently agitated. The Biotechnology Industry Organisation (BIO), a trade group, assured members that this was just a \"preliminary step\" in a longer battle.",
+        "On July 29th they were relieved, at least temporarily. A federal appeals court overturned the prior decision, ruling that Myriad Genetics could indeed hold patents to two genes that help forecast a woman's risk of breast cancer. The chief executive of Myriad, a company in Utah, said the ruling was a blessing to firms and patients alike. But as companies continue their attempts at personalised medicine, the courts will remain rather busy.",
+        "The Myriad case itself is probably not over. Critics make three main arguments against gene patents: a gene is a product of nature, so it may not be patented; gene patents suppress innovation rather than reward it; and patents' monopolies restrict access to genetic tests such as Myriad's. A growing number seem to agree. Last year a federal task-force urged reform for patents related to genetic tests.",
+        "In October the Department of Justice filed a brief in the Myriad case, arguing that an isolated DNA molecule \"is no less a product of nature…than are cotton fibres that have been separated from cotton seeds.\" Despite the appeals court's decision, big questions remain unanswered. For example, it is unclear whether the sequencing of a whole genome violates the patents of individual genes within it. The case may yet reach the Supreme Court. As the industr y advances, however, other suits may have an even greater impact.",
+        "Companies are unlikely to file many more patents for human DNA molecules — most are already patented or in the public domain. Firms are now studying how genes interact, looking for correlations that might be used to determine the causes of disease or predict a drug's efficacy. Companies are eager to win patents for \"connecting the dots,\" explains Hans Sauer, a lawyer for the BIO. Their success may be determined by a suit related to this issue, brought by the Mayo Clinic, which the Supreme Court will hear in its next term.",
+        "The BIO recentl y held a convention which included sessions to coach lawyers on the shifting landscape for patents. Each meeting was packed."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "It can be learned from Paragraph 1 that the biotech companies would like .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "genes to be patentable"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "the BIO to issue a warning"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "their executives to be active"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "judges to rule out gene patenting"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Those who are against gene patents believe that .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "genetic tests are not reliable"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "only man-made products are patentable"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "patents on genes depend much on innovation"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "courts should restrict access to genetic tests"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to Hans Sauer, companies are eager to win patents for .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "discovering gene interactions"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "establishing disease correlations"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "drawing pictures of genes"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "identifying human DNA"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "By saying \"Each meeting was packed\" (Line 4, Para. 6), the author means that",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "the supreme court was authoritative"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "the BIO was a powerful organisation"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "gene patenting was a great concern"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "lawyers were keen to attend conventions"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "词义/句义猜测题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "Generally speaking, the author's attitude toward gene patenting is .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "critical"
             },
             {
               "label": "B",
@@ -459,18 +459,17 @@
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "scornful"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "objective"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "态度观点题"
           ],
           "source_sentence": ""
         }
@@ -478,156 +477,81 @@
     },
     {
       "id": "p4",
-      "title": "Text 4 · 社会与法律",
-      "theme": "society",
-      "category": "社会法律",
-      "word_count": 0,
+      "title": "Text 4 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 1404,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "The great recession may be over, but this era of high joblessness is probably beginning. Before it ends, it will likely change the life course and character of a generation of young adults. And ultimately, it is likely to reshape our politics, our culture, and the character of our society for years. No one tries harder than the jobless to find silver linings in this national economic disaster.",
+        "Many said that unemployment, while extremely painful, had improved them in some ways: they had become less materialistic and more financially prudent; they were more aware of the struggles of others. In limited respects, perhaps the recession will leave society better off. At the very least, it has awoken us from our national fever dream of easy riches and bigger houses, and put a necessary end to an era of reckless personal spending. But for the most part, these benefits seem thin, uncertain, and far off.",
+        "In The Moral Consequences of Economic Growth, the economic historian Benjamin Friedman argues that both inside and outside the U.S., lengthy periods of economic sta gnation or decline have almost alwa ys left societ y more mean­ spirited and less inclusive, and have usuall y stopped or reversed the advance of rights and freedoms. Anti-immigrant sentiment typically increases, as does conflict between races and classes. Income inequality usually falls during a recession, but it has not shrunk in this one. Indeed, this period of economic weakness may reinforce class divides, and decrease opportunities to cross them — especiall y for young people.",
+        "The research of Till Von Wachter, the economist at Columbia University, suggests that not all people graduatin g into a recession see their life chances dimmed: those with degrees from elite universities catch up fairl y quickl y to where they otherwise would have been if they had graduated in better times; it is the masses beneath them that are left behind. In the Internet age, it is particularl y easy to see the resentment that has always been hidden within American society. More difficult, in the moment, is discernin g precisel y how these lean times are affectin g societ y's character. In many respects, the U.S. was more socially tolerant entering this recession than at any time in its history, and a variety of national polls on social conflict since then have shown mixed results.",
+        "We will have to wait and see exactly how these hard times will reshape our social fabric. But they certainly will reshape it, and all the more so the longer they extend. jobless try to . 3 7. According to Paragraph 2, the recession has made people . elite universities tend to [ C] see their life chances as dimmed as the others' PartB Directions: Read the following text and answer the questions by finding information from the left column that corresponds to each of the marked details given in the right column. There are two extra choices in the right column.",
+        "Mark your answers on ANSWER SHEET 1. (10 points) \"Universal history, the history of what man has accomplished in this world, is at bottom the History of the Great Men who have worked here,\" wrote the Victorian sage Thomas Carlyle. Well, not any more it is not. Suddenly, Britain looks to have fallen out with its favorite historical form. This could be no more than a passing literary craze, but it also points to a broader truth about how we now approach the past: less concerned with learning from our forefathers and more interested in feeling their pain.",
+        "Today, we want empathy, not inspiration. From the earliest days of the Renaissance, the writin g of histor y meant recounting the exemplary lives of great men. In 1337, Petrarch began work on his rambling writing De Viris Illustribus — On Famous Men, highlighting the virtus (or virtue) of classical heroes. Petrarch celebrated their greatness in conquerin g fortune and rising to the top.",
+        "This was the biographical tradition which Niccolo Machiavelli turned on its head. In The Prince, he championed cunnin g, ruthlessness, and boldness, rather than virtue, mercy and justice, as the skills of successful leaders. Over time, the attributes of greatness shifted. The Romantics commemorated the leadin g painters and authors of their day, stressin g the uniqueness of the artist's personal experience rather than public glory.",
+        "By contrast, the Victorian author Samuel Smiles wrote Self-Help as a catalogue of the worthy lives of engineers, industrialists and explorers. \"The valuable examples which they furnish of the power of self-help, of patient purpose, resolute working, and steadfast integrity, issuing in the formation of truly noble and manly character, exhibit,\" wrote Smiles, \"what it is in the power of each to accomplish for himself.\" His biographies of James Watt, Richard Arkwright and Josiah Wedgwood were held up as beacons to guide the working man through his difficult life. This was all a bit bourgeois for Thomas Carlyle, who focused his biographies on the truly heroic lives of Martin Luther, Oliver Cromwell and Napoleon Bonaparte. These epochal figures represented lives hard to imitate, but to be acknowledged as possessing higher authority than mere mortals.",
+        "Not everyone was convinced by such bombast. \"The history of all hitherto existin g society is the history of class struggles,\" wrote Marx and En gels in The Communist Manif esto. For them, history did nothing, it possessed no immense wealth nor waged battles: \"It is man, real, livin g man who does all that.\" And history should be the story of the masses and their record of struggle, As such, it needed to appreciate the economic realities, the social contexts and power relations in which each epoch stood. For: \"Men make their own history, but they do not make it just as they please; they do not make it under circumstances chosen by themselves, but under circumstances directly found, given and transmitted from the past.\" This was the tradition which revolutionised our appreciation of the past.",
+        "In place of Thomas Carlyle, Britain nurtured Christopher Hill, EP Thompson and Eric Hobsbawm. History from below stood alongside biographies of great men. Whole new realms of understandin g — from gender to race to cultural studies — were opened up as scholars unpicked the multiplicity of lost societies. And it transformed public history too: downstairs became just as fascinating as upstairs. artists. hard to imitate. great men in history. masses and their record of struggle. leaders. [G] depicted the worthy lives of engineers, industrialists and explorers.",
+        "Section III Translation Translate the following text from English into Chinese. Write your translation on ANSWER SHEET 2. (15 points) When people in developing countries worry about migration, they are usually concerned at the prospect of their best and brightest departure to Silicon Valley or to hospitals and universities in the developed world. These are the kind of workers that countries like Britain, Canada and Australia try to attract by using immigration rules that privilege college graduates. Lots of studies have found that well-educated people from developing countries are particularly likely to emigrate.",
+        "A big survey of Indian households in 2004 found that nearly 40% of emigrants had more than a high-school education, compared with around 3.3% of all Indians over the age 25. This \"brain drain\" has long bothered policymakers in poor countries. They fear that it hurts their economies, depriving them of much-needed skilled workers who could have taught at their universities, worked in their hospitals and come up with clever new products for their factories to make. Sec tion IV Writing Part A Suppose you have found something wrong with the electronic dictionary that you bought from an online store the other day.",
+        "Write an email to the customer service center to 1) make a compla int, and 2) demand a prompt solution. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter. Use \"Zhang Wei\" instead. Do not write the address. (10 points) Part B Write an essay based on the following table.",
+        "In your writing, you should 1) describe the table, and 2) give your comments. You should write at least 150 words. Write your essay on ANSWER SHEET 2. (1 5 points) 某公司 员 工工作满意度调 查 二 满意 不清楚 不满意 :::;40 岁 16.7 % 50.0 % 33.3 % 41�50 岁 0.0 % 36.0 % 64.0 % >5 0 岁 40.0 % 50.0 % 10.0 %"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Benjamin Friedman believes that economic recessions may .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "impose a heavier burden on immigrants"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "bring out more evils of human nature"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "promote the advance of rights and freedoms"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "ease conflicts between races and classes"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "an oversimplified view"
-            },
-            {
-              "label": "B",
-              "text": "a well-grounded concern"
-            },
-            {
-              "label": "C",
-              "text": "a purely academic guess"
-            },
-            {
-              "label": "D",
-              "text": "an irrational complaint"
-            }
-          ],
-          "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "态度观点题",
-            "例证功能题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
-          "options": [
-            {
-              "label": "A",
-              "text": "boost corporate profits"
-            },
-            {
-              "label": "B",
-              "text": "lower employee satisfaction"
-            },
-            {
-              "label": "C",
-              "text": "improve work-life balance"
-            },
-            {
-              "label": "D",
-              "text": "reduce long-term productivity"
-            }
-          ],
-          "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "no": 2,
+          "stem": "The research of Till Von Wachter suggests that in the recession graduates from elite universities tend to",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "lag behind the others due to decreased opportunities"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "catch up quickly with experienced employees"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "see their life chances as dimmed as the others'"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "recover more quickly than the others"
             }
           ],
-          "answer": "A",
+          "answer": "",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
             "推理判断题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "skeptical"
-            },
-            {
-              "label": "B",
-              "text": "supportive"
-            },
-            {
-              "label": "C",
-              "text": "neutral"
-            },
-            {
-              "label": "D",
-              "text": "critical"
-            }
-          ],
-          "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "主旨大意题"
           ],
           "source_sentence": ""
         }

@@ -1,162 +1,162 @@
 {
   "year": 2018,
   "title": "考研英语二 2018 年 · 阅读理解 Part A (Text 1-4)",
-  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。",
   "total_points": 40,
   "per_question_points": 2,
   "passages": [
     {
       "id": "p1",
-      "title": "Text 1 · 经济与管理类",
-      "theme": "business/economy",
-      "category": "经济管理",
-      "word_count": 0,
+      "title": "Text 1 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 373,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "It is curious that Stephen Koziatek feels almost as though he has to justify his efforts to give his students a better future. Mr. Koziatek is part of something pioneering. He is a teacher at a New Hampshire high school where learning is not something of books and tests and mechanical memorization, but practical. When did it become accepted wisdom that students should be able to name the 13th president of the United States but be utterly overwhelmed by a broken bike chain?",
+        "As Koziatek knows, there is learning in just about everything. Nothing is necessarily g ained by forcing students to learn geometry at a graffitied desk stuck with generations of discarded chewing gum. They can also learn geometry by assembling a bicycle. But he's also found a kind of insidious prejudice.",
+        "Working with your hands is seen as almost a mark of inferiority. Schools in the family of vocational education \"have that stereotype…that it's for kids who can't make it academically,\" he says. On one hand, that viewpoint is a logical product of America's evolution. Manufacturing is not the economic engine that it once was.",
+        "The job security that the US economy once offered to high school graduates has largely evaporated. More education is the new principle. We want more for our kids, and rightfully so. But the headlong push into bachelor's degrees for all — and the subtle devaluing of anything less — misses an important point: That's not the only thing the American economy needs.",
+        "Yes, a bachelor's degree opens more doors. But even now, 54 percent of the jobs in the country are middle-skill jobs, such as construction and high-skill manufacturing. But only 44 percent of workers are adequately trained. In other words, at a time when the working class has turned the country on its political head, frustrated that the opportunity that once defined America is vanishing, one obvious solution is staring us in the face.",
+        "There is a gap in working-class jobs, but the workers who need those jobs most aren't equipped to do them. Koziatek's Manchester School of Technology High School is trying to fill that gap. Koziatek's school is a wake-up call. When education becomes one-size-fits-all, it risks overlooking a nation's diversity of gifts."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "A broken bike chain is mentioned to show students'lack of",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "practical ability"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "academic training"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "pioneering spirit"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "mechamcal memonzat10n"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 2,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "skeptical"
-            },
-            {
-              "label": "B",
-              "text": "supportive"
-            },
-            {
-              "label": "C",
-              "text": "neutral"
-            },
-            {
-              "label": "D",
-              "text": "critical"
-            }
-          ],
-          "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "态度观点题",
-            "例证功能题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 3,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "an oversimplified view"
-            },
-            {
-              "label": "B",
-              "text": "a well-grounded concern"
-            },
-            {
-              "label": "C",
-              "text": "a purely academic guess"
-            },
-            {
-              "label": "D",
-              "text": "an irrational complaint"
-            }
-          ],
-          "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 4,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "no": 2,
+          "stem": "There exists the prejudice that vocational education is for kids who .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "have a stereotyped mind"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "h ave no career mot1vat10n"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "are not academically successful"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "are financially disadvantaged"
             }
           ],
-          "answer": "C",
+          "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "We can infer from Paragraph 5 that high school graduates .",
+          "options": [
+            {
+              "label": "A",
+              "text": "used to have big financial concerns"
+            },
+            {
+              "label": "B",
+              "text": "used to have more job opportunities"
+            },
+            {
+              "label": "C",
+              "text": "are reluctant to work in manufacturing"
+            },
+            {
+              "label": "D",
+              "text": "are entitled to more educational privileges"
+            }
+          ],
+          "answer": "B",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
             "推理判断题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 5,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "no": 4,
+          "stem": "The headlong push into bachelor's degrees for all .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "helps create a lot of middle-skill jobs"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "may narrow the gap in working-class jobs"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "is expected to yield a better-trained workforce"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "indicates the overvaluing of higher education"
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 5,
+          "stem": "The author's attitude toward Koziatek's school can be described as",
+          "options": [
+            {
+              "label": "A",
+              "text": "supportive"
+            },
+            {
+              "label": "B",
+              "text": "tolerant"
+            },
+            {
+              "label": "C",
+              "text": "disappointed"
+            },
+            {
+              "label": "D",
+              "text": "cautious"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "态度观点题"
           ],
           "source_sentence": ""
         }
@@ -164,156 +164,155 @@
     },
     {
       "id": "p2",
-      "title": "Text 2 · 科技与数字生活",
-      "theme": "technology",
-      "category": "科技",
-      "word_count": 0,
+      "title": "Text 2 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 426,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "While fossil fuels - coal, oil, gas - still generate roughly 85 percent of the world's energy supply, it's clearer than ever that the future belongs to renewable sources such as wind and solar. The move to renewables is picking up momentum around the world: They now account for more than half of new power sources going on line. Some growth stems from a commitment by g overnments and farsighted businesses to fund cleaner energy sources. But increasingly the story is about the plummeting prices of renewables, especially wind and solar.",
+        "The cost of solar panels has dropped by 80 percent and the cost of wind turbines by close to one-third in the past eight years. In many parts of the world renewable energy is already a principal energy source. In Scotland, for example, wind turbines provide enough electricit y to power 95 percent of homes. While the rest of the world takes the lead, notabl y China and Europe, the United States is also seeing a remarkable shift.",
+        "In March, for the first time, wind and solar power accounted for more than 10 percent of the power generated in the US, reported the US Energy Information Administration. President Trump has underlined fossil fuels — especially coal — as the path to economic growth. In a recent speech in Iowa, he dismissed wind power as an unreliable energy source. But that message did not play well with many in Iowa, where wind turbines dot the fields and provide 36 percent of the state's electricity generation - and where tech giants like Microsoft are being attracted by the availability of clean energy to power their data centers.",
+        "The question \"what happens when the wind doesn't blow or the sun doesn't shine?\" has provided a quick put-down for skeptics. But a boost in the storage capacity of batteries is making their ability to keep p ower flowin g around the clock more likely. The advance is driven in part by vehicle manufacturers, who are placing big bets on battery-powered electric vehicles. Although electric cars are still a rarity on roads now, this massive investment could change the picture rapidly in coming years.",
+        "While there's a long way to go, the trend lines for renewables are spiking. The pace of change in energy sources appears to be speeding up — perhaps just in time to have a meaningful effect in slowing climate change. What Washington does — or doesn't do — to promote alternative energy may mean less and less at a time of a global shift in thought."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "The word \"plummeting\" (Line 3, Para. 2) is closest in meaning to .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "stabilizing"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "changing"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "falling"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "nsmg"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "词义/句义猜测题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "According to Paragraph 3, the use of renewable energy in America .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "is progressing notably"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "is as extensive as in Europe"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "faces many challenges"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "has proved to be impractical"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "It can be learned that in Iowa, .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "wind is a widely used energy source"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "wind energy has replaced fossil fuels"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "tech giants are investing in clean energy"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "there is a shortage of clean energy supply"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "Which of the following is true about clean energy according to Paragraphs 5&6 ?",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "Its application has boosted battery storage."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "It is con皿only used in car manufacturing."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "Its continuous supply is becoming a reality."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "Its sustainable exploitation will remain difficult."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "It can be inferred from the last paragraph that renewable energy .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "will bring the US closer to other countries"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "will accelerate global environmental change"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "is not really encouraged by the US government"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "is not competitive enough with regard to its cost"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "推理判断题"
           ],
           "source_sentence": ""
         }
@@ -321,156 +320,127 @@
     },
     {
       "id": "p3",
-      "title": "Text 3 · 教育与文化",
-      "theme": "education",
-      "category": "教育文化",
-      "word_count": 0,
+      "title": "Text 3 · 经济管理",
+      "theme": "经济管理",
+      "category": "经济管理",
+      "word_count": 406,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "The power and ambition of the giants of the digital econom y is astonishing­ Amazon has just announced the purchase of the upmarket grocer y chain Whole Foods for $ 13.Sbn, but two years ago Facebook paid even more than that to acquire the WhatsApp messaging service, which doesn't have any physical product at all. What WhatsApp offered Facebook was an intricate and finely detailed web of its users' friendships and social lives. Facebook promised the European commission then that it would not link phone numbers to Facebook identities, but it broke the promise almost as soon as the deal went through. Even without knowing what was in the messages, the knowledge of who sent them and to whom was enormousl y revealing and still could be.",
+        "What political journalist, what party whip, would not want to know the makeup of the WhatsApp groups in which Theresa May's enemies are currently plotting? It may be that the value of Whole Foods to Amazon is not so much the 460 shops it owns, but the records of which customers have purchased what. Competition law appears to be the only way to address these imbalances of power. But it is clumsy. For one thing, it is very slow compared to the pace of change within the digital economy.",
+        "By the time a problem has been addressed and remedied it may have vanished in the marketplace, to be replaced by new abuses of power. But there is a deeper conceptual problem, too. Competition law as presently interpreted deals with financial disadvantage to consumers and this is not obvious when the users of these services don't pay for them. The users of their services are not their customers.",
+        "That would be the people who buy advertising from them - and Facebook and Google, the two virtual giants, dominate digital advertising to the disadvantage of all other media and entertainment companies. The product they're selling is data, and we, the users, convert our lives to data for the benefit of the digital giants. Just as some ants farm the bugs called aphids for the honeydew they produce when they feed, so Google farms us for the data that our digital lives yield. Ants keep predator y insects away from where their aphids feed; Gmail keeps the spammers out of our inboxes.",
+        "It doesn't feel like a human or democratic relationship, even if both sides benefit. A worsen political disputes because ."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "According to Paragraph 1, Facebook acquired WhatsApp for its .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "digital products"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "user information"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "physical assets"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "quality service"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to the author, competition law .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "should serve the new market powers"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "may worsen the economic imbalance"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "should not provide just one legal solution"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "cannot keep pace with the changing market"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "Competition law as presently interpreted can hardly protect Facebook users because .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "they are not defined as customers"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "they are not financially reliable"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "the services are generally digital"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "the services are paid for by advertisers"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "The ants analogy is used to illustrate .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "a win-win business model between digital giants"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "a typical competition pattern among digital giants"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "the benefits provided for digital giants'customers"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "the relationship between digital giants and their users"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "boost corporate profits"
-            },
-            {
-              "label": "B",
-              "text": "lower employee satisfaction"
-            },
-            {
-              "label": "C",
-              "text": "improve work-life balance"
-            },
-            {
-              "label": "D",
-              "text": "reduce long-term productivity"
-            }
-          ],
-          "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -478,156 +448,138 @@
     },
     {
       "id": "p4",
-      "title": "Text 4 · 社会与法律",
-      "theme": "society",
-      "category": "社会法律",
-      "word_count": 0,
+      "title": "Text 4 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 1334,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "To combat the trap of putting a premium on being busy, Cal Newport, author of Deep Work: Rules for Focused Success in a Distracted World, recommends building a habit of \"deep work\" - the ability to focus without distraction. There are a number of approaches to mastering the art of deep work - be it lengthy retreats dedicated to a specific task; developing a daily ritual; or taking a \"journalistic\" approach to seizing moments of deep work when you can throughout the day. Whichever approach, the key is to determine your length of focus time and stick to it. Newport also recommends \"deep scheduling\" to combat constant interruptions and get more done in less time.",
+        "\"At any given point, I should have deep work scheduled for roughly the next month. Once on the calendar, I protect this time like I would a doctor's appointment or important meeting\", he writes. Another approach to getting more done in less time is to rethink how you prioritise your day - in particular how we craft our to-do lists. Tim Harford, author of Messy: The Power of Disorder to Transform Our Lives, points to a study in the early 1980s that divided undergraduates into two groups: some were advised to set out monthly goals and study activities; others were told to plan activities and goals in much more detail, day by day.",
+        "While the researchers assumed that the well-structured daily plans would be most effective when it came to the execution of tasks, they were wrong: the detailed daily plans demotivated students. Harford argues that inevitable distractions often render the daily to-do list ineffective, while leaving room for improvisation in such a list can reap the best results. In order to make the most of our focus and energy, we also need to embrace downtime, or as Newport suggests, \"be lazy\". \"Idleness is not just a vacation, an indulgence or a vice; it is as indispensable to the brain as vitamin D is to the body…[ idleness] is, paradoxically, necessary to getting any work done,\" he argues.",
+        "Srini Pillay, an assistant professor of psychiatry at Harvard Medical School, believes this counterintuitive link between downtime and productivity may be due to the way our brains operate. When our brains switch between being focused and unfocused on a task, they tend to be more efficient. \"What people don't realise is that in order to complete these tasks they need to use both the focus and unfocus circuits in their brain,\" says Pillay. PartB Directions: Read the following text and answer the questions by choosing the most suitable subtitles from the list A-G for each numbered paragraph (41-45).",
+        "There are two extra subtitles which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points) [E] Find the \"me too''s [F] Skip the small talk [G] Ask for an opinion Five ways to make conversation with anyone Conversations are links, which means when you have a conversation with a new person a link gets formed and every conversation you have after that moment will strengthen the link. You meet new people every day: the grocery worker, the cab driver, new people at work or the security guard at the door. Simply starting a conversation with them will form a link.",
+        "Here are five simple ways that you can make the first move and start a conversation with strangers. Suppose you are in a room with someone you don't know and something within you says \"I want to talk with this person\" — this is something that mostly happens with all of us. You wanted to say something — the first word —b ut it just won't come out, it feels like it is stuck somewhere. I know the feeling and here is my advice: just get it out.",
+        "Just think: what is the worst that could happen? They won't talk with you? Well, they are not talking with you now! I truly believe that once you get that first word out everything else will just flow.",
+        "So keep it simple: \"Hi\", \"Hey\"or \"Hello\" — do the best you can to gather all of the enthusiasm and energy you can, put on a big smile and say \"Hi\". It is a problem all of us face; you have limited time with the person that you want to talk with and you want to make this talk memorable. Honestly, if we got stuck in the rut of \"hi\", \"hello\", \"how are you?\" and ''what is going on?\", you will fail to give the initial jolt to the conversation that can make it so memorable. So don't be afraid to ask more personal questions.",
+        "Trust me, you'll be surprised to see how much people are willing to share if you just ask. When you meet a person for the first time, make an effort to find the things which you and that person have in common so that you can build the conversation from that point. When you start conversation from there and then move outwards, you'll find all of a sudden that the conversation becomes a lot easier. Imagine you are pouring your heart out to someone and they are just busy on their phone, and if you ask for their attention you get the response \"I canmultitask\".",
+        "So when someone tries to communicate with you, just be in that communication wholeheartedly. Make eye contact. Trust me, eye contact is where all the magic happens. When you make eye contact, you can feel the conversation. You all came into a conversation where you first met the person, but after some time you may have met again and have forgotten their name.",
+        "Isn't that awkward! So, remember the little details of the people you met or you talked with; perhaps the places they have been to, the places they want to go, the things they like, the things they hate — whatever you talk about. When you remember such things you can automatically become investor in their wellbeing. So they feel a responsibility to you to keep that relationship going.",
+        "That's it. Five amazing ways that you can make conversation with almost anyone. Every person is a really good book to read, or to have a conversation with! Section III Translation Translate the following text into Chinese.",
+        "Write your translation neatly on the ANSWER SHEET. (15 points) A fifth grader gets a homework assignment to select his future career path from a list of occupations. He ticks \"astronaut\" but quickl y adds \"scientist\" to the list and selects it as well. The boy is convinced that if he reads enough, he can explore as many career paths as he likes. And so he reads - everything from encyclopedias to science fiction novels.",
+        "He reads so passionately that his parents have to institute a \"no reading policy\" at the dinner table. That boy was Bill Gates, and he hasn't stopped reading yet - not even after becoming one of the most successful people on the planet. Nowadays, his reading material has changed from science fiction and reference books: recently, he revealed that he reads at least 50 nonfiction books a year. Gates chooses nonfiction titles because they explain how the world works.",
+        "\"Each book opens up new avenues of knowledge to explore\", Gates says. Section N Writing Part A Suppose you have to cancel your travel plan and will not be able to visit Professor Smith. Write him an email to 1) apologize and explain the situation, and 2) suggest a future meeting. You should write about 100 words on the ANSWER SHEET.",
+        "Do not use your own name. Use \"Li Ming\" instead. Do not write your address. (10 points) PartB Write an essay based on the chart below. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points) 4.7 0% 价格 · 环境 ·特 色 · 其他 20 17 年某市消 费者选择餐 厅时 的关 注因素"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "The key to mastering the art of deep work is to .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "keep to your focus time"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "list your immediate tasks"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "make specific daily plans"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "seize every minute to work"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "The study in the early 1980s cited by Harford shows that .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "distractions may actually increase efficiency"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "daily schedules are indispensable to studying"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "students are hardly motivated by monthly goals"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "detailed plans may not be as fruitful as expected"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to Newport, idleness is .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "a desirable mental state for busy people"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "a major contributor to physical health"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "an effective way to save time and energy"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "an essential factor in accomplishing any work"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "Pillay believes that our brains' shift between being focused and unfocused .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "can result in psychological well-being"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "can bring about greater efficiency"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "is aimed at better balance in work"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "is driven by task urgency"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "boost corporate profits"
-            },
-            {
-              "label": "B",
-              "text": "lower employee satisfaction"
-            },
-            {
-              "label": "C",
-              "text": "improve work-life balance"
-            },
-            {
-              "label": "D",
-              "text": "reduce long-term productivity"
-            }
-          ],
-          "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }

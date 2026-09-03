@@ -1,26 +1,75 @@
 {
   "year": 2023,
-  "title": "2023年英语二写作(图表题干待提取)",
-  "prompt": "Section IV Writing\nPart A\n47. Directions:\nAn art exhibition and a robot show are to be held on Sunday, and your friend David asks\nyou which one he should go to. Write him an email to\n1) make a suggestion, and\n2) give your reason(s).\nWrite your answer in about 100 words on the ANSWER SHEET.\nDo not use your own name in your email, use “Li Ming” instead. (10 points)",
-  "chartType": "",
-  "chartOption": {},
-  "keyPoints": [],
+  "title": "2023年英语二写作",
+  "prompt": "Part B\n48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n\n某市居民健康素养水平（%）\n2012年: 8.8%\n2013年: 9.5%\n2014年: 9.8%\n2015年: 10.3%\n2016年: 11.6%\n2017年: 14.2%\n2018年: 17.1%\n2019年: 19.2%\n2020年: 23.2%\n2021年: 25.4%",
+  "partA": "Part A\n47. Directions:\nAn art exhibition and a robot show are to be held on Sunday, and your friend David asks you which one he should go to. Write him an email to\n1) make a suggestion, and\n2) give your reason(s).\nWrite your answer in about 100 words on the ANSWER SHEET.\nDo not use your own name in your email, use \"Li Ming\" instead. (10 points)",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n\n某市居民健康素养水平（%）\n2012年: 8.8%\n2013年: 9.5%\n2014年: 9.8%\n2015年: 10.3%\n2016年: 11.6%\n2017年: 14.2%\n2018年: 17.1%\n2019年: 19.2%\n2020年: 23.2%\n2021年: 25.4%",
+  "chartType": "bar",
+  "chartOption": {
+    "xAxis": {
+      "type": "category",
+      "data": ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
+      "name": "年份"
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比（%）",
+      "min": 0,
+      "max": 30
+    },
+    "series": [
+      {
+        "type": "bar",
+        "data": [8.8, 9.5, 9.8, 10.3, 11.6, 14.2, 17.1, 19.2, 23.2, 25.4],
+        "itemStyle": {
+          "color": "#0033A0"
+        }
+      }
+    ],
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "title": {
+      "text": "某市居民健康素养水平（%）",
+      "left": "center"
+    }
+  },
+  "keyPoints": [
+    "2012年: 8.8%",
+    "2013年: 9.5%",
+    "2014年: 9.8%",
+    "2015年: 10.3%",
+    "2016年: 11.6%",
+    "2017年: 14.2%",
+    "2018年: 17.1%",
+    "2019年: 19.2%",
+    "2020年: 23.2%",
+    "2021年: 25.4%",
+    "整体呈稳步上升趋势"
+  ],
   "scaffolding": {
     "trends": [
       "account for the largest proportion of",
       "follow closely behind at",
       "take the lead in",
-      "witness a sharp increase / decrease"
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
     ],
     "comparisons": [
       "in contrast to",
       "the gap between... and... is striking",
-      "twice as many as"
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
     ],
     "reasons": [
       "can be attributed to the accelerating pace of life",
       "hinge upon the increasing need for flexibility",
-      "stem from a growing awareness of health"
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
     ]
   },
   "sampleEssays": []

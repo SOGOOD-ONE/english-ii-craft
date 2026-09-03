@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import * as echarts from 'echarts';
 import YearPicker from '@/components/common/YearPicker';
 import api from '@/api';
 import { useAuthStore } from '@/store/auth';
@@ -48,6 +49,25 @@ export default function WritingPage() {
     return lines.join('\n');
   }, [paper, year]);
 
+  // ECharts 图表渲染
+  const chartRef = useRef<HTMLDivElement>(null);
+  const chartInstance = useRef<echarts.ECharts | null>(null);
+  useEffect(() => {
+    if (!chartRef.current) return;
+    if (!chartInstance.current) {
+      chartInstance.current = echarts.init(chartRef.current);
+    }
+    const opt = paper?.chartOption;
+    if (opt && Object.keys(opt).length > 0) {
+      chartInstance.current.setOption(opt, true);
+    } else {
+      chartInstance.current.clear();
+    }
+    const handleResize = () => chartInstance.current?.resize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [paper]);
+
   async function onReview() {
     if (!essay || essay.trim().length < 30) { alert('作文至少 30 词才能批改哦'); return; }
     setBusy(true);
@@ -84,10 +104,13 @@ export default function WritingPage() {
         <div>
           <div className="border-b border-zinc-100 pb-2 mb-2 flex justify-between items-center">
             <span className="font-semibold text-zinc-800">{paper?.title || `${year}年大作文`}</span>
-            <span className="text-zinc-400">满分: 15分</span>
+            <div className="flex items-center gap-2">
+              <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={setYear} />
+              <span className="text-zinc-400">满分: 15分</span>
+            </div>
           </div>
           {/* ECharts 容器 */}
-          <div id="echart-container" className="w-full h-56 border border-zinc-100 rounded bg-zinc-50/50"></div>
+          <div ref={chartRef} id="echart-container" className="w-full h-56 border border-zinc-100 rounded bg-zinc-50/50"></div>
           {/* 核心采分数据 */}
           {paper?.keyPoints && paper.keyPoints.length > 0 && (
             <div className="mt-3 bg-zinc-50 border border-zinc-200 rounded p-2 text-zinc-600 leading-relaxed">

@@ -1,26 +1,47 @@
 {
   "year": 2019,
-  "title": "2019年英语二写作(图表题干待提取)",
-  "prompt": "Section IV Writing\nPart A\n47. Directions:\nSuppose Professor Smith asked you to plan a debate on the theme of city traffic.\nWrite him an email to\n1) suggest a specific topic with your reasons, and\n2) tell him about your arrangements.\nYou should write about 10 0 words on the ANSWER SHEET.\nDo not use your one name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB\n48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 15 0 words on the ANSWER SHEET. (15 points)\n80.0%\n70.0 %\n60.0%\n50.0 %\n40.0%\n30.0 %\n20.0%\nL0 .0%\n0.0 %\n就业 升学\n圈 2013 年\n迈 201 8年\n创业\n某高校20 1 3年和2 01 8年本科 毕业生去向统计\n- 14 -",
-  "chartType": "",
+  "title": "2019年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 15 0 words on the ANSWER SHEET. (15 points)\n80.0% \n70.0 % \n60.0% \n50.0 % \n40.0% \n30.0 % \n20.0% \nL0 .0% \n0.0 % \n就业 升学\n圈 2013 年\n迈 201 8年\n创业\n某高校20 1 3年和2 01 8年本科 毕业生去向统计\n- 14 -",
+  "partA": "Part A \n47. Directions:\nSuppose Professor Smith asked you to plan a debate on the theme of city traffic.\nWrite him an email to \n1) suggest a specific topic with your reasons, and\n2) tell him about your arrangements.\nYou should write about 10 0 words on the ANSWER SHEET.\nDo not use your one name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 15 0 words on the ANSWER SHEET. (15 points)\n80.0% \n70.0 % \n60.0% \n50.0 % \n40.0% \n30.0 % \n20.0% \nL0 .0% \n0.0 % \n就业 升学\n圈 2013 年\n迈 201 8年\n创业\n某高校20 1 3年和2 01 8年本科 毕业生去向统计\n- 14 -",
+  "chartType": "mixed",
   "chartOption": {},
-  "keyPoints": [],
+  "keyPoints": [
+    "48. Directions:",
+    "1) interpret the chart, and",
+    "2) give your comments.",
+    "70.0 %",
+    "50.0 %",
+    "30.0 %",
+    "L0 .0%",
+    "圈 2013 年",
+    "迈 201 8年",
+    "某高校20 1 3年和2 01 8年本科 毕业生去向统计",
+    "- 14 -"
+  ],
   "scaffolding": {
     "trends": [
       "account for the largest proportion of",
       "follow closely behind at",
       "take the lead in",
-      "witness a sharp increase / decrease"
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
     ],
     "comparisons": [
       "in contrast to",
       "the gap between... and... is striking",
-      "twice as many as"
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
     ],
     "reasons": [
       "can be attributed to the accelerating pace of life",
       "hinge upon the increasing need for flexibility",
-      "stem from a growing awareness of health"
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
     ]
   },
   "sampleEssays": []

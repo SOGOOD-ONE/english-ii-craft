@@ -1,162 +1,160 @@
 {
   "year": 2023,
   "title": "考研英语二 2023 年 · 阅读理解 Part A (Text 1-4)",
-  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。",
   "total_points": 40,
   "per_question_points": 2,
   "passages": [
     {
       "id": "p1",
-      "title": "Text 1 · 经济与管理类",
-      "theme": "business/economy",
-      "category": "经济管理",
-      "word_count": 0,
+      "title": "Text 1 · 社会法律",
+      "theme": "社会法律",
+      "category": "社会法律",
+      "word_count": 397,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "In the quest for the perfect lawn, homeowners across the country are taking a shortcut — and it is the environment that is paying the price. About eight million square metres of plastic grass is sold each year but opposition has now spread to the highest gardening circles. The Chelsea Flower Show has banned fake grass from this year’s event, declaring it to be not part of its ethos. The Royal Horticultural Society (RHS), which runs the annual show in west London, says it has introduced the ban because of the damage plastic grass does to the environment and biodiversity.",
+        "Ed Horne, of the RHS, said: “We launched our sustainability strategy last year and fake grass is just not in line with our ethos and views on plastic. We recommend using real grass because of its environmental benefits, which include supporting wildlife, alleviating flooding and cooling the environment.” The RHS’s decision comes as campaigners try to raise awareness of the problems fake grass causes. A Twitter account, which claims to “cut through the greenwash” of artificial grass, already has more than 20,000 followers. It is trying to encourage people to sign two petitions, one calling for a ban on the sale of plastic grass and another calling for an “ecological damage” tax on such lawns.",
+        "They have gathered 7,276 and 11,282 signatures. However, supporters of fake grass point out that there is also an environmental impact with natural lawns, which need mowing and therefore usually consume electricity or petrol. The industry also points out that real grass requires considerable amounts of water, weed killer or other treatments and that people who lay fake grass tend to use their garden more. The industry also claims that people who lay fake grass spend an average of £500 on trees or shrubs for their garden, which provides habitat for insects.",
+        "In response to another petition last year about banning fake lawns, which gathered 30,000 signatures, the government responded that it has “no plans to ban the use of artificial grass.” It added: “We prefer to help people and organizations make the right choice rather than legislating on such matters. However, the use of artificial grass must comply with the legal and policy safeguards in place to protect biodiversity and ensure sustainable drainage, while measures such as the strengthened biodiversity duty should serve to encourage public authorities to consider sustainable alternatives.”"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "The RHS thinks that plastic grass ____",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "is harmful to the environment."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "is a hot topic in gardening circles."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "is overpraised in the annual show."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "is ruining the view of west London."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "The petitions mentioned in Paragraph 3 reveal the campaigners’ ____",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "disappointment with the RHS."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "resistance to fake grass use."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "anger over the proposed tax."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "concern about real grass supply."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "In Paragraph 4, supporters of fake grass point out ____",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "the necessity to lower the costs of fake grass."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "the disadvantages of growing real grass."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "the way to take care of artificial lawns."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "the challenges of insect habitat protection."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "What would the government do with regard to artificial grass?",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "Urge legislation to restrict its use."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "Take measures to guarantee its quality."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "Remind its users to obey existing rules."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "Replace it with sustainable alternatives."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "It can be learned from the text that fake grass ____",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "is being improved continuously."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "has seen a market share decline."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "is becoming increasingly affordable."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "has been a controversial product."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -164,155 +162,154 @@
     },
     {
       "id": "p2",
-      "title": "Text 2 · 科技与数字生活",
-      "theme": "technology",
-      "category": "科技",
-      "word_count": 0,
+      "title": "Text 2 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 435,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "It’s easy to dismiss as absurd the federal government’s ideas for plugging the chronic funding gap of our national parks. Can anyone really think it’s a good idea to allow Amazon deliveries to your tent in Yosemite or food trucks to line up under the redwood trees at Sequoia National Park? But the government is right about one thing: U.S. national parks are in crisis. Collectively, they have a maintenance backlog of more than $12 billion.",
+        "Roads, trails, restrooms, visitor centers and other infrastructure are crumbling. But privatizing and commercializing the campgrounds would not be a cure-all. Campgrounds are a tiny portion of the overall infrastructure backlog, and businesses in the parks hand over, on average, only about 5% of their revenues to the National Park Service. Moreover, increased privatization would certainly undercut one of the major reasons why 300 million visitors come to the parks each year: to enjoy nature and get a break from the commercial drumbeat that overwhelms daily life.",
+        "The real problem is that the parks have been chronically starved of funding. We conducted a comprehensive survey examining how U.S. residents view their national parks, and we found that Americans place a very high value on them — whether or not they actually visit them. The peer-reviewed economic survey of 700 U.S. taxpayers, conducted by mail and internet, also found that people would be willing to pay a significant amount of money to make sure the parks and their programs are kept intact. Some 81% of respondents said they would be willing to pay additional taxes for the next 10 years to avoid any cuts to the national parks.",
+        "The national parks provide great value to U.S. residents both as places to escape and as symbols of nature. On top of this, they produce value from their extensive educational programs, their positive impact on the climate through carbon sequestration, their contribution to our cultural and artistic life, and of course through tourism. The parks also help keep America’s past alive, working with thousands of local jurisdictions around the country to protect historical sites — including Ellis Island and Gettysburg — and to bring the stories of these places to life. The parks do all this on a shoestring.",
+        "Congress allocates only $3 billion a year to the national park system — an amount that has been flat since 2001 (in inflation-adjusted dollars) with the exception of a onetime boost in 2009 as part of the Obama stimulus package. Meanwhile, the number of annual visitors has increased by more than 50% since 1980, and now stands at 330 million visitors per year."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "What problem are U.S. national parks faced with?",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "Decline of business profits."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "Inadequate commercialization."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "Lack of transportation services."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "Poorly maintained infrastructure."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "Increased privatization of the campgrounds may ____",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "spoil visitor experience."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "help preserve nature."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "bring operational pressure."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "boost visits to parks."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to Paragraph 5, most respondents in the survey would ____",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "go to the national parks on a regular basis."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "advocate a bigger budget for the national parks."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "agree to pay extra for the national parks."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "support the national parks’ recent reforms."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "The national parks are valuable in that they ____",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "lead the way in tourism."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "have historical significance."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "sponsor research on climate."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "provide an income for the locals."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "It can be concluded from the text that the national park system ____",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "is able to cope with staff shortages."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "is able to meet visitors’ demands."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "is in need of a new pricing policy."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "is in need of funding increase."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
             "推理判断题"
           ],
           "source_sentence": ""
@@ -321,156 +318,154 @@
     },
     {
       "id": "p3",
-      "title": "Text 3 · 教育与文化",
-      "theme": "education",
-      "category": "教育文化",
-      "word_count": 0,
+      "title": "Text 3 · 科技",
+      "theme": "科技",
+      "category": "科技",
+      "word_count": 399,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "The Internet may be changing merely what we remember, not our capacity to do so, suggests Columbia University psychology professor Betsy Sparrow. In 2011, Sparrow led a study in which participants were asked to record 40 factoids in a computer (“an ostrich’s eye is bigger than its brain,” for example). Half of the participants were told the information would be erased, while the other half were told it would be saved. Guess what? The latter group made no effort to recall the information when quizzed on it later, because they knew they could find it on their computers.",
+        "In the same study, a group was asked to remember both the information and the folders it was stored in. They didn’t remember the information, but they remembered how to find the folders. In other words, human memory is not deteriorating but “adapting to new communications technology,” Sparrow says. In a very practical way, the Internet is becoming an external hard drive for our memories, a process known as “cognitive offloading.” Traditionally, this role was fulfilled by data banks, libraries, and other humans.",
+        "Your father may never remember birthdays because your mother does, for instance. Some worry that this is having a destructive effect on society, but Sparrow sees an upside. Perhaps, she suggests, the trend will change our approach to learning from a focus on individual facts and memorization to an emphasis on more conceptual thinking — something that is not available on the Internet. “I personally have never seen all that much intellectual value in memorizing things,” Sparrow says, adding that we haven’t lost our ability to do it. Still other experts say it’s too soon to understand how the Internet affects our brains.",
+        "There is no experimental evidence showing that it interferes with our ability to focus, for instance, wrote psychologists Christopher Chabris and Daniel J. Simons. And surfing the web exercised the brain more than reading did among computer-savvy older adults in a 2008 study involving 24 participants at the Semel Institute for Neuroscience and Human Behavior at the University of California, Los Angeles. “There may be costs associated with our increased reliance on the Internet, but I’d have to imagine that overall the benefits are going to outweigh those costs,” observes psychology professor Benjamin Storm. “It seems pretty clear that memory is changing, but is it changing for the better? At this point, we don’t know.”"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Sparrow’s study shows that with the Internet, the human brain will ____",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "analyze information in detail."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "collect information efficiently."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "switch its focus of memory."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "extend its memory duration."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "The process of “cognitive offloading” ____",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "helps us identify false information."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "keeps our memory from failing."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "enables us to classify trivial facts."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "lessens our memory burdens."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "Which of the following would Sparrow support about the Internet?",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "It may reform our learning approach."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "It may impact our society negatively."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "It may enhance our adaptability to technology."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "It may interfere with our conceptual thinking."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "It is indicated in Paragraph 3 that how the Internet affects our brains ____",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "requires further academic research."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "is most studied in older adults."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "is reflected in our reading speed."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "depends on our web-surfing habits."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "Neither Sparrow nor Storm would agree that ____",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "our reliance on the Internet will be costly."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "the Internet is weakening our memory."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "memory exercise is a must for our brains."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "our ability to focus declines with age."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -478,156 +473,136 @@
     },
     {
       "id": "p4",
-      "title": "Text 4 · 社会与法律",
-      "theme": "society",
-      "category": "社会法律",
-      "word_count": 0,
+      "title": "Text 4 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 1281,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "Teenagers are paradoxical. That’s a mild and detached way of saying something that parents often express with considerably stronger language. But the paradox is scientific as well as personal. In adolescence, helpless and dependent children who have relied on grown- ups for just about everything become independent people who can take care of themselves and help each other.",
+        "At the same time, once cheerful and compliant children become rebellious teenage risk-takers. A new study published in the journal Child Development, by Eveline Crone of the University of Leiden and colleagues, suggests that the positive and negative sides of teenagers go hand in hand. The study is part of a new wave of thinking about adolescence. For a long time, scientists and policy makers concentrated on the idea that teenagers were a problem that needed to be solved.",
+        "The new work emphasizes that adolescence is a time of opportunity as well as risk. The researchers studied “prosocial” and rebellious traits in more than 200 children and young adults, ranging from 11 to 28 years old. The participants filled out questionnaires about how often they did things that were altruistic and positive, like sacrificing their own interests to help a friend, or rebellious and negative, like getting drunk or staying out late. Other studies have shown that rebellious behavior increases as you become a teenager and then fades away as you grow older.",
+        "But the new study shows that, interestingly, the same pattern holds for prosocial behavior. Teenagers were more likely than younger children or adults to report that they did things like unselfishly help a friend. Most significantly, there was a positive correlation between prosociality and rebelliousness. The teenagers who were more rebellious were also more likely to help others.",
+        "The good and bad sides of adolescence seem to develop together. Is there some common factor that underlies these apparently contradictory developments? One idea is that teenage behavior is related to what researchers call “reward sensitivity.” Decision-making always involves balancing rewards and risks, benefits and costs. “Reward sensitivity” measures how much reward it takes to outweigh risk. Teenagers are particularly sensitive to social rewards — winning the game, impressing a new friend, getting that boy to notice you.",
+        "Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age. Somehow, when you hit 30, the chance that something exciting and new will happen at that party just doesn’t seem to outweigh the effort of getting up off the couch. Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column.",
+        "Mark your answers on the ANSWER SHEET. (10 points) Net-zero rules set to send cost of new homes and extensions soaring New building regulations aimed at improving energy efficiency are set to increase the price of new homes, as well as those of extensions and loft conversions on existing ones. The rules, which came into effect on Wednesday in England, are part of government plans to reduce the UK’s carbon emissions to net zero by 2050. They set new standards for ventilation, energy efficiency and heating, and state that new residential buildings must have charging points for electric vehicles. The moves are the most significant change to building regulations in years, and industry experts say they will inevitably lead to higher prices at a time when a shortage of materials and high labour costs are already driving up bills.",
+        "Brian Berry, chief executive of the Federation of Master Builders, says the measures will require new materials, testing methods, products and systems to be installed. “All this comes at an increased cost during a time when prices are already sky high. Inevitably, consumers will have to pay more,” he says. Gareth Belsham, of surveyors Naismiths, says people who are upgrading, or extending their home, will be directly affected. “The biggest changes relate to heating and insulation,” he explains. “There are new rules concerning the amount of glazing used in extensions, and any new windows or doors must be highly insulated.” Windows and doors will have to adhere to higher standards, while there are new limits on the amount of glazing you can have to reduce unwanted heat from the sun. Thomas Goodman, of MyJobQuote, says this will bring in new restrictions for extensions. “Glazing on windows, doors and roof lights must cover no more than 25% of the floor area to prevent heat loss,” he says.",
+        "As the rules came into effect last Wednesday, property developers were rushing to file plans just before the deadline. Any plans submitted before that date are considered to be under the previous rules, and can go ahead as long as work starts before 15th June next year. Builders which have costed projects, but have not filed the paperwork, may need to go back and submit fresh estimates, says Marcus Jefford of Build Aviator. Materials prices are already up 25% in the last two years.",
+        "How much overall prices will increase as a result of the rule changes is not clear. “Whilst admirable in their intentions, they will add to the cost of housebuilding at a time when many already feel that they are priced out of homeownership,” says Jonathan Rolande of the National Association of Property Buyers. “An average extension will probably see around £3,000 additional cost thanks to the new regs.” John Kelly, a construction lawyer at Freeths law firm, believes prices will eventually come down. But not in the immediate future. “As the marketplace adapts to the new requirements, and the technologies that support them, the scaling up of these technologies will eventually bring costs down, but in the short term, we will all have to pay the price of the necessary transition,” he says. However, the long-term effects of the changes will be more comfortable and energy- efficient homes, adds Andrew Mellor, of PRP architects. “Homeowners will probably recoup that cost over time in energy bill savings. It will obviously be very volatile at the moment, but they will have that benefit over time.” projects. heat loss. they can afford. include new windows or doors.",
+        "G. The rule changes will benefit homeowners eventually. Section III Translation Translate the following text into Chinese. Write your translation on the ANSWER SHEET. (15 points) In the late 18th century, William Wordsworth became famous for his poems about nature.",
+        "And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world. Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and make them see things differently. Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring. No one knows for sure when poetry began but it has been around for thousands of years, even before people could write.",
+        "It was a way to tell stories and pass down history. It is closely related to song and even when written it is usually created to be performed out loud. Poems really come to life when they are recited. This can also help with understanding them too, because the rhythm and sounds of the words become clearer.",
+        "Section IV Writing Part A An art exhibition and a robot show are to be held on Sunday, and your friend David asks you which one he should go to. Write him an email to 1) make a suggestion, and 2) give your reason(s). Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email, use “Li Ming” instead. (10 points)"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to Paragraph 1, children growing into adolescence tend to ____",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "develop opposite personality traits."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "see the world in an unreasonable way."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "have fond memories of their past."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "show affection for their parents."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
-          "options": [
-            {
-              "label": "A",
-              "text": "skeptical"
-            },
-            {
-              "label": "B",
-              "text": "supportive"
-            },
-            {
-              "label": "C",
-              "text": "neutral"
-            },
-            {
-              "label": "D",
-              "text": "critical"
-            }
-          ],
-          "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "an oversimplified view"
-            },
-            {
-              "label": "B",
-              "text": "a well-grounded concern"
-            },
-            {
-              "label": "C",
-              "text": "a purely academic guess"
-            },
-            {
-              "label": "D",
-              "text": "an irrational complaint"
-            }
-          ],
-          "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "态度观点题",
-            "例证功能题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "boost corporate profits"
-            },
-            {
-              "label": "B",
-              "text": "lower employee satisfaction"
-            },
-            {
-              "label": "C",
-              "text": "improve work-life balance"
-            },
-            {
-              "label": "D",
-              "text": "reduce long-term productivity"
-            }
-          ],
-          "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
-          "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "no": 2,
+          "stem": "It can be learned from Paragraph 2 that Crone’s study ____",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "explores teenagers’ social responsibilities."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "examines teenagers’ emotional problems."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "provides a new insight into adolescence."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "highlights negative adolescent behavior."
             }
           ],
-          "answer": "A",
+          "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 3,
+          "stem": "What does Crone’s study find about prosocial behavior?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It results from the wish to cooperate."
+            },
+            {
+              "label": "B",
+              "text": "It is cultivated through education."
+            },
+            {
+              "label": "C",
+              "text": "It is subject to family influence."
+            },
+            {
+              "label": "D",
+              "text": "It tends to peak in adolescence."
+            }
+          ],
+          "answer": "C",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题"
+          ],
+          "source_sentence": ""
+        },
+        {
+          "no": 4,
+          "stem": "It can be learned from the last two paragraphs that teenagers ____",
+          "options": [
+            {
+              "label": "A",
+              "text": "overstress their influence on others."
+            },
+            {
+              "label": "B",
+              "text": "care a lot about social recognition."
+            },
+            {
+              "label": "C",
+              "text": "become anxious about their future."
+            },
+            {
+              "label": "D",
+              "text": "endeavor to live a joyful life."
+            }
+          ],
+          "answer": "D",
+          "explanation": "待补充:原文线索句 + 错项排除思路。",
+          "tags": [
+            "细节事实题"
           ],
           "source_sentence": ""
         }

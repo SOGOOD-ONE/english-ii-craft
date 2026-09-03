@@ -1,162 +1,159 @@
 {
   "year": 2024,
   "title": "考研英语二 2024 年 · 阅读理解 Part A (Text 1-4)",
-  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。",
   "total_points": 40,
   "per_question_points": 2,
   "passages": [
     {
       "id": "p1",
-      "title": "Text 1 · 经济与管理类",
-      "theme": "business/economy",
+      "title": "Text 1 · 经济管理",
+      "theme": "经济管理",
       "category": "经济管理",
-      "word_count": 0,
+      "word_count": 400,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "In her new book Cogs and Monsters: What Economics Is, and What It Should Be, Diane Coyle, an economist at Cambridge University, argues that the digital economy requires new ways of thinking about progress. “Whatever we mean by the economy growing, by things getting better, the gains will have to be more evenly shared than in the recent past,” she writes. “An economy of tech millionaires or billionaires and gig workers, with middle-income jobs undercut by automation, will not be politically sustainable.” Improving living standards and increasing prosperity for more people will require greater use of digital technologies to boost productivity in various sectors, including health care and construction, says Coyle. But people can’t be expected to embrace the changes if they’re not seeing the benefits — if they’re just seeing good jobs being destroyed. In a recent interview, Coyle said she fears that tech’s inequality problem could be a roadblock to deploying AI. “We’re talking about disruption,” she says. “These are transformative technologies that change the ways we spend our time every day, that change business models that succeed.” To make such “tremendous changes,” she adds, you need social buy-in. Instead, says Coyle, resentment is simmering among many as the benefits are perceived to go to elites in a handful of prosperous cities.",
+        "According to the Brookings Institution, a short list of eight American cities that included San Francisco, San Jose, Boston, and Seattle had roughly 38% of all tech jobs by 2019. New AI technologies are particularly concentrated: Brookings’s Mark Muro and Sifan Liu estimate that just 15 cities account for two-thirds of the AI assets and capabilities in the United States. The dominance of a few cities in the invention and commercialization of AI means that geographical disparities in wealth will continue to soar. Not only will this foster political and social unrest, but it could, as Coyle suggests, hold back the sorts of AI technologies needed for regional economies to grow.",
+        "Part of the solution could lie in somehow loosening the stranglehold that Big Tech has on defining the AI agenda. That will likely take increased federal funding for research independent of the tech giants. A more immediate response is to broaden our digital imaginations to conceive of AI technologies that don’t simply replace jobs but expand opportunities in the sectors that different parts of the country care most about, like health care, education, and manufacturing."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Coyle argues in her new book that economic growth should ______",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "give rise to innovations."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "diversify career choices."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "benefit people equally."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "be promoted forcefully."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to Paragraph 2, digital technologies should be used to ______",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "bring about instant prosperity."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "reduce people’s workload."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "raise overall work efficiency."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "enhance cross-sector cooperation."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "What does Coyle fear about transformative technologies?",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "They may affect work-life balance."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "They may be impractical to deploy."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "They may incur huge expenditure."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "They may be unwelcome to the public."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "Several American cities are mentioned to show ______",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "the uneven distribution of AI technologies in the US."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "the disappointing prospect of tech jobs in the US."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "the fast progress of US regional economies."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "the increasing significance of US AI assets."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "With regard to Coyle’s concern, the author suggests ______",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "raising funds to start new AI projects."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "encouraging collaboration in AI research."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "guarding against the side effects of AI."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "redefining the role of AI technologies."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "推理判断题"
           ],
           "source_sentence": ""
         }
@@ -164,156 +161,153 @@
     },
     {
       "id": "p2",
-      "title": "Text 2 · 科技与数字生活",
-      "theme": "technology",
-      "category": "科技",
-      "word_count": 0,
+      "title": "Text 2 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 391,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "The UK is facing a future construction crisis because of a failure to plant trees to produce wood, Confor has warned. The forestry and wood trade body has called for urgent action to reduce the country’s reliance on timber imports and provide a stable supply of wood for future generations. Currently only 20 percent of the UK’s wood requirement is home-grown while it remains the second-largest net importer of timber in the world. Coming at a time of fresh incentives from the UK government for landowners to grow more trees, the trade body says these don’t go far enough and fail to promote the benefits of planting them to boost timber supplies. “Not only are we facing a carbon crisis now, but we will also be facing a future construction crisis because of a failure to plant trees to produce wood,” said Stuart Goodall, chief executive of Confor. “For decades we have not taken responsibility for investing in our domestic wood supply, leaving us exposed to fluctuating prices and fighting for future supplies of wood as global demand rises and our own supplies fall.” The UK has ideal conditions for growing wood to build low-carbon homes and is a global leader in certifying that its forests are sustainably managed, Confor says.",
+        "While around three quarters of Scottish homes are built from Scottish timber, the use of home-grown wood in England is only around 25 percent. The causes of the UK’s current position are complex and range from outdated perceptions of productive forestry to the decimation of trees by grey squirrels. It also encompasses significant hesitation on behalf of farmers and other landowners to invest in long-term planting projects. While productive tree planting can deliver real financial benefits to rural economies and contribute to the UK’s net-zero strategy, the focus of government support continues to be on food production and the rewilding and planting of native woodland solely for biodiversity.",
+        "Goodall added: “While food production and biodiversity health are clearly of critical importance, we need our land to also provide secure supplies of wood for construction, manufacturing and contribute to net-zero.” “While the UK government has stated its ambition for more tree planting, there has been little action on the ground. Confor is now calling for much greater impetus behind those aspirations to ensure we have enough wood to meet increasing demand.”"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "It can be learned from Paragraph 1 that the UK needs to ______",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "increase its domestic wood supply."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "reduce its demand for timber."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "lower its wood production costs."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "lift its control on timber imports."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to Confor, the UK government’s fresh incentives ______",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "can hardly address a construction crisis."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "are believed to come at a wrong time."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "seem to be misleading for landowners."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "will be too costly to put into practice."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "The UK’s exposure to fluctuating wood prices is a result of ______",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "the governments inaction on timber imports."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "inadequate investment in growing wood."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "the competition among timber traders at home."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "wood producers’ motive to maximise profits."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Which of the following causes the shortage of wood supply in the UK?",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "Excessive timber consumption in construction."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "Unfavourable conditions for growing wood."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "Outdated technologies of the wood industry."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "Farmers’ unwillingness to plant trees."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "What does Goodall think the UK government should do?",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "Subsidise the building of low-carbon homes."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "Pay greater attention to boosting rural economies."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "Provide more support for productive tree planting."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "Give priority to pursuing its net-zero strategy."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -321,156 +315,153 @@
     },
     {
       "id": "p3",
-      "title": "Text 3 · 教育与文化",
-      "theme": "education",
-      "category": "教育文化",
-      "word_count": 0,
+      "title": "Text 3 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 390,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "One of the biggest challenges in keeping unsafe aging drivers off the road is convincing them that it’s time to turn over the keys. “It’s a complete life-changer” when someone stops — or is forced to stop — driving, said former risk manager Anne M. Menke. “The American Medical Association advises physicians that in situations where clear evidence of substantial driving impairment implies a strong threat to patient and public safety, and where the physician’s advice to discontinue driving privileges is ignored, it is desirable and ethical to notify the Department of Motor Vehicles,” Menke wrote. “Some states require physicians to report, others allow but do not mandate reports, while a few consider a report a breach of confidentiality. There could be liability and penalties if a physician does not act in accordance with state laws on reporting and confidentiality,” she counseled. Part of the problem in keeping older drivers safe is that the difficulties are addressed piecemeal by different professions with different focuses, including gerontologists, highway administration officials, automotive engineers and others, said gerontologist Elizabeth Dugan. “There’s not a National Institute of Older Driver Studies,” she said. “We need better evidence on what makes drivers unsafe” and what can help, said Dugan.",
+        "One thing that does seem to work is requiring drivers to report in person for license renewal. Mandatory in-person renewal was associated with a 31 percent reduction in fatal crashes involving drivers 85 or older, according to one study. Passing vision tests also produced a similar decline in fatal crashes for those drivers, although there appeared to be no benefit from combining the two. Many older drivers don’t see eye doctors or can’t afford to.",
+        "Primary care providers have their hands full and may not be able to follow through with patients who have trouble driving because they can’t turn their heads or remember where they are going — or have gotten shorter and haven’t changed their seat settings sufficiently to reach car pedals easily. As long as there are other cars on the roads, self-driving cars won’t solve the problems of crashes, said Dugan. Avoiding dangers posed by all those human drivers would require too many algorithms, she said. But we need to do more to improve safety, said Dugan. “If we’re going to have 100-year lives, we need cars that a 90-year-old can drive comfortably.”"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to Paragraph 1, keeping unsafe aging drivers off the road ______",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "is a new safety measure."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "has become a disputed issue."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "can be a tough task to complete."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "will be beneficial to their health."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "The American Medical Association’s advice ______",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "has won support from drivers."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "is generally considered unrealistic."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "is widely dismissed as unnecessary."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "has met with different responses."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to Dugan, efforts to keep older drivers safe ______",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "have brought about big changes."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "need to be well coordinated."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "have gained public recognition."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "call for relevant legal support."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "Some older drivers have trouble driving because they tend to ______",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "stick with bad driving habits."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "have a weakened memory."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "suffer from chronic pains."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "neglect car maintenance."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "Dugan thinks that the solution to the problems of crashes may lie in ______",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "upgrading self-driving vehicles."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "developing senior-friendly cars."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "renovating transport facilities."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "adjusting the age limit for drivers."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -478,156 +469,132 @@
     },
     {
       "id": "p4",
-      "title": "Text 4 · 社会与法律",
-      "theme": "society",
-      "category": "社会法律",
-      "word_count": 0,
+      "title": "Text 4 · 健康医疗",
+      "theme": "健康医疗",
+      "category": "健康医疗",
+      "word_count": 1321,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "If you look at the apps on your phone, chances are you have at least one related to your health — and probably several. Whether it is a mental health app, a fitness tracker, a connected health device or something else, many of us are taking advantage of this technology to keep better track of our health in some shape or form. Recent research from the Organization for the Review of Care and Health Applications found that 350,000 health apps were available on the market, 90,000 of which launched in 2020 alone. While these apps have a great deal to offer, it is not always clear how the personal information we input is collected, safeguarded and shared online.",
+        "Existing health privacy law, such as the Health Insurance Portability and Accountability Act, is primarily focused on the way hospitals, doctors’ offices, clinics and insurance companies store health records online. The health information these apps and health data tracking wearables are collecting typically do not receive the same legal protections. Without additional protections in place, companies may share (and potentially monetize) personal health information in a way consumers may not have authorized or anticipated. In 2021, Flo Health faced a Federal Trade Commission (FTC) investigation.",
+        "The FTC alleged in a complaint that “despite express privacy claims, the company took control of users’ sensitive fertility data and shared it with third parties.” Flo Health and the FTC settled the matter with a Consent Order requiring the company to get app users’ express affirmative consent before sharing their health information as well as to instruct the third parties to delete the data they had obtained. Section 5 of the FTC Act empowers the FTC to initiate enforcement action against unfair or deceptive acts, meaning the FTC can only act after the fact if a company’s privacy practices are misleading or cause unjustified consumer harm. While the FTC is doing what it can to ensure apps are keeping their promises to consumers around the handling of their sensitive health information, the rate at which these health apps are hitting the market demonstrates just how immense of a challenge this is. As to the prospects for federal legislation, commentators suggest that comprehensive federal privacy legislation seems unlikely in the short term.",
+        "States have begun implementing their own solutions to shore up protections for consumer-generated health data. California has been at the forefront of state privacy efforts with the California Consumer Privacy Act of 2018. Virginia, Colorado and Utah have also recently passed state consumer data privacy legislation. Part B Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column.",
+        "There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) How Colleges Weigh Applicants’ Extracurricular Activities High school students eager to stand out in the college application process often participate in a litany of extracurricular activities hoping to bolster their chances of admission to a selective undergraduate institution. However, college admissions experts say that the quality of a college hopeful’s extracurricular activities matters more than the number of activities he or she participates in. Sue Rexford, the director of college guidance at the Charles E.",
+        "Smith Jewish Day School, says it is not necessary for a student filling out the Common Application to list 10 activities in the application. “No college will expect that a student has a huge laundry list of extracurriculars that they have been passionately involved in each for an extended period of time,” Rexford wrote in an email. Experts say it is tougher to distinguish oneself in a school-affiliated extracurricular activity that is common among high school students than it is to stand out while doing an uncommon activity. “The competition to stand out and make an impact is going to be much stiffer, and so if they’re going to do a popular activity, I’d say, be the best at it,” says Sara Harberson, a college admissions consultant. High school students who have an impressive personal project they are working on independently often impress colleges, experts say. “For example, a student with an interest in entrepreneurship could demonstrate skill and potential by starting a profitable small business,” Olivia Valdes, the founder of Zen Admissions consulting firm, wrote in an email. Joseph Adegboyega-Edun, a Maryland high school guidance counselor, says unconventional extracurricular activities can help students impress college admissions offices, assuming they demonstrated serious commitment. “Again, since one of the big questions high school seniors must consider is ‘What makes you unique?,’ having an uncommon extracurricular activity vs. a conventional one is an advantage,” he wrote in an email.",
+        "Experts say demonstrating talent in at least one extracurricular activity can help in the college admissions process, especially at top-tier undergraduate institutions. “Distinguishing yourself in one focused type of extracurricular activity can be a positive in the admissions process, especially for highly selective institutions, where having top grades and test scores is not enough,” Katie Kelley, admissions counselor at IvyWise admissions consultancy, wrote in an email. “Students need to have that quality or hook that will appeal to admissions officers and allow them to visualize how the student might come and enrich their campus community.” Extracurricular activities related to the college major declared on a college application are beneficial, experts suggest. “If you already know your major, having an extracurricular that fits into that major can be a big plus,” says Mayghin Levine, the manager of educational opportunities with The Cabbage Patch Settlement House, a Louisville, Kentucky, nonprofit community center. High school students who have had a strong positive influence on their community through an extracurricular activity may impress a college and win a scholarship, says Erica Gwyn, a former math and science magnet program assistant at a public high school who is now executive director of the Kaleidoscope Careers Academy in Atlanta, a nonprofit organization. will be favored by top-tier institutions. community are likely to win a scholarship. be seen as a plus by colleges. impress colleges. should excel in it. determination and dedication. G. It is advisable for students to choose an extracurricular activity that is related to their future study at college. Section III Translation Translate the following text into Chinese.",
+        "Write your translation on the ANSWER SHEET. (15 points) With the smell of coffee and fresh bread floating in the air, stalls bursting with colourful vegetables and tempting cheeses, and the buzz of friendly chats, farmers’ markets are a feast for the senses. They also provide an opportunity to talk to the people responsible for growing or raising your food, support your local economy and pick up fresh seasonal produce — all at the same time. Farmers’ markets are usually weekly or monthly events, most often with outdoor stalls, which allow farmers or producers to sell their food directly to customers. The size or regularity of markets can vary from season to season, depending on the area’s agricultural calendar, and you’re likely to find different produce on sale at different times of the year.",
+        "By cutting out the middleman, the farmers secure more profit for their produce. Shoppers also benefit from seeing exactly where — and to who — their money is going. Section IV Writing Part A Suppose you and Jack are going to do a survey on the protection of old houses in an ancient town. Write him an email to 1) put forward your plan, and 2) ask for his opinion.",
+        "Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email; use “Li Ming” instead. (10 points) Part B Write an essay based on the chart below. In your writing, you should 1) describe and interpret the chart, and 2) give your comments. Write your answer in about 150 words on the ANSWER SHEET. (15 points) 某高校劳动实践课学生主要收获调查 0% 20% 40% 60% 80% 100% 感觉到心情舒畅 提升了合作能力 学习了相关知识 提升了动手能力"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "The research findings are cited in Paragraph 1 to show ______",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "the prevalence of health apps."
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "the public concern over health."
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "the popularity of smartphones."
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "the advancement of technology."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "词义/句义猜测题",
-            "态度观点题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "What does the author imply about existing health privacy law?",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "Its coverage needs to be extended."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "Its enforcement needs strengthening."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "It has discouraged medical misconduct."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "It has disappointed insurance companies."
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "Before sharing its users’ health information, Flo Health is required to ______",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "seek the approval of the FTC."
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "find qualified third parties."
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "remove irrelevant personal data."
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "obtain their explicit permission."
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "What challenge is the FTC currently faced with?",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "The complexity of health information."
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "The rapid increase in new health apps."
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "The subtle deceptiveness of health apps."
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "The difficulty in assessing consumer harm."
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "skeptical"
-            },
-            {
-              "label": "B",
-              "text": "supportive"
-            },
-            {
-              "label": "C",
-              "text": "neutral"
-            },
-            {
-              "label": "D",
-              "text": "critical"
-            }
-          ],
-          "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }

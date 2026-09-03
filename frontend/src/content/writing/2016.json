@@ -1,26 +1,40 @@
 {
   "year": 2016,
-  "title": "2016年英语二写作(图表题干待提取)",
-  "prompt": "Section IV Writing\nPart A\n47. Directions:\nSuppose you won a translation contest and your friend, Jack, wrote an email\nto congratulate you and ask for advice on translation. Write him a reply to\n1) thank him, and\n2) give your advice.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB\n48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n培养 独立能 力\n6%\n广交朋友\n9赞\n其他\n缓解 压 力\n33%\n37%\n- 14 -",
-  "chartType": "",
+  "title": "2016年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n培养 独立能 力\n6% \n广交朋友\n9赞\n其他\n缓解 压 力\n33% \n37% \n- 14 -",
+  "partA": "Part A \n47. Directions:\nSuppose you won a translation contest and your friend, Jack, wrote an email\nto congratulate you and ask for advice on translation. Write him a reply to \n1) thank him, and\n2) give your advice.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n培养 独立能 力\n6% \n广交朋友\n9赞\n其他\n缓解 压 力\n33% \n37% \n- 14 -",
+  "chartType": "mixed",
   "chartOption": {},
-  "keyPoints": [],
+  "keyPoints": [
+    "48. Directions:",
+    "1) interpret the chart, and",
+    "2) give your comments.",
+    "- 14 -"
+  ],
   "scaffolding": {
     "trends": [
       "account for the largest proportion of",
       "follow closely behind at",
       "take the lead in",
-      "witness a sharp increase / decrease"
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
     ],
     "comparisons": [
       "in contrast to",
       "the gap between... and... is striking",
-      "twice as many as"
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
     ],
     "reasons": [
       "can be attributed to the accelerating pace of life",
       "hinge upon the increasing need for flexibility",
-      "stem from a growing awareness of health"
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
     ]
   },
   "sampleEssays": []

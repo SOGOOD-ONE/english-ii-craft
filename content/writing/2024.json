@@ -1,26 +1,44 @@
 {
   "year": 2024,
-  "title": "2024年英语二写作(图表题干待提取)",
-  "prompt": "Section IV Writing\nPart A\n47. Directions:\nSuppose you and Jack are going to do a survey on the protection of old houses in an\nancient town. Write him an email to\n1) put forward your plan, and\n2) ask for his opinion.\nWrite your answer in about 100 words on the ANSWER SHEET.\nDo not use your own name in your email; use “Li Ming” instead. (10 points)\n14\nPart B\n48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) describe and interpret the chart, and\n2) give your comments.\nWrite your answer in about 150 words on the ANSWER SHEET. (15 points)\n某高校劳动实践课学生主要收获调查\n54.40%\n32.60%\n91.30%\n84.80%\n0% 20% 40% 60% 80% 100%\n感觉到心情舒畅\n提升了合作能力\n学习了相关知识\n提升了动手能力",
-  "chartType": "",
+  "title": "2024年英语二写作",
+  "prompt": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  writing,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n \n \n某高校劳动实践课学生主要收获调查 \n54.40%\n32.60%\n91.30%\n84.80%\n0% 20% 40% 60% 80% 100%\n感觉到心情舒畅\n提升了合作能力\n学习了相关知识\n提升了动手能力",
+  "partA": "Part  A \n47. Directions: \nSuppose  you  and  Jack  are  going  to  do  a  survey  on  the  protection  of  old  houses  in  an  \nancient  town.  Write  him  an  email  to \n1)  put  forward  your  plan,  and \n2)  ask  for  his  opinion. \nWrite  your  answer  in  about  100  words  on  the  ANSWER  SHEET. \nDo  not  use  your  own  name  in  your  email;  use  “Li  Ming”  instead.  (10  points)\nPart  B",
+  "partB": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  writing,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n \n \n某高校劳动实践课学生主要收获调查 \n54.40%\n32.60%\n91.30%\n84.80%\n0% 20% 40% 60% 80% 100%\n感觉到心情舒畅\n提升了合作能力\n学习了相关知识\n提升了动手能力",
+  "chartType": "mixed",
   "chartOption": {},
-  "keyPoints": [],
+  "keyPoints": [
+    "48. Directions:",
+    "1) describe and interpret the chart, and",
+    "2) give your comments.",
+    "54.40%",
+    "32.60%",
+    "91.30%",
+    "84.80%",
+    "0% 20% 40% 60% 80% 100%"
+  ],
   "scaffolding": {
     "trends": [
       "account for the largest proportion of",
       "follow closely behind at",
       "take the lead in",
-      "witness a sharp increase / decrease"
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
     ],
     "comparisons": [
       "in contrast to",
       "the gap between... and... is striking",
-      "twice as many as"
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
     ],
     "reasons": [
       "can be attributed to the accelerating pace of life",
       "hinge upon the increasing need for flexibility",
-      "stem from a growing awareness of health"
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
     ]
   },
   "sampleEssays": []

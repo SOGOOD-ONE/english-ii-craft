@@ -1,162 +1,132 @@
 {
   "year": 2013,
   "title": "考研英语二 2013 年 · 阅读理解 Part A (Text 1-4)",
-  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。占位骨架,实际文本请从 PDF 抽取后替换。",
+  "intro": "共 4 篇文章,每篇 5 道多选题,共 20 题 × 2 分 = 40 分。",
   "total_points": 40,
   "per_question_points": 2,
   "passages": [
     {
       "id": "p1",
-      "title": "Text 1 · 经济与管理类",
-      "theme": "business/economy",
-      "category": "经济管理",
-      "word_count": 0,
+      "title": "Text 1 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 387,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "In an essay entitled \"Making It in America,\" the author Adam Davidson relates a joke from cotton country about just how much a modern textile mill has been automated: The average mill has only two employees today, \"a man and a dog. The man is there to feed the dog, and the dog is there to keep the man away from the machines.\" Davidson's article is one of a number of pieces that have recently appeared making the point that the reason we have such stubbornly high unemployment and declining middle-class incomes today is largely because of the big drop in demand because of the Great Recession, but it is also because of the advances in both globalization and the information technology revolution, which are more rapidly than ever replacing labor with machines or foreign workers. In the past, workers with average skills, doing an average job, could earn an average lifestyle. But, today, average is officially over.",
+        "Being average just won't earn you what it used to. It can't when so many more employers have so much more access to so much more above average cheap foreign labor, cheap robotics, cheap software, cheap automation and cheap genius. Therefore, everyone needs to find their extra — their unique value contribution that makes them stand out in whatever is their field of employment. Yes, new technology has been eating jobs forever, and always will.",
+        "But there's been an acceleration. As Davidson notes, \"In the 10 years ending in 2009, [U.S.] factories shed workers so fast that they erased almost all the gains of the previous 70 years; roughly one out of every three manufacturing jobs — about 6 million in total — disappeared.\" There will always be change — new jobs, new products, new services. But the one thing we know for sure is that with each advance in globalization and the I. T. revolution, the best jobs will require workers to have more and better education to make themselves above average.",
+        "In a world where average is officially over, there are many things we need to do to support employment, but nothing would be more important than passing some kind of G. I. Bill for the 2l 8t century that ensures that every American has access to post­ high school education. eclme of middle-class mcomes[D] the d"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "According to Paragraph 3, to be a successful employee, one has to .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "work on cheap software"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "ask for a moderate salary"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "adopt an average lifestyle"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "contribute something unique"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "The quotation in Paragraph 4 explains that .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "gains of technology have been erased"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "job opportunities are disappearing at a high speed"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "factories are making much less money than before"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "new jobs and services have been offered"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "According to the author, to reduce unemployment, the most important is",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "to accelerate the I. T. revolution"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "to ensure more education for people"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "to advance economic globalization"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "to pass more bills in the 21st century"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "Which of the following would be the most appropriate title for the text?",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "New Law Takes Effect."
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "Technology Goes Cheap."
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "Average Is Over."
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "Recession Is Bad."
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "boost corporate profits"
-            },
-            {
-              "label": "B",
-              "text": "lower employee satisfaction"
-            },
-            {
-              "label": "C",
-              "text": "improve work-life balance"
-            },
-            {
-              "label": "D",
-              "text": "reduce long-term productivity"
-            }
-          ],
-          "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -164,156 +134,156 @@
     },
     {
       "id": "p2",
-      "title": "Text 2 · 科技与数字生活",
-      "theme": "technology",
-      "category": "科技",
-      "word_count": 0,
+      "title": "Text 2 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 377,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "A century ago, the immigrants from across the Atlantic included settlers and sojourners. Along with the many folks looking to make a permanent home in the United States came those who had no intention to stay, and who would make some money and then go home. Between 1908 and 1915, about 7 million people arrived while about 2 million departed. About a quarter of all Italian immigrants, for example, eventually returned to Italy for good.",
+        "They even had an affectionate nickname, \"uccelli di passaggio,\" birds of passage. Today, we are much more rigid about immigrants. We divide newcomers into two categories: legal or illegal, good or bad. We hail them as Americans in the making, or brand them as aliens to be kicked out.",
+        "That framework has contributed mightily to our broken immigration system and the long political paralysis over how to fix it. We don't need more categories, but we need to change the way we think about categories. We need to look beyond strict definitions of legal and illegal. To start, we can recognize the new birds of passage, those living and thriving in the gray areas.",
+        "We might then begin to solve our immigration challenges. Crop pickers, violinists, construction workers, entrepreneurs, engineers, home health-care aides and physicists are among today's birds of passage. They are energetic participants in a global economy driven by the flow of work, money and ideas. They prefer to come and go as opportunity calls them.",
+        "They can manage to have a job in one place and a family in another. With or without permission, they straddle laws, jurisdictions and identities with ease. We need them to imagine the United States as a place where they can be productive for a while without committing themselves to staying forever. We need them to feel that home can be both here and there and that they can belong to two nations honorably.",
+        "Accommodating this new world of people in motion will require new attitudes on both sides of the immigration battle. Looking beyond the culture war logic of right or wrong means opening up the middle ground and understanding that managing immigration today requires multiple paths and multiple outcomes, including some that are not easy to accomplish legally in the existing system."
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "\"Birds of passage\" refers to those who .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "stay in a foreign country temporarily"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "leave their home countries for good"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "immigrate across the Atlantic"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "find permanent jobs overseas"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "It is implied in Paragraph 2 that the current immigration system in the US",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "needs new immigrant categories"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "has loosened control over immigrants"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "should be adapted to meet challenges"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "has been fixed via political means"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to the author, today's birds of passage want .",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "financial incentives"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "a global recognition"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "the freedom to stay and leave"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "opportunities to get regular jobs"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "The author suggests that the birds of passage today should be treated .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "as faithful partners"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "with legal tolerance"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "with economic favors"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "as mighty rivals"
             }
           ],
           "answer": "B",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
+            "推理判断题"
           ],
           "source_sentence": ""
         },
         {
           "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "The most appropriate title for this text would be .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "Come and Go: Big Mistake"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "Living and Thriving: Great Risk"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "With or Without: Great Risk"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "Legal or Illegal: Big Mistake"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "细节事实题"
           ],
           "source_sentence": ""
         }
@@ -321,156 +291,99 @@
     },
     {
       "id": "p3",
-      "title": "Text 3 · 教育与文化",
-      "theme": "education",
-      "category": "教育文化",
-      "word_count": 0,
+      "title": "Text 3 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 401,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "Scientists have found that although we are prone to snap overreactions, if we take a moment and think about how we are likely to react, we can reduce or even eliminate the negative effects of our quick, hard-wired responses. Snap decisions can be important defense mechanisms; if we are judging whether someone is dangerous, our brains and bodies are hard-wired to react very quickly, within milliseconds. But we need more time to assess other factors. To accurately tell whether someone is sociable, studies show, we need at least a minute, preferably five.",
+        "It takes a while to judge complex aspects of personalit y, like neuroticism or open -mindedness. But snap decisions in reaction to rapid stimuli aren't exclusive to the interpersonal realm. Psychologists at the University of Toronto found that viewing a fast-food logo for just a few milliseconds primes us to read 20 percent faster, even though reading has little to do with eating. We unconsciously associate fast food with speed and impatience and carry those impulses into whatever else we're doing, Subjects exposed to fast-food flashes also tend to think a musical piece lasts too long.",
+        "Yet we can reverse such influences. If we know we will overreact to consumer products or housing options when we see a happy face (one reason good sales representatives and real estate agents are always smiling), we can take a moment before buying. If we know female job screeners are more likely to reject attractive female applicants, we can help screeners understand their biases — or hire outside screeners. John Gottman, the marriage expert, explains that we quickly \"thin slice\" information reliably only after we ground such snap reactions in \"thick sliced\" long­ term study.",
+        "When Dr. Gottman really wants to assess whether a couple will stay together, he invites them to his island retreat for a much longer evaluation: two days, not two seconds. Our ability to mute our hard-wired reactions by pausing is what differentiates us from animals: dogs can think about the future only intermittently or for a few minutes. But historically we have spent about 12 percent of our days contemplating the longer term.",
+        "Although technology might change the way we react, it hasn't changed our nature. We still have the imaginative capacity to rise above temptation and reverse the high-speed trend. 33 T . o reverse the negative influences of snap dec1s10ns, we should . [ C] uncertain"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
+          "stem": "The time needed in making decisions may .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "predetermine the accuracy of our judgment"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "prove the complexity of our brain reaction"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "depend on the importance of the assessment"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "vary according to the urgency of the situation"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "John Gattman says that reliable snap reactions are based on .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "critical assessment"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "\"thin sliced\" study"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "adequate information"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "sensible explanation"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "The author's attitude toward reversing the high-speed trend is .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "tolerant"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "optimistic"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "uncertain"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "Doubtful"
             }
           ],
-          "answer": "A",
+          "answer": "",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 4,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "skeptical"
-            },
-            {
-              "label": "B",
-              "text": "supportive"
-            },
-            {
-              "label": "C",
-              "text": "neutral"
-            },
-            {
-              "label": "D",
-              "text": "critical"
-            }
-          ],
-          "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "主旨大意题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "The author's attitude towards the issue is best described as ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "an oversimplified view"
-            },
-            {
-              "label": "B",
-              "text": "a well-grounded concern"
-            },
-            {
-              "label": "C",
-              "text": "a purely academic guess"
-            },
-            {
-              "label": "D",
-              "text": "an irrational complaint"
-            }
-          ],
-          "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "态度观点题"
           ],
           "source_sentence": ""
         }
@@ -478,156 +391,137 @@
     },
     {
       "id": "p4",
-      "title": "Text 4 · 社会与法律",
-      "theme": "society",
-      "category": "社会法律",
-      "word_count": 0,
+      "title": "Text 4 · 社会文化",
+      "theme": "社会文化",
+      "category": "社会文化",
+      "word_count": 1217,
       "paragraphs": [
-        "[TODO: 待从真题 PDF 提取英文原文段落]\n\n该占位仅用于前端 UI 联调,真实文本请写入 content/reading/<year>.json 的 passages[i].paragraphs 数组。"
+        "Europe is not a gender-equality heaven. In particular, the corporate workplace will never be completely family-friendly until women are part of senior management decisions, and Europe's top corporate-governance positions remain overwhelmingly male. Indeed, women hold only 14 per cent of positions on European corporate boards. The European Union is now considering legislation to compel corporate boards to maintain a certain proportion of women — up to 60 per cent.",
+        "This proposed mandate was born of frustration. Last year, European Commission Vice President Viviane Reding issued a call to voluntary action. Reding invited corporations to sign up for gender balance goals of 40 per cent female board membership. But her appeal was considered a failure: only 24 companies took it up.",
+        "Do we need quotas to ensure that women can continue to climb the corporate ladder fairly as they balance work and family? \"Personally, I don't like quotas,\" Reding said recently. \"But I like what the quotas do.\" Quotas get action: they \"open the way to equality and they break through the glass ceiling,\" according to Reding, a result seen in France and other countries with legally binding provisions on placing women in top business positions. I understand Reding's reluctance — and her frustration.",
+        "I don't like quotas either; they run counter to my belief in meritocracy, governance by the capable. But, when one considers the obstacles to achieving the meritocratic ideal, it does look as if a fairer world must be temporarily ordered. After all, four decades of evidence has now shown that corporations in Europe as well as the US are evading the meritocratic hiring and promotion of women to top positions — no matter how much \"soft pressure\" is put upon them. When women do break through to the summit of corporate power — as, for example, Sheryl Sandberg recently did at Facebook — they attract massive attention precisely because they remain the exception to the rule.",
+        "If appropriate public policies were in place to help all women — whether CEOs or their children's caregivers — and all families, Sandberg would be no more newsworthy than any other highly capable person hvmg m a more Just society. [ C] indifference PartB Directions: Read the following text and answer the questions by choosing the most suitable subtitle from the list A - G for each numbered paragraph (41 - 45). There are two extra subtitles which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points) [E] Stick to what you need [F] Planning is everything [G] Waste not, want not The hugely popular blog the Skint Foodie chronicles how Tony balances his love of good food with living on benefits. After bills, Tony has £ 60 a week to spend, £4 0 of which goes on food, but 10 years ago he was earning £ 130,000 a year working in corporate communications and eating at London's best restaurants at least twice a week.",
+        "Then his marriage failed, his career burned out and his drinking became serious. \"The community mental health team saved my life. And I felt like that again, to a certain degree, when people responded to the blog so well. It gave me the validation and confidence that I'd lost.",
+        "But it's still a day-by-day thing.\" Now he's living in a council flat and fielding offers from literary agents. He's feeling positive, but he' 11 carry on blogging — not about eating as cheaply as you can — \"there are so many people in a much worse state, with barely any money to spend on food\" — but eating well on a budget. Here's his advice for economical foodies. Impulsive spending isn't an option, so plan your week's menu in advance, making shopping lists for your ingredients in their exact quantities.",
+        "I have an Excel template for a week of breakfast, lunch and dinner. Stop laughing: it's not just cost effective but helps you balance your diet. It's also a good idea to shop daily instead of weekly, because, being human, you'll sometimes change your mind about what you fancy. This is where supermarkets and their anonymity come in handy.",
+        "With them, there's not the same embarrassment as when buying one carrot in a little greengrocer. And if you plan properly, you'll know that you only need, say, 350 g of shin of beef and six rashers of bacon, not whatever weight is pre-packed in the supermarket chiller. You may proudly claim to only have frozen peas in the freezer — that's not good enough. Mine is filled with leftovers, bread, stock, meat and fish.",
+        "Planning ahead should eliminate wastage, but if you have surplus vegetables you'll do a vegetable soup, and all fruits threatening to \"go off' will be cooked or juiced. Everyone says this, but it really is a top tip for frugal eaters. Shop at butchers, delis and fish-sellers regularly, even for small things, and be super friendly. Soon you'll feel comfortable asking if they've any knuckles of ham for soups and stews, or beef bones, chicken carcasses and fish heads for stock which, more often than not, they'll let you have for free.",
+        "You won't be eating out a lot, but save your pennies and once every few months treat yourself to a set lunch at a good restaurant— £ 1.75 a week for three months gives you £2 1 — more than enough for a three-course lunch at Michelin-starred Arbutus. It's £ 16.95 there — or £ 12.99 for a large pizza from Domino's: I know which I'd rather eat. Section III Translation Translate the following text into Chinese. Write your translation on the ANSWER SHEET. (15 points) I can pick a date from the past 53 years and know instantly where I was, what happened in the news and even the day of the week.",
+        "I've been able to do this since I was four. I never feel overwhelmed with the amount of information my brain absorbs. My mind seems to be able to cope and the information is stored away neatly. When I think of a sad memory, I do what everybody does - try to put it to one side.",
+        "I don't think it's harder for me just because my memory is clearer. Powerful memory doesn't make my emotions any more acute or vivid. I can recall the day my grandfather died and the sadness I felt when we went to the hospital the day before. I also remember that the musical play Hair opened on Broadway on the same day — they both just pop into my mind in the same way.",
+        "Section IV Writing Part A Suppose your class is to hold a charity sale for kids in need of help. Write your classmates an email to 1) inform them about the details, and 2) encourage them to participate. You should write about 100 words on the ANSWER SHEET. Do not use your own name.",
+        "Use \"Li Ming\" instead. Do not write your address. (10 points) PartB Write an essay based on the following chart. In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points) %％% %% % 0 0 0 0 0 0086 人数百分比 大 一 大二 大三 大四 某高校学生 兼职情况"
       ],
       "questions": [
         {
           "no": 1,
-          "stem": "The author quotes the example in Paragraph 2 to show that ______.",
+          "stem": "In the European corporate workplace, generally .",
           "options": [
             {
               "label": "A",
-              "text": "an oversimplified view"
+              "text": "women take the lead"
             },
             {
               "label": "B",
-              "text": "a well-grounded concern"
+              "text": "men have the final say"
             },
             {
               "label": "C",
-              "text": "a purely academic guess"
+              "text": "corporate governance is overwhelmed"
             },
             {
               "label": "D",
-              "text": "an irrational complaint"
+              "text": "senior management is family-friendly"
             }
           ],
           "answer": "C",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "态度观点题",
-            "例证功能题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 2,
-          "stem": "Which of the following best summarizes the main idea of the passage?",
+          "stem": "The European Union's intended legislation is .",
           "options": [
             {
               "label": "A",
-              "text": "boost corporate profits"
+              "text": "a reflection of gender balance"
             },
             {
               "label": "B",
-              "text": "lower employee satisfaction"
+              "text": "a response to Reding's call"
             },
             {
               "label": "C",
-              "text": "improve work-life balance"
+              "text": "a reluctant choice"
             },
             {
               "label": "D",
-              "text": "reduce long-term productivity"
+              "text": "a voluntary action"
             }
           ],
           "answer": "D",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "例证功能题",
             "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 3,
-          "stem": "The word \"X\" (Line 3, Para.4) is closest in meaning to ______.",
+          "stem": "According to Reding, quotas may help women .",
           "options": [
             {
               "label": "A",
-              "text": "It will be reversed very soon"
+              "text": "get top business positions"
             },
             {
               "label": "B",
-              "text": "It has become an irreversible trend"
+              "text": "see through the glass ceiling"
             },
             {
               "label": "C",
-              "text": "It mainly affects developing countries"
+              "text": "balance work and family"
             },
             {
               "label": "D",
-              "text": "It does more harm than good"
+              "text": "anticipate legal results"
             }
           ],
           "answer": "A",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "细节事实题",
-            "推理判断题"
+            "细节事实题"
           ],
           "source_sentence": ""
         },
         {
           "no": 4,
-          "stem": "The author's attitude towards the issue is best described as ______.",
+          "stem": "The author's attitude toward Reding's appeal is one of",
           "options": [
             {
               "label": "A",
-              "text": "skeptical"
+              "text": "skepticism"
             },
             {
               "label": "B",
-              "text": "supportive"
+              "text": "objectiveness"
             },
             {
               "label": "C",
-              "text": "neutral"
+              "text": "indifference"
             },
             {
               "label": "D",
-              "text": "critical"
+              "text": "approval"
             }
           ],
-          "answer": "B",
+          "answer": "",
           "explanation": "待补充:原文线索句 + 错项排除思路。",
           "tags": [
-            "推理判断题",
-            "主旨大意题"
-          ],
-          "source_sentence": ""
-        },
-        {
-          "no": 5,
-          "stem": "According to the text, the key reason for this phenomenon is that ______.",
-          "options": [
-            {
-              "label": "A",
-              "text": "an oversimplified view"
-            },
-            {
-              "label": "B",
-              "text": "a well-grounded concern"
-            },
-            {
-              "label": "C",
-              "text": "a purely academic guess"
-            },
-            {
-              "label": "D",
-              "text": "an irrational complaint"
-            }
-          ],
-          "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "主旨大意题",
-            "词义/句义猜测题"
+            "态度观点题"
           ],
           "source_sentence": ""
         }

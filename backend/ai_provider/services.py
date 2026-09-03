@@ -122,7 +122,11 @@ def _call_chat(messages: list[dict], system: str | None, user_content: str, cfg:
                 if resp.status_code >= 400:
                     raise RuntimeError(f'AI provider HTTP {resp.status_code}: {resp.text[:200]}')
                 data = resp.json()
-                content = data['choices'][0]['message']['content'] or ''
+                choices = data.get('choices') or []
+                if not choices:
+                    raise RuntimeError(f'AI 返回 choices 为空: {data}')
+                message = choices[0].get('message') or {}
+                content = (message.get('content') or '').strip()
                 usage = (data.get('usage') or {}) if isinstance(data, dict) else {}
                 return content, {
                     'prompt_tokens': usage.get('prompt_tokens', 0),
@@ -234,3 +238,51 @@ def lookup_word(user, word: str, context: str = '') -> LookupResult:
         senses=list(data.get('senses') or [])[:4],
         collocations=list(data.get('collocations') or [])[:4],
     )
+
+
+TRANSLATION_SYSTEM_PROMPT = '''你是专业的考研英语文章翻译专家。
+请将用户提供的英文文章逐段翻译成中文。
+要求：
+1. 准确翻译考研英语文章的学术表达和固定搭配
+2. 保持中文通顺自然，符合中文阅读习惯
+3. 严格按照段落顺序，逐段对应翻译，只输出翻译内容
+4. **不要输出`[段落 1]`这样的标记，也不要输出原文**，只输出中文翻译
+5. 每个段落翻译完成后，用三个竖线`|||`分隔，便于程序解析
+6. 只输出翻译，不要任何额外文字、解释或标记
+
+格式要求：
+翻译1|||翻译2|||翻译3|||...
+'''
+
+
+def translate_paragraphs(user, paragraphs: list[str]) -> list[str]:
+    """调用 AI 逐段翻译英文文章，返回翻译结果列表，顺序与输入一致。"""
+    cfg = resolve_config(user)
+    if not cfg.api_key:
+        raise RuntimeError('当前没有可用的 AI Key。请在「设置」中填入自己的 Key,或联系管理员配置全局 AI。')
+    
+    # 提示去掉，只告诉 AI 我们要结果，不要标记
+    user_content = "请逐段翻译以下英文，只输出翻译，段落之间用 ||| 分隔，不要任何标记：\n\n"
+    for i, para in enumerate(paragraphs, 1):
+        user_content += f"---\n段落{i}:\n{para}\n"
+    
+    content, _ = _call_chat([], TRANSLATION_SYSTEM_PROMPT, user_content, cfg, temperature=0.3)
+    
+    # 按 ||| 分割
+    parts = [p.strip() for p in content.split('|||') if p.strip()]
+    # 去掉任何残留的 "段落 N:", "[段落 N]" 标记
+    parts = [re.sub(r'^(\[[^\]]*\]\s*|段落\s*\d+\s*[:：]\s*)', '', p) for p in parts]
+    # 如果分割后数量不对，尝试按换行分割 fallback
+    if len(parts) < len(paragraphs):
+        parts = [p.strip() for p in content.split('\n') if p.strip()]
+        parts = [re.sub(r'^(\[[^\]]*\]\s*|段落\s*\d+\s*[:：]\s*)', '', p) for p in parts]
+    
+    # 取前 N 个翻译（N = 输入段落数）
+    results = parts[:len(paragraphs)]
+    # 去掉空行，合并换行
+    results = [r.replace('\n', ' ').strip() for r in results]
+    # 如果不够，补空字符串
+    while len(results) < len(paragraphs):
+        results.append('')
+    
+    return results
