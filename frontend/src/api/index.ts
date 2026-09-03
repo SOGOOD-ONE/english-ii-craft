@@ -11,10 +11,10 @@ export interface DeviceConfig {
 
 export const api = {
   device: {
-    register: () => http.post<DeviceConfig>('/api/v1/device/device/register', {}).then(r => r.data),
-    getMe: () => http.get<DeviceConfig>('/api/v1/device/device/me').then(r => r.data),
+    register: () => http.post<DeviceConfig>('/api/v1/device/register', {}).then(r => r.data),
+    getMe: () => http.get<DeviceConfig>('/api/v1/device/me').then(r => r.data),
     patchMe: (partial: Partial<DeviceConfig>) =>
-      http.patch<DeviceConfig>('/api/v1/device/device/me', partial).then(r => r.data),
+      http.patch<DeviceConfig>('/api/v1/device/me', partial).then(r => r.data),
   },
   exam: {
     years: (module: 'writing' | 'translation' | 'reading' | 'cloze' | 'newtype_b' = 'writing') =>

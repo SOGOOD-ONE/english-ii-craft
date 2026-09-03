@@ -23,7 +23,7 @@ export function setDeviceId(id: string) {
 export async function initDeviceId(): Promise<string> {
   let id = getDeviceId();
   if (id) return id;
-  const resp = await fetch('/api/v1/device/device/register', { method: 'POST' });
+  const resp = await fetch('/api/v1/device/register', { method: 'POST' });
   const data = await resp.json();
   id = String(data.device_id || data.device?.device_id || '');
   if (!id) throw new Error('注册设备失败');
