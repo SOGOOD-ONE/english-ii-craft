@@ -1,29 +1,18 @@
 import { useMemo, useState } from 'react';
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import api from '@/api';
-import { useAuthStore } from '@/store/auth';
 
 export default function VocabPage() {
   const qc = useQueryClient();
-  const isAuthed = useAuthStore(s => s.isAuthenticated());
   const [filter, setFilter] = useState<'due' | 'mastered' | 'all'>('due');
   const [idx, setIdx] = useState(0);
   const [showBack, setShowBack] = useState(false);
-
-  if (!isAuthed) {
-    return (
-      <div className="flex flex-col items-center justify-center py-20 text-zinc-500 text-xs">
-        <div>生词本功能需要登录，请点击上方「账号接入」Tab 登录后再使用。</div>
-      </div>
-    );
-  }
 
   const { data: cards = [] } = useQuery({
     queryKey: ['vocab-cards', filter],
     queryFn: () => api.vocab.cardsList(
       filter === 'due' ? { due: 1 } : filter === 'mastered' ? { mastered: 1 } : {}
     ),
-    enabled: isAuthed,
   });
 
   const reviewMut = useMutation({

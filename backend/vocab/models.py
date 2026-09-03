@@ -1,10 +1,10 @@
 from django.db import models
-from django.conf import settings
+from accounts.models import Device
 
 
 class Word(models.Model):
     """
-    全局共享词典(所有用户共用的 lemma 条目):
+    全局共享词典(所有设备共用的 lemma 条目):
     hover 查词时后端先查这个表,未命中再调 AI Provider,写回本缓存。
     """
     lemma = models.CharField(max_length=64, unique=True, db_index=True,
@@ -28,7 +28,7 @@ class Word(models.Model):
 
 class VocabCard(models.Model):
     """
-    FSRS 用户生词卡(一个用户 × 一个 Word = 一张卡,支持多语境)。
+    FSRS 设备生词卡(一个设备 × 一个 Word = 一张卡,支持多语境)。
     FSRS 字段对应 ts-fsrs 的 Card 结构。
     """
     STATE_NEW = 0
@@ -42,7 +42,7 @@ class VocabCard(models.Model):
         (STATE_RELEARNING, '再学习'),
     )
 
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='vocab_cards')
+    device = models.ForeignKey(Device, on_delete=models.CASCADE, related_name='vocab_cards', null=True, blank=True)
     word = models.ForeignKey(Word, on_delete=models.PROTECT, related_name='cards')
     # 上下文(用户是在哪个句子里抓词的 / 来源年份)
     context_sentence = models.TextField(blank=True, default='')
@@ -68,11 +68,11 @@ class VocabCard(models.Model):
     class Meta:
         verbose_name = '生词卡'
         verbose_name_plural = verbose_name
-        unique_together = (('user', 'word', 'source_path'),)
+        unique_together = (('device', 'word', 'source_path'),)
         ordering = ('due',)
         indexes = [
-            models.Index(fields=['user', 'due', 'mastered']),
+            models.Index(fields=['device', 'due', 'mastered']),
         ]
 
     def __str__(self):
-        return f'Card<{self.user.username}/{self.word.lemma}>'
+        return f'Card<{self.device.device_id}/{self.word.lemma}>'

@@ -1,18 +1,20 @@
 import http from './axios';
-import type { ProfileInfo, UserInfo } from '@/store/auth';
 
-export interface LoginPayload { username: string; password: string; }
-export interface RegisterPayload extends LoginPayload { email: string; }
-export interface AuthResp { access: string; refresh: string; user: UserInfo; profile: ProfileInfo; }
+export interface DeviceConfig {
+  device_id: string;
+  ai_base_url?: string;
+  ai_api_key?: string;
+  ai_model?: string;
+  mastery_required?: number;
+  daily_new_limit?: number;
+}
 
 export const api = {
-  auth: {
-    register: (p: RegisterPayload) => http.post<AuthResp>('/api/v1/auth/register', p).then(r => r.data),
-    login: (p: LoginPayload) => http.post<AuthResp>('/api/v1/auth/login', p).then(r => r.data),
-    refresh: (refresh: string) => http.post<{ access: string; refresh?: string }>('/api/v1/auth/token/refresh', { refresh }).then(r => r.data),
-    me: () => http.get<{ user: UserInfo; profile: ProfileInfo }>('/api/v1/auth/me').then(r => r.data),
-    patchMe: (partial: Partial<{ email: string; ai_base_url: string; ai_api_key: string; ai_model: string; mastery_required: number; daily_new_limit: number }>) =>
-      http.patch<{ user: UserInfo; profile: ProfileInfo }>('/api/v1/auth/me', partial).then(r => r.data),
+  device: {
+    register: () => http.post<DeviceConfig>('/api/v1/device/device/register', {}).then(r => r.data),
+    getMe: () => http.get<DeviceConfig>('/api/v1/device/device/me').then(r => r.data),
+    patchMe: (partial: Partial<DeviceConfig>) =>
+      http.patch<DeviceConfig>('/api/v1/device/device/me', partial).then(r => r.data),
   },
   exam: {
     years: (module: 'writing' | 'translation' | 'reading' | 'cloze' | 'newtype_b' = 'writing') =>

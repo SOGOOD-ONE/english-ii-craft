@@ -56,10 +56,10 @@ class AIConfig:
 
 
 # ------------------------ 获取配置 ------------------------
-def resolve_config(user=None) -> AIConfig:
+def resolve_config(device=None) -> AIConfig:
     """
     解析 AI 配置:
-      1. 用户 profile 如果三个字段都填或部分填 → 填了用用户的,空了回退全局
+      1. 设备(device) 如果三个字段都填或部分填 → 填了用设备的,空了回退全局
       2. 全局 settings.GLOBAL_AI_*
     最终 api_key 可能为空字符串,调用方要判断并抛 400。
     """
@@ -69,12 +69,10 @@ def resolve_config(user=None) -> AIConfig:
     api_key = dj_settings.GLOBAL_AI_API_KEY
     model = dj_settings.GLOBAL_AI_MODEL
 
-    if user and not user.is_anonymous:
-        profile = getattr(user, 'profile', None)
-        if profile:
-            base_url = (profile.ai_base_url or base_url).rstrip('/') or base_url
-            api_key = profile.ai_api_key or api_key
-            model = profile.ai_model or model
+    if device:
+        base_url = (device.ai_base_url or base_url).rstrip('/') or base_url
+        api_key = device.ai_api_key or api_key
+        model = device.ai_model or model
 
     return AIConfig(base_url=base_url.rstrip('/'), api_key=api_key, model=model)
 

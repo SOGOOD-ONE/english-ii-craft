@@ -1,9 +1,10 @@
 from drf_spectacular.utils import extend_schema
 from rest_framework import viewsets, status
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 
 from ai_provider.services import review_essay, AIConfig, resolve_config
+from accounts.models import Device
 from writing.models import EssayReview
 from writing.serializers import ReviewRequestSerializer, ReviewResponseSerializer
 
@@ -14,11 +15,14 @@ class ReviewViewSet(viewsets.GenericViewSet):
     - GET  /reviews  → 我的批改历史(可按 year 过滤,分页)
     - GET  /reviews/{id}
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     serializer_class = ReviewResponseSerializer
 
     def get_queryset(self):
-        qs = EssayReview.objects.filter(user=self.request.user).order_by('-created_at')
+        device: Device | None = getattr(self.request, 'device', None)
+        if not device:
+            return EssayReview.objects.none()
+        qs = EssayReview.objects.filter(device=device).order_by('-created_at')
         y = self.request.query_params.get('year')
         if y and str(y).isdigit():
             qs = qs.filter(year=int(y))
@@ -26,14 +30,17 @@ class ReviewViewSet(viewsets.GenericViewSet):
 
     @extend_schema(request=ReviewRequestSerializer, responses=ReviewResponseSerializer)
     def create(self, request, *args, **kwargs):
+        device: Device | None = getattr(request, 'device', None)
+        if not device:
+            return Response({'detail': '缺少 X-Device-Id 请求头'}, status=status.HTTP_400_BAD_REQUEST)
         s = ReviewRequestSerializer(data=request.data)
         s.is_valid(raise_exception=True)
         year = s.validated_data['year']
         essay = s.validated_data['essay']
         chart_info = s.validated_data.get('chart_info') or ''
-        result = review_essay(request.user, chart_info, essay)
+        result = review_essay(device, chart_info, essay)
         rec = EssayReview.objects.create(
-            user=request.user,
+            device=device,
             year=year,
             chart_info=chart_info,
             user_essay=essay,
@@ -68,19 +75,14 @@ class ReviewConfigView(viewsets.GenericViewSet):
       公开接口,前端用来判断是否可以用 AI(有全局 Key 或用户自己配了 Key)
       返回 {available:bool, effective_model, using_user_key:bool}
     """
-    authentication_classes = []
     permission_classes = [AllowAny]
 
     def list(self, request, *args, **kwargs):
-        user = request.user if request.user and request.user.is_authenticated else None
-        cfg: AIConfig = resolve_config(user)
-        using_user = False
-        if user and getattr(user, 'profile', None):
-            if user.profile.ai_api_key:
-                using_user = True
+        device: Device | None = getattr(request, 'device', None)
+        cfg: AIConfig = resolve_config(device)
         return Response({
             'available': bool(cfg.api_key),
             'effective_base': cfg.base_url,
             'effective_model': cfg.model,
-            'using_user_key': using_user,
+            'using_user_key': bool(device and device.ai_api_key),
         })

@@ -8,7 +8,6 @@
 //  - 加生词 → POST /api/v1/vocab/cards (未登录弹窗提示)
 // ============================================================
 import { useEffect, useRef, useState, useCallback } from 'react';
-import { useAuthStore } from '@/store/auth';
 import api from '@/api';
 
 interface WordSense { pos?: string; definition?: string; [k: string]: any; }
@@ -108,7 +107,6 @@ function speakWord(word: string) {
 }
 
 export default function WordHoverTip() {
-  const isAuthed = useAuthStore(s => s.isAuthenticated());
   const [state, setState] = useState<TipState>(INIT);
   const stateRef = useRef(state); stateRef.current = state;
   const enterTimer = useRef<number | null>(null);
@@ -240,7 +238,6 @@ export default function WordHoverTip() {
 
   const onSave = async () => {
     if (!state.word) return;
-    if (!isAuthed) { alert('请先登录'); return; }
     setState(s => ({ ...s, saving: true, saved: false }));
     try {
       const d = state.def || (await api.vocab.lookupWord(state.word, state.context || ''));

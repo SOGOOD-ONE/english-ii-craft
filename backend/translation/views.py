@@ -3,13 +3,13 @@ from pathlib import Path
 
 from django.conf import settings
 from rest_framework import viewsets, status
-from rest_framework.decorators import action
-from rest_framework.permissions import IsAuthenticated, AllowAny
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from diff_match_patch import diff_match_patch
 
+from accounts.models import Device
 from translation.models import TranslationAttempt
 from translation.serializers import AttemptRequestSerializer, AttemptSerializer
 
@@ -26,7 +26,6 @@ def _load_translation_json(year: int) -> dict | None:
 
 class ContentTranslationView(APIView):
     """GET /translation/content/{year} 直接返回真题目录下 JSON(公开,未登录也能看题目)"""
-    authentication_classes = []
     permission_classes = [AllowAny]
 
     def get(self, request, year: int):
@@ -37,11 +36,14 @@ class ContentTranslationView(APIView):
 
 
 class AttemptViewSet(viewsets.GenericViewSet):
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
     serializer_class = AttemptSerializer
 
     def get_queryset(self):
-        qs = TranslationAttempt.objects.filter(user=self.request.user).order_by('-created_at')
+        device: Device | None = getattr(self.request, 'device', None)
+        if not device:
+            return TranslationAttempt.objects.none()
+        qs = TranslationAttempt.objects.filter(device=device).order_by('-created_at')
         y = self.request.query_params.get('year')
         if y and str(y).isdigit():
             qs = qs.filter(year=int(y))
@@ -51,11 +53,13 @@ class AttemptViewSet(viewsets.GenericViewSet):
         return qs
 
     def create(self, request, *args, **kwargs):
+        device: Device | None = getattr(request, 'device', None)
+        if not device:
+            return Response({'detail': '缺少 X-Device-Id 请求头'}, status=status.HTTP_400_BAD_REQUEST)
         s = AttemptRequestSerializer(data=request.data)
         s.is_valid(raise_exception=True)
         d = s.validated_data
         year = d['year']
-        # 如果后端有参考译文,就直接算 diff;没有只存原文,ref_zh 留空(前端可本地贴)
         ref_zh = ''
         slice_text_for_ref = ''
         j = _load_translation_json(year)
@@ -66,9 +70,8 @@ class AttemptViewSet(viewsets.GenericViewSet):
                     slice_text_for_ref = sl.get('text') or ''
                     break
             if not ref_zh and j.get('refZh'):
-                ref_zh = j['refZh']  # 整段兜底
+                ref_zh = j['refZh']
         source = d['source_text'] or slice_text_for_ref
-        # Diff (diff-match-patch 直接返回 [(op, text)] 数组,前端直接渲染)
         dmp = diff_match_patch()
         diffs = dmp.diff_main(ref_zh, d['user_translation']) if ref_zh else []
         diff_report = {
@@ -76,7 +79,7 @@ class AttemptViewSet(viewsets.GenericViewSet):
             'has_refZh': bool(ref_zh),
         }
         obj = TranslationAttempt.objects.create(
-            user=request.user,
+            device=device,
             year=year, slice_id=d['slice_id'],
             source_text=source,
             user_translation=d['user_translation'],

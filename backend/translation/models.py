@@ -1,10 +1,10 @@
 from django.db import models
-from django.conf import settings
+from accounts.models import Device
 
 
 class TranslationAttempt(models.Model):
-    """段落翻译:用户一次逐句翻译的提交记录 + Diff结果 + 可选AI润色"""
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='trans_attempts')
+    """段落翻译:设备逐句翻译的提交记录 + Diff结果 + 可选AI润色"""
+    device = models.ForeignKey(Device, on_delete=models.CASCADE, related_name='trans_attempts', null=True, blank=True)
     year = models.SmallIntegerField(db_index=True)
     slice_id = models.CharField(max_length=16, help_text='如 s1/s2/s10, 对应 content/translation/<year>.json 的 slice.id')
     source_text = models.TextField(blank=True, default='', help_text='冗余存一份原文,前端直接拿了做 Diff 展示')
@@ -23,4 +23,4 @@ class TranslationAttempt(models.Model):
         ordering = ('-created_at',)
 
     def __str__(self):
-        return f'TransAttempt<{self.user.username}/{self.year}-{self.slice_id}>'
+        return f'TransAttempt<{self.device.device_id if self.device else "None"}/{self.year}-{self.slice_id}>'

@@ -66,7 +66,9 @@ def new_default_card_fields() -> dict[str, Any]:
     }
 
 
-def schedule_card(card: VocabCard, rating: RatingType, now: datetime | None = None) -> dict[str, Any]:
+def schedule_card(card: VocabCard, rating: RatingType,
+                  device: Any | None = None,
+                  now: datetime | None = None) -> dict[str, Any]:
     now_dt = (now or datetime.now(timezone.utc))
     if now_dt.tzinfo is None:
         now_dt = now_dt.replace(tzinfo=timezone.utc)
@@ -81,10 +83,9 @@ def schedule_card(card: VocabCard, rating: RatingType, now: datetime | None = No
 
     # 业务掌握规则(连续 Good/Easy N 次 算掌握)
     mastery_threshold = 2
-    user = getattr(card, 'user', None)
-    if user and hasattr(user, 'profile'):
+    if device:
         try:
-            mastery_threshold = int(user.profile.mastery_required or 2)  # type: ignore[union-attr]
+            mastery_threshold = int(device.mastery_required or 2)
         except Exception:
             pass
     is_recognized = rating in ('Good', 'Easy')

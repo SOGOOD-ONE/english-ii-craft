@@ -1,20 +1,37 @@
-import { useState } from 'react';
-import { useMutation, useQueryClient } from '@tanstack/react-query';
+import { useEffect, useState } from 'react';
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import api from '@/api';
-import { useAuthStore } from '@/store/auth';
+import { getDeviceId } from '@/store/device';
 
 export default function SettingsPage() {
   const qc = useQueryClient();
-  const { user, profile, setMe, logout } = useAuthStore();
-  const [mode, setMode] = useState<'default' | 'custom'>(profile?.has_custom_key ? 'custom' : 'default');
+
+  const { data: cfg, isLoading } = useQuery({
+    queryKey: ['device-me'],
+    queryFn: () => api.device.getMe(),
+  });
+
+  const [mode, setMode] = useState<'default' | 'custom'>('default');
   const [form, setForm] = useState({
-    ai_base_url: profile?.has_custom_key ? profile.ai_base_url : '',
+    ai_base_url: '',
     ai_api_key: '',
-    ai_model: profile?.has_custom_key ? profile.ai_model : '',
-    mastery_required: profile?.mastery_required ?? 2,
-    daily_new_limit: profile?.daily_new_limit ?? 20,
+    ai_model: '',
+    mastery_required: 2,
+    daily_new_limit: 20,
   });
   const [msg, setMsg] = useState<{ type: 'ok' | 'err'; text: string } | null>(null);
+
+  useEffect(() => {
+    if (!cfg) return;
+    setMode(cfg.ai_base_url ? 'custom' : 'default');
+    setForm({
+      ai_base_url: cfg.ai_base_url || '',
+      ai_api_key: '',
+      ai_model: cfg.ai_model || '',
+      mastery_required: cfg.mastery_required ?? 2,
+      daily_new_limit: cfg.daily_new_limit ?? 20,
+    });
+  }, [cfg]);
 
   const mut = useMutation({
     mutationFn: async () => {
@@ -31,30 +48,42 @@ export default function SettingsPage() {
         payload.ai_api_key = '';
         payload.ai_model = '';
       }
-      const resp = await api.auth.patchMe(payload);
-      setMe({ user: resp.user, profile: resp.profile });
+      await api.device.patchMe(payload);
       setMsg({ type: 'ok', text: '✅ 设置已保存' });
+      qc.invalidateQueries({ queryKey: ['device-me'] });
     },
     onError: (e: any) => setMsg({ type: 'err', text: e?.response?.data?.detail || e?.message || '保存失败' }),
   });
 
+  const deviceId = getDeviceId();
+
+  const handleCopy = () => {
+    if (deviceId) {
+      navigator.clipboard.writeText(deviceId).then(() => {
+        setMsg({ type: 'ok', text: '✅ 设备 ID 已复制到剪贴板' });
+      }).catch(() => {
+        setMsg({ type: 'err', text: '复制失败，请手动选择复制' });
+      });
+    }
+  };
+
+  if (isLoading) return <div className="text-zinc-500 text-xs p-4">加载中...</div>;
+
   return (
     <div className="max-w-3xl mx-auto space-y-4">
       <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className="font-semibold text-zinc-800">系统设置</span>
-          <span className="text-zinc-400 text-[11px]">当前账号: {user?.username || '未登录'} ({user?.email || '-'})</span>
-        </div>
-        {user && (
-          <button onClick={() => logout()} className="px-2.5 py-1 rounded border border-zinc-200 text-zinc-600 hover:bg-zinc-100 text-xs">退出登录</button>
-        )}
+        <span className="font-semibold text-zinc-800">系统设置</span>
       </div>
 
-      {!user && (
-        <div className="p-3 rounded border border-zinc-200 bg-white text-zinc-500 text-xs">
-          未登录，部分功能受限。
+      {/* 设备 ID 显示/迁移 */}
+      <div className="p-3 rounded border border-zinc-200 bg-white">
+        <div className="font-semibold text-xs mb-2">设备身份 (多设备迁移用)</div>
+        <div className="flex items-center gap-2">
+          <code className="flex-1 truncate bg-zinc-50 border border-zinc-200 rounded px-2 py-1 text-[11px] font-mono">{deviceId}</code>
+          <button onClick={handleCopy} className="px-2.5 py-1 rounded border border-zinc-200 text-zinc-600 hover:bg-zinc-100 text-[11px] whitespace-nowrap">复制 ID</button>
         </div>
-      )}
+        <div className="text-[11px] text-zinc-500 mt-1">复制此 ID 到新设备的设置页，即可恢复生词本数据。</div>
+      </div>
 
       <div className="p-3 rounded border border-zinc-200 bg-white space-y-4">
         <div>
@@ -71,13 +100,13 @@ export default function SettingsPage() {
               <div className="text-zinc-500 mt-1">支持智谱 / DeepSeek / Moonshot 等。</div>
             </button>
           </div>
-          {profile && (
+          {cfg && (
             <div className="mt-2 text-[11px] text-zinc-500 p-2 rounded bg-zinc-50 border border-zinc-200">
-              <div>当前生效: <b>{profile.has_custom_key ? '你自己的 Key' : '系统默认 Key'}</b>
-                {profile.has_custom_key && profile.ai_api_key_masked && <span className="ml-1 text-zinc-600">{profile.ai_api_key_masked}</span>}
+              <div>当前生效: <b>{cfg.ai_base_url ? '你自己的 Key' : '系统默认 Key'}</b>
+                {(cfg as any).ai_api_key_masked && <span className="ml-1 text-zinc-600">{(cfg as any).ai_api_key_masked}</span>}
               </div>
-              {profile.ai_base_url && <div>Base: {profile.ai_base_url}</div>}
-              {profile.ai_model && <div>Model: {profile.ai_model}</div>}
+              {cfg.ai_base_url && <div>Base: {cfg.ai_base_url}</div>}
+              {cfg.ai_model && <div>Model: {cfg.ai_model}</div>}
             </div>
           )}
         </div>

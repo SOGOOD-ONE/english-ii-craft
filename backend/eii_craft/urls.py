@@ -21,7 +21,7 @@ urlpatterns = [
     path('api/schema/docs/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
     # 业务 v1
-    path('api/v1/auth/', include('accounts.urls')),
+    path('api/v1/device/', include('accounts.urls')),
     path('api/v1/vocab/', include('vocab.urls')),
     path('api/v1/writing/', include('writing.urls')),
     path('api/v1/translation/', include('translation.urls')),

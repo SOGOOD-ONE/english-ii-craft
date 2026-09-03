@@ -1,11 +1,11 @@
 from django.db import models
-from django.conf import settings
+from accounts.models import Device
 
 
 class EssayReview(models.Model):
     """图表大作文 AI 批改记录(完整 ReviewResponse 入库, 便于错题本/重看)"""
 
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='essay_reviews')
+    device = models.ForeignKey(Device, on_delete=models.CASCADE, related_name='essay_reviews', null=True, blank=True)
     year = models.SmallIntegerField(db_index=True, help_text='真题年份')
     chart_info = models.TextField(blank=True, default='', help_text='传给 AI 的当前图表核心数据背景')
     user_essay = models.TextField(help_text='考生提交作文原文')
@@ -35,4 +35,4 @@ class EssayReview(models.Model):
         ordering = ('-created_at',)
 
     def __str__(self):
-        return f'EssayReview<{self.user.username}/{self.year} {self.total_score}/15>'
+        return f'EssayReview<{self.device.device_id if self.device else "None"}/{self.year} {self.total_score}/15>'
