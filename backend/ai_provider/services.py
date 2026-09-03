@@ -69,12 +69,16 @@ def resolve_config(device=None) -> AIConfig:
     api_key = dj_settings.GLOBAL_AI_API_KEY
     model = dj_settings.GLOBAL_AI_MODEL
 
-    if device:
-        base_url = (device.ai_base_url or base_url).rstrip('/') or base_url
-        api_key = device.ai_api_key or api_key
-        model = device.ai_model or model
+    if device is not None:
+        if hasattr(device, 'ai_base_url') and device.ai_base_url:
+            base_url = device.ai_base_url
+        if hasattr(device, 'ai_api_key') and device.ai_api_key:
+            api_key = device.ai_api_key
+        if hasattr(device, 'ai_model') and device.ai_model:
+            model = device.ai_model
 
-    return AIConfig(base_url=base_url.rstrip('/'), api_key=api_key, model=model)
+    base_url = base_url.rstrip('/') or base_url
+    return AIConfig(base_url=base_url, api_key=api_key, model=model)
 
 
 # ------------------------ 内部 HTTP 调用 ------------------------

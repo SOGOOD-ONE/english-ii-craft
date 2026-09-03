@@ -3,7 +3,6 @@ import { useQuery } from '@tanstack/react-query';
 import * as echarts from 'echarts';
 import YearPicker from '@/components/common/YearPicker';
 import api from '@/api';
-import { useAuthStore } from '@/store/auth';
 import type { WritingData } from '@/types';
 
 const MODULE = 'writing' as const;
@@ -13,7 +12,6 @@ export default function WritingPage() {
   const [essay, setEssay] = useState('');
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<any>(null);
-  const [aiCfg, setAiCfg] = useState<{ available: boolean; effective_model: string } | null>(null);
 
   const { data: years } = useQuery({
     queryKey: ['exam-years', MODULE],
@@ -29,15 +27,6 @@ export default function WritingPage() {
       }
     },
   });
-
-  const isAuthed = useAuthStore(s => s.isAuthenticated());
-  useEffect(() => {
-    if (isAuthed) {
-      api.writing.aiConfig().then(setAiCfg).catch(() => void 0);
-    } else {
-      setAiCfg({ available: false, effective_model: '未登录，请登录后使用AI' });
-    }
-  }, [isAuthed]);
 
   const chartInfo = useMemo(() => {
     if (!paper) return '';
@@ -65,7 +54,11 @@ export default function WritingPage() {
     }
     const handleResize = () => chartInstance.current?.resize();
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      chartInstance.current?.dispose();
+      chartInstance.current = null;
+    };
   }, [paper]);
 
   async function onReview() {

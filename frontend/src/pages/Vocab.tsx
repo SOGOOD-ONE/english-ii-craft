@@ -135,9 +135,15 @@ export default function VocabPage() {
                   disabled={reviewMut.isPending}
                   className="p-2 border border-zinc-200 hover:bg-zinc-100 rounded text-center text-xs disabled:opacity-50">
                   <div className="font-bold">{rating}</div>
-                  <div className="text-zinc-400 text-[10px]">{current[`next_${rating.toLowerCase()}` as keyof typeof current] || '—'}</div>
+                  <div className="text-zinc-400 text-[10px]">复习</div>
                 </button>
               ))}
+            </div>
+            <div className="flex justify-center mt-2">
+              <button onClick={() => { if (confirm('确认删除此卡片？')) deleteMut.mutate(current.id); }}
+                className="text-[10px] text-zinc-400 hover:text-red-500 underline">
+                删除此卡片
+              </button>
             </div>
           </div>
         ) : (
