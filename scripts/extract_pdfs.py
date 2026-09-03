@@ -1,11 +1,10 @@
 # ============================================================
 # 提取 kaoyanzhenti 仓库中所有英语二 PDF 原文
 # 目标:
-#  1. 英译汉整段   → content/translation/<year>.json 的 segments[].en
-#  2. 新题型题目  → content/part-b/<year>.json 的 paragraphs/options
-#  3. 大作文(Part B)图表题干 + 小作文 → content/writing/<year>.json
+#  1. 英译汉整段   → content/translation/<year>.json
+#  2. 大作文(Part B)图表题干 → content/writing/<year>.json
 #
-# 参考译文、图表数值、答案解析、考点/陷阱、干扰项分析
+# 参考译文、图表数值、答案解析、考点/陷阱
 # 这些 PDF 只含题干不含答案,无法从 PDF 提取。
 # 脚本在生成 JSON 时把这些字段留为 [] 或占位,后续人工或联网补充。
 # ============================================================
@@ -27,11 +26,6 @@ MARKERS = {
     # 宽松匹配:从 "Translat" 关键词取到 Section IV 写作之前
     "translation": re.compile(
         r"Translat(?:e|ion)[\s\S]{0,500}?\n\s*46\s*[.\s]+(.*?)(?=Section\s*IV|Writing|$)",
-        re.S | re.I,
-    ),
-    # 新题型 Part B:在 Part A 阅读之后, Translation 段落翻译之前
-    "partb": re.compile(
-        r"Part\s*B[\s\S]{0,300}?(Directions:[\s\S]*?)(?=Part\s*C|Section\s*III|Translation|翻译|46\s*[.．])",
         re.S | re.I,
     ),
     # 作文: Section IV Writing 到文件末尾整段
@@ -108,23 +102,6 @@ def process_translation(year: int, text: str) -> dict | None:
     }
 
 
-def process_partb(year: int, text: str) -> dict | None:
-    # Part B 结构: 先 Directions,再是 5 个段落/41-45 空,再是选项
-    m = MARKERS["partb"].search(text)
-    if not m:
-        return None
-    chunk = clean(m.group(1))
-    return {
-        "year": year,
-        "type": "",          # 未知,需要后续手工填 "subheading" 或 "matching"
-        "title": f"{year}年新题型(题型待标注)",
-        "raw": chunk,         # 先原样存,待后续解析成 paragraphs/options
-        "paragraphs": [],
-        "options": [],
-        "synonymMappings": [],
-    }
-
-
 def process_writing(year: int, text: str) -> dict | None:
     m = MARKERS["writing"].search(text)
     if not m:
@@ -166,7 +143,7 @@ def main():
     )
     print(f"发现 {len(files)} 份 PDF")
 
-    counts = {"translation": 0, "part-b": 0, "writing": 0}
+    counts = {"translation": 0, "writing": 0}
     for f in files:
         year = extract_year(f.name)
         if year < 2010:
@@ -183,15 +160,6 @@ def main():
             counts["translation"] += 1
             print(f"  翻译 ✓  {len(tr['segments'])} 句")
 
-        pb = process_partb(year, text)
-        if pb:
-            out = CONTENT / "part-b" / f"{year}.json"
-            out.parent.mkdir(parents=True, exist_ok=True)
-            with open(out, "w", encoding="utf-8") as fh:
-                json.dump(pb, fh, ensure_ascii=False, indent=2)
-            counts["part-b"] += 1
-            print(f"  新题型 ✓  (raw 已保存,待后续解析 paragraphs/options)")
-
         wr = process_writing(year, text)
         if wr:
             out = CONTENT / "writing" / f"{year}.json"
@@ -201,7 +169,7 @@ def main():
             counts["writing"] += 1
             print(f"  写作 ✓  prompt 已保存")
 
-    print(f"\n合计提取: 翻译 {counts['translation']} / 新题型 {counts['part-b']} / 写作 {counts['writing']}")
+    print(f"\n合计提取: 翻译 {counts['translation']} / 写作 {counts['writing']}")
 
 
 if __name__ == "__main__":

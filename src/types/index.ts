@@ -99,41 +99,6 @@ export interface TranslationData {
   segments?: TranslationSegment[];
 }
 
-// ---------- 真题数据:新题型 ----------
-export interface PartBParagraph {
-  id: string;
-  text: string;
-  correctOptionId: string;
-  // 原文中需高亮的同义替换片段
-  highlight?: { id: string; text: string };
-}
-
-export interface PartBOption {
-  id: string;
-  text: string;
-  isDistractor?: boolean;
-  distractorReason?: string; // 干扰项设错机制
-}
-
-export interface SynonymMapping {
-  optionId: string;
-  optionKeyword: string;
-  textHighlightId: string;
-  explanation: string;
-}
-
-export interface PartBData {
-  year: number;
-  /** 题型:subheading=小标题对应, matching=多项匹配,空串=未解析/待人工整理 */
-  type: 'subheading' | 'matching' | '';
-  title: string;
-  /** 未结构化的原题面原文(从 PDF 提取的 raw text),用于"待解析"降级视图 */
-  raw?: string;
-  paragraphs: PartBParagraph[];
-  options: PartBOption[];
-  synonymMappings: SynonymMapping[];
-}
-
 // ---------- AI 批改报告 ----------
 // 旧 schema(兼容旧字段):
 export interface AiReviewReport {

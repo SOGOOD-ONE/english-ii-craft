@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { PenLine, Languages, Radar, Layers, MousePointerClick } from 'lucide-react';
+import { PenLine, Languages, Layers, MousePointerClick } from 'lucide-react';
 
 const MODULES = [
   {
@@ -7,7 +7,7 @@ const MODULES = [
     icon: PenLine,
     title: '图表大作文实验室',
     score: '15分',
-    desc: '动态图表渲染 + 语料积木点击插入 + AI 四维度智能阅卷。',
+    desc: '动态图表渲染 + 语料积木点击插入 + 智谱 glm-4-flash 四维度智能阅卷。',
   },
   {
     href: '/translation',
@@ -17,18 +17,11 @@ const MODULES = [
     desc: '句子切片训练 + jsdiff 字符级红绿高亮 + 考点陷阱透视。',
   },
   {
-    href: '/part-b',
-    icon: Radar,
-    title: '新题型逻辑雷达',
-    score: '10分',
-    desc: '同义替换联动高亮 + 干扰项排除靶场,直击命题逻辑。',
-  },
-  {
     href: '/vocab',
     icon: Layers,
     title: 'FSRS 语境生词本',
     score: '闭环',
-    desc: '全局划词抓取真题原句 + 间隔重复卡片流,形成记忆闭环。',
+    desc: '全局 hover 查词 + 划词抓取真题原句 + FSRS 间隔重复卡片流,形成记忆闭环。',
   },
 ];
 
@@ -43,21 +36,23 @@ export default function Home() {
               考研英语二 · 攻坚工坊
             </h1>
             <p className="text-zinc-500 mt-1">
-              差异化攻克主观题与逻辑题(总分 40 分),零后端架构,本地数据优先。
+              专攻主观题(作文 + 翻译,总分 30 分)+ 记忆闭环,零后端架构,本地数据优先。
             </p>
           </div>
           <div className="bg-zinc-900 text-white px-3 py-1.5 rounded font-mono text-[11px]">
-            MVP 数据源: 2023 真题
+            数据源: 2010–2026 真题
           </div>
         </div>
         <div className="mt-3 flex items-center gap-2 text-zinc-500 text-[11px] bg-zinc-50 border border-zinc-200 rounded px-3 py-2">
           <MousePointerClick size={13} />
-          <span>提示:在任意模块的英文文本上选中单词,系统自动抓取该词所在的真题原句并存入生词本。</span>
+          <span>
+            任意英文文本 hover 自动查释义(智谱 glm-4-flash,本地 Dexie 缓存),选中单词可抓取进生词本。
+          </span>
         </div>
       </section>
 
       {/* 模块导航 */}
-      <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {MODULES.map((m) => {
           const Icon = m.icon;
           return (
@@ -83,11 +78,10 @@ export default function Home() {
         })}
       </section>
 
-      <section className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <section className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {[
           { k: '图表写作', v: '15' },
           { k: '段落翻译', v: '15' },
-          { k: '新题型', v: '10' },
         ].map((s) => (
           <div key={s.k} className="bg-white border border-zinc-200 rounded p-4">
             <div className="text-2xl font-bold font-mono">{v(s.v)}</div>

@@ -6,7 +6,7 @@ import WordHoverTip from '@/components/common/WordHoverTip';
 
 export const metadata: Metadata = {
   title: 'English-II-Craft 考研英语二攻坚工坊',
-  description: '专攻考研英语二主观题与逻辑题:图表写作、段落翻译、新题型雷达、FSRS 语境生词本。零后端,本地数据优先。',
+  description: '专攻考研英语二主观题:图表写作智能阅卷、段落翻译 Diff 精修、FSRS 语境生词本。零后端,本地数据优先。',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

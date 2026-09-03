@@ -9,7 +9,6 @@ import { cn } from '@/lib/utils';
 const NAV = [
   { href: '/writing', label: '图表写作' },
   { href: '/translation', label: '段落翻译' },
-  { href: '/part-b', label: '新题型雷达' },
   { href: '/vocab', label: 'FSRS复习' },
 ];
 
@@ -59,7 +58,7 @@ export default function Navbar() {
           设置
         </Link>
         <div className="text-zinc-400 font-mono text-[11px] hidden sm:block">
-          真题范围: 2023年 (MVP) | 划词抓取已激活
+          真题: 2010–2026 | hover 查词 + 划词抓取 已激活
         </div>
       </div>
     </header>
