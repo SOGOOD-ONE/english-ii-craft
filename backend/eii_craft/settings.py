@@ -146,6 +146,7 @@ CSRF_TRUSTED_ORIGINS = _env_list(
 EXAM_CONTENT_ROOT = PROJECT_ROOT / 'content'
 
 # ------- 全局 AI Provider 配置(用户未设置时的兜底) -------
+# 从 .env 读取, 如果 .env 里没配, 就从环境变量取, 再没有就用下方默认值
 GLOBAL_AI_BASE_URL = os.environ.get('GLOBAL_AI_BASE_URL', 'https://open.bigmodel.cn/api/paas/v4').rstrip('/')
 GLOBAL_AI_API_KEY = os.environ.get('GLOBAL_AI_API_KEY', '')
 GLOBAL_AI_MODEL = os.environ.get('GLOBAL_AI_MODEL', 'glm-4-flash')

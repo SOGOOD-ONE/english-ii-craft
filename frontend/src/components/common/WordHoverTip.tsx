@@ -111,7 +111,6 @@ export default function WordHoverTip() {
   const stateRef = useRef(state); stateRef.current = state;
   const enterTimer = useRef<number | null>(null);
   const leaveTimer = useRef<number | null>(null);
-  const abortRef = useRef<number | null>(null);
   const currentWordRef = useRef<string>('');
   const rootRef = useRef<HTMLDivElement>(null);
   const [enabled, setEnabled] = useState(true);
@@ -136,24 +135,27 @@ export default function WordHoverTip() {
     return () => { mo.disconnect(); };
   }, [enabled]);
 
-  // 查词
+  // 查词: 用 AbortController 彻底解决竞态
+  const abortCtrlRef = useRef<AbortController | null>(null);
   const fetchWord = useCallback(async (word: string, context: string | undefined, wordKey: string, cx: number, cy: number) => {
     currentWordRef.current = wordKey;
     const show = (patch: Partial<TipState>) => setState(s => ({ ...s, visible: true, x: cx, y: cy, word, context, loading: false, ...patch }));
     show({ loading: true });
-    if (abortRef.current) window.clearTimeout(abortRef.current);
-    const id = Date.now(); abortRef.current = id;
+    // 取消上一个请求
+    if (abortCtrlRef.current) abortCtrlRef.current.abort();
+    const ctrl = new AbortController();
+    abortCtrlRef.current = ctrl;
     try {
       const r = await api.vocab.lookupWord(word, context || '');
-      if (abortRef.current !== id || currentWordRef.current !== wordKey) return;
+      if (ctrl.signal.aborted || currentWordRef.current !== wordKey) return;
       const def: CachedDef = {
         id: r.id, word: r.lemma, lemma: r.lemma, phonetic: r.phonetic || '',
-        senses: (r.senses || []).map((s: any) => ({ pos: s.pos, definition: s.definition ?? (typeof s === 'string' ? s : JSON.stringify(s)) })),
+        senses: (r.senses || []).slice(0, 2).map((s: any) => ({ pos: s.pos, definition: s.definition ?? (typeof s === 'string' ? s : JSON.stringify(s)) })),
         collocations: r.collocations || [], from_cache: !!r.from_cache,
       };
       show({ loading: false, def });
     } catch (err: any) {
-      if (abortRef.current !== id || currentWordRef.current !== wordKey) return;
+      if (err.name === 'AbortError' || ctrl.signal.aborted || currentWordRef.current !== wordKey) return;
       show({ loading: false, err: err?.response?.data?.detail || err?.message || '查词失败' });
     }
   }, []);
@@ -173,9 +175,15 @@ export default function WordHoverTip() {
       if (leaveTimer.current) { window.clearTimeout(leaveTimer.current); leaveTimer.current = null; }
       const rect = span.getBoundingClientRect();
       const cx = rect.left + rect.width / 2, cy = rect.bottom + 6;
+      // 同一个词直接复用缓存的 def
       if (currentWordRef.current === wordKey && stateRef.current.def) {
         setState(s => ({ ...s, visible: true, x: cx, y: cy }));
         return;
+      }
+      // 新词: 立即隐藏旧弹窗,避免旧词定义闪烁
+      if (currentWordRef.current !== wordKey) {
+        setState(INIT);
+        if (abortCtrlRef.current) abortCtrlRef.current.abort();
       }
       enterTimer.current = window.setTimeout(() => {
         fetchWord(word, getContext(span), wordKey, cx, cy);
