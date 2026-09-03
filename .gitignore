@@ -1,22 +1,15 @@
-# ---- Node / Vite / legacy Next ----
+# ---- Node / Vite / Build ----
 node_modules/
-.next/
-out/
-frontend/dist/
+dist/
 *.log
 .DS_Store
 
-# ---- Django / Python ----
+# ---- Python / Cache ----
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-.Python
-backend/.env.local
-backend/db.sqlite3
-backend/db.sqlite3-journal
-backend/media/
-backend/staticfiles/
+db.sqlite3
 
 # ---- IDE ----
 .idea/
