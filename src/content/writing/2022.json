@@ -1,0 +1,118 @@
+{
+  "year": 2022,
+  "title": "2022年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n2022年 英 语 （ 二 ）试 题 第 14 页 共 14 页",
+  "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n2022年 英 语 （ 二 ）试 题 第 14 页 共 14 页",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "2018-2020年我国快递业务量变动情况",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "整体业务量",
+        "农村地区业务量"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 55,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "2018年",
+        "2019年",
+        "2020年"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "业务量（亿件）",
+      "min": 0,
+      "max": 1000
+    },
+    "series": [
+      {
+        "name": "整体业务量",
+        "type": "bar",
+        "data": [
+          507.1,
+          635.2,
+          833.6
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      },
+      {
+        "name": "农村地区业务量",
+        "type": "bar",
+        "data": [
+          120,
+          150,
+          300
+        ],
+        "itemStyle": {
+          "color": "#10B981"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "全国快递总体业务量由2018年的507.1亿件爆发式增长至2020年的833.6亿件",
+    "农村地区快递业务量由120亿件增至300亿件，增长1.5倍",
+    "电商下乡与物流基础设施建设极大释放了下沉市场消费潜力"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

@@ -1,0 +1,6 @@
+{
+  "name": "English-II-Craft 考研英语二攻坚工坊",
+  "description": "专为考研英语（二）考生打造的高效备考工坊，集成图表写作深度批改、段落翻译逐句精修、阅读理解精读与同义替换雷达、FSRS间隔记忆词库及划词查词。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

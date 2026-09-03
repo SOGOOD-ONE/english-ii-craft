@@ -20,6 +20,7 @@
       ],
       "questions": [
         {
+          "id": "2010-p1-q1",
           "no": 1,
           "stem": "In the first paragraph, Damien Hirst's sale was referred to as \"a last victory\" because ---",
           "options": [
@@ -41,13 +42,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2010-p1-q2",
           "no": 2,
           "stem": "By saying \"spending of any sort became deeply unfashionable\" (Line 1-2, Para. 3), the author suggests that __ _",
           "options": [
@@ -69,13 +68,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2010-p1-q3",
           "no": 3,
           "stem": "Which of the following statements is NOT true?",
           "options": [
@@ -97,13 +94,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2010-p1-q4",
           "no": 4,
           "stem": "The three Ds mentioned in the last paragraph are ___",
           "options": [
@@ -125,13 +120,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2010-p1-q5",
           "no": 5,
           "stem": "The most appropriate title for this text could be __ _",
           "options": [
@@ -153,13 +146,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 398
     },
     {
       "id": "p2",
@@ -175,6 +166,7 @@
       ],
       "questions": [
         {
+          "id": "2010-p2-q1",
           "no": 1,
           "stem": "What is most wives' main expectation of their husbands?",
           "options": [
@@ -196,13 +188,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2010-p2-q2",
           "no": 2,
           "stem": "Judging from the context, the phrase \"wreaking havoc\" (Line 3, Para. 2) most probably means __ _",
           "options": [
@@ -224,13 +214,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "词义/句义猜测题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2010-p2-q3",
           "no": 3,
           "stem": "All of the following are true EXCEPT __ _",
           "options": [
@@ -252,13 +240,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2010-p2-q4",
           "no": 4,
           "stem": "Which of the following can best summarize the main idea of this text?",
           "options": [
@@ -280,13 +266,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "主旨大意题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2010-p2-q5",
           "no": 5,
           "stem": "In the following part immediately after this text, the author will most probably focus on ___",
           "options": [
@@ -308,13 +292,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 380
     },
     {
       "id": "p3",
@@ -331,6 +313,7 @@
       ],
       "questions": [
         {
+          "id": "2010-p3-q1",
           "no": 1,
           "stem": "According to Dr. Curtis, habits like hand washing with soap ___",
           "options": [
@@ -352,13 +335,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2010-p3-q2",
           "no": 2,
           "stem": "Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to ---",
           "options": [
@@ -380,13 +361,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2010-p3-q3",
           "no": 3,
           "stem": "Which of the following does NOT belong to products that help create people's habits?",
           "options": [
@@ -408,13 +387,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2010-p3-q4",
           "no": 4,
           "stem": "From the text we know that some of consumers' habits are developed due to ___",
           "options": [
@@ -436,13 +413,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2010-p3-q5",
           "no": 5,
           "stem": "The author's attitude toward the influence of advertisement on people's habits is",
           "options": [
@@ -464,13 +439,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "态度观点题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 426
     },
     {
       "id": "p4",
@@ -483,22 +456,22 @@
         "In some states, for example, jury duty was limited to persons of supposedly superior intelligence, education, and moral character. Although the Supreme Court of the United States had prohibited intentional racial discrimination in jury selection as early as the 1880 case of Strauder v. West Virginia, the practice of selecting so-called elite or blue-ribbon juries provided a convenient way around this and other antidiscrimination laws. The system also failed to regularly include women on juries until the mid-20th century.",
         "Although women first served on state juries in Utah in 1898, it was not until the 1940s that a majority of states made women eligible for jury duty. Even then several states automatically exempted women from jury duty unless they personally asked to have their names included on the jury list. This practice was justified by the claim that women were needed at home, and it kept juries unrepresentative of women through the 1960s. In 1968, the Congress of the United States passed the Jury Selection and Service Act, ushering in a new era of democratic reforms for the jury.",
         "This law abolished special educational requirements for federal jurors and required them to be selected at random from a cross section of the entire community. In the landmark 1975 decision Taylor v. Louisiana, the Supreme Court extended the requirement that juries be representative of all parts of the community to the state level. The Taylor decision also declared sex discrimination in jury selection to be unconstitutional and ordered states to use the same procedures for selecting male and female jurors.",
-        "PartB Directions: Read the following text and decide whether each of the statements is true or false. Choose T if the statement is true or F if the statement is not true. Mark your answers on ANSWER SHEET 1. (10 points) Copying Birds May Save Aircraft Fuel Both Boeing and Airbus have trumpeted the efficiency of their newest aircraft, the 787 and A350 respectively. Their clever designs and lightweight composites certainly make a difference.",
         "But a group of researchers at Stanford University, led by Ilan Kroo, has suggested that airlines could take a more naturalistic approach to cutting jet-fuel use and it would not require them to buy new aircraft. The answer, says Dr. Kroo, lies with birds. Since 1914, scientists have known that birds flying in formation - a V-shape - expend less energy. The air flowing over a bird's wings curls upwards behind the wingtips, a phenomenon known as upwash. Other birds flying in the upwash experience reduced drag, and spend less energy propelling themselves.",
         "Peter Lissaman, an aeronautics expert who was formerly at Caltech and the University of Southern California, has suggested that a formation of 25 birds might enjoy a range increase of71 %. When applied to aircraft, the principles are not substantially different. Dr. Kroo and his team modeled what would happen if three passenger jets departing from Los Angeles, San Francisco and Las Vegas were to assemble over Utah, assume an inverted V-formation, occasionally change places so all could have a tum in the most favourable positions, and proceed to London. They found that the aircraft consumed as much as 15% less fuel (coupled with a reduction in carbon-dioxide output).",
         "Nitrogen-oxide emissions during the cruising portions of the flight fell by around a quarter. There are, of course, knots to be worked out. One consideration is safety, or at least the perception of it. Would passengers feel comfortable travelling in companion?",
         "Dr. Kroo points out that the aircraft could be separated by several nautical miles, and would not be in the intimate groupings favoured by display teams like the Red Arrows. A passenger peering out of the window might not even see the other planes. Whether the separation distances involved would satisfy air-traffic-control regulations is another matter, although a working group at the International Civil Aviation Organisation has included the possibility of formation flying in a blueprint for new operational guidelines.",
         "It remains to be seen how weather conditions affect the air flows that make formation flight more efficient. In zones of increased turbulence, the planes' wakes will decay more quickly and the effect will diminish. Dr. Kroo says this is one of the areas his team will investigate further. It might also be hard for airlines to co-ordinate the departure times and destinations of passenger aircraft in a way that would allow them to gain from formation flight.",
         "Cargo aircraft, in contrast, might be easier to reschedule, as might routine military flights. As it happens, America's armed forces are on the case already. Earlier this year the country's Defence Advanced Research Projects Agency announced plans to pay Boeing to investigate formation flight, though the programme has yet to begin. There are reports that some military aircraft flew in formation when they were low on fuel during the Second World War, but Dr.",
-        "Lissaman says they are unsubstantiated. \"My father was an RAF pilot and my cousin the skipper of a Lancaster lost over Berlin,\" he adds. So he should know. Boeing and Airbus aircraft. planes. tried formation flight to save fuel. Section III Translation In this section there is a text in English.",
+        "Lissaman says they are unsubstantiated. \"My father was an RAF pilot and my cousin the skipper of a Lancaster lost over Berlin,\" he adds. So he should know. Boeing and Airbus aircraft. planes. tried formation flight to save fuel.",
         "Translate it into Chinese. Write your translation on ANSWER SHEET 2. (15 points) \"Sustainabi lity\" has become a popular word these days, but to Ted Ning, the concept will always have personal meaning. Having endured a painful period of unsustainability in his own life made it clear to him that sustainability-oriented values must be expressed through everyday action and choice. Ning recalls spending a confusing year in the late 1990s selling insurance.",
         "He'd been through the dot-corn boom and burst and, desperate for a job, signed on with a Boulder agency. It didn't go well. \"It was a really bad move because that's not my passion,\" says Ning, whose dilemma about the job translated, predictably, into a lack of sales. \"I was miserable. I had so much anxiety that I would wake up in the middle of the night and stare at the ceiling. I had no money and needed the job.",
-        "Everyone said, 'Just wait, you'll turn the comer, give it some time.\"' Section IV Writing Part A You have just come back from the U.S. as a member of a Sino-American cultural exchange program. Write a letter to your American colleague to 1) express your thanks for his/her warm reception; 2) welcome him/her to visit China in due course. You should write about 100 words on ANSWER SHEET 2. Do not sign your own name at the end of the letter.",
-        "Use \"Zhang Wei\" instead. Do not write your address. (10 points)+ PartB In this section, you are asked to write an essay based on the following chart. In your writing, you should 1) interpret the chart and 2) give your comments. You should write at least 150 words.",
-        "Write your essay on ANSWER SHEET 2. (15 points) Mobile-phone subscriptions (2000-2008) subscription number -----------------.-- 4 billion CJ Developing countries Developed-countries 3 billion 2 billion I billion ...,..___.-P .............. ....l..f...._......,.L......l\"-fi'&--f-1-�p;il- ........ -o 2000 2001 2002 2003 2004 2005 2006 2007 2008 (year)"
+        "Everyone said, 'Just wait, you'll turn the comer, give it some time.\"'",
+        "Use \"Zhang Wei\" instead. Do not write your address. (10 points)+",
+        "Write your essay on ANSWER SHEET 2. (15 points) Mobile-phone subscriptions ( 2008) subscription number -----------------.-- 4 billion CJ Developing countries Developed-countries 3 billion 2 billion I billion ...,..___.-P .............. ....l..f...._......,.L......l\"-fi'&--f �p;il- ........ -o 2000 2001 2002 2003 2004 2005 2006 2007 2008 (year)"
       ],
       "questions": [
         {
+          "id": "2010-p4-q1",
           "no": 1,
           "stem": "From the principles of the US jury system, we learn that __ _",
           "options": [
@@ -520,13 +493,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2010-p4-q2",
           "no": 2,
           "stem": "The practice of selecting so-called elite jurors prior to 1968 showed __ _",
           "options": [
@@ -548,13 +519,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2010-p4-q3",
           "no": 3,
           "stem": "Even in the 1960s, women were seldom on the jury list in some states because",
           "options": [
@@ -576,13 +545,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2010-p4-q4",
           "no": 4,
           "stem": "After the Jury Selection and Service Act was passed,, __ _",
           "options": [
@@ -604,13 +571,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2010-p4-q5",
           "no": 5,
           "stem": "In discussing the US jury system, the text centers on __ _",
           "options": [
@@ -632,13 +597,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 1138
     }
   ]
 }

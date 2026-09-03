@@ -1,0 +1,109 @@
+{
+  "year": 2011,
+  "title": "2011年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart and\n2) give your comments.\nYou should write at least 150 words.\nWrite your essay on ANSWER SHEET 2. (15 points)\n40% \n35% \n30% \n25% \n20% \n15% \n10% \n5% \n0% \n2008年\n口国产品牌\n2009年\n• 日系品牌 口美系品牌\n2008、 2009年国内轿车市场部分品牌市场份额示意图\n- 14 -",
+  "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart and\n2) give your comments.\nYou should write at least 150 words.\nWrite your essay on ANSWER SHEET 2. (15 points)\n40% \n35% \n30% \n25% \n20% \n15% \n10% \n5% \n0% \n2008年\n口国产品牌\n2009年\n• 日系品牌 口美系品牌\n2008、 2009年国内轿车市场部分品牌市场份额示意图\n- 14 -",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "2008、2009年国内轿车市场部分品牌市场份额示意图",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "2008年",
+        "2009年"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "国产品牌",
+        "日系品牌",
+        "美系品牌"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "市场份额 (%)",
+      "min": 0,
+      "max": 40
+    },
+    "series": [
+      {
+        "name": "2008年",
+        "type": "bar",
+        "data": [
+          25,
+          35,
+          15
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        }
+      },
+      {
+        "name": "2009年",
+        "type": "bar",
+        "data": [
+          32,
+          25,
+          14
+        ],
+        "itemStyle": {
+          "color": "#F59E0B"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "国产品牌市场份额由2008年的25%跃升至2009年的32%，增幅显著",
+    "日系品牌市场份额由35%大幅滑落至25%，降幅明显",
+    "美系品牌份额基本保持稳定，从15%微降至14%"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

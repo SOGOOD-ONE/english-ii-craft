@@ -1,0 +1,127 @@
+{
+  "year": 2017,
+  "title": "2017年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n100\n20 13 年 20 1 4年 20 15 年\nI+博物馆数 益（ 家） 一量 参观人数 （十 万人 次 ）\n20 13 -2015年 我国博物馆 数散和参观人数\n- 14 -",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n100\n20 13 年 20 1 4年 20 15 年\nI+博物馆数 益（ 家） 一量 参观人数 （十 万人 次 ）\n20 13 -2015年 我国博物馆 数散和参观人数\n- 14 -",
+  "chartType": "mixed",
+  "chartOption": {
+    "title": {
+      "text": "2013-2015年我国博物馆数量和参观人数",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "博物馆数量（家）",
+        "参观人数（十万人次）"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 45,
+      "bottom": 45,
+      "left": 55,
+      "right": 55,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "2013年",
+        "2014年",
+        "2015年"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": [
+      {
+        "type": "value",
+        "name": "数量（家）",
+        "min": 0,
+        "max": 6000
+      },
+      {
+        "type": "value",
+        "name": "人数（十万人次）",
+        "min": 0,
+        "max": 1000
+      }
+    ],
+    "series": [
+      {
+        "name": "博物馆数量（家）",
+        "type": "bar",
+        "data": [
+          4165,
+          4510,
+          4692
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      },
+      {
+        "name": "参观人数（十万人次）",
+        "type": "line",
+        "yAxisIndex": 1,
+        "data": [
+          637.8,
+          717.7,
+          781.1
+        ],
+        "itemStyle": {
+          "color": "#F59E0B"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "博物馆数量稳步增长，从2013年的4165家增至2015年的4692家",
+    "参观人数由6.38亿人次（637.8十万人次）快速升至7.81亿人次",
+    "文化设施建设与公众精神文化需求呈现良性双向增长"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

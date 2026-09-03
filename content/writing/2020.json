@@ -4,14 +4,73 @@
   "prompt": "48. Directions:\nWrite an essay based on the chart below. In your \nwriting, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points) \n学习知识59.5%\n某高校学生手机阅读目的调查\n \n- 14 -",
   "partA": "Part A \n47. Directions:\nSuppose you are planning a tour of a historical site for a group of international\nstudents. Write an email to \n1) tell them about the site, and\n2)give them some tips for the tour.\nPlease write your answer on the ANSWER SHEET. \nDo not use your own name, use \"Li Ming\" instead. (10 points) \nPartB",
   "partB": "48. Directions:\nWrite an essay based on the chart below. In your \nwriting, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points) \n学习知识59.5%\n某高校学生手机阅读目的调查\n \n- 14 -",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某高校学生手机阅读目的调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "学习知识",
+        "获取资讯",
+        "休闲娱乐",
+        "打发时间",
+        "其他"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 70
+    },
+    "series": [
+      {
+        "name": "阅读目的",
+        "type": "bar",
+        "data": [
+          59.5,
+          55.4,
+          38.6,
+          31.8,
+          2.7
+        ],
+        "itemStyle": {
+          "color": "#6366F1"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) interpret the chart, and",
-    "2) give your comments.",
-    "学习知识59.5%",
-    "- 14 -"
+    "学习知识位居榜首，占比高达59.5%，手机已成为移动学习的重要工具",
+    "获取资讯紧随其后占55.4%，休闲娱乐（38.6%）和打发时间（31.8%）同样占据相当比例",
+    "手机阅读兼具实用性与娱乐性，满足大学生多元碎片化需求"
   ],
   "scaffolding": {
     "trends": [

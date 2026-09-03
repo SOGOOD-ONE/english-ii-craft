@@ -1,0 +1,680 @@
+{
+  "devices": {
+    "dev-2ybdv8mcz-mtle85dh": {
+      "device_id": "dev-2ybdv8mcz-mtle85dh",
+      "ai_base_url": "",
+      "ai_api_key": "",
+      "ai_model": "",
+      "mastery_required": 2,
+      "daily_new_limit": 20,
+      "created_at": "2026-09-03T10:39:42.389Z"
+    },
+    "test-dev-1": {
+      "device_id": "test-dev-1",
+      "ai_base_url": "",
+      "ai_api_key": "",
+      "ai_model": "",
+      "mastery_required": 2,
+      "daily_new_limit": 20,
+      "created_at": "2026-09-03T10:39:54.770Z"
+    },
+    "dev-9kg9e0unk-mtlea14c": {
+      "device_id": "dev-9kg9e0unk-mtlea14c",
+      "ai_base_url": "",
+      "ai_api_key": "",
+      "ai_model": "",
+      "mastery_required": 2,
+      "daily_new_limit": 20,
+      "created_at": "2026-09-03T10:41:10.188Z"
+    },
+    "dev-nyssxw0gc-mtlea14f": {
+      "device_id": "dev-nyssxw0gc-mtlea14f",
+      "ai_base_url": "",
+      "ai_api_key": "",
+      "ai_model": "",
+      "mastery_required": 2,
+      "daily_new_limit": 20,
+      "created_at": "2026-09-03T10:41:10.191Z"
+    },
+    "default-device": {
+      "device_id": "default-device",
+      "ai_base_url": "",
+      "ai_api_key": "",
+      "ai_model": "",
+      "mastery_required": 2,
+      "daily_new_limit": 20,
+      "created_at": "2026-09-03T11:26:40.962Z"
+    }
+  },
+  "words": {
+    "proportion": {
+      "id": 1,
+      "lemma": "proportion",
+      "phonetic": "/prəˈpɔːʃn/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "比例; 部分; 份额"
+        },
+        {
+          "pos": "vt.",
+          "definition": "使成比例"
+        }
+      ],
+      "collocations": [
+        "in proportion to",
+        "a large proportion of",
+        "out of proportion"
+      ]
+    },
+    "comment": {
+      "id": 33,
+      "lemma": "comment",
+      "phonetic": "/ˈkɑːment/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "评论，意见；批评，指责；说明，写照；<旧>解说，注释；（计算机）注解"
+        },
+        {
+          "pos": "v.",
+          "definition": "评论，发表意见；..."
+        }
+      ],
+      "collocations": []
+    },
+    "historically": {
+      "id": 3,
+      "lemma": "historically",
+      "phonetic": "/historically/",
+      "senses": [
+        {
+          "pos": "adv.",
+          "definition": "考研高频考点词汇 [historically]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "tipp": {
+      "id": 34,
+      "lemma": "tipping",
+      "phonetic": "/tipp/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "倾斜；倒垃圾"
+        },
+        {
+          "pos": "v.",
+          "definition": "（使）倾斜；倾倒；轻触；给小费（tip的现在分词）"
+        },
+        {
+          "pos": "n.",
+          "definition": "（Tippi..."
+        }
+      ],
+      "collocations": []
+    },
+    "people": {
+      "id": 5,
+      "lemma": "people",
+      "phonetic": "/people/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [people]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "business": {
+      "id": 6,
+      "lemma": "business",
+      "phonetic": "/business/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [business]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "servers earning less than the minimum wage. In the"
+      ]
+    },
+    "so": {
+      "id": 7,
+      "lemma": "so",
+      "phonetic": "/so/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [so]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "[英文原句 2] It's awkward, and so awkward that some pe"
+      ]
+    },
+    "start": {
+      "id": 8,
+      "lemma": "start",
+      "phonetic": "/start/",
+      "senses": [
+        {
+          "pos": "v./adj.",
+          "definition": "考研高频考点词汇 [start]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "ning less than the minimum wage. In the early 2010"
+      ]
+    },
+    "they": {
+      "id": 9,
+      "lemma": "they",
+      "phonetic": "/they/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [they]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "assum": {
+      "id": 10,
+      "lemma": "assum",
+      "phonetic": "/assum/",
+      "senses": [
+        {
+          "pos": "v./adj.",
+          "definition": "考研高频考点词汇 [assum]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "customer": {
+      "id": 11,
+      "lemma": "customer",
+      "phonetic": "/customer/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [customer]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "the": {
+      "id": 12,
+      "lemma": "the",
+      "phonetic": "/the/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [the]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "[英文原句 1] You know the moment—the conversation slow"
+      ]
+    },
+    "earn": {
+      "id": 13,
+      "lemma": "earn",
+      "phonetic": "/earn/",
+      "senses": [
+        {
+          "pos": "v./adj.",
+          "definition": "考研高频考点词汇 [earn]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "U.S. customers historically tipped people they ass"
+      ]
+    },
+    "and": {
+      "id": 14,
+      "lemma": "and",
+      "phonetic": "/and/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [and]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "ay based on the chart below. In your essay, you sh"
+      ]
+    },
+    "range": {
+      "id": 15,
+      "lemma": "range",
+      "phonetic": "/range/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [range]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "staurant servers earning less than the minimum wag"
+      ]
+    },
+    "receiv": {
+      "id": 16,
+      "lemma": "receiv",
+      "phonetic": "/receiv/",
+      "senses": [
+        {
+          "pos": "v./adj.",
+          "definition": "考研高频考点词汇 [receiv]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "Customers in the past nearly always paid tips afte"
+      ]
+    },
+    "ever": {
+      "id": 17,
+      "lemma": "ever",
+      "phonetic": "/ever/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [ever]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "This increase is sometimes called tipflation — the"
+      ]
+    },
+    "employee": {
+      "id": 18,
+      "lemma": "employee",
+      "phonetic": "/employee/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [employee]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "[参考精译 第5段]: 该段探讨核心论述主题（To ensure that all employee"
+      ]
+    },
+    "awkward": {
+      "id": 19,
+      "lemma": "awkward",
+      "phonetic": "/awkward/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [awkward]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "[英文原句 2] It's awkward, and so awkward that some pe"
+      ]
+    },
+    "conversation": {
+      "id": 20,
+      "lemma": "conversation",
+      "phonetic": "/conversation/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "考研高频考点词汇 [conversation]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "[英文原句 1] You know the moment—the conversation slow"
+      ]
+    },
+    "sheet": {
+      "id": 21,
+      "lemma": "sheet",
+      "phonetic": "/sheet/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [sheet]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "your comments. Write your answer in about 150 word"
+      ]
+    },
+    "moment": {
+      "id": 22,
+      "lemma": "moment",
+      "phonetic": "/moment/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "考研高频考点词汇 [moment]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "You know the moment – the conversation slows, then"
+      ]
+    },
+    "sentence": {
+      "id": 23,
+      "lemma": "sentence",
+      "phonetic": "/sentence/",
+      "senses": [
+        {
+          "pos": "n./v.",
+          "definition": "考研高频考点词汇 [sentence]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "Sentence 1悬停/选中英文单词可查词释义"
+      ]
+    },
+    "payment": {
+      "id": 24,
+      "lemma": "payment",
+      "phonetic": "/payment/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "考研高频考点词汇 [payment]，语境研读中"
+        }
+      ],
+      "collocations": [
+        "The prevalence of digital payment devices has made"
+      ]
+    },
+    "farmer": {
+      "id": 29,
+      "lemma": "farmers",
+      "phonetic": "/ˈfɑːrmərz/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "[农]农民（farmer 的复数）"
+        }
+      ],
+      "collocations": []
+    },
+    "burst": {
+      "id": 30,
+      "lemma": "bursting",
+      "phonetic": "/ˈbɜːrstɪŋ/",
+      "senses": [
+        {
+          "pos": "adj.",
+          "definition": "充满的；渴望的"
+        },
+        {
+          "pos": "v.",
+          "definition": "爆炸；猛冲；涨满；充满感情；突然爆发（感情）；猛然打开；决堤；突然..."
+        }
+      ],
+      "collocations": []
+    },
+    "sustainable": {
+      "id": 31,
+      "lemma": "sustainable",
+      "phonetic": "/səˈsteɪnəb(ə)l/",
+      "senses": [
+        {
+          "pos": "adj.",
+          "definition": "可以忍受的；足以支撑的；养得起的；可持续的"
+        }
+      ],
+      "collocations": []
+    },
+    "inequality": {
+      "id": 32,
+      "lemma": "inequality",
+      "phonetic": "/ˌɪnɪˈkwɑːləti/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "（大小、程度、情况等的）不同，不平等；（数学）（两式间的）不等；（数学）不等式"
+        }
+      ],
+      "collocations": []
+    },
+    "farmers": {
+      "id": 29,
+      "lemma": "farmers",
+      "phonetic": "/ˈfɑːrmərz/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "[农]农民（farmer 的复数）"
+        }
+      ],
+      "collocations": []
+    },
+    "bursting": {
+      "id": 30,
+      "lemma": "bursting",
+      "phonetic": "/ˈbɜːrstɪŋ/",
+      "senses": [
+        {
+          "pos": "adj.",
+          "definition": "充满的；渴望的"
+        },
+        {
+          "pos": "v.",
+          "definition": "爆炸；猛冲；涨满；充满感情；突然爆发（感情）；猛然打开；决堤；突然..."
+        }
+      ],
+      "collocations": []
+    },
+    "tipping": {
+      "id": 34,
+      "lemma": "tipping",
+      "phonetic": "/tipp/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "倾斜；倒垃圾"
+        },
+        {
+          "pos": "v.",
+          "definition": "（使）倾斜；倾倒；轻触；给小费（tip的现在分词）"
+        },
+        {
+          "pos": "n.",
+          "definition": "（Tippi..."
+        }
+      ],
+      "collocations": []
+    },
+    "innovation": {
+      "id": 35,
+      "lemma": "innovation",
+      "phonetic": "/ˌɪnəˈveɪʃ(ə)n/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "新事物，新方法；革新，创新"
+        }
+      ],
+      "collocations": []
+    },
+    "economy": {
+      "id": 36,
+      "lemma": "economy",
+      "phonetic": "/ɪˈkɑːnəmi/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "经济；节省，简练；经济舱"
+        },
+        {
+          "pos": "adj.",
+          "definition": "经济实惠的"
+        },
+        {
+          "pos": "",
+          "definition": "【名】 （Economy）（英）伊科诺米（..."
+        }
+      ],
+      "collocations": []
+    },
+    "challenge": {
+      "id": 37,
+      "lemma": "challenge",
+      "phonetic": "/ˈtʃælɪndʒ/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "挑战，难题；挑战书，比赛邀请；质疑，质询；喝停盘查"
+        },
+        {
+          "pos": "v.",
+          "definition": "挑战，向……下战书；质疑，拒绝接受..."
+        }
+      ],
+      "collocations": []
+    }
+  },
+  "nextWordId": 38,
+  "cards": [
+    {
+      "id": 1,
+      "device_id": "test-dev-1",
+      "word_id": 1,
+      "word": "proportion",
+      "word_detail": {
+        "id": 1,
+        "lemma": "proportion",
+        "phonetic": "/prəˈpɔːʃn/",
+        "senses": [
+          {
+            "pos": "n.",
+            "definition": "比例; 部分; 份额"
+          },
+          {
+            "pos": "vt.",
+            "definition": "使成比例"
+          }
+        ],
+        "collocations": [
+          "in proportion to",
+          "a large proportion of",
+          "out of proportion"
+        ]
+      },
+      "source_path": "",
+      "context_sentence": "",
+      "due": "2026-09-03T10:49:54.769Z",
+      "stability": 2.3065,
+      "difficulty": 2.11810397,
+      "elapsed_days": 0,
+      "scheduled_days": 0,
+      "reps": 1,
+      "lapses": 0,
+      "state": 1,
+      "last_review": "2026-09-03T10:39:54.769Z",
+      "consecutive_correct": 1,
+      "mastered": false,
+      "created_at": "2026-09-03T10:39:52.616Z"
+    }
+  ],
+  "nextCardId": 2,
+  "reviews": [
+    {
+      "id": 1,
+      "device_id": "test-dev-1",
+      "year": 2025,
+      "chart_info": "",
+      "user_essay": "As is clearly illustrated in the column chart, mobile subscriptions account for the largest proportion of total telecommunication services. This dramatic surge can be primarily attributed to the growing demand for digital connectivity and smart lifestyles.",
+      "total_score": 10.2,
+      "s_data": 3.4,
+      "s_logic": 2.6,
+      "s_vocab": 2.2,
+      "s_grammar": 2,
+      "data_feedback": "考生成功捕捉了图表中的关键数据份额与趋势走向，指标对比清晰。",
+      "logic_feedback": "归因部分连词略显单薄，建议增加深层社会经济归因表达（如 hinge upon the increasing need for）。",
+      "summary": "全文篇幅 36 词，行文结构完整。重点优化图表专业词汇精度与长短句结合。",
+      "corrections": [
+        {
+          "original": "As is clearly illustrated in the column chart, mobile subscriptions account for the largest proportion of total telecommunication services",
+          "improved": "As is explicitly illustrated in the above column chart, a dramatic shift has taken place in...",
+          "reason": "替换为高分图表引出句型，增强学术严谨度。"
+        },
+        {
+          "original": "The reason is that people want more conveniences.",
+          "improved": "The underlying driving force primarily hinges upon the public pursuit of efficiency and convenience.",
+          "reason": "用 underlying driving force 和 hinge upon 替换平淡表达。"
+        }
+      ],
+      "ai_base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "ai_model": "glm-4-flash",
+      "created_at": "2026-09-03T10:39:58.572Z"
+    }
+  ],
+  "nextReviewId": 2,
+  "attempts": [
+    {
+      "id": 1,
+      "device_id": "test-dev-1",
+      "year": 2025,
+      "slice_id": "s1",
+      "source_text": "",
+      "user_translation": "这是考生的测试翻译",
+      "ref_zh": "",
+      "diff_report": {
+        "diffs": [],
+        "has_refZh": false
+      },
+      "diff_text": "",
+      "created_at": "2026-09-03T10:39:47.422Z"
+    },
+    {
+      "id": 2,
+      "device_id": "default-device",
+      "year": 2024,
+      "slice_id": "s1",
+      "source_text": "With the smell of coffee...",
+      "user_translation": "空气中弥漫着咖啡和新鲜面包的香气",
+      "ref_zh": "空气中弥漫着咖啡与新鲜面包的香气，摊位上摆满了色彩斑斓的蔬菜和诱人的奶酪，耳边回荡着友善交谈的嗡嗡声，农贸集市堪称一场感官的盛宴。",
+      "diff_report": {
+        "diffs": [
+          [
+            0,
+            "空气中弥漫着咖啡"
+          ],
+          [
+            -1,
+            "与"
+          ],
+          [
+            1,
+            "和"
+          ],
+          [
+            0,
+            "新鲜面包的香气"
+          ],
+          [
+            -1,
+            "，摊位上摆满了色彩斑斓的蔬菜和诱人的奶酪，耳边回荡着友善交谈的嗡嗡声，农贸集市堪称一场感官的盛宴。"
+          ]
+        ],
+        "has_refZh": true
+      },
+      "diff_text": "空气中弥漫着咖啡[-与-][+和+]新鲜面包的香气[-，摊位上摆满了色彩斑斓的蔬菜和诱人的奶酪，耳边回荡着友善交谈的嗡嗡声，农贸集市堪称一场感官的盛宴。-]",
+      "created_at": "2026-09-03T11:20:10.587Z"
+    }
+  ],
+  "nextAttemptId": 3
+}

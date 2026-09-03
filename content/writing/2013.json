@@ -4,15 +4,71 @@
   "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n%％%\n%%\n%\n0 0 0 0 0\n人数百分比\n88.2 4% \n大 一 大二 大三 大四\n某高校学生 兼职情况\n- 14 -",
   "partA": "Part A \n47. Directions:\nSuppose your class is to hold a charity sale for kids in need of help. Write your\nclassmates an email to \n1) inform them about the details, and\n2) encourage them to participate.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB",
   "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n%％%\n%%\n%\n0 0 0 0 0\n人数百分比\n88.2 4% \n大 一 大二 大三 大四\n某高校学生 兼职情况\n- 14 -",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某高校学生兼职情况",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 35,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "大一",
+        "大二",
+        "大三",
+        "大四"
+      ],
+      "name": "年级",
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "人数百分比 (%)",
+      "min": 0,
+      "max": 100
+    },
+    "series": [
+      {
+        "name": "兼职比例",
+        "type": "bar",
+        "data": [
+          67.7,
+          77.9,
+          88.24,
+          71.4
+        ],
+        "itemStyle": {
+          "color": "#6366F1"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) interpret the chart, and",
-    "2) give your comments.",
-    "0 0 0 0 0",
-    "88.2 4%",
-    "- 14 -"
+    "大三兼职比例最高，达到88.24%，成为大学生兼职的主力军",
+    "大一与大二兼职比例分别达到67.7%和77.9%，呈逐年上升趋势",
+    "大四学生因面临毕业论文与求职考研，兼职比例回落至71.4%"
   ],
   "scaffolding": {
     "trends": [

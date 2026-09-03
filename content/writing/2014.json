@@ -4,15 +4,91 @@
   "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n图城 镇人 口乡 村人\n10\nI \n00 I\n834\n666\n�6\n过4\n:mt- I\n、\n19 90年 2000年 201 0年\n20 年 间中 国城 镇人 口与 乡村 人口变 化图\n- 14 -",
   "partA": "Part A \n47. Directions:\nSuppose you are going to study abroad and share an apartment with John, a\nlocal student. Write him an email to \n1) tell him about your living habits, and\n2) ask for advice about living there.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your own name. Use \"Li Ming\" instead.\nDo not write your address. (10 points)\nPartB",
   "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n图城 镇人 口乡 村人\n10\nI \n00 I\n834\n666\n�6\n过4\n:mt- I\n、\n19 90年 2000年 201 0年\n20 年 间中 国城 镇人 口与 乡村 人口变 化图\n- 14 -",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "20年间中国城镇人口与乡村人口变化图 (1990-2010)",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "城镇人口",
+        "乡村人口"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "1990年",
+        "2000年",
+        "2010年"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "人口（百万）",
+      "min": 0,
+      "max": 1000
+    },
+    "series": [
+      {
+        "name": "城镇人口",
+        "type": "bar",
+        "data": [
+          300,
+          460,
+          666
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      },
+      {
+        "name": "乡村人口",
+        "type": "bar",
+        "data": [
+          834,
+          807,
+          674
+        ],
+        "itemStyle": {
+          "color": "#10B981"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) interpret the chart, and",
-    "2) give your comments.",
-    "19 90年 2000年 201 0年",
-    "20 年 间中 国城 镇人 口与 乡村 人口变 化图",
-    "- 14 -"
+    "1990至2010年中国城镇人口从3亿剧增至6.66亿，实现翻倍增长",
+    "乡村人口由8.34亿持续下降至6.74亿",
+    "城镇与乡村人口差距急剧缩小，2010年已基本持平，体现中国城市化历史进程"
   ],
   "scaffolding": {
     "trends": [

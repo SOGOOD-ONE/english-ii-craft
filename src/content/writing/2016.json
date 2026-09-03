@@ -1,0 +1,103 @@
+{
+  "year": 2016,
+  "title": "2016年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n培养 独立能 力\n6% \n广交朋友\n9赞\n其他\n缓解 压 力\n33% \n37% \n- 14 -",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n培养 独立能 力\n6% \n广交朋友\n9赞\n其他\n缓解 压 力\n33% \n37% \n- 14 -",
+  "chartType": "pie",
+  "chartOption": {
+    "title": {
+      "text": "某高校学生旅游目的调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "item",
+      "formatter": "{b}: {c}%"
+    },
+    "legend": {
+      "bottom": 5
+    },
+    "series": [
+      {
+        "name": "旅游目的",
+        "type": "pie",
+        "radius": "55%",
+        "center": [
+          "50%",
+          "45%"
+        ],
+        "data": [
+          {
+            "value": 37,
+            "name": "缓解压力",
+            "itemStyle": {
+              "color": "#3B82F6"
+            }
+          },
+          {
+            "value": 33,
+            "name": "欣赏风景",
+            "itemStyle": {
+              "color": "#10B981"
+            }
+          },
+          {
+            "value": 15,
+            "name": "其他",
+            "itemStyle": {
+              "color": "#9CA3AF"
+            }
+          },
+          {
+            "value": 9,
+            "name": "广交朋友",
+            "itemStyle": {
+              "color": "#F59E0B"
+            }
+          },
+          {
+            "value": 6,
+            "name": "培养独立能力",
+            "itemStyle": {
+              "color": "#8B5CF6"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "keyPoints": [
+    "缓解压力位居第一，占37.0%，反映当代大学生面对学业与就业的调适需求",
+    "欣赏风景紧随其后，占33.0%，前两者合计占据七成",
+    "广交朋友（9%）和培养独立能力（6%）占据一定比例"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

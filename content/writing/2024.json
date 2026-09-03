@@ -4,17 +4,70 @@
   "prompt": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  writing,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n \n \n某高校劳动实践课学生主要收获调查 \n54.40%\n32.60%\n91.30%\n84.80%\n0% 20% 40% 60% 80% 100%\n感觉到心情舒畅\n提升了合作能力\n学习了相关知识\n提升了动手能力",
   "partA": "Part  A \n47. Directions: \nSuppose  you  and  Jack  are  going  to  do  a  survey  on  the  protection  of  old  houses  in  an  \nancient  town.  Write  him  an  email  to \n1)  put  forward  your  plan,  and \n2)  ask  for  his  opinion. \nWrite  your  answer  in  about  100  words  on  the  ANSWER  SHEET. \nDo  not  use  your  own  name  in  your  email;  use  “Li  Ming”  instead.  (10  points)\nPart  B",
   "partB": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  writing,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n \n \n某高校劳动实践课学生主要收获调查 \n54.40%\n32.60%\n91.30%\n84.80%\n0% 20% 40% 60% 80% 100%\n感觉到心情舒畅\n提升了合作能力\n学习了相关知识\n提升了动手能力",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某高校劳动实践课学生主要收获调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 30,
+      "left": 120,
+      "right": 40,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 100
+    },
+    "yAxis": {
+      "type": "category",
+      "data": [
+        "提升了合作能力",
+        "感觉到心情舒畅",
+        "提升了动手能力",
+        "学习了相关知识"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11
+      }
+    },
+    "series": [
+      {
+        "name": "主要收获",
+        "type": "bar",
+        "data": [
+          32.6,
+          54.4,
+          84.8,
+          91.3
+        ],
+        "itemStyle": {
+          "color": "#8B5CF6"
+        },
+        "label": {
+          "show": true,
+          "position": "right",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) describe and interpret the chart, and",
-    "2) give your comments.",
-    "54.40%",
-    "32.60%",
-    "91.30%",
-    "84.80%",
-    "0% 20% 40% 60% 80% 100%"
+    "“学习了相关知识”占比最高（91.3%），“提升了动手能力”位居第二（84.8%）",
+    "超过半数学生（54.4%）表示在实践中“感觉到心情舒畅”，兼具心理调节价值",
+    "约三成学生（32.6%）认为劳动实践促进了团队合作能力"
   ],
   "scaffolding": {
     "trends": [

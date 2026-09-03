@@ -4,16 +4,96 @@
   "prompt": "48. Directio ns : \nWrite an essay based on the following table. In your writing, you should \n1) describe the table, and \n2) give your comments. \nYou should write at least 150 words. \nWrite your essay on ANSWER SHEET 2. (1 5 points) \n某公司 员 工工作满意度调 查\n二\n满意 不清楚 不满意\n:::;40 岁 16.7 % 50.0 % 33.3 % \n41�50 岁 0.0 % 36.0 % 64.0 % \n>5 0 岁 40.0 % 50.0 % 10.0 % \n- 14 -",
   "partA": "Part A \n47. Directio ns : \nSuppose you have found something wrong with the electronic dictionary that \nyou bought from an online store the other day. Write an email to the customer \nservice center to \n1) make a compla int, and \n2) demand a prompt solution. \nYou should write about 100 words on ANSWER SHEET 2. \nDo not sign your own name at the end of the letter. Use \"Zhang Wei\" instead. \nDo not write the address. (10 points) \nPart B",
   "partB": "48. Directio ns : \nWrite an essay based on the following table. In your writing, you should \n1) describe the table, and \n2) give your comments. \nYou should write at least 150 words. \nWrite your essay on ANSWER SHEET 2. (1 5 points) \n某公司 员 工工作满意度调 查\n二\n满意 不清楚 不满意\n:::;40 岁 16.7 % 50.0 % 33.3 % \n41�50 岁 0.0 % 36.0 % 64.0 % \n>5 0 岁 40.0 % 50.0 % 10.0 % \n- 14 -",
-  "chartType": "table",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某公司员工工作满意度调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "满意",
+        "不清楚",
+        "不满意"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "≤40岁",
+        "41-50岁",
+        ">50岁"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 100
+    },
+    "series": [
+      {
+        "name": "满意",
+        "type": "bar",
+        "data": [
+          16.7,
+          0,
+          40
+        ],
+        "itemStyle": {
+          "color": "#10B981"
+        }
+      },
+      {
+        "name": "不清楚",
+        "type": "bar",
+        "data": [
+          50,
+          36,
+          50
+        ],
+        "itemStyle": {
+          "color": "#6B7280"
+        }
+      },
+      {
+        "name": "不满意",
+        "type": "bar",
+        "data": [
+          33.3,
+          64,
+          10
+        ],
+        "itemStyle": {
+          "color": "#EF4444"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directio ns :",
-    "1) describe the table, and",
-    "2) give your comments.",
-    ":::;40 岁 16.7 % 50.0 % 33.3 %",
-    "41�50 岁 0.0 % 36.0 % 64.0 %",
-    ">5 0 岁 40.0 % 50.0 % 10.0 %",
-    "- 14 -"
+    "41-50岁员工不满意比例高达64.0%，满意度为0%，处于职业中年危机与倦怠期",
+    ">50岁员工满意度最高（40.0%），不满意仅占10.0%",
+    "≤40岁年轻员工满意比例为16.7%，不满意占33.3%，半数员工持不确定态度"
   ],
   "scaffolding": {
     "trends": [

@@ -1,0 +1,122 @@
+{
+  "year": 2019,
+  "title": "2019年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 15 0 words on the ANSWER SHEET. (15 points)\n80.0% \n70.0 % \n60.0% \n50.0 % \n40.0% \n30.0 % \n20.0% \nL0 .0% \n0.0 % \n就业 升学\n圈 2013 年\n迈 201 8年\n创业\n某高校20 1 3年和2 01 8年本科 毕业生去向统计\n- 14 -",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 15 0 words on the ANSWER SHEET. (15 points)\n80.0% \n70.0 % \n60.0% \n50.0 % \n40.0% \n30.0 % \n20.0% \nL0 .0% \n0.0 % \n就业 升学\n圈 2013 年\n迈 201 8年\n创业\n某高校20 1 3年和2 01 8年本科 毕业生去向统计\n- 14 -",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某高校2013年和2018年本科毕业生去向统计",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "2013年",
+        "2018年"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "升学",
+        "就业",
+        "创业",
+        "其他"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 80
+    },
+    "series": [
+      {
+        "name": "2013年",
+        "type": "bar",
+        "data": [
+          26.3,
+          68.1,
+          1.3,
+          4.3
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      },
+      {
+        "name": "2018年",
+        "type": "bar",
+        "data": [
+          34,
+          60.7,
+          2.6,
+          2.7
+        ],
+        "itemStyle": {
+          "color": "#10B981"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "直接就业虽然仍占主导，但从68.1%降至60.7%",
+    "国内及出国升学比例从26.3%显著攀升至34.0%",
+    "创业比例由1.3%翻倍至2.6%，就业选择更加多元化"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

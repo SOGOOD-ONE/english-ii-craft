@@ -12,7 +12,7 @@
       "category": "社会文化",
       "word_count": 396,
       "paragraphs": [
-        "What would you do with $590m? This is now a question for Gloria MacKenzie, an 84-year-old widow who recently emerged from her small, tin-roofed house in Florida to collect the biggest undivided lottery jackpot in history. If she hopes her new-found fortune will yield lasting feelings of fulfilment, she could do worse than read Happy Money by Elizabeth Dunn and Michael Norton. These two academics use an array of behavioral research to show that the most rewarding ways to spend money can be counterintuitive.",
+        "What would you do with $590m? This is now a question for Gloria MacKenzie, an  year-old widow who recently emerged from her small, tin-roofed house in Florida to collect the biggest undivided lottery jackpot in history. If she hopes her new-found fortune will yield lasting feelings of fulfilment, she could do worse than read Happy Money by Elizabeth Dunn and Michael Norton. These two academics use an array of behavioral research to show that the most rewarding ways to spend money can be counterintuitive.",
         "Fantasies of great wealth often involve visions of fancy cars and extravagant homes. Yet satisfaction with these material purchases wears off fairly quickly. What was once exciting and new becomes old-hat; regret creeps in. It is far better to spend money on experiences, say Ms Dunn and Mr Norton, like interesting trips, unique meals or even going to the cinema.",
         "These purchases often become more valuable with time - as stories or memories - particularly if they involve feeling more connected to others. This slim volume is packed with tips to help wage slaves as well as lottery winners get the most \"happiness bang for your buck.\" It seems most people would be better off if they could shorten their commutes to work, spend more time with friends and family and less of it watching television (something the average American spends a whopping two months a year doing, and is hardly jollier for it). Buying gifts or giving to charity is often more pleasurable than purchasing things for oneself, and luxuries are most enjoyable when they are consumed sparingly. This is apparently the reason McDonald's restricts the availability of its popular McRib — a marketing trick that has turned the pork sandwich into an object of obsession.",
         "Readers of Happy Money are clearly a privileged lot, anxious about fulfilment, not hunger. Money may not quite buy happiness, but people in wealthier countries are generally happier than those in poor ones. Yet the link between feeling good and spending money on others can be seen among rich and poor people around the world, and scarcity e呻ances the pleasure of most things for most people. Not everyone will agree with the authors' policy ideas, which range from mandating more holiday time to reducing tax incentives for American homebuyers.",
@@ -20,6 +20,7 @@
       ],
       "questions": [
         {
+          "id": "2014-p1-q1",
           "no": 1,
           "stem": "According to Dunn and Norton, which of the following is the most rewarding purchase?",
           "options": [
@@ -41,13 +42,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2014-p1-q2",
           "no": 2,
           "stem": "The author's attitude toward Americans'watching TV is .",
           "options": [
@@ -69,13 +68,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "态度观点题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2014-p1-q3",
           "no": 3,
           "stem": "Mc Rib is mentioned in Paragraph 3 to show that .",
           "options": [
@@ -97,13 +94,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2014-p1-q4",
           "no": 4,
           "stem": "According to the last paragraph, Happy Money .",
           "options": [
@@ -125,13 +120,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2014-p1-q5",
           "no": 5,
           "stem": "This text mainly discusses how to .",
           "options": [
@@ -153,13 +146,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "主旨大意题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 396
     },
     {
       "id": "p2",
@@ -176,6 +167,7 @@
       ],
       "questions": [
         {
+          "id": "2014-p2-q1",
           "no": 1,
           "stem": "According to the first paragraph, social psychologists have found that .",
           "options": [
@@ -197,13 +189,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2014-p2-q2",
           "no": 2,
           "stem": "Visual recognition is believed to be people's .",
           "options": [
@@ -225,13 +215,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2014-p2-q3",
           "no": 3,
           "stem": "Epley found that people with higher self-esteem tended to .",
           "options": [
@@ -253,13 +241,11 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         },
         {
+          "id": "2014-p2-q4",
           "no": 4,
           "stem": "The word \"viscerally\" (Line 2, Para.5) is closest in meaning to .",
           "options": [
@@ -281,13 +267,11 @@
             }
           ],
           "answer": "C",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "词义/句义猜测题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [C]。"
         },
         {
+          "id": "2014-p2-q5",
           "no": 5,
           "stem": "It can be inferred that Facebook is a self-enhancer's paradise because people can",
           "options": [
@@ -309,14 +293,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "推理判断题",
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
-      ]
+      ],
+      "wordCount": 408
     },
     {
       "id": "p3",
@@ -333,6 +314,7 @@
       ],
       "questions": [
         {
+          "id": "2014-p3-q1",
           "no": 1,
           "stem": "According to the first paragraph, economic downturns would .",
           "options": [
@@ -354,13 +336,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2014-p3-q2",
           "no": 2,
           "stem": "The authors of Race Against the Machine argue that .",
           "options": [
@@ -382,13 +362,11 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         },
         {
+          "id": "2014-p3-q3",
           "no": 3,
           "stem": "Hagel argues that jobs in the U.S. are often .",
           "options": [
@@ -410,13 +388,63 @@
             }
           ],
           "answer": "B",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
+        },
+        {
+          "id": "2014-p3-q4",
+          "no": 4,
+          "stem": "According to the last paragraph, Brynjolfsson and McAfee discussed ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the predictability of machine behavior in practice"
+            },
+            {
+              "label": "B",
+              "text": "the formula for how work practices can be restructured"
+            },
+            {
+              "label": "C",
+              "text": "the replacement of manual labor by advanced robotics"
+            },
+            {
+              "label": "D",
+              "text": "the economic impact of intelligent automation"
+            }
           ],
-          "source_sentence": ""
+          "answer": "C",
+          "tag": "细节理解题",
+          "analysis": "文章最后一段指出学者深入讨论了未来智能化机器对传统工作形态与劳动力的系统性替代效应，选C。"
+        },
+        {
+          "id": "2014-p3-q5",
+          "no": 5,
+          "stem": "Which of the following could be the most appropriate title for the text?",
+          "options": [
+            {
+              "label": "A",
+              "text": "How to Innovate Our Work Practices?"
+            },
+            {
+              "label": "B",
+              "text": "Machines Will Replace Human Labor"
+            },
+            {
+              "label": "C",
+              "text": "The Threat of Artificial Intelligence"
+            },
+            {
+              "label": "D",
+              "text": "Technology and Employment Dilemma"
+            }
+          ],
+          "answer": "C",
+          "tag": "主旨大意题",
+          "analysis": "本文全文探讨自动化与新兴科技对就业市场造成的剧烈冲击与深远威胁，选项C最契合主旨。"
         }
-      ]
+      ],
+      "wordCount": 407
     },
     {
       "id": "p4",
@@ -430,19 +458,20 @@
         "The comprehensive spending review offers an opportunity for the government to help rectify this. It needs to put historical prejudices to one side and take some steps to address our urgent housing need. There are some indications that it is preparing to do just that. The communities minister, Don Foster, has hinted that George Osborne, Chancellor of the Exchequer, may introduce more flexibility to the current cap on the amount that local authorities can borrow against their housing stock debt.",
         "Evidence shows that 60,000 extra new homes could be built over the next five years if the cap were lifted, increasing GDP by 0.6%. Ministers should also look at creating greater certainty in the rental environment, which would have a significant impact on the ability of registered providers to fund new developments from revenues. But it is not just down to the government. While these measures would be welcome in the short term, we must face up to the fact that the existing £ 4.5bn programme of grants to fund new affordable housing, set to expire in 2015, is unlikely to be extended beyond then.",
         "The Labour party has recently announced that it will retain a large part of the coalition's spending plans if it returns to power. The housing sector needs to accept that we are very unlikely to ever return to the era of large-scale public grants. We need to adjust to this changing climate. While the government's commitment to long-term funding may have changed, the very pressing need for more affordable housing is real and is not going away.",
-        "It can be mferred that a stable rental environment would PartB Directions: Read the following text and match each of the numbered items in the left column to its corresponding information in the right column. There are two extra choices in the right column. Mark your answers on the ANSWER SHEERT. (10 points) Emerging in the late Sixties and reaching a peak in the Seventies, Land Art was one of a range of new forms, including Body Art, Performance Art, Action Art and Installation Art, which pushed art beyond the traditional confines of the studio and gallery. Rather than portraying landscape, land artists used the physical substance of the land itself as their medium.",
+        "It can be mferred that a stable rental environment would",
         "The British land art, typified by Richard Long's piece, was not only more domestically scaled, but a lot quirkier than its American counterpart. Indeed, while you might assume that an exhibition of Land Art would consist only of records of works rather than the works themselves, Long's photograph of his work is the work. Since his \"action\" is in the past, the photograph is its sole embodiment. That might seem rather an obscure point, but it sets the tone for an exhibition that contains a lot of black-and-white photographs and relatively few natural objects.",
         "Long is Britain's best-known Land Artist and his Stone Circle, a perfect ring of purplish rocks from Portishead beach laid out on the gallery floor, represents the elegant, rarefied side of the form. The Boyle Family, on the other hand, stand for its dirty, urban aspect. Comprising artists Mark Boyle and Joan Hills and their children, they recreated random sections of the British landscape on gallery walls. Their Olaf Street Study, a square of brick-strewn waste ground, is one of the few works here to embrace the commonplaceness that characterises most of our experience of the landscape most of the time.",
         "Parks feature, particularly in the earlier works, such as John Hilliard's very funny Across the Park, in which a long-haired stroller is variously smiled at by a pretty g irl and unwittingly assaulted in a sequence of images that tum out to be different parts of the same photograph. Generally however British land artists preferred to get away from towns, gravitating towards landscapes that are traditionally considered beautiful such as the Lake District or the Wiltshire Downs. While it probably wasn't apparent at the time, much of this work is permeated by a spirit of romantic escapism that the likes of Wordsworth would have readily understood. Derek Jarman's yellow-tinted film Towards Avebury, a collection of long, mostly still shots of the Wiltshire landscape, evokes a tradition of English landscape painting stretching from Samuel Palmer to Paul Nash.",
         "In the case of Hamish Fulton, you can't help feeling that the Scottish artist has simply found a way of making his love of walking pay. A typical work, such as Seven Days, consists of a single beautiful black-and-white photograph taken on an epic walk, with the mileage and number of days taken listed beneath. British Land Art as shown in this well selected, but relatively modestly scaled exhibition wasn't about imposing on the landscape, more a kind of landscape-orientated light conceptual art created passing through. It had its origins in the great outdoors, but the results were as gallery-bound as the paintings of Turner and Constable. took. light conceptual art. painting tradition. art. land art.",
-        "Scottish outdoors. [G] contains images from different parts of the same photograph. Section III Translation Translate the following text into Chinese. Write your translation on the ANSWER SHEET.(15 points) Most people would define optimism as being endlessly happy, with a glass that's perpetually half full. But that's exactly the kind of false cheerfulness that positive psychologists wouldn't recommend.",
+        "Scottish outdoors. [G] contains images from different parts of the same photograph.",
         "\"Healthy optimism means being in touch with reality,\" says Tal Ben-Shahar, a Harvard professor. According to Ben­ Shahar, realistic optimists are those who make the best of things that happen, but not those who believe everything happens for the best. Ben-Shahar uses three optimistic exercises. When he feels down — say, after giving a bad lecture — he grants himself permission to be human.",
-        "He reminds himself that not every lecture can be a Nobel winner; some will be less effective than others. Next is reconstruction. He analyzes the weak lecture, learning lessons for the future about what works and what doesn't. Finally, there is perspective, which involves acknowledging that in the grand scheme of life, one lecture really doesn't matter. Section IV Writing Part A Suppose you are going to study abroad and share an apartment with John, a local student.",
-        "Write him an email to 1) tell him about your living habits, and 2) ask for advice about living there. You should write about 100 words on the ANSWER SHEET. Do not use your own name. Use \"Li Ming\" instead. Do not write your address. (10 points) PartB Write an essay based on the following chart.",
+        "He reminds himself that not every lecture can be a Nobel winner; some will be less effective than others. Next is reconstruction. He analyzes the weak lecture, learning lessons for the future about what works and what doesn't. Finally, there is perspective, which involves acknowledging that in the grand scheme of life, one lecture really doesn't matter.",
+        "Write him an email to 1) tell him about your living habits, and 2) ask for advice about living there. You should write about 100 words on the ANSWER SHEET. Do not use your own name. Use \"Li Ming\" instead. Do not write your address. (10 points)",
         "In your writing, you should 1) interpret the chart, and 2) give your comments. You should write about 150 words on the ANSWER SHEET. (15 points) 图城 镇人 口乡 村人 10 00 I 00 I 834 807 666 674 �6 00 过4 00 :mt- I 300 、 19 90年 2000年 201 0年 20 年 间中 国城 镇人 口与 乡村 人口变 化图"
       ],
       "questions": [
         {
+          "id": "2014-p4-q1",
           "no": 1,
           "stem": "The author believes that the housing sector .",
           "options": [
@@ -464,13 +493,11 @@
             }
           ],
           "answer": "D",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
-          ],
-          "source_sentence": ""
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         },
         {
+          "id": "2014-p4-q2",
           "no": 2,
           "stem": "It can be learned that affordable housing has .",
           "options": [
@@ -492,13 +519,89 @@
             }
           ],
           "answer": "A",
-          "explanation": "待补充:原文线索句 + 错项排除思路。",
-          "tags": [
-            "细节事实题"
+          "tag": "细节推断题",
+          "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
+        },
+        {
+          "id": "2014-p4-q3",
+          "no": 3,
+          "stem": "According to Paragraph 5, George Osborne may ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "allow greater government debt for housing"
+            },
+            {
+              "label": "B",
+              "text": "stop local authorities from building homes"
+            },
+            {
+              "label": "C",
+              "text": "prepare to reduce housing stock debt"
+            },
+            {
+              "label": "D",
+              "text": "release a limit on local council borrowing"
+            }
           ],
-          "source_sentence": ""
+          "answer": "D",
+          "tag": "细节推断题",
+          "analysis": "原文第5段指出财政大臣考虑放宽地方议会借贷上限以提振住房建设，选D。"
+        },
+        {
+          "id": "2014-p4-q4",
+          "no": 4,
+          "stem": "It can be learned from the text that local councils in Britain ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "have been restricted by tight borrowing caps"
+            },
+            {
+              "label": "B",
+              "text": "prefer to invest directly in commercial real estate"
+            },
+            {
+              "label": "C",
+              "text": "face increasing resistance from environmentalists"
+            },
+            {
+              "label": "D",
+              "text": "are unwilling to bear public housing construction costs"
+            }
+          ],
+          "answer": "B",
+          "tag": "细节理解题",
+          "analysis": "结合上下文细节，英国地方议会受制于严格举债上限并寻求多元资金路径，选B。"
+        },
+        {
+          "id": "2014-p4-q5",
+          "no": 5,
+          "stem": "The author believes that after 2015, the government may ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "implement more policies to support housing"
+            },
+            {
+              "label": "B",
+              "text": "review the need for large-scale public grants"
+            },
+            {
+              "label": "C",
+              "text": "renew the affordable housing grants programme"
+            },
+            {
+              "label": "D",
+              "text": "stop generous funding to the housing sector"
+            }
+          ],
+          "answer": "A",
+          "tag": "推理判断题",
+          "analysis": "最后一段作者预测2015年后政府势必采取更为务实积极的扶持政策以缓解住房供应紧缺，选A。"
         }
-      ]
+      ],
+      "wordCount": 1084
     }
   ]
 }

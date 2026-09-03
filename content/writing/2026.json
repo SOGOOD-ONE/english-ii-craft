@@ -4,15 +4,71 @@
   "prompt": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  essay,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n某项关于儿童户外活动看法的调查 \n54.60% 54.50%\n37.20%\n33.20%\n满足好奇心 促进观察力 强身健体 增强亲子互动",
   "partA": "Part  A \n47. Directions: \nSuppose  your  friend  Jack  has  shared  with  you  a  video  of  his  family’s  travel  in  China.  Write  \nan  email  to  tell  him \n1)  how  you  feel  about  the  video,  and \n2)  your  wish  to  learn  more  about  their  travel. \nWrite  your  answer  in  about  100  words  on  the  ANSWER  SHEET. \nDo  not  use  your  own  name  in  your  email.  Use  “Li  Ming”  instead.  (10  points) \n \n \nPart  B",
   "partB": "48. Directions: \nWrite  an  essay  based  on  the  chart  below.  In  your  essay,  you  should \n1)  describe  and  interpret  the  chart,  and \n2)  give  your  comments. \nWrite  your  answer  in  about  150  words  on  the  ANSWER  SHEET.  (15  points) \n某项关于儿童户外活动看法的调查 \n54.60% 54.50%\n37.20%\n33.20%\n满足好奇心 促进观察力 强身健体 增强亲子互动",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某项关于儿童户外活动看法的调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "满足好奇心",
+        "促进观察力",
+        "强身健体",
+        "增强亲子互动"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 70
+    },
+    "series": [
+      {
+        "name": "赞同比例",
+        "type": "bar",
+        "data": [
+          54.6,
+          54.5,
+          37.2,
+          33.2
+        ],
+        "itemStyle": {
+          "color": "#F97316"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) describe and interpret the chart, and",
-    "2) give your comments.",
-    "54.60% 54.50%",
-    "37.20%",
-    "33.20%"
+    "“满足好奇心”（54.60%）和“促进观察力”（54.50%）是公众最看重的儿童户外活动益处",
+    "强身健体（37.20%）和增强亲子互动（33.20%）分别占三成以上",
+    "家长与社会越发重视大自然探索对儿童身心发育与认知成长的综合促进作用"
   ],
   "scaffolding": {
     "trends": [

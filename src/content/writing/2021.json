@@ -1,0 +1,98 @@
+{
+  "year": 2021,
+  "title": "2021年英语二写作",
+  "prompt": "48. Directions :\nWrite an essay based on the chart below.In your writing,you should\n1) interpret the chart, and\n2) give your comments,\nYou should write about 150 words on the ANSWER SHEET.(15 points)\n某市居民锻炼方式调查\n60.0%54.3%\n50.0%47.7%\n40.0%\n30.0%\n23.9%\n20.0%15.8%\n10.0%\n0.0%-独白锻炼和家人一起 和朋友一走团体活动",
+  "partB": "48. Directions :\nWrite an essay based on the chart below.In your writing,you should\n1) interpret the chart, and\n2) give your comments,\nYou should write about 150 words on the ANSWER SHEET.(15 points)\n某市居民锻炼方式调查\n60.0%54.3%\n50.0%47.7%\n40.0%\n30.0%\n23.9%\n20.0%15.8%\n10.0%\n0.0%-独白锻炼和家人一起 和朋友一走团体活动",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某市居民锻炼方式调查",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "独自锻炼",
+        "和朋友一起",
+        "和家人一起",
+        "团体活动"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 70
+    },
+    "series": [
+      {
+        "name": "参与比例",
+        "type": "bar",
+        "data": [
+          54.3,
+          47.7,
+          23.9,
+          15.8
+        ],
+        "itemStyle": {
+          "color": "#0D9488"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "独自锻炼占比最高，达到54.3%，体现灵活性和个人掌控性",
+    "与朋友结伴锻炼占47.7%，具备较强的社交激励属性",
+    "与家人一起（23.9%）及团体活动（15.8%）构成有益补充"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

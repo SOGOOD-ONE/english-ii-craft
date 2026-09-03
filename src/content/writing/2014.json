@@ -1,0 +1,118 @@
+{
+  "year": 2014,
+  "title": "2014年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n图城 镇人 口乡 村人\n10\nI \n00 I\n834\n666\n6\n过4\n:mt- I\n、\n19 90年 2000年 201 0年\n20 年 间中 国城 镇人 口与 乡村 人口变 化图\n- 14 -",
+  "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n图城 镇人 口乡 村人\n10\nI \n00 I\n834\n666\n6\n过4\n:mt- I\n、\n19 90年 2000年 201 0年\n20 年 间中 国城 镇人 口与 乡村 人口变 化图\n- 14 -",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "20年间中国城镇人口与乡村人口变化图 (1990-2010)",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "legend": {
+      "data": [
+        "城镇人口",
+        "乡村人口"
+      ],
+      "bottom": 5
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 45,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "1990年",
+        "2000年",
+        "2010年"
+      ],
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "人口（百万）",
+      "min": 0,
+      "max": 1000
+    },
+    "series": [
+      {
+        "name": "城镇人口",
+        "type": "bar",
+        "data": [
+          300,
+          460,
+          666
+        ],
+        "itemStyle": {
+          "color": "#3B82F6"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      },
+      {
+        "name": "乡村人口",
+        "type": "bar",
+        "data": [
+          834,
+          807,
+          674
+        ],
+        "itemStyle": {
+          "color": "#10B981"
+        },
+        "label": {
+          "show": true,
+          "position": "top"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "1990至2010年中国城镇人口从3亿剧增至6.66亿，实现翻倍增长",
+    "乡村人口由8.34亿持续下降至6.74亿",
+    "城镇与乡村人口差距急剧缩小，2010年已基本持平，体现中国城市化历史进程"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

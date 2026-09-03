@@ -1,0 +1,109 @@
+{
+  "year": 2023,
+  "title": "2023年英语二写作",
+  "prompt": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n\n某市居民健康素养水平（%）\n2012年: 8.8%\n2013年: 9.5%\n2014年: 9.8%\n2015年: 10.3%\n2016年: 11.6%\n2017年: 14.2%\n2018年: 17.1%\n2019年: 19.2%\n2020年: 23.2%\n2021年: 25.4%",
+  "partB": "48. Directions:\nWrite an essay based on the chart below. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n\n某市居民健康素养水平（%）\n2012年: 8.8%\n2013年: 9.5%\n2014年: 9.8%\n2015年: 10.3%\n2016年: 11.6%\n2017年: 14.2%\n2018年: 17.1%\n2019年: 19.2%\n2020年: 23.2%\n2021年: 25.4%",
+  "chartType": "bar",
+  "chartOption": {
+    "title": {
+      "text": "某市居民健康素养水平（%）",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "axis"
+    },
+    "grid": {
+      "top": 40,
+      "bottom": 35,
+      "left": 50,
+      "right": 30,
+      "containLabel": true
+    },
+    "xAxis": {
+      "type": "category",
+      "data": [
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2020",
+        "2021"
+      ],
+      "name": "年份",
+      "axisLabel": {
+        "interval": 0,
+        "fontSize": 11,
+        "rotate": 20
+      }
+    },
+    "yAxis": {
+      "type": "value",
+      "name": "百分比 (%)",
+      "min": 0,
+      "max": 30
+    },
+    "series": [
+      {
+        "type": "bar",
+        "data": [
+          8.8,
+          9.5,
+          9.8,
+          10.3,
+          11.6,
+          14.2,
+          17.1,
+          19.2,
+          23.2,
+          25.4
+        ],
+        "itemStyle": {
+          "color": "#0033A0"
+        },
+        "label": {
+          "show": true,
+          "position": "top",
+          "formatter": "{c}%"
+        }
+      }
+    ]
+  },
+  "keyPoints": [
+    "2012至2021年间该市居民健康素养水平从8.8%稳步提升至25.4%",
+    "近十年来年均增幅稳定，体现居民健康意识与公共健康宣教的成效"
+  ],
+  "scaffolding": {
+    "trends": [
+      "account for the largest proportion of",
+      "follow closely behind at",
+      "take the lead in",
+      "witness a sharp increase / decrease",
+      "reach a peak at",
+      "experience a steady decline",
+      "remain relatively stable at"
+    ],
+    "comparisons": [
+      "in contrast to",
+      "the gap between... and... is striking",
+      "twice as many as",
+      "three times the size of",
+      "account for a larger share than"
+    ],
+    "reasons": [
+      "can be attributed to the accelerating pace of life",
+      "hinge upon the increasing need for flexibility",
+      "stem from a growing awareness of health",
+      "is closely related to the improvement of living standards",
+      "reflects the changing social trends"
+    ]
+  },
+  "sampleEssays": []
+}

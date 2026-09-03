@@ -4,13 +4,83 @@
   "prompt": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n其他\n20% \n新年礼物\n0% \n我国 某 市 居民 乔 节假期花销 比例\n- 14 -",
   "partA": "Part A \n47. Directions:\nSuppose your university is going to host a summer camp for high school students.\nWrite a notice to \n1) briefly introduce the camp activities, and\n2) call for volunteers.\nYou should write about 100 words on the ANSWER SHEET.\nDo not use your name or the name of your university.\nDo not write your address. (10 points)\nPartB",
   "partB": "48. Directions:\nWrite an essay based on the following chart. In your writing, you should\n1) interpret the chart, and\n2) give your comments.\nYou should write about 150 words on the ANSWER SHEET. (15 points)\n其他\n20% \n新年礼物\n0% \n我国 某 市 居民 乔 节假期花销 比例\n- 14 -",
-  "chartType": "mixed",
-  "chartOption": {},
+  "chartType": "pie",
+  "chartOption": {
+    "title": {
+      "text": "我国某市居民春节假期花销比例",
+      "left": "center",
+      "textStyle": {
+        "fontSize": 13,
+        "fontWeight": "bold"
+      }
+    },
+    "tooltip": {
+      "trigger": "item",
+      "formatter": "{b}: {c}% ({d}%)"
+    },
+    "legend": {
+      "bottom": 5
+    },
+    "series": [
+      {
+        "name": "春节花销",
+        "type": "pie",
+        "radius": "55%",
+        "center": [
+          "50%",
+          "45%"
+        ],
+        "data": [
+          {
+            "value": 40,
+            "name": "新年礼物",
+            "itemStyle": {
+              "color": "#EF4444"
+            }
+          },
+          {
+            "value": 20,
+            "name": "买年货/吃喝聚会",
+            "itemStyle": {
+              "color": "#F59E0B"
+            }
+          },
+          {
+            "value": 20,
+            "name": "交通出行",
+            "itemStyle": {
+              "color": "#3B82F6"
+            }
+          },
+          {
+            "value": 15,
+            "name": "给压岁钱",
+            "itemStyle": {
+              "color": "#10B981"
+            }
+          },
+          {
+            "value": 5,
+            "name": "其他",
+            "itemStyle": {
+              "color": "#9CA3AF"
+            }
+          }
+        ],
+        "emphasis": {
+          "itemStyle": {
+            "shadowBlur": 10,
+            "shadowOffsetX": 0,
+            "shadowColor": "rgba(0, 0, 0, 0.5)"
+          }
+        }
+      }
+    ]
+  },
   "keyPoints": [
-    "48. Directions:",
-    "1) interpret the chart, and",
-    "2) give your comments.",
-    "- 14 -"
+    "新年礼物花销占据最高比重，达40%",
+    "买年货/聚会与交通出行各占20%，反映走亲访友与生活消费需求",
+    "给压岁钱占15%，人情与传统习俗开销占整体主导"
   ],
   "scaffolding": {
     "trends": [
