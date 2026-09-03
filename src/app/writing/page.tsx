@@ -2,11 +2,11 @@
 
 import { useMemo, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { Sparkles, Loader2 } from 'lucide-react';
+import { Sparkles, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
 import YearPicker from '@/components/common/YearPicker';
 import { YEARS, getWriting } from '@/content';
-import { reviewEssay, loadAiConfig } from '@/lib/ai/client';
-import type { AiReviewReport, WritingData } from '@/types';
+import { reviewEssay as reviewZhipuEssay } from '@/lib/ai/zhipu';
+import type { ZhipuEssayReview, WritingData } from '@/types';
 
 // ECharts 仅客户端渲染
 const ReactECharts = dynamic(() => import('echarts-for-react'), { ssr: false });
@@ -17,10 +17,30 @@ const SCAFFOLD_GROUPS: { key: 'trends' | 'comparisons' | 'reasons'; label: strin
   { key: 'reasons', label: '归因分析' },
 ];
 
-// 有完整图表数据的年份;缺图表数据时 fallback 显示原题干
 function hasChart(d: WritingData | undefined) {
   return !!d && !!d.chartType && d.chartOption && Object.keys(d.chartOption).length > 0;
 }
+
+/** 组装 chartInfo:给 AI 的图表背景(极值/对比/趋势),优先用 keyPoints,其次 prompt */
+function buildChartInfo(data: WritingData | undefined, year: number): string {
+  const parts: string[] = [];
+  parts.push(`年份: ${year} 年考研英语二图表大作文`);
+  if (data?.title) parts.push(`图表标题:${data.title}`);
+  if (data?.chartType) parts.push(`图表类型:${data.chartType}`);
+  if (data?.keyPoints && data.keyPoints.length > 0) {
+    parts.push('核心采分数据:');
+    data.keyPoints.forEach((p, i) => parts.push(`  ${i + 1}. ${p}`));
+  }
+  if (data?.prompt) parts.push(`题面原文:\n${data.prompt}`);
+  return parts.join('\n');
+}
+
+const DIMS: { key: keyof ZhipuEssayReview['scores']; label: string; full: number; color: string }[] = [
+  { key: 'data', label: '数据完整度', full: 4, color: 'text-sky-700 bg-sky-50 border-sky-200' },
+  { key: 'logic', label: '归因论述逻辑', full: 4, color: 'text-indigo-700 bg-indigo-50 border-indigo-200' },
+  { key: 'vocab', label: '词汇句式丰富度', full: 4, color: 'text-emerald-700 bg-emerald-50 border-emerald-200' },
+  { key: 'grammar', label: '语法与拼写', full: 3, color: 'text-amber-700 bg-amber-50 border-amber-200' },
+];
 
 export default function WritingPage() {
   const years = YEARS.writing;
@@ -29,9 +49,10 @@ export default function WritingPage() {
 
   const editorRef = useRef<HTMLTextAreaElement>(null);
   const [essay, setEssay] = useState('');
-  const [review, setReview] = useState<AiReviewReport | null>(null);
+  const [review, setReview] = useState<ZhipuEssayReview | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [usedDefaultKey, setUsedDefaultKey] = useState(false);
 
   const wordCount = useMemo(
     () => (essay.trim() ? essay.trim().split(/\s+/).length : 0),
@@ -54,19 +75,20 @@ export default function WritingPage() {
   const runReview = async () => {
     setError('');
     setReview(null);
-    const cfg = loadAiConfig();
-    if (!cfg || !cfg.apiKey) {
-      setError('未配置 AI 接口,请先到 /settings 填写 baseURL / apiKey / model。');
+    if (!essay.trim() || wordCount < 30) {
+      setError('请先写一段作文(建议 30 词以上)再进行批改哦。');
       return;
     }
     setLoading(true);
+    setUsedDefaultKey(false);
     try {
-      const chartContext =
-        (data?.keyPoints ?? []).join('\n') ||
-        data?.prompt ||
-        (data?.title ?? '');
-      const report = await reviewEssay(essay, chartContext, cfg);
+      const chartInfo = buildChartInfo(data, year);
+      const report = await reviewZhipuEssay(chartInfo, essay);
       setReview(report);
+      // 如果没报错且用户没填自定义配置,说明走了默认 Key,显示提示
+      const { loadAiConfig } = await import('@/lib/ai/client');
+      const cfg = loadAiConfig();
+      setUsedDefaultKey(!cfg || !cfg.apiKey || cfg.apiKey.length === 0);
     } catch (e) {
       setError(e instanceof Error ? e.message : 'AI 批改失败');
     } finally {
@@ -75,10 +97,11 @@ export default function WritingPage() {
   };
 
   const noChart = data && !hasChart(data);
+  const total = DIMS.reduce((s, d) => s + d.full, 0); // 15
 
   return (
     <section className="space-y-3">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap gap-2">
         <span className="font-semibold text-zinc-800">图表大作文实验室</span>
         <YearPicker years={years} value={year} onChange={setYear} />
       </div>
@@ -131,13 +154,13 @@ export default function WritingPage() {
             )}
           </div>
           <div className="text-zinc-400 text-[11px] mt-2">
-            提示:试着选中上面英文文本中的任意单词测试划词捕获。
+            提示:鼠标悬停英文单词可查释义,选中可捕获进生词本。
           </div>
         </div>
 
-        {/* 右栏:语料积木 + 编辑器 + AI */}
-        <div className="col-span-12 lg:col-span-7 bg-white border border-zinc-200 rounded p-3 flex flex-col justify-between lg:h-[calc(100vh-116px)]">
-          <div>
+        {/* 右栏:语料积木 + 编辑器 + AI 批改 */}
+        <div className="col-span-12 lg:col-span-7 bg-white border border-zinc-200 rounded p-3 flex flex-col lg:h-[calc(100vh-116px)]">
+          <div className="flex-1 min-h-0 flex flex-col">
             <div className="border-b border-zinc-100 pb-2 mb-2">
               <span className="font-semibold text-zinc-800">常用表达积木 (点击插入光标处):</span>
               {SCAFFOLD_GROUPS.map((g) => {
@@ -172,13 +195,13 @@ export default function WritingPage() {
               ref={editorRef}
               value={essay}
               onChange={(e) => setEssay(e.target.value)}
-              className="w-full h-64 p-3 border border-zinc-200 rounded focus:outline-none focus:border-zinc-900 font-mono text-xs leading-relaxed resize-none"
-              placeholder="在此键入你的图表作文... (建议字数: 150词左右)"
+              className="w-full h-64 p-3 border border-zinc-200 rounded focus:outline-none focus:border-zinc-900 font-mono text-xs leading-relaxed resize-none shrink-0"
+              placeholder="在此键入你的图表作文... (建议字数: 150词左右, 写完点右下角「AI 维度批改」)"
             />
             <div className="text-right text-zinc-400 mt-1 font-mono">当前字数: {wordCount} 词</div>
           </div>
 
-          <div className="border-t border-zinc-100 pt-2 flex justify-between items-center">
+          <div className="border-t border-zinc-100 pt-2 mt-2 flex justify-between items-center shrink-0">
             <button
               onClick={() => setEssay('')}
               className="text-zinc-500 hover:text-zinc-800"
@@ -191,35 +214,133 @@ export default function WritingPage() {
               className="bg-zinc-900 hover:bg-zinc-800 disabled:opacity-60 text-white px-4 py-1.5 rounded font-medium flex items-center gap-1.5"
             >
               {loading ? <Loader2 size={13} className="animate-spin" /> : <Sparkles size={13} />}
-              {loading ? '批改中...' : '执行 AI 维度批改'}
+              {loading ? '批改中 (约 2 秒)...' : 'AI 维度批改'}
             </button>
           </div>
 
-          {error && (
-            <div className="mt-2 p-2.5 bg-rose-50 border border-rose-200 rounded text-rose-700 text-[11px]">
-              {error}
-            </div>
-          )}
-
-          {review && (
-            <div className="mt-2 p-2.5 bg-zinc-50 border border-zinc-200 rounded text-zinc-700">
-              <div className="font-bold text-zinc-900 flex justify-between flex-wrap gap-1">
-                <span>预估得分: {review.score} / {review.total}</span>
-                <span className="font-normal text-zinc-500 text-[11px]">
-                  数据完整: {review.dimensions.dataDescription} | 逻辑论证:{' '}
-                  {review.dimensions.reasoning} | 词汇语法:{' '}
-                  {review.dimensions.vocabulary} | 拼写: {review.dimensions.grammar}
+          {/* 批改结果 */}
+          <div className="mt-2 shrink-0 overflow-y-auto max-h-[45vh] pr-0.5">
+            {usedDefaultKey && !error && (
+              <div className="mb-2 text-[11px] text-emerald-700 bg-emerald-50 border border-emerald-200 rounded p-2 flex items-start gap-1.5">
+                <CheckCircle2 size={13} className="mt-0.5 shrink-0" />
+                <span>
+                  当前使用内置智谱 <code>glm-4-flash</code> 免费模型。如想换用自己的 Key,
+                  请去 <a href="/settings" className="underline">系统设置</a> 切换。
                 </span>
               </div>
-              {review.suggestions?.length > 0 && (
-                <ul className="mt-1 text-zinc-600 list-disc pl-4 space-y-0.5">
-                  {review.suggestions.map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          )}
+            )}
+            {error && (
+              <div className="p-2.5 bg-rose-50 border border-rose-200 rounded text-rose-700 text-[11px] flex items-start gap-1.5">
+                <AlertCircle size={13} className="mt-0.5 shrink-0" />
+                <div>
+                  <div className="font-semibold mb-0.5">批改失败</div>
+                  <div>{error}</div>
+                </div>
+              </div>
+            )}
+
+            {review && (
+              <div className="p-3 bg-zinc-50 border border-zinc-200 rounded space-y-3">
+                {/* 总分 + 4 维 */}
+                <div>
+                  <div className="flex justify-between items-baseline flex-wrap gap-2">
+                    <div className="text-zinc-800 text-sm font-semibold">综合评分</div>
+                    <div className="font-mono font-bold text-zinc-900">
+                      <span className="text-2xl">{review.totalScore.toFixed(1)}</span>
+                      <span className="text-zinc-500 text-xs"> / {total} 分</span>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-2">
+                    {DIMS.map((d) => {
+                      const v = review.scores[d.key] ?? 0;
+                      const pct = Math.min(100, (v / d.full) * 100);
+                      return (
+                        <div
+                          key={d.key}
+                          className={`rounded border p-2 ${d.color.split(' ')[2]} ${d.color.split(' ')[1]}`}
+                        >
+                          <div className="flex justify-between items-baseline">
+                            <span className="text-[11px] font-medium">{d.label}</span>
+                            <span className="font-mono text-xs font-bold">
+                              {typeof v === 'number' ? v.toFixed(1) : v}
+                              <span className="text-zinc-500 font-normal">/{d.full}</span>
+                            </span>
+                          </div>
+                          <div className="mt-1 h-1.5 bg-white/60 rounded overflow-hidden">
+                            <div
+                              className="h-full bg-current"
+                              style={{ width: `${pct}%`, opacity: 0.7 }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* 维度文字点评 */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px]">
+                  <div className="bg-white border border-zinc-200 rounded p-2">
+                    <div className="font-semibold text-zinc-800 mb-1">📊 数据完整度评价</div>
+                    <div className="text-zinc-700 leading-relaxed whitespace-pre-wrap">
+                      {review.dataFeedback || '—'}
+                    </div>
+                  </div>
+                  <div className="bg-white border border-zinc-200 rounded p-2">
+                    <div className="font-semibold text-zinc-800 mb-1">🧠 归因逻辑评价</div>
+                    <div className="text-zinc-700 leading-relaxed whitespace-pre-wrap">
+                      {review.logicFeedback || '—'}
+                    </div>
+                  </div>
+                </div>
+
+                {/* 逐句修正 */}
+                {review.corrections && review.corrections.length > 0 && (
+                  <div>
+                    <div className="font-semibold text-zinc-800 mb-1.5 text-sm">
+                      ✏️ 逐句润色与提分建议
+                    </div>
+                    <ul className="space-y-2">
+                      {review.corrections.map((c, i) => (
+                        <li
+                          key={i}
+                          className="bg-white border border-zinc-200 rounded p-2 text-[11px]"
+                        >
+                          <div className="mb-1">
+                            <span className="inline-block px-1.5 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200 mr-1.5 text-[10px] font-semibold">
+                              原句
+                            </span>
+                            <span className="text-zinc-700 whitespace-pre-wrap leading-relaxed">
+                              {c.original}
+                            </span>
+                          </div>
+                          <div className="mb-1">
+                            <span className="inline-block px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 mr-1.5 text-[10px] font-semibold">
+                              推荐
+                            </span>
+                            <span className="text-zinc-800 whitespace-pre-wrap leading-relaxed font-medium">
+                              {c.improved}
+                            </span>
+                          </div>
+                          {c.reason && (
+                            <div className="text-zinc-500 pl-16 leading-relaxed">
+                              💡 {c.reason}
+                            </div>
+                          )}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* 总结 */}
+                <div className="bg-zinc-900 text-zinc-100 rounded p-2.5 text-[11px] leading-relaxed">
+                  <span className="font-semibold mr-1.5">🎯 总体点评:</span>
+                  {review.summary}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>

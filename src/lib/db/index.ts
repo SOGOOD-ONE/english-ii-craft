@@ -2,17 +2,21 @@
 // 本地数据库 (Dexie / IndexedDB) —— 零后端,数据全部存本机
 // ============================================================
 import Dexie, { type Table } from 'dexie';
-import type { VocabCard } from '@/types';
+import type { VocabCard, WordDefinition } from '@/types';
 
 export class AppDB extends Dexie {
   cards!: Table<VocabCard, number>;
+  words!: Table<WordDefinition, string>;
 
   constructor() {
     super('english-ii-craft');
-    this.version(1).stores({
-      // id 自增主键;due 用于复习排程索引;state/word 辅助查询
-      cards: '++id, word, due, state',
-    });
+    this.version(2)
+      .stores({
+        // id 自增主键;due 用于复习排程索引;state/word 辅助查询
+        cards: '++id, word, due, state',
+        // 单词释义缓存(hover tooltip 用),以 word(归一化小写)为唯一主键
+        words: '&word, accessedAt',
+      });
   }
 }
 

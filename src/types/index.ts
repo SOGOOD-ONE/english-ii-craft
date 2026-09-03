@@ -135,6 +135,7 @@ export interface PartBData {
 }
 
 // ---------- AI 批改报告 ----------
+// 旧 schema(兼容旧字段):
 export interface AiReviewReport {
   score: number;
   total: number;
@@ -145,4 +146,41 @@ export interface AiReviewReport {
     grammar: number;
   };
   suggestions: string[];
+}
+
+// 新 schema:按智谱 Prompt 约定输出(写作页新批改 UI 使用)
+export interface EssayCorrection {
+  original: string;
+  improved: string;
+  reason: string;
+}
+
+export interface ZhipuEssayReview {
+  totalScore: number;
+  scores: {
+    data: number;
+    logic: number;
+    vocab: number;
+    grammar: number;
+  };
+  dataFeedback: string;
+  logicFeedback: string;
+  corrections: EssayCorrection[];
+  summary: string;
+}
+
+// ---------- 单词释义(hover tooltip 用,落 Dexie 缓存) ----------
+export interface WordDefinition {
+  /** 小写去标点归一化后的词形(主键) */
+  word: string;
+  /** 词性 + 中文释义 / 短搭配,数组形式(多义项分行显示) */
+  senses: string[];
+  /** 音标(可选) */
+  phonetic?: string;
+  /** 常见搭配(可选,glm-4-flash 可附带产出) */
+  collocations?: string[];
+  /** 首次查询时间 */
+  createdAt: Date;
+  /** 最后访问时间(用于 LRU 淘汰) */
+  accessedAt: Date;
 }

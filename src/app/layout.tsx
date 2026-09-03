@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/common/Navbar';
 import SelectionPopover from '@/components/common/SelectionPopover';
+import WordHoverTip from '@/components/common/WordHoverTip';
 
 export const metadata: Metadata = {
   title: 'English-II-Craft 考研英语二攻坚工坊',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="bg-zinc-100 text-zinc-900 font-sans text-xs antialiased selection:bg-zinc-900 selection:text-white">
         <Navbar />
         <SelectionPopover />
+        <WordHoverTip />
         <main className="max-w-7xl mx-auto p-3">{children}</main>
       </body>
     </html>
