@@ -1,0 +1,39 @@
+{
+  "year": 2023,
+  "type": "subheading",
+  "title": "2023年新题型:小标题对应 (Subheading Matching)",
+  "paragraphs": [
+    {
+      "id": "p1",
+      "text": "Many corporations find that offering telecommuting options drastically cuts office rental expenses and monthly utility bills for the headquarters.",
+      "correctOptionId": "B",
+      "highlight": { "id": "target-1", "text": "drastically cuts office rental expenses and monthly utility bills" }
+    },
+    {
+      "id": "p2",
+      "text": "In addition, staff members who work remotely report fewer daily commute-induced stress symptoms and lower burnout rates.",
+      "correctOptionId": "D",
+      "highlight": { "id": "target-2", "text": "fewer daily commute-induced stress symptoms and lower burnout rates" }
+    }
+  ],
+  "options": [
+    { "id": "A", "text": "Environmental impacts of commuting", "isDistractor": true, "distractorReason": "无中生有:原文未涉及通勤对环境的影响。" },
+    { "id": "B", "text": "Financial benefits for employers" },
+    { "id": "C", "text": "Technical barriers to remote work", "isDistractor": true, "distractorReason": "过度泛化:原文未提及远程办公的技术障碍。" },
+    { "id": "D", "text": "Psychological advantages for staff" }
+  ],
+  "synonymMappings": [
+    {
+      "optionId": "B",
+      "optionKeyword": "Financial benefits",
+      "textHighlightId": "target-1",
+      "explanation": "同义替换:Financial benefits(经济收益) ↔ cuts rental expenses(削减租金开支)"
+    },
+    {
+      "optionId": "D",
+      "optionKeyword": "Psychological advantages",
+      "textHighlightId": "target-2",
+      "explanation": "同义替换:Psychological advantages(心理优势) ↔ fewer stress symptoms(压力症状减少)"
+    }
+  ]
+}

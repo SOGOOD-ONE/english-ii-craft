@@ -1,0 +1,91 @@
+{
+  "year": 2023,
+  "title": "2023年英语二真题翻译:诗歌与华兹华斯",
+  "intro": "Translate the following text from English into Chinese. Write your translation on the ANSWER SHEET. (15 points)",
+  "segments": [
+    {
+      "id": 1,
+      "en": "In the late 18th century, William Wordsworth became famous for his poems about nature. And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world.",
+      "refZh": "18世纪末期,威廉·华兹华斯因其描写自然的诗歌而闻名。他是浪漫主义运动的奠基人之一,该运动颂扬自然世界的奇迹。",
+      "points": [
+        "in the late 18th century:时间状语前置,译为\"18世纪末期\"。",
+        "became famous for:词组译为\"因……而闻名\",避免直译\"变得出名\"。",
+        "which celebrated...:非限制性定语从句,顺译或拆译为独立分句,which 指代 Romanticism。"
+      ],
+      "pitfalls": [
+        "celebrated 此处是动词\"颂扬/赞美\",勿误译为\"庆祝\"。",
+        "Romanticism 专有名词,译\"浪漫主义\"。"
+      ]
+    },
+    {
+      "id": 2,
+      "en": "Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and make them see things differently.",
+      "refZh": "诗歌充满力量。它的能量与节奏能够吸引读者,将他们带入另一个世界,并让他们以不同的方式看待事物。",
+      "points": [
+        "capture a reader:capture 此处意译\"吸引/抓住\",勿译\"捕获\"。",
+        "transport them...:them 指代 a reader(读者),中文可明化为\"他们\"。",
+        "三个并列动词 capture / transport / make 顺译即可。"
+      ],
+      "pitfalls": [
+        "transport 勿直译\"运输\",此处为\"带入/引向\"。",
+        "see things differently:\"以不同的方式看待事物\",勿译\"不同地看东西\"。"
+      ]
+    },
+    {
+      "id": 3,
+      "en": "Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring.",
+      "refZh": "经过精心挑选的词句,诗歌可以是戏剧性的、有趣的、优美的、动人的和鼓舞人心的。",
+      "points": [
+        "Through...:方式状语前置,译\"通过/经过……\"。",
+        "五个并列形容词转名词性短语排比,保持中文节奏。",
+        "moving:此处为\"动人的\",勿译\"移动的\"。"
+      ],
+      "pitfalls": [
+        "selected 译\"挑选\"而非\"选择\"更贴文学语境。",
+        "inspiring 译\"鼓舞人心的\"。"
+      ]
+    },
+    {
+      "id": 4,
+      "en": "No one knows for sure when poetry began but it has been around for thousands of years, even before people could write.",
+      "refZh": "没有人确切知道诗歌始于何时,但它已存在数千年,甚至在人类会书写之前就已出现。",
+      "points": [
+        "for sure:\"确切地\",修饰 knows。",
+        "has been around:口语化表达,译\"存在/流传\"。",
+        "even before people could write:让步时间状语,前置或后置皆可。"
+      ],
+      "pitfalls": [
+        "has been around 勿直译\"一直在附近\"。",
+        "could write 译\"会书写/有文字\"。"
+      ]
+    },
+    {
+      "id": 5,
+      "en": "It was a way to tell stories and pass down history. It is closely related to song and even when written it is usually created to be performed out loud.",
+      "refZh": "它是一种讲述故事、传承历史的方式。它与歌曲密切相关,即使被书写下来,通常也是为了大声朗诵而创作。",
+      "points": [
+        "pass down:\"传承/流传\"。",
+        "even when written:省略结构 even when (it is) written,译\"即使被书写下来\"。",
+        "created to be performed out loud:目的状语,译\"为大声朗诵而创作\"。"
+      ],
+      "pitfalls": [
+        "performed out loud 勿译\"表演出声\",此处为\"大声朗诵\"。",
+        "related to song 译\"与歌曲密切相关\"。"
+      ]
+    },
+    {
+      "id": 6,
+      "en": "Poems really come to life when they are recited. This can also help with understanding them too because the rhythm and sounds of the words become clearer.",
+      "refZh": "诗歌在被朗诵时才真正鲜活起来。这也有助于理解诗歌,因为词语的节奏与声响会变得更加清晰。",
+      "points": [
+        "come to life:\"鲜活起来/生动起来\"。",
+        "This 指代\"朗诵\"这一行为,中文可明化。",
+        "because 原因状语从句顺译。"
+      ],
+      "pitfalls": [
+        "come to life 勿译\"来到生命\"。",
+        "sounds of the words 译\"词语的声响\"。"
+      ]
+    }
+  ]
+}
