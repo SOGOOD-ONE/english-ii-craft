@@ -25,7 +25,7 @@
 - **FSRS 间隔复习算法**：基于自由间隔重复调度算法（Free Spaced Repetition Scheduler），精准计算单词记忆遗忘曲线。
 - **四选一测验 (Quiz)**：内置确定性 Seed 洗牌算法的提速测试模式，提供例句语境与即时发音反馈。
 
-### 5. ⚙️ 真题导入与设置 (Settings & Importer)
+### 5. 真题导入与设置 (Settings & Importer)
 - **智能解析引擎**：支持通过 GitHub 仓库、PDF 文件或纯文本一键解析并导入自定义真题。
 - **本地设备同步**：基于 设备 ID（Device ID）管理个人练习进度与备考数据。
 
