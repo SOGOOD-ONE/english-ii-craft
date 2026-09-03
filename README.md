@@ -1,32 +1,71 @@
-# React + TypeScript + Vite
+# 考研英语真题研习工坊 (Craft English)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+考研英语真题研习工坊是一个专为考研学子打造的高效、全方位的真题备考与攻坚平台。结合现代化的前端交互与智能辅导算法，帮助考生深挖真题价值、高效复盘并提升应试能力。
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 核心功能特性
 
-## React Compiler
+### 1. 📊 大作文写作 (Writing)
+- **真题全覆盖**：收录历年考研英语大作文真题（涵盖柱状图、饼图、折线图等各类图表作文）。
+- **图表数据可视化**：基于 ECharts 渲染动态图表，直观还原真题数据。
+- **采分点与关键词**：拆解核心采分数据与高分词汇，提供结构化写作指导与智能批改反馈。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 2. 🔤 翻译精修 (Translation)
+- **Part C 段落/句子翻译**：支持按真题官方段落与长难句进行切片训练。
+- **字符级 Diff 对比**：精准对比个人译文与官方标准译文，秒出差异。
+- **语法与易错解析**：提供详细的考点拆解、语法结构分析及易错避坑指南。
 
-## Expanding the Oxlint configuration
+### 3. 📖 阅读理解与手写笔记 (Reading & Canvas)
+- **双语对照与真题解析**：收录阅读理解 Part A (Text 1-4)，支持逐段双语对照与选项考点剖析。
+- **沉浸式笔记画布**：内置高性能 Canvas 手写/鼠标/触控笔记系统，支持自由标注、高亮、橡皮擦与多版笔记管理。
+- **划词悬停查词 (WordTip)**：阅读过程中支持任意单词悬停即时查词、发音及一键加入背诵词库。
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### 4. 🧠 FSRS 智能词汇复习 (Vocab & FSRS)
+- **FSRS 间隔复习算法**：基于自由间隔重复调度算法（Free Spaced Repetition Scheduler），精准计算单词记忆遗忘曲线。
+- **四选一测验 (Quiz)**：内置确定性 Seed 洗牌算法的提速测试模式，提供例句语境与即时发音反馈。
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+### 5. ⚙️ 真题导入与设置 (Settings & Importer)
+- **智能解析引擎**：支持通过 GitHub 仓库、PDF 文件或纯文本一键解析并导入自定义真题。
+- **本地设备同步**：基于 设备 ID（Device ID）管理个人练习进度与备考数据。
+
+---
+
+## 🛠️ 技术栈架构
+
+- **前端框架**：React 18 + TypeScript + Vite
+- **UI & 样式**：Tailwind CSS + Motion (Framer Motion) + Lucide React
+- **数据可视化**：ECharts
+- **状态管理与请求**：TanStack React Query + Axios
+- **后端服务**：Express + Node.js (支持真题数据 API 与模版静态服务)
+
+---
+
+## 🚀 快速开始
+
+### 1. 环境要求
+- Node.js >= 18.0.0
+- npm >= 9.0.0
+
+### 2. 安装依赖
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+### 3. 启动开发服务器
+```bash
+npm run dev
+```
+启动后访问 `http://localhost:3000` 即可预览应用。
+
+### 4. 构建与部署
+```bash
+npm run build
+npm start
+```
+
+---
+
+## 📄 许可证
+
+MIT License
