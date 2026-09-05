@@ -544,9 +544,103 @@
         }
       ],
       "collocations": []
+    },
+    "ask": {
+      "id": 38,
+      "lemma": "ask",
+      "phonetic": "/æsk/",
+      "senses": [
+        {
+          "pos": "v.",
+          "definition": "询问，打听；要求，请求；邀请，约请 ；指望，期待"
+        },
+        {
+          "pos": "",
+          "definition": "【名】 （Ask）（芬、瑞典）阿斯克（人名..."
+        }
+      ],
+      "collocations": [
+        "Ask people about public libraries and a certain image spring"
+      ]
+    },
+    "there": {
+      "id": 39,
+      "lemma": "there",
+      "phonetic": "/ðer; ðər/",
+      "senses": [
+        {
+          "pos": "adv.",
+          "definition": "在那里；在那边；在那点上"
+        },
+        {
+          "pos": "int.",
+          "definition": "你瞧"
+        },
+        {
+          "pos": "n.",
+          "definition": "那个地方"
+        }
+      ],
+      "collocations": [
+        "ce you enjoyed as a child but, rather like a British seaside"
+      ]
+    },
+    "mcdonald": {
+      "id": 40,
+      "lemma": "mcdonald",
+      "phonetic": "/məkˈdɑːnld/",
+      "senses": [
+        {
+          "pos": "",
+          "definition": "麦当劳（McDonald's）"
+        },
+        {
+          "pos": "",
+          "definition": "麦克唐纳（人名）"
+        }
+      ],
+      "collocations": [
+        "re are more than twice the number of libraries (2,892) as th"
+      ]
+    },
+    "branch": {
+      "id": 41,
+      "lemma": "branches",
+      "phonetic": "/ˈbræntʃɪz/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "分支；分支机构（branch 的复数）"
+        },
+        {
+          "pos": "v.",
+          "definition": "分支，分岔（branch 的第三人称单数）"
+        }
+      ],
+      "collocations": [
+        "to learn there are more than twice the number of libraries ("
+      ]
+    },
+    "branches": {
+      "id": 41,
+      "lemma": "branches",
+      "phonetic": "/ˈbræntʃɪz/",
+      "senses": [
+        {
+          "pos": "n.",
+          "definition": "分支；分支机构（branch 的复数）"
+        },
+        {
+          "pos": "v.",
+          "definition": "分支，分岔（branch 的第三人称单数）"
+        }
+      ],
+      "collocations": [
+        "to learn there are more than twice the number of libraries ("
+      ]
     }
   },
-  "nextWordId": 38,
+  "nextWordId": 42,
   "cards": [
     {
       "id": 1,

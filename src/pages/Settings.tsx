@@ -150,6 +150,13 @@ export default function SettingsPage() {
                   <div className="flex flex-wrap gap-1.5">
                     <button
                       type="button"
+                      onClick={() => setForm(f => ({ ...f, ai_base_url: 'https://generativelanguage.googleapis.com', ai_model: 'gemini-3.8-flash' }))}
+                      className="px-2 py-1 bg-zinc-100 hover:bg-zinc-200 text-zinc-800 rounded text-[10px] font-medium transition"
+                    >
+                      ⚡ Google Gemini (直接填官方 AIzaSy Key)
+                    </button>
+                    <button
+                      type="button"
                       onClick={() => setForm(f => ({ ...f, ai_base_url: 'https://api.siliconflow.cn/v1', ai_model: 'Qwen/Qwen2.5-7B-Instruct' }))}
                       className="px-2 py-1 bg-zinc-100 hover:bg-zinc-200 text-zinc-800 rounded text-[10px] font-medium transition"
                     >

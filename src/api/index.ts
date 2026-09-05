@@ -54,8 +54,8 @@ export const api = {
       http.get<Array<{ year: number; module: string; title: string; has_ref_zh: boolean; has_chart: boolean; note: string }>>('/api/v1/exam/years', { params: { module, subject } }).then(r => r.data),
     content: <T = any>(module: 'writing' | 'translation' | 'reading', year: number, subject = 'eng2') =>
       http.get<T>(`/api/v1/exam/content/${module}/${year}`, { params: { subject } }).then(r => r.data),
-    translate: (paragraphs: string[]) =>
-      http.post<{ translations: string[]; error: string }>('/api/v1/exam/translate', { paragraphs }).then(r => r.data),
+    translate: (paragraphs: string[], meta?: { year?: number; passageId?: string; subject?: string }) =>
+      http.post<{ translations: string[]; error: string }>('/api/v1/exam/translate', { paragraphs, ...meta }).then(r => r.data),
     uploadAndParse: (formData: FormData) =>
       http.post<ExamParsedResponse>('/api/v1/exam/upload-and-parse', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
@@ -76,12 +76,19 @@ export const api = {
       http.post<{ id: number; lemma: string; phonetic: string; senses: any[]; collocations: string[]; from_cache: boolean }>(
         '/api/v1/vocab/words/lookup', { word, context }
       ).then(r => r.data),
-    cardsList: (params: { due?: 0 | 1; mastered?: 0 | 1; page_size?: number } = {}) =>
-      http.get<any[]>('/api/v1/vocab/cards/', { params }).then(r => r.data),
+    cardsList: (params: { due?: 0 | 1; mastered?: 0 | 1; status?: 'new' | 'due' | 'mastered' | 'all'; page_size?: number } = {}) =>
+      http.get<{ count: number; results: any[] }>('/api/v1/vocab/cards/', { params }).then(r => r.data),
     cardsCreate: (p: any) => http.post<any>('/api/v1/vocab/cards/', p).then(r => r.data),
     cardsDelete: (id: number) => http.delete(`/api/v1/vocab/cards/${id}/`).then(r => r.data),
+    cardsClearAll: () => http.delete<{ success: boolean; message: string; deleted_count: number }>('/api/v1/vocab/cards/clear-all/').then(r => r.data),
+    cardsDeleteBySource: (source_path: string) =>
+      http.delete<{ success: boolean; message: string; deleted_count: number }>('/api/v1/vocab/cards/by-source/', { params: { source_path } }).then(r => r.data),
     cardsReview: (id: number, rating: 'Again' | 'Hard' | 'Good' | 'Easy') =>
       http.post<any>(`/api/v1/vocab/cards/${id}/review/`, { rating }).then(r => r.data),
+    importBatch: (items: Array<{ word: string; phonetic?: string; definition?: string; pos?: string; context_sentence?: string }>, source_path = '自定义导入词库') =>
+      http.post<{ success: boolean; imported_count: number; skipped_count: number; total_processed: number; message: string }>(
+        '/api/v1/vocab/cards/import-batch', { items, source_path }
+      ).then(r => r.data),
   },
   writing: {
     aiConfig: () => http.get<{ available: boolean; effective_base: string; effective_model: string; using_user_key: boolean }>('/api/v1/writing/ai-config/').then(r => r.data),

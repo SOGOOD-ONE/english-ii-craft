@@ -64,25 +64,40 @@ export default function ReadingPage() {
   }
 
   // 调用AI翻译，完成后直接显示8:2分栏
-  async function doAITranslate() {
+  async function doAITranslate(forceRefresh = false) {
     if (!passage || !passage.paragraphs || passage.paragraphs.length === 0) return;
     const cacheKey = `${subject}-${year}-${tab}`;
     
-    // 如果已经翻译过了，直接显示
-    if (aiTranslations[cacheKey]) {
-      setShowTranslate(true);
-      return;
+    // 1. 如果已有真实中文译文且非强制刷新，直接显示
+    if (!forceRefresh) {
+      if (
+        passage.translations &&
+        passage.translations.length >= passage.paragraphs.length &&
+        passage.translations.some(t => /[\u4e00-\u9fa5]/.test(t))
+      ) {
+        setAiTranslations(prev => ({ ...prev, [cacheKey]: passage.translations! }));
+        setShowTranslate(true);
+        return;
+      }
+      if (aiTranslations[cacheKey] && aiTranslations[cacheKey].some(t => /[\u4e00-\u9fa5]/.test(t))) {
+        setShowTranslate(true);
+        return;
+      }
     }
     
     setTranslating(true);
     try {
-      const res = await api.exam.translate(passage.paragraphs);
+      const res = await api.exam.translate(passage.paragraphs, { year, passageId: passage.id, subject });
       if (res.error) {
         alert(res.error);
         return;
       }
-      setAiTranslations(prev => ({ ...prev, [cacheKey]: res.translations }));
-      setShowTranslate(true);
+      if (res.translations && res.translations.some((t: string) => /[\u4e00-\u9fa5]/.test(t))) {
+        setAiTranslations(prev => ({ ...prev, [cacheKey]: res.translations }));
+        setShowTranslate(true);
+      } else {
+        alert('暂未获取到有效的中文译文，请稍后再试。');
+      }
     } catch (e: any) {
       alert(`翻译失败: ${e.message || e}`);
     } finally {
@@ -116,27 +131,30 @@ export default function ReadingPage() {
     setShowAnswer(s => ({ ...s, [no]: !s[no] }));
   }
 
+  const yearList = Array.isArray(years) ? years : Array.isArray((years as any)?.years) ? (years as any).years : [];
+  const yearNumbers = yearList.map((y: any) => typeof y === 'number' ? y : y?.year).filter((y: any): y is number => typeof y === 'number');
+
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-2">
-          <BookOpen className="w-4 h-4 text-zinc-700" />
-          <span className="font-semibold text-zinc-800">阅读理解 Part A (Text 1-4)</span>
-          <span className="text-zinc-400 text-[11px] ml-1">4 篇 × 5 题 × 2 分 = 40 分</span>
+          <BookOpen className="w-4 h-4 text-zinc-700 shrink-0" />
+          <span className="font-semibold text-zinc-800 text-xs sm:text-sm">阅读理解 Part A (Text 1-4)</span>
+          <span className="text-zinc-400 text-[10px] sm:text-[11px] hidden sm:inline ml-1">4 篇 × 5 题 = 40 分</span>
         </div>
-        <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={handleYearChange} />
+        <YearPicker years={yearNumbers} value={year} onChange={handleYearChange} />
       </div>
 
       {data?.intro && <div className="text-zinc-400 text-[11px]">{data.intro}</div>}
 
-      <div className="flex flex-wrap gap-1 border-b border-zinc-200 pb-2">
+      <div className="flex gap-1 border-b border-zinc-200 pb-2 overflow-x-auto whitespace-nowrap">
         {PASSAGE_ORDER.map((pid, i) => {
           const title = `Text ${i+1}`;
           const active = (tab === pid || (!tab && i === 0));
           return (
             <button key={pid} onClick={() => setTab(pid)}
-              className={`px-2.5 py-1 rounded text-xs font-medium transition flex items-center gap-1.5 ${active ? 'bg-zinc-900 text-white shadow-xs' : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100'}`}>
-              <FileText className="w-3 h-3" />
+              className={`px-3 py-1.5 rounded-lg text-xs font-medium transition flex items-center gap-1.5 shrink-0 ${active ? 'bg-zinc-900 text-white shadow-xs' : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100'}`}>
+              <FileText className="w-3.5 h-3.5" />
               <span>{title}</span>
             </button>
           );
@@ -145,28 +163,40 @@ export default function ReadingPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {/* 左 3 列:文章 */}
-        <article className="lg:col-span-3 p-3 rounded border border-zinc-200 bg-white">
+        <article className="lg:col-span-3 p-3 sm:p-4 rounded-xl border border-zinc-200 bg-white">
           {/* 标题 + 翻译按钮 */}
-          <div className="flex items-center justify-between mb-2">
-            <div className="font-semibold text-sm">
+          <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+            <div className="font-semibold text-xs sm:text-sm">
               {passage?.title ? passage.title.split('·')[0].split('-')[0].trim() : `Text ${passageIdx + 1}`}
             </div>
             <div className="flex items-center gap-1.5">
               {showTranslate && (
+                <>
+                  <button
+                    onClick={() => setShowTranslate(false)}
+                    className="text-[11px] px-2.5 py-1 rounded-md border border-zinc-200 hover:bg-zinc-100 active:scale-95 transition"
+                  >
+                    隐藏翻译
+                  </button>
+                  <button
+                    onClick={() => doAITranslate(true)}
+                    disabled={translating}
+                    title="强制调用最新引擎重新翻译"
+                    className="text-[11px] px-2.5 py-1 rounded-md border border-zinc-200 hover:bg-zinc-100 disabled:opacity-50 text-zinc-600 active:scale-95 transition"
+                  >
+                    {translating ? '更新中...' : '重新翻译'}
+                  </button>
+                </>
+              )}
+              {!showTranslate && (
                 <button
-                  onClick={() => setShowTranslate(false)}
-                  className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 hover:bg-zinc-100"
+                  onClick={() => doAITranslate(false)}
+                  disabled={translating}
+                  className="text-[11px] px-2.5 py-1 rounded-md border border-zinc-200 hover:bg-zinc-100 disabled:opacity-50 active:scale-95 transition"
                 >
-                  隐藏翻译
+                  {translating ? '翻译中...' : '全文翻译'}
                 </button>
               )}
-              <button
-                onClick={doAITranslate}
-                disabled={translating}
-                className="text-[11px] px-2 py-0.5 rounded border border-zinc-200 hover:bg-zinc-100 disabled:opacity-50"
-              >
-                {translating ? '翻译中...' : '全文翻译'}
-              </button>
             </div>
           </div>
 
@@ -195,7 +225,9 @@ export default function ReadingPage() {
                     const cacheKey = `${subject}-${year}-${tab}`;
                     const cachedAi = aiTranslations[cacheKey]?.[i];
                     const jsonTr = passage?.translations?.[i];
-                    const tr = jsonTr || cachedAi;
+                    const validJsonTr = (jsonTr && /[\u4e00-\u9fa5]/.test(jsonTr)) ? jsonTr : '';
+                    const validCachedAi = (cachedAi && /[\u4e00-\u9fa5]/.test(cachedAi)) ? cachedAi : '';
+                    const tr = validJsonTr || validCachedAi;
                     return (
                       <div key={i} className="space-y-2">
                         {/* 英文原文 */}

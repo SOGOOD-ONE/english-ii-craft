@@ -218,7 +218,7 @@ export default function VocabQuizSession({
   // 4. 当前交互状态
   const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null);
   const [isAnswerRevealed, setIsAnswerRevealed] = useState<boolean>(false);
-  const [autoNextTimer, setAutoNextTimer] = useState<NodeJS.Timeout | null>(null);
+  const autoNextTimerRef = React.useRef<NodeJS.Timeout | null>(null);
   const [autoAdvance, setAutoAdvance] = useState<boolean>(true);
   const [showSentenceContext, setShowSentenceContext] = useState<boolean>(false);
 
@@ -263,8 +263,13 @@ export default function VocabQuizSession({
     if (currentTask?.type === 'en_zh' && currentCard?.word) {
       speakWord(currentCard.word);
     }
-    if (autoNextTimer) clearTimeout(autoNextTimer);
-  }, [activeTaskKey, currentTask?.type, currentCard?.word, speakWord, autoNextTimer]);
+    return () => {
+      if (autoNextTimerRef.current) {
+        clearTimeout(autoNextTimerRef.current);
+        autoNextTimerRef.current = null;
+      }
+    };
+  }, [activeTaskKey, currentTask?.type, currentCard?.word, speakWord]);
 
   // 生成 4 个选项
   const currentOptions: QuizOption[] = useMemo(() => {
@@ -329,7 +334,10 @@ export default function VocabQuizSession({
 
   // 切换到下一题（含防连续出现动态调整）
   const handleNextQuestion = useCallback(() => {
-    if (autoNextTimer) clearTimeout(autoNextTimer);
+    if (autoNextTimerRef.current) {
+      clearTimeout(autoNextTimerRef.current);
+      autoNextTimerRef.current = null;
+    }
 
     // 检查是否还有题目
     if (currentIndex + 1 < queue.length) {
@@ -353,7 +361,7 @@ export default function VocabQuizSession({
       // 队列已到底部
       setCurrentIndex(queue.length);
     }
-  }, [autoNextTimer, currentIndex, currentTask, queue]);
+  }, [currentIndex, currentTask, queue]);
 
   // 处理选项点击
   const handleSelectOption = useCallback((option: QuizOption) => {
@@ -444,11 +452,11 @@ export default function VocabQuizSession({
 
     // 自动跳转下一题 (如果开启了自动切题)
     if (autoAdvance) {
-      const delay = isCorrect ? 1000 : 2200;
-      const timer = setTimeout(() => {
+      const delay = isCorrect ? 900 : 2000;
+      if (autoNextTimerRef.current) clearTimeout(autoNextTimerRef.current);
+      autoNextTimerRef.current = setTimeout(() => {
         handleNextQuestion();
       }, delay);
-      setAutoNextTimer(timer);
     }
   }, [isAnswerRevealed, currentTask, currentCard, autoAdvance, onReviewSubmit, currentIndex, handleNextQuestion]);
 

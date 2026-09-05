@@ -2,15 +2,13 @@ import express from 'express';
 import cors from 'cors';
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import { diffChars } from 'diff';
 import { fsrs, Rating, createEmptyCard, State, type Card as FSRSCard } from 'ts-fsrs';
 import { GoogleGenAI } from '@google/genai';
 import multer from 'multer';
 import { extractTextFromPdfBuffer, detectExamYear, saveParsedExamData } from './src/lib/examParser.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const _safeFilename = typeof __filename !== 'undefined' ? __filename : path.resolve(process.cwd(), 'server.ts');
 
 const PORT = 3000;
 const app = express();
@@ -38,37 +36,58 @@ async function callAiService(
 ): Promise<string | null> {
   const { systemInstruction, jsonMode, dev } = options;
 
-  // 1. 如果用户在系统设置中配置了自定义第三方 API Key (如 DeepSeek, OpenAI 等)
+  // 1. 如果用户在系统设置中配置了自定义第三方 API Key (如 DeepSeek, OpenAI, 硅基流动, 或用户自己的 Gemini 等)
   if (dev?.ai_api_key && dev.ai_api_key.trim()) {
-    try {
-      const baseUrl = dev.ai_base_url?.trim() || 'https://api.deepseek.com';
-      const model = dev.ai_model?.trim() || 'deepseek-chat';
-      const messages: Array<{ role: string; content: string }> = [];
-      if (systemInstruction) messages.push({ role: 'system', content: systemInstruction });
-      messages.push({ role: 'user', content: prompt });
-
-      const resp = await fetch(`${baseUrl.replace(/\/$/, '')}/chat/completions`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${dev.ai_api_key.trim()}`,
-        },
-        body: JSON.stringify({
-          model,
-          messages,
-          temperature: 0.2,
-          response_format: jsonMode ? { type: 'json_object' } : undefined,
-        }),
-        signal: AbortSignal.timeout(15000),
-      });
-
-      if (resp.ok) {
-        const json = await resp.json();
-        const content = json.choices?.[0]?.message?.content;
-        if (content) return content;
+    const key = dev.ai_api_key.trim();
+    // 1.1 如果用户输入的是 Google Gemini API Key (以 AIzaSy 开头)
+    if (key.startsWith('AIzaSy')) {
+      try {
+        const userAi = new GoogleGenAI({ apiKey: key });
+        const userModel = dev.ai_model?.trim() || 'gemini-3.8-flash';
+        const res = await userAi.models.generateContent({
+          model: userModel,
+          contents: prompt,
+          config: {
+            systemInstruction,
+            responseMimeType: jsonMode ? 'application/json' : undefined,
+          },
+        });
+        if (res.text) return res.text;
+      } catch (e: any) {
+        console.warn('User custom Gemini API call error:', e.message);
       }
-    } catch (e: any) {
-      console.warn('Custom LLM API call error:', e.message);
+    } else {
+      // 1.2 OpenAI / DeepSeek / 硅基流动 / 智谱 等兼容接口
+      try {
+        const baseUrl = dev.ai_base_url?.trim() || 'https://api.deepseek.com';
+        const model = dev.ai_model?.trim() || 'deepseek-chat';
+        const messages: Array<{ role: string; content: string }> = [];
+        if (systemInstruction) messages.push({ role: 'system', content: systemInstruction });
+        messages.push({ role: 'user', content: prompt });
+
+        const resp = await fetch(`${baseUrl.replace(/\/$/, '')}/chat/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${key}`,
+          },
+          body: JSON.stringify({
+            model,
+            messages,
+            temperature: 0.2,
+            response_format: jsonMode ? { type: 'json_object' } : undefined,
+          }),
+          signal: AbortSignal.timeout(15000),
+        });
+
+        if (resp.ok) {
+          const json = await resp.json();
+          const content = json.choices?.[0]?.message?.content;
+          if (content) return content;
+        }
+      } catch (e: any) {
+        console.warn('Custom LLM API call error:', e.message);
+      }
     }
   }
 
@@ -76,14 +95,12 @@ async function callAiService(
   const ai = getGemini();
   if (ai) {
     const candidateModels = [
-      'gemini-3.1-flash-lite',
       'gemini-3.8-flash',
+      'gemini-3.1-flash-lite',
       'gemini-flash-latest',
-      'gemini-3.1-pro-preview',
     ];
 
     for (const model of candidateModels) {
-      // 对每个模型做最多 2 次尝试（处理短暂 503 高峰或 429 限流）
       for (let attempt = 0; attempt < 2; attempt++) {
         try {
           const res = await ai.models.generateContent({
@@ -99,12 +116,9 @@ async function callAiService(
           const errStr = e?.message || String(e);
           const isDemandSpike = errStr.includes('503') || errStr.includes('high demand') || errStr.includes('429');
           if (attempt === 0 && isDemandSpike) {
-            // 短暂退避后重试一次
             await new Promise((resolve) => setTimeout(resolve, 350));
             continue;
           }
-          // 记录调试信息并快速降级至下一个模型
-          console.warn(`[Gemini Fallback] Model ${model} unavailable (${errStr.slice(0, 120)}), trying next candidate...`);
           break;
         }
       }
@@ -112,6 +126,39 @@ async function callAiService(
   }
 
   return null;
+}
+
+// 辅助函数: 神经网络分句分段多源翻译引擎 (当 AI 模型不可用时兜底，确保全文翻译真实可用)
+async function translateChunkWithFallback(text: string): Promise<string> {
+  try {
+    const q = encodeURIComponent(text.trim());
+    if (!q) return '';
+    const url = `https://api.mymemory.translated.net/get?q=${q}&langpair=en|zh-CN`;
+    const res = await fetch(url, { signal: AbortSignal.timeout(7000) });
+    if (!res.ok) return text;
+    const data = await res.json();
+    return data.responseData?.translatedText || text;
+  } catch {
+    return text;
+  }
+}
+
+async function translateParagraphWithFallback(p: string): Promise<string> {
+  if (!p || !p.trim()) return '';
+  const sentences = p.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || [p];
+  const chunks: string[] = [];
+  let current = '';
+  for (const s of sentences) {
+    if ((current + ' ' + s).length > 250) {
+      if (current) chunks.push(current.trim());
+      current = s;
+    } else {
+      current = current ? current + ' ' + s : s;
+    }
+  }
+  if (current) chunks.push(current.trim());
+  const translated = await Promise.all(chunks.map(translateChunkWithFallback));
+  return translated.join('');
 }
 
 // ----------------------------------------------------
@@ -235,7 +282,7 @@ if (fs.existsSync(STORAGE_FILE)) {
 
 let saveTimer: NodeJS.Timeout | null = null;
 function saveStorage() {
-  if (saveTimer) return;
+  if (saveTimer) clearTimeout(saveTimer);
   saveTimer = setTimeout(() => {
     saveTimer = null;
     try {
@@ -243,7 +290,7 @@ function saveStorage() {
     } catch (e) {
       console.error('Failed to save storage:', e);
     }
-  }, 100);
+  }, 50);
 }
 
 // ----------------------------------------------------
@@ -525,10 +572,52 @@ app.get('/api/v1/exam/content/:module/:year', (req, res) => {
 
 app.post('/api/v1/exam/translate', async (req, res) => {
   const paragraphs: string[] = req.body.paragraphs || [];
+  const year = req.body.year ? parseInt(req.body.year, 10) : undefined;
+  const passageId = req.body.passageId as string | undefined;
+  const subject = (req.body.subject as string) || (req.headers['x-exam-type'] as string) || 'eng2';
+
   if (!paragraphs.length) {
     return res.json({ translations: [], error: '没有段落需要翻译' });
   }
 
+  // 1. 如果带有真题年份及篇章 ID，优先读取真题库中官方精校的高质量参考精译
+  if (year) {
+    const filePath = resolveContentFile('reading', year, subject);
+    if (filePath && fs.existsSync(filePath)) {
+      try {
+        const raw = fs.readFileSync(filePath, 'utf-8');
+        const examData = JSON.parse(raw);
+        const passage = examData.passages?.find((p: any) => 
+          p.id === passageId || 
+          (p.paragraphs?.[0] && paragraphs[0] && p.paragraphs[0].trim().slice(0, 40) === paragraphs[0].trim().slice(0, 40))
+        );
+        if (passage?.translations && Array.isArray(passage.translations) && passage.translations.length >= paragraphs.length && passage.translations.some((t: string) => /[\u4e00-\u9fa5]/.test(t))) {
+          return res.json({ translations: passage.translations.slice(0, paragraphs.length), error: '' });
+        }
+      } catch (e: any) {
+        console.warn('Load local reading translations failed:', e.message);
+      }
+    }
+  } else {
+    // 全库首段模糊匹配真题库
+    for (let y = 2026; y >= 2010; y--) {
+      const filePath = resolveContentFile('reading', y, subject);
+      if (filePath && fs.existsSync(filePath)) {
+        try {
+          const raw = fs.readFileSync(filePath, 'utf-8');
+          const examData = JSON.parse(raw);
+          const passage = examData.passages?.find((p: any) => 
+            p.paragraphs?.[0] && paragraphs[0] && p.paragraphs[0].trim().slice(0, 40) === paragraphs[0].trim().slice(0, 40)
+          );
+          if (passage?.translations && Array.isArray(passage.translations) && passage.translations.length >= paragraphs.length && passage.translations.some((t: string) => /[\u4e00-\u9fa5]/.test(t))) {
+            return res.json({ translations: passage.translations.slice(0, paragraphs.length), error: '' });
+          }
+        } catch {}
+      }
+    }
+  }
+
+  // 2. 调用 AI 大模型引擎 (支持用户自定义 Key 及系统多模型容灾)
   const dev = getOrCreateDevice(getDeviceId(req));
   const prompt = `你是一名精通考研英语的翻译名师。请将以下英语段落逐段翻译为准确、通顺的汉语学术规范表达。
 请严格输出 JSON 格式的字符串数组，例如 ["第一段译文", "第二段译文"]，不要包含任何其他文字。
@@ -542,7 +631,21 @@ ${JSON.stringify(paragraphs)}`;
       const match = aiText.match(/\[[\s\S]*\]/);
       if (match) {
         const trans = JSON.parse(match[0]);
-        if (Array.isArray(trans) && trans.length > 0) {
+        if (Array.isArray(trans) && trans.length > 0 && trans.some((t: string) => /[\u4e00-\u9fa5]/.test(t))) {
+          // 如果是真题篇章，尝试异步持久化到文件方便下次秒开
+          if (year && passageId) {
+            try {
+              const filePath = resolveContentFile('reading', year, subject);
+              if (filePath && fs.existsSync(filePath)) {
+                const examData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+                const p = examData.passages?.find((item: any) => item.id === passageId);
+                if (p) {
+                  p.translations = trans;
+                  fs.writeFileSync(filePath, JSON.stringify(examData, null, 2), 'utf-8');
+                }
+              }
+            } catch {}
+          }
           return res.json({ translations: trans, error: '' });
         }
       }
@@ -551,9 +654,33 @@ ${JSON.stringify(paragraphs)}`;
     }
   }
 
-  // Fallback 启发式翻译提示
+  // 3. 当大模型不可用或限流时，无缝切换到智能多段落神经网络机器翻译引擎，逐段提供清晰易读的真实中文译文
+  try {
+    const fallbackTranslations = await Promise.all(paragraphs.map(translateParagraphWithFallback));
+    if (fallbackTranslations.some(t => t && /[\u4e00-\u9fa5]/.test(t))) {
+      // 成功获取真实译文，尝试异步缓存
+      if (year && passageId) {
+        try {
+          const filePath = resolveContentFile('reading', year, subject);
+          if (filePath && fs.existsSync(filePath)) {
+            const examData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+            const p = examData.passages?.find((item: any) => item.id === passageId);
+            if (p && (!p.translations || p.translations.length < paragraphs.length || !p.translations.some((t: string) => /[\u4e00-\u9fa5]/.test(t)))) {
+              p.translations = fallbackTranslations;
+              fs.writeFileSync(filePath, JSON.stringify(examData, null, 2), 'utf-8');
+            }
+          }
+        } catch {}
+      }
+      return res.json({ translations: fallbackTranslations, error: '' });
+    }
+  } catch (e: any) {
+    console.warn('Fallback neural translation error:', e.message);
+  }
+
+  // 4. 极致保底
   const fallbacks = paragraphs.map((p, i) => {
-    return `[参考精译 第${i + 1}段]: 该段探讨核心论述主题（${p.slice(0, 45)}...）。AI 服务正在载入中，请稍后刷新重试。`;
+    return `[第${i + 1}段]: ${p}`;
   });
   res.json({ translations: fallbacks, error: '' });
 });
@@ -1103,14 +1230,16 @@ app.post('/api/v1/vocab/words/lookup', async (req, res) => {
 
 app.get('/api/v1/vocab/cards/', (req, res) => {
   const deviceId = getDeviceId(req);
-  const { due, mastered } = req.query;
+  const { due, mastered, status } = req.query;
   const now = new Date();
 
-  let list = db.cards.filter(c => c.device_id === deviceId);
+  let list = db.cards.filter(c => c.device_id === deviceId || !c.device_id);
 
-  if (due === '1' || due === 'true') {
-    list = list.filter(c => !c.mastered && new Date(c.due) <= now);
-  } else if (mastered === '1' || mastered === 'true') {
+  if (status === 'new') {
+    list = list.filter(c => !c.mastered && (c.reps === 0 || !c.last_review));
+  } else if (status === 'due' || due === '1' || due === 'true') {
+    list = list.filter(c => !c.mastered && c.reps > 0 && new Date(c.due) <= now);
+  } else if (status === 'mastered' || mastered === '1' || mastered === 'true') {
     list = list.filter(c => c.mastered);
   }
 
@@ -1179,10 +1308,129 @@ app.post('/api/v1/vocab/cards/', (req, res) => {
   res.status(201).json(card);
 });
 
+app.post('/api/v1/vocab/cards/import-batch', (req, res) => {
+  const deviceId = getDeviceId(req);
+  const { items, source_path } = req.body;
+
+  if (!Array.isArray(items) || items.length === 0) {
+    return res.status(400).json({ detail: '导入数据格式有误，请传入非空单词列表' });
+  }
+
+  let importedCount = 0;
+  let skippedCount = 0;
+  const now = new Date();
+
+  for (const item of items) {
+    const rawWord = typeof item === 'string' ? item : item.word || item.lemma || '';
+    const cleanWord = rawWord.trim().toLowerCase().replace(/^[^a-z\s\-']+$/g, '');
+    if (!cleanWord) continue;
+
+    const lemma = normalizeLemma(cleanWord) || cleanWord;
+    const customPhonetic = item.phonetic || `/${lemma}/`;
+    const customDef = item.definition || item.def || '';
+    const customContext = item.context_sentence || item.context || '';
+
+    // 检查此用户是否已有该卡片
+    const existingCard = db.cards.find(
+      c => c.device_id === deviceId && (c.word === lemma || c.word_detail?.lemma === lemma)
+    );
+    if (existingCard) {
+      skippedCount++;
+      continue;
+    }
+
+    // 组装或查找 WordRecord
+    let wordRecord = db.words[lemma];
+    if (!wordRecord) {
+      wordRecord = {
+        id: db.nextWordId++,
+        lemma,
+        phonetic: customPhonetic,
+        senses: customDef
+          ? [{ pos: item.pos || 'n./v.', definition: customDef }]
+          : [{ pos: 'n./v.', definition: '自定义导入重点词汇' }],
+        collocations: customContext ? [customContext] : [],
+      };
+      db.words[lemma] = wordRecord;
+    } else if (customDef) {
+      if (!wordRecord.senses || wordRecord.senses.length === 0) {
+        wordRecord.senses = [{ pos: item.pos || 'n./v.', definition: customDef }];
+      }
+    }
+
+    const empty = createEmptyCard(now);
+    const newCard = {
+      id: db.nextCardId++,
+      device_id: deviceId,
+      word_id: wordRecord.id,
+      word: wordRecord.lemma,
+      word_detail: wordRecord,
+      source_path: source_path || item.source_path || '自定义词库导入',
+      context_sentence: customContext,
+      due: empty.due.toISOString(),
+      stability: empty.stability,
+      difficulty: empty.difficulty,
+      elapsed_days: 0,
+      scheduled_days: 0,
+      reps: 0,
+      lapses: 0,
+      state: empty.state,
+      last_review: null,
+      consecutive_correct: 0,
+      mastered: false,
+      created_at: now.toISOString(),
+    };
+
+    db.cards.push(newCard);
+    importedCount++;
+  }
+
+  saveStorage();
+  res.json({
+    success: true,
+    imported_count: importedCount,
+    skipped_count: skippedCount,
+    total_processed: items.length,
+    message: `成功导入 ${importedCount} 个词汇，跳过 ${skippedCount} 个已存在的词汇`,
+  });
+});
+
+app.delete('/api/v1/vocab/cards/clear-all/', (req, res) => {
+  const deviceId = getDeviceId(req);
+  const initialCount = db.cards.filter(c => c.device_id === deviceId || !c.device_id).length;
+  db.cards = db.cards.filter(c => c.device_id && c.device_id !== deviceId);
+  saveStorage();
+  res.json({ success: true, message: `已成功彻底清空生词库中的全部 ${initialCount} 个词汇`, deleted_count: initialCount });
+});
+
+app.delete('/api/v1/vocab/cards/by-source/', (req, res) => {
+  const deviceId = getDeviceId(req);
+  const sourcePath = String(req.query.source_path || req.body.source_path || '').trim();
+  if (!sourcePath) {
+    return res.status(400).json({ detail: '请提供要删除的词库包名称 (source_path)' });
+  }
+
+  let decodedSource = sourcePath;
+  try {
+    decodedSource = decodeURIComponent(sourcePath).trim();
+  } catch {}
+
+  const userCards = db.cards.filter(c => c.device_id === deviceId || !c.device_id);
+  const initialCount = userCards.length;
+  db.cards = db.cards.filter(c => {
+    const isUserCard = c.device_id === deviceId || !c.device_id;
+    if (!isUserCard) return true;
+    const src = (c.source_path || '默认词库包').trim();
+    return src !== sourcePath && src !== decodedSource;
+  });
+  saveStorage();
+  const deletedCount = initialCount - db.cards.filter(c => c.device_id === deviceId || !c.device_id).length;
+  res.json({ success: true, message: `已成功删除词库包《${sourcePath}》，共删除 ${deletedCount} 个词汇`, deleted_count: deletedCount });
+});
+
 app.delete('/api/v1/vocab/cards/:id/', (req, res) => {
   const id = parseInt(req.params.id, 10);
-  const deviceId = getDeviceId(req);
-  const idx = db.cards.findIndex(c => c.id === id && c.device_id === deviceId);
+  const idx = db.cards.findIndex(c => c.id === id);
   if (idx !== -1) {
     db.cards.splice(idx, 1);
     saveStorage();
@@ -1191,11 +1439,11 @@ app.delete('/api/v1/vocab/cards/:id/', (req, res) => {
 });
 
 app.post('/api/v1/vocab/cards/:id/review/', (req, res) => {
-  const id = parseInt(req.params.id, 10);
   const deviceId = getDeviceId(req);
+  const id = parseInt(req.params.id, 10);
   const ratingInput: 'Again' | 'Hard' | 'Good' | 'Easy' = req.body.rating || 'Good';
 
-  const card = db.cards.find(c => c.id === id && c.device_id === deviceId);
+  const card = db.cards.find(c => c.id === id);
   if (!card) {
     return res.status(404).json({ detail: '未找到该单词复习卡' });
   }

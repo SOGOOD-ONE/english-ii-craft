@@ -525,7 +525,7 @@ export default function ExamImporter() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-zinc-200">
-                {overview?.years?.map((item) => (
+                {(Array.isArray(overview?.years) ? overview.years : []).map((item) => (
                   <tr key={item.year} className="hover:bg-zinc-50/50">
                     <td className="py-2 px-3 font-mono font-bold text-zinc-900">{item.year}</td>
                     <td className="py-2 px-3">
@@ -570,9 +570,7 @@ export default function ExamImporter() {
                         <button
                           disabled={deleteMut.isPending}
                           onClick={() => {
-                            if (window.confirm(`确定要移除 ${item.year} 年真题吗？`)) {
-                              deleteMut.mutate(item.year);
-                            }
+                            deleteMut.mutate(item.year);
                           }}
                           className="text-red-500 hover:text-red-700 text-[11px] p-1 rounded hover:bg-red-50 inline-flex items-center gap-0.5"
                           title="删除此年份数据"

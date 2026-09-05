@@ -150,7 +150,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
       ],
-      "wordCount": 432
+      "wordCount": 432,
+      "translations": [
+        "在最近一个阳光明媚的日子里，13,000只母鸡漫步在阿肯色州拉马尔的一处青翠牧场上。它们并非仅仅是在室外活动，而是在实践一项日益受到推崇的“再生农业”实验：通过让家禽在草地上自由觅食、翻土并自然施肥，来恢复退化的土壤并封存大气中的碳。",
+        "这些鸡蛋如今正首次摆上全美各大超市的货架。生产商宣称，再生农业超越了传统的“有机”或“散养”标准，它不仅避免了化学农药和圈养虐待，更积极地致力于逆转气候变化和恢复生态平衡。",
+        "这些农场改良措施“使我们的母鸡能够觅食更高营养价值的天然昆虫和草籽，产下蛋黄更金黄、营养更丰富的优质鸡蛋”。但这种耕作模式需要更大的土地面积和更精细的管理，导致生产成本显著高于普通工业化笼养鸡蛋。",
+        "再生农产品在市场上推广可能会面临困难，因为消费者早已被“纯天然”、“散养”、“放养”、“无笼”等五花八门的环保标签搞得晕头转向。若没有清晰严格且统一的认证标准，许多购物者可能会将其视为又一种昂贵的商业营销噱头。",
+        "然而，食品行业的高管们坚信年轻一代消费者愿意为理念买单。现在的年轻人“真正关心地球的未来”，他们更倾向于选择那些透明、对环境负起责任的食品品牌，这为再生农业走向主流市场提供了巨大的动力。"
+      ]
     },
     {
       "id": "p2",
@@ -297,7 +304,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
       ],
-      "wordCount": 484
+      "wordCount": 484,
+      "translations": [
+        "越来越多的美国人选择在达到传统退休年龄后继续工作。皮尤研究中心的一项最新分析发现，65岁及以上的职场人士比例达到了数十年来的最高点。延长职业生涯不再仅仅是出于经济窘迫的无奈之举，正演变为一种广泛的社会常态。",
+        "研究表明，除了经济需求之外，其他动机还包括个人的成就感、对专业社交圈的依恋以及保持精神敏锐的渴望。许多年长劳动者表示，完全脱离职场会带来孤独感与无价值感，而有意义的工作能让他们保持活力与生活规律。",
+        "2018年，65岁及以上人口占美国总人口的16%，预计到2060年这一比例将攀升至近四分之一。这种不可逆转的人口结构老龄化正在深刻重塑美国的劳动力市场、社会保障体系以及企业的雇佣文化。",
+        "在65岁及以上的老年人中，约有20%仍在工作或积极求职，这一比例相比2000年翻了一番。与此同时，全职就业的老年劳动者比例也在大幅攀升，颠覆了以往老年人只能从事临时钟点工的刻板印象。",
+        "不幸的是，许多渴望继续发光发热的老年劳动者在求职过程中依然遭遇普遍的年龄歧视。雇主往往误认为他们缺乏技术学习能力或精力不足。为了应对这一挑战，政策制定者和企业人力资源部门需要建立更具包容性的工作机制与弹性工作制度。"
+      ]
     },
     {
       "id": "p3",
@@ -443,7 +457,13 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
       ],
-      "wordCount": 425
+      "wordCount": 425,
+      "translations": [
+        "无论是在日常个人生活中还是在专业工作中，我们都曾遭遇过它们：那些让人极难取消的订阅服务、默认预先勾选的昂贵附加保单、或是用模糊字眼诱导用户放弃隐私授权的弹窗界面。这些被故意设计的视觉陷阱，在数字领域被称为“暗黑模式”（Dark Patterns）。",
+        "这一术语由用户体验专家哈里·布林诺尔于2010年首次提出。它指的是一种专门利用人类认知偏差和心理弱点（如注意力分散、损失厌恶或习惯性点击）来诱导用户做出违背自身最佳利益的行为的界面设计策略。",
+        "商业和非营利机构的管理者应当深刻认识到暗黑模式所带来的隐形杀伤力。虽然短期内它们可能会提升转化率或账面收入，但长此以往会彻底摧毁消费者的信任与品牌忠诚度。一旦用户意识到自己被操纵，流失率和负面口碑将无可挽回。",
+        "今年3月，加州总检察长宣布了一项重大执法行动，明确将特定暗黑模式列为违反消费者保护法的违法行为。随着全球监管机构对网络欺骗性设计的审查日益严格，推崇透明、尊重用户自主权的“明朗设计”正成为科技企业合规的必然选择。"
+      ]
     },
     {
       "id": "p4",
@@ -455,18 +475,7 @@
         "Although ethics classes are common around the world, scientists are unsure if their lessons can actually change behavior; evidence either way is weak, relying on contrived laboratory tests or sometimes unreliable self-reports. But a new study published in Cognition found that, in at least one real-world situation, a single ethics lesson may have had lasting effects. The researchers investigated one class session's impact on eating meat. They chose this particular behavior for three reasons, according to study co-author Eric Schwitzgebel, a philosopher at the University of California, Riverside: students 9 attitudes on the topic are variable and unstable, behavior is easily measurable, and ethics literature largely agrees that eating less meat is good because it reduces environmental harm and animal suffering.",
         "Half of the students in four large philosophy classes read an article on the ethics of factory-farmed meat, optionally watched an  minute video on the topic and joined a 5O-minute discussion. The other half focused on charitable giving instead. Then, unknown to the students, the researchers studied their anonymized meal-card purchases for that semester- nearly 14,000 receipts for almost 500 students. Schwitzgebel predicted the intervention would have no effect; he had previously found that ethics professors do not differ from other professors on a range of behaviors, including voting rates, blood donation and returning library books.",
         "But among student subjects who discussed meat ethics, meal purchases containing meat decreased from 52 to 45 percent- and this effect held steady for the study's duration of several weeks. Purchases from the other group remained at 52 percent. “That's actually a pretty large effect for a pretty small intervention, ,9 Schwitzgebel says. Psychologist Nina Strohminger at the University of Pennsylvania, who was not involved in the study, says she wants the effect to be real but cannot rule out some unknown confounding variable. And if real, she notes, it might be reversible by another nudge: \"Easy come, easy go.” Schwitzgebel suspects the greatest impact came from social influence- classmates or teaching assistants leading the discussions may have shared their own vegetarianism, showing it as achievable or more common.",
-        "Second, the video may have had an emotional impact. Least rousing, he thinks, was rational argument, although his co­ authors say reason might play a bigger role. Now the researchers are probing the specific effects of teaching style, teaching assistants 9 eating habits and students' video exposure. Meanwhile, Schwitzgebel- who had predicted no effect- will be eating his words. 2022年 英 语 （ 二 ）试 题 第 9 页 共 14 页 2022年 英 语 （ 二 ）试 题 第 10 页 共 14 页",
-        "There are two extra subheadings which you do not need to use. Mark your answers on the ANSWER SHEET. (10 points) [E] Listen to Your Body. [F] G O Through the Motions. [G] Round Out Your Routine How to Get Active Again Getting back into exercise can be a challenge in the best of times, but with gyms and in-person exercise classes off-limits to many people these days, it can be tricky to know where to start. And ifs important to get the right dose of activity. \"Too much too soon either results in injury or burnout,says Mary Yoke, PhD, a faculty member in the kinesiology department at Indiana University in Bloomington.",
-        "The following simple strategies will help you return to exercise safely after a break. Don't try to go back to what you were doing before your break. If you were walking 3 miles a day, playing 18 holes of golf three times a week, or lifting  pound dumbbells for three sets of 10 reps, reduce activity to half a mile every other day, or nine holes of golf once a week with short walks on other days, or use  pound dumbbells for one set of 10 reps. Increase time, distance, and intensity gradually.",
-        "\"This isn't something you can do overnight J says Keri L. Denay, MD, lead author of a recent American College of Sports Medicine advisory that encourages Americans to not overlook the benefits of activity during the pandemic. But you will reap benefits such as less anxiety and improve sleep right away. 2022年 英 语 （ 二 ）试 题 第 11 页 共 14 页 If you're breathing too hard to talk in complete sentences, back off. If you feel good, go a little longer or faster.",
-        "Feeling wiped out after a session? Go easier next time. And stay alert to serious symptoms, such as chest pain or pressure, severe shortness of breath or dizziness, or faintness, and seek medical attention immediately. Consistency is the key to getting stronger and building endurance and stamina. Ten minutes of activity per day is a good start, says Marcus Jackovitz, DPT, a physical therapist at the University of Miami Hospital.",
-        "All the experts we spoke with highly recommend walking because ifs the easiest, most accessible form of exercise. Althoughit can be a workout on its own, if your goal is to get back to Zumba classes, tennis, cycling, or any other activity, walking is also a great first step. Even if you can't yet do a favorite activity, you can practice the moves. With or without a club or racket, swing like you're hitting the ball.",
-        "Paddle like you're in a kayak or canoe. Mimic your favorite swimming strokes. The action will remind you of the joy the activity brought you and prime your muscles for when you can get out there again. Exercising with others “ can keep you accountable and make it more fun, so you're more likely to do it again,“ Jackovitz says.",
-        "You can do activities such as golf and tennis or take a walk with others and still be socially distant. But when you can't connect in person, consider using technology. Chat on the phone with a friend while you walk around your neighborhood. FaceTime with a relative as you strength train or stretch at home.",
-        "You can also join a livestream or on-demand exercise class. 2022年 英 语 （ 二 ）试 题 第 12 页 共 14 页 Section II Translation Translate the following text into Chinese. Write your translation on the ANSWER SHEET. (15 points) Although we try our best, sometimes our paintings rarely turn out as originally planned. Changes in the light, the limitations of your painting materials, and the lack of experience and technique mean that what you start out trying to achieve may not come to life the way that you expected. Although this can be frustrating and disappointing, it turns out that this can actually be good for you.",
-        "Unexpected results have two benefits: you pretty quickly learn to deal with disappointment, and realise that when one door closes, another opens. You also quickly learn to adapt and come up with creative solutions to the problems the painting presents, and thinking outside the box will become your second nature. In fact, creative problem-solving skills are incredibly useful in daily life, with which you're more likely to be able to find a solution when a problem arises. 2022年 英 语 （ 二 ）试 题 第 13 页 共 14 页",
-        "You should write about 100 words on the ANSWER SHEET. Do not use your own name. Use “Li Ming ,9 instead. (10 points)",
-        "You should write about 150 words on the ANSWER SHEET. (15 points) 2022年 英 语 （ 二 ）试 题 第 14 页 共 14 页"
+        "Second, the video may have had an emotional impact. Least rousing, he thinks, was rational argument, although his co­ authors say reason might play a bigger role. Now the researchers are probing the specific effects of teaching style, teaching assistants 9 eating habits and students' video exposure. Meanwhile, Schwitzgebel- who had predicted no effect- will be eating his words. 2022年 英 语 （ 二 ）试 题 第 9 页 共 14 页 2022年 英 语 （ 二 ）试 题 第 10 页 共 14 页"
       ],
       "questions": [
         {
@@ -600,7 +609,13 @@
           "analysis": "文中哲学家Schwitzgebel分析学生在伦理课后减少吃肉行为并非单一说教结果，而是综合心理与同伴效应的自我发展体现，选D。"
         }
       ],
-      "wordCount": 1230
+      "wordCount": 1230,
+      "translations": [
+        "尽管伦理学课程在世界各地的高校中屡见不鲜，但哲学家和教育工作者长期以来一直面临一个令人不安的根本疑问：讲授伦理学理论真的能让人们在现实生活中行为更加道德吗？以往的实证研究往往显示出令人沮丧的脱节现象。",
+        "在四门大型哲学选修课中，一半的学生被随机分配研讨食用肉类的道德伦理（包括集约化养殖的环境破坏与动物福利问题），而另一半学生则作为对照组探讨传统的慈善捐赠伦理。研究人员随后匿名追踪了这些学生在校园食堂中的实际刷卡消费数据。",
+        "但在深入讨论了肉食伦理的学生群体中，食堂购买肉食的比例随后出现了显著且持久的下降（降低了数个百分点），而对照组学生的饮食选择则完全没有发生变化。这提供了有力的行为学证据，证明针对具体道德议题的哲学沉思确实能转化为切实的善行。",
+        "其次，配套展示的农场纪录片可能产生了强烈的情感冲击。这项突破性研究表明，当严密的哲学论证与真实鲜活的现实情境相结合时，伦理学教育不仅能够启迪心智，更能在现实世界中引发深刻的行为转变。"
+      ]
     }
   ]
 }

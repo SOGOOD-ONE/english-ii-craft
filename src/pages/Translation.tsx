@@ -86,36 +86,40 @@ export default function TranslationPage() {
   }
 
   return (
-    <div className="max-w-4xl mx-auto py-5 px-3">
+    <div className="max-w-4xl mx-auto py-3 sm:py-5 px-1.5 sm:px-3">
       {/* 统一段落翻译工作台主容器 */}
       <div className="bg-white border border-zinc-200 rounded-xl shadow-xs overflow-hidden">
         {/* 顶部标题与年份/控制栏 */}
-        <div className="p-4 border-b border-zinc-100 bg-white">
+        <div className="p-3 sm:p-4 border-b border-zinc-100 bg-white">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
             <div>
-              <div className="flex items-center gap-2">
-                <span className="font-bold text-zinc-800 text-sm">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="font-bold text-zinc-800 text-xs sm:text-sm">
                   {year}年 考研英语 · Part C 段落翻译精修
                 </span>
-                <span className="text-[11px] bg-zinc-100 text-zinc-700 border border-zinc-200/80 px-2 py-0.5 rounded font-mono font-medium">
+                <span className="text-[10px] sm:text-[11px] bg-zinc-100 text-zinc-700 border border-zinc-200/80 px-2 py-0.5 rounded font-mono font-medium">
                   Part C / 15分
                 </span>
               </div>
-              <p className="text-zinc-500 text-xs mt-1">
+              <p className="text-zinc-500 text-[11px] sm:text-xs mt-1">
                 支持按真题官方段落逐句切片练习、字符级 Diff 对比、考点解析与易错避坑。
               </p>
             </div>
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-wrap w-full sm:w-auto justify-between sm:justify-start">
               <button
                 type="button"
                 onClick={() => setShowFullText(!showFullText)}
-                className="flex items-center gap-1 text-xs border border-zinc-200/80 text-zinc-700 hover:bg-zinc-50 px-2.5 py-1.5 rounded-lg transition cursor-pointer bg-white"
+                className="flex items-center gap-1 text-xs border border-zinc-200/80 text-zinc-700 hover:bg-zinc-50 px-2.5 py-1.5 rounded-lg transition cursor-pointer bg-white active:scale-95"
               >
                 <BookOpen className="w-3.5 h-3.5 text-zinc-500" />
                 <span>{showFullText ? '收起完整原文' : '完整真题与译文'}</span>
                 {showFullText ? <ChevronUp className="w-3.5 h-3.5" /> : <ChevronDown className="w-3.5 h-3.5" />}
               </button>
-              <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={handleYearChange} />
+              <YearPicker
+                years={(Array.isArray(years) ? years : Array.isArray((years as any)?.years) ? (years as any).years : []).map((y: any) => typeof y === 'number' ? y : y?.year).filter((y: any): y is number => typeof y === 'number')}
+                value={year}
+                onChange={handleYearChange}
+              />
             </div>
           </div>
 

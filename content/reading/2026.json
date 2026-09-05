@@ -151,7 +151,15 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
       ],
-      "wordCount": 413
+      "wordCount": 413,
+      "translations": [
+        "谈及公共图书馆，人们脑海中往往会浮现出某种特定印象：积满灰尘、陈旧过时，是你童年时喜欢的地方，但就像英国的海滨小镇一样，你现在还会去那里吗？况且——它们不都正面临关闭吗？然而现实却截然不同，正如我在文化部委托我对英格兰公共图书馆进行独立审查时所发现的那样（该审查报告于昨日发布）。当我走访全国各地的图书馆时，惊讶地得知全英图书馆的数量（2,892家）竟然是麦当劳门店数量的两倍以上。",
+        "走进其中的任何一家，你都会发现这里是一片繁忙活跃的景象。尽管图书始终是（且应当始终是）任何图书馆的核心，但图书馆还提供了诸多其他服务：就业指导、语言课程或数字化接入与技术支持。有些图书馆设有商业与知识产权中心，可为企业主和创业者提供协助。许多图书馆现场配备了护士进行基础健康检查，并与全科医生（GP）诊所建立了联动合作。",
+        "在某些图书馆，年轻人甚至可以免费借用符合国际足联（FIFA）标准的足球。作为所有这一切的回报，你完全不需要付出任何代价。这里不仅不收取任何费用，也绝不会有人要求你证明自己或作出解释；你只会受到热情的欢迎，在需要时获得帮助，不需要时也不会受到打扰。无论是公共机构还是私营机构，没有哪一家能像图书馆这样包容大度。",
+        "然而，我们的图书馆却依然常常被忽视和低估。整体到访人次呈下降趋势，由于地方政府持续面临财政压力，许多图书馆举步维艰。自2010年以来关闭的图书馆数量尚存争议：英国特许公共财政与会计协会（CIPFA）的年度调查显示全英关闭数量接近800家；而英格兰艺术委员会掌握的官方统计数据则记录为230家。",
+        "关闭230家图书馆当然还是太多了。因此，如果我们想要为子孙后代守护图书馆，就必须提高全社会对图书馆及其所开展工作的认知度。本次审查建议在全国范围内开展品牌宣传活动，以增强图书馆的实体影响力；重新推行一项允许会员凭卡在全国任意图书馆借阅的计划；并为儿童提供自动注册会员服务。如果我们不去使用图书馆，最终就将彻底失去它们。",
+        "而对于那些已经有一段时间没去过图书馆的人来说，那里的崭新面貌可能会让他们大吃一惊。"
+      ]
     },
     {
       "id": "p2",
@@ -298,7 +306,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [D]。"
         }
       ],
-      "wordCount": 404
+      "wordCount": 404,
+      "translations": [
+        "我们的研究显示，在英国，大约每五个职场人中就有一人在工作场所与像 ChatGPT 这样的人工智能交流。有些人会询问自己在工作中的权利，少数人甚至会询问是否可以炒掉自己的老板。三分之一的人会询问与工作相关的问题，但对其他人而言，生成式人工智能更像是在孤独日子里的友好伴侣。我们对这些员工经历的深入调查发现，近三分之二的人表示与 AI 助手交谈有助于减轻孤独感。换言之，他们使用 AI 不仅是为了头脑风暴、起草文稿和编辑校对，也是为了倾诉心声、分享欢笑和汲取知识。",
+        "这些经历直接反映了对许多人而言现代职场的现状：孤独而封闭的环境，其中疏离感和精疲力竭的情绪普遍蔓延。当工作环境的情感纽带开始瓦解时，人们就会寻找其他途径来满足自身的需求。这引发了一些重要问题：当交谈对象不是人类而是人工智能时，究竟会发生什么？",
+        "作为职场人，我们都需要情感连接。当这种连接缺失时，转向求助于 AI 并不是失败的表象，而是一种应对策略。话虽如此，与 AI 建立情感纽带听起来可能有些滑稽，甚至令人担忧。但是，人与机器沟通之间的界限确实已经变得越发模糊。",
+        "生成式 AI 可以用自然语言回应我们的提问、提出问题、肯定我们的情绪，甚至调整其语调以适应我们的情绪节奏。这些特征使得人们很容易对 AI 工具产生信任感，进而觉得它就像一个真正的伴侣。但这其中潜藏着一个陷阱：尽管 AI 工具听起来好像很在乎你，但实际上它们根本不在乎。AI 没有感情、共情能力或道德指南针。它无法真正分担我们的痛苦，也无法庆祝我们的成功。当人们转向 AI 来满足情感需求时，他们是在与一台旨在模拟人类反应、而非真正具有感知力的机器互动。",
+        "企业和机构不应责怪员工求助于 AI，而应理解推动这种行为背后的动因：职场中的情感空虚。领导者和管理者应当营造一种让人们感受到彼此被关注、被倾听和被支持的环境。这包括鼓励真实的日常对话、创造随意的社交互动契机，并营造一种把寻求帮助视作常态的包容氛围。技术可以是一种有益的工具，但它绝不应取代那些赋予工作深刻意义的、错综复杂却又无比真挚的人际关系。"
+      ]
     },
     {
       "id": "p3",
@@ -445,28 +460,27 @@
           "analysis": "根据文中对意大利铁路现代化规划的描述，重点工程之一是改造既有常规线路以提升运力网络，选A。"
         }
       ],
-      "wordCount": 394
+      "wordCount": 394,
+      "translations": [
+        "自2008年罗马与米兰之间的高铁网络开通以来，两地间的旅途时间缩短了一半以上，降至三小时以内。在此过程中，高铁服务实际上挤垮了连接意大利商业之都与政治之都的空中穿梭航线。如今，两座城市之间约80%的客运出行都由高铁承载。然而，这项服务已然成为其自身成功的牺牲品，因为意大利国家铁路网运营商（RFI）正竭力应对急剧飙升的运输需求。",
+        "意大利铁路网络上的列车延误现象愈发频繁，且一旦发生延误，其连锁反应往往是灾难性的。高铁线路上的一处技术故障会迅速蔓延至全国，给乘客带来极大的混乱。根本原因在于高铁网络已经达到了承载极限。以罗马至佛罗伦萨的线路为例，其运行负荷已接近饱和。在高峰时段，列车每隔几分钟就有一趟，几乎没有任何容错空间。",
+        "米兰比可卡大学的运输经济学家卡洛·安德烈亚·朱里钦（Carlo Andrea Giuricin）指出，该铁路网络最初是为较少班次的列车而设计的。“当一个网络的利用率如此极高时，就不存在任何备用运力容量，线路上只要出现哪怕一丝小瑕疵，整个局势就会变得极其错综复杂，”他表示。",
+        "混合运行系统意味着高铁列车在某些特定路段或穿行大城市时，必须在常规既有铁轨上行驶。如果遇到拥堵，或者例如一列普速列车发生故障，整个高铁网络都会受到波及。此次升级改造将带来的最重要变化之一，是通过修建地下铁路联络线，在某些城市核心区实现高铁线路与普速常规线路的彻底物理分离。专家表示，RFI 多年来持续投资的高密度列控技术与卫星信号控制系统也将带来显著的运行改善。",
+        "朱里钦表示，这将有助于缩短在同一条线路上任意特定时刻前后两列高铁列车之间的安全行车间距，这应当意味着运载能力和通行顺畅度将得到显著跃升。"
+      ]
     },
     {
       "id": "p4",
       "title": "Text 4 · 社会文化",
       "theme": "社会文化",
       "category": "社会文化",
-      "word_count": 1297,
+      "word_count": 562,
       "paragraphs": [
         "In 2023, Chicago lost one of its most beloved street festivals. The Silver Room Block Party, staged by Hyde Park community leader Eric Williams, announced it would not return in 2024. What began as a small neighborhood gathering blossomed into a massive cultural event, welcoming tens of thousands of people each year over nearly two decades before abruptly shutting down. Williams pointed to rising production costs and declining attendee donations as primary reasons the Silver Room Block Party could not continue, highlighting a reality that all street festival organizers face right now.",
         "The cost of producing a street festival in Chicago has skyrocketed. Security, entertainment, portable restrooms, insurance and even basics such as fencing and staffing have all become significantly more expensive. At the same time, donations at festival gates have dropped dramatically. Chicago’s summer festivals are about more than just entertainment; they are economic engines that directly benefit the neighborhoods they’re in and the city of Chicago as whole.",
         "Street festivals drive foot traffic to local businesses and foster the kind of cultural vibrancy that makes our city special. We often hear people ask why we solicit donations at our entry points, especially when the city’s largest festivals like the Chicago Jazz Festival do not request donations. The fact is, unlike those large, city-produced music festivals, your neighborhood street festivals receive no city funding and rely on a combination of sponsorships, vendor fees and gate donations to cover their costs. Wicker Park Fest has long been one of Chicago’s most anticipated summer festivals, drawing upward of 70,000 attendees for a full weekend of live indie music, local art, small business vendors and, most importantly, community connection.",
         "In 2024, Wicker Park Fest saw record- breaking attendance. Despite the turnout, gate donations reached their lowest point in our history. This year, we’ve been forced to scale back the footprint of the fest. We are eliminating a stage, booking fewer performers and making additional cuts to reduce our costs, all while striving to keep the festival as vibrant as ever, as supportive of local artists and businesses, and as true to Wicker Park’s unique spirit and reputation as festgoers have come to expect.",
-        "This summer, as you enjoy your favorite neighborhood street festival, I hope you’ll remember that they exist because of community support. A thriving summer festival season doesn’t happen by accident; it happens when we all chip in.",
-        "Mark your answers on the ANSWER SHEET. (10 points) In an effort to support restoration programmes, specialists are developing supplies of seeds and seedlings, maintaining gene banks and sequencing the genomes of indigenous trees and other crops. Their work deals with one of the problems that could block major restoration efforts in different parts of the world. “Where’s the planting material going to come from? That’s one big bottleneck,” says genetic- resources specialist Ramni Jamnadass. Asia is arguably the region most neglected by global efforts to increase diversity in restoration and to study native species.",
-        "Christopher Kettle, Biodiversity International’s director for forest genetic resources and restoration in Rome, says that the need for infrastructure — things such as mechanisms for collecting and storing seeds, and nurseries to raise seedlings — might be most desperate here because many trees are ‘masting’ species, which don’t produce seeds every year. People need to be ready. “Otherwise, you miss the boat, you lose all the seed and you’ve got to wait another seven years,” says Kettle. “This is a really, really critical issue for restoration in Southeast Asia, because many of the most important timber species and tree species — the ones that will lock up the most carbon — they’re all masting species.” Climate change is a driving factor in the push to restore forests, but it also raises questions, such as where trees can thrive in the future. Climate change is also expected to alter relationships between trees, insects, diseases and other forest species. “Insects that today are a minor problem may become a major problem if they can produce three or four generations in a year,” says forest ecologist John Stanturf. This remains a significant knowledge gap. “We know enough to know that this is a concern, but we don’t know enough about how to respond to it yet.",
-        "That’s a great area to be doing research.” So is soil, says Cindy Prescott, a forest ecologist at the University of British Columbia in Vancouver. “If you don’t look at the soil at the start, you can spend a lot of money and time putting in species that aren’t going to survive there.” With so much research left to do, leaders in the field have been doing some soul-searching, and acknowledging that restoration can be motivated by — and designed to meet — different needs. “When you talk about conservation or restoration, the first question has to be restoration by whom, for whom?” says Daniel Janzen, a biologist at the University of Pennsylvania. The question can have more than one answer. Much of the global funding for restoration is dedicated to developing it as a tool to mitigate climate change, notes restoration ecologist Pedro Brancalion. “But if you ask a farmer in Brazil if he or she is concerned about climate change, they would say, ‘No, I am concerned about water,’ ” he says. Their interests as stewards of the land need to be better integrated with those who have the money to support restoration.",
-        "That has been the strongest lesson of all for forest ecologist Robin Chazdon. Restoration is about more than what gets planted in the ground, she says. “Yes, it’s about forests, but it’s really about people. They are the agents of restoration.” not produce seeds annually. restoration. needs of the people involved. in forest restoration. with. awareness of whose interests to serve. G. Some creatures in the forest that multiply fast can become a great threat to forest restoration.",
-        "The clothes we choose can reflect our personality, mood, and identity. Whether we opt for bold, colorful outfits or prefer more understated styles, our dress choices convey messages about who we are and how we want to be perceived. Additionally, clothing can impact our confidence levels. When we wear clothes that make us feel comfortable and confident, it can positively affect our self-esteem and overall mood.",
-        "Moreover, cultural and societal influences play a significant role in shaping our dress choices. Different cultures have their norms and expectations regarding dress, which can influence the types of clothing people wear and the meanings attributed to them.",
-        "Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email. Use “Li Ming” instead. (10 points)",
-        "Write your answer in about 150 words on the ANSWER SHEET. (15 points) 某项关于儿童户外活动看法的调查 满足好奇心 促进观察力 强身健体 增强亲子互动"
+        "This summer, as you enjoy your favorite neighborhood street festival, I hope you’ll remember that they exist because of community support. A thriving summer festival season doesn’t happen by accident; it happens when we all chip in."
       ],
       "questions": [
         {
@@ -600,7 +614,14 @@
           "analysis": "结尾段作者呼吁街头节日的存续离不开社区公众的倾力支持与慷慨捐赠（community support / chip in），选C。"
         }
       ],
-      "wordCount": 1127
+      "wordCount": 1127,
+      "translations": [
+        "2023年，芝加哥失去了其最受民众喜爱的街头节日之一。由海德公园社区领袖埃里克·威廉姆斯（Eric Williams）创办的“银色空间街区派对”（The Silver Room Block Party）宣布将不会在2024年回归。这场最初仅仅是邻里小聚的活动，在近二十年间逐渐演变成一项盛大的文化盛会，每年吸引数以万计的人群参与，却在近期戛然而止。威廉姆斯指出，节节攀升的筹办成本以及参与者捐款的持续下滑是派对无法继续的主要原因，这凸显了当下所有街头节日主办方共同面临的严峻现实。",
+        "在芝加哥举办街头节日的成本已然飙升。安保、演艺、移动卫生间、保险乃至围栏和工作人员等基础项目的支出都大幅上涨。与此同时，节日入口处的公众捐款却急剧缩水。芝加哥的夏季街头节日远不止是纯粹的娱乐消遣；它们是直接造福所在社区乃至整个芝加哥市的经济引擎。",
+        "街头节日为当地商家带来了巨大的客流量，并孕育了赋予我们这座城市独特魅力的文化活力。我们经常听到人们询问为什么要在入口处募捐，尤其是像芝加哥爵士音乐节这样全市规模最大的节庆活动并不索要捐款。事实是，与那些由市政官方出资举办的大型音乐节不同，你们所在社区的街头节日得不到任何市政拨款，完全依靠赞助、摊位费以及现场入场捐赠的综合资金来覆盖成本。威克公园节（Wicker Park Fest）长期以来都是芝加哥最受期待的夏季节日之一，在整整一个周末的时间里吸引了超过7万名参与者，共同享受现场独立音乐、本土艺术、小微商家市集，以及最为重要的社区情感纽带。",
+        "2024年，威克公园节创下了历史新高的参会人数纪录。然而尽管人潮涌动，门票入口处的捐款数额却跌至历史最低谷。今年，我们被迫缩减了节日的举办规模。我们取消了一座舞台，减少了演出人员的邀请数量，并采取了其他削减措施来降低成本，同时依然努力保持节日一如既往的活力，全力支持当地艺术家和小企业，并坚守参与者所期望的威克公园独特的文化底蕴与声誉。",
+        "今年夏天，当你流连于你最钟爱的社区街头节日时，我希望你能记住：它们的存续完全依赖于社区公众的支持。一个繁荣热闹的夏季节庆季绝非理所当然，唯有我们共同出力慷慨相助，美好才能得以延续。"
+      ]
     }
   ]
 }

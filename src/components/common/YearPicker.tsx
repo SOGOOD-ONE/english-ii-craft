@@ -29,6 +29,8 @@ export default function YearPicker({
     return () => document.removeEventListener('mousedown', onDocClick);
   }, []);
 
+  const safeYears = Array.isArray(years) ? years : [];
+
   return (
     <div className="relative inline-block" ref={ref}>
       <button
@@ -44,7 +46,7 @@ export default function YearPicker({
       </button>
       {open && (
         <div className="absolute z-50 mt-1 right-0 min-w-[100px] bg-white border border-zinc-200 rounded shadow-lg py-1 max-h-64 overflow-y-auto">
-          {(years || []).map((y) => (
+          {safeYears.map((y) => (
             <button
               key={y}
               onClick={() => {

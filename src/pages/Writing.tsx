@@ -198,16 +198,20 @@ export default function WritingPage() {
   return (
     <div className="grid grid-cols-12 gap-3">
       {/* 左栏: 图表与数据特征 */}
-      <div className="col-span-5 bg-white border border-zinc-200 rounded p-3 flex flex-col justify-between h-[calc(100vh-68px)] overflow-hidden">
+      <div className="col-span-12 lg:col-span-5 bg-white border border-zinc-200 rounded-xl p-3 flex flex-col justify-between lg:h-[calc(100vh-68px)] h-auto overflow-hidden">
         <div className="overflow-y-auto pr-1 flex-1">
-          <div className="border-b border-zinc-100 pb-2 mb-2 flex justify-between items-center">
+          <div className="border-b border-zinc-100 pb-2 mb-2 flex justify-between items-center gap-2">
             <div className="flex items-center gap-1.5 min-w-0">
               <BarChart3 className="w-4 h-4 text-zinc-700 shrink-0" />
-              <span className="font-semibold text-zinc-800 truncate">{paper?.title || `${year}年大作文`}</span>
+              <span className="font-semibold text-zinc-800 text-xs sm:text-sm truncate">{paper?.title || `${year}年大作文`}</span>
             </div>
             <div className="flex items-center gap-2 shrink-0">
-              <YearPicker years={(years || []).map(y => y.year)} value={year} onChange={handleYearChange} />
-              <span className="text-zinc-400 text-xs">满分: 15分</span>
+              <YearPicker
+                years={(Array.isArray(years) ? years : Array.isArray((years as any)?.years) ? (years as any).years : []).map((y: any) => typeof y === 'number' ? y : y?.year).filter((y: any): y is number => typeof y === 'number')}
+                value={year}
+                onChange={handleYearChange}
+              />
+              <span className="text-zinc-400 text-xs">15分</span>
             </div>
           </div>
 
@@ -237,7 +241,7 @@ export default function WritingPage() {
               <div
                 ref={chartRef}
                 id="echart-container"
-                style={{ height: '275px', width: '100%', minHeight: '275px' }}
+                style={{ height: '260px', width: '100%', minHeight: '220px' }}
                 className="w-full border border-zinc-200/80 rounded bg-white"
               />
               {paperLoading && (
@@ -270,30 +274,30 @@ export default function WritingPage() {
             </div>
           )}
         </div>
-        <div className="text-zinc-400 text-[11px] pt-1 border-t border-zinc-100">提示：试着选中左侧文字中的英文单词测试划词捕获。</div>
+        <div className="text-zinc-400 text-[11px] pt-1 border-t border-zinc-100 hidden sm:block">提示：试着选中左侧文字中的英文单词测试划词捕获。</div>
       </div>
 
       {/* 右栏: 写作积木与编辑器 */}
-      <div className="col-span-7 bg-white border border-zinc-200 rounded p-3 flex flex-col justify-between h-[calc(100vh-68px)]">
+      <div className="col-span-12 lg:col-span-7 bg-white border border-zinc-200 rounded-xl p-3 flex flex-col justify-between lg:h-[calc(100vh-68px)] h-auto">
         <div>
           <div className="border-b border-zinc-100 pb-2 mb-2">
-            <span className="font-semibold text-zinc-800">常用表达积木 (点击插入光标处):</span>
-            <div className="flex flex-wrap gap-1.5 mt-2">
+            <span className="font-semibold text-zinc-800 text-xs">常用表达积木 (点击插入光标处):</span>
+            <div className="flex flex-wrap sm:flex-wrap gap-1.5 mt-2 overflow-x-auto pb-1 sm:pb-0">
               {(paper?.scaffolding?.trends || ['account for the largest proportion of', 'take the lead in', 'reach a peak at']).slice(0, 3).map((p: string) => (
                 <button key={p} onClick={() => insertWord(p)}
-                  className="bg-emerald-50 hover:bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded border border-emerald-200 text-xs transition" title="趋势句型">
+                  className="bg-emerald-50 hover:bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded border border-emerald-200 text-xs transition shrink-0 sm:shrink-1" title="趋势句型">
                   [趋势] {p}
                 </button>
               ))}
               {(paper?.scaffolding?.comparisons || ['in sharp contrast to', 'account for a larger share than']).slice(0, 2).map((p: string) => (
                 <button key={p} onClick={() => insertWord(p)}
-                  className="bg-blue-50 hover:bg-blue-100 text-blue-800 px-2 py-0.5 rounded border border-blue-200 text-xs transition" title="对比句型">
+                  className="bg-blue-50 hover:bg-blue-100 text-blue-800 px-2 py-0.5 rounded border border-blue-200 text-xs transition shrink-0 sm:shrink-1" title="对比句型">
                   [对比] {p}
                 </button>
               ))}
               {(paper?.scaffolding?.reasons || ['hinge upon the increasing need for', 'can be attributed to the accelerating pace of life']).slice(0, 2).map((p: string) => (
                 <button key={p} onClick={() => insertWord(p)}
-                  className="bg-purple-50 hover:bg-purple-100 text-purple-800 px-2 py-0.5 rounded border border-purple-200 text-xs transition" title="归因句型">
+                  className="bg-purple-50 hover:bg-purple-100 text-purple-800 px-2 py-0.5 rounded border border-purple-200 text-xs transition shrink-0 sm:shrink-1" title="归因句型">
                   [归因] {p}
                 </button>
               ))}
@@ -301,24 +305,24 @@ export default function WritingPage() {
           </div>
           <textarea id="essay-editor" value={essay} onChange={e => setEssay(e.target.value)}
             placeholder="在此键入你的图表作文... (建议字数: 150词左右)"
-            className="w-full h-64 p-3 border border-zinc-200 rounded focus:outline-none focus:border-zinc-900 font-mono text-xs leading-relaxed resize-none" />
-          <div className="text-right text-zinc-400 mt-1 font-mono">当前字数: {wordCount} 词</div>
+            className="w-full h-48 sm:h-64 p-3 border border-zinc-200 rounded focus:outline-none focus:border-zinc-900 font-mono text-xs leading-relaxed resize-none" />
+          <div className="text-right text-zinc-400 mt-1 font-mono text-xs">当前字数: {wordCount} 词</div>
         </div>
 
-        <div className="border-t border-zinc-100 pt-2 flex justify-between items-center">
-          <button onClick={() => setEssay('')} className="text-zinc-500 hover:text-zinc-800">清空内容</button>
+        <div className="border-t border-zinc-100 pt-2 flex justify-between items-center gap-2">
+          <button onClick={() => setEssay('')} className="text-zinc-500 hover:text-zinc-800 text-xs min-h-[38px] px-2">清空内容</button>
           <button disabled={busy} onClick={onReview}
-            className="bg-zinc-900 hover:bg-zinc-800 text-white px-4 py-1.5 rounded font-medium disabled:opacity-60">
+            className="bg-zinc-900 hover:bg-zinc-800 text-white px-4 py-2 rounded-lg font-medium text-xs disabled:opacity-60 transition shadow-xs active:scale-98">
             {busy ? '批改中...' : '执行 AI 维度批改'}
           </button>
         </div>
 
         {/* AI 批改结果 */}
         {result && (
-          <div className="mt-2 p-2.5 bg-zinc-50 border border-zinc-200 rounded text-zinc-700 space-y-2 max-h-48 overflow-y-auto">
-            <div className="font-bold text-zinc-900 flex justify-between">
+          <div className="mt-2 p-2.5 bg-zinc-50 border border-zinc-200 rounded text-zinc-700 space-y-2 max-h-56 overflow-y-auto">
+            <div className="font-bold text-zinc-900 flex flex-col sm:flex-row justify-between gap-1">
               <span>预估得分: {(+result.total_score).toFixed(1)} / 15.0</span>
-              <span className="font-normal text-zinc-500">
+              <span className="font-normal text-zinc-500 text-[11px]">
                 数据: {+(result.s_data || 0).toFixed(1)} | 逻辑: {+(result.s_logic || 0).toFixed(1)} | 词汇: {+(result.s_vocab || 0).toFixed(1)} | 语法: {+(result.s_grammar || 0).toFixed(1)}
               </span>
             </div>

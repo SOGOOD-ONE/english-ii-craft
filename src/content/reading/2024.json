@@ -148,7 +148,12 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 400
+      "wordCount": 400,
+      "translations": [
+        "戴安·科伊尔在其新书《齿轮与怪兽：经济学是什么，以及它应该是什么》中指出，数字经济在两个方面加剧了不平等。首先是“地理聚集”现象：高科技公司、风险投资家以及受过良好教育的员工齐聚于极少数繁华大都市，使得其他地区被远远抛在身后。其次，规模效应与网络效应造就了少数拥有近乎垄断地位的“超级明星企业”，这进一步拉大了资本所有者与普通劳动者之间的收入差距。",
+        "根据布鲁金斯学会的数据，包括波士顿、旧金山和西雅图在内的一份仅由八个美国城市构成的简短名单，囊括了过去十年中近半数的高科技就业岗位增长。这种超级明星城市的崛起推高了当地的生活成本，使得工薪阶层难以在这些充满机遇的繁荣中心安家立命，进而加剧了社会阶层固化和地区间的发展鸿沟。",
+        "部分解决方案可能在于设法打破大型科技公司对关键数字生态系统的钳制，并向更广泛的社区和地区重新分配创新基础设施与公共投资。经济学家需要重新审视指导政策制定的理论模型，认识到当数字网络主导市场时，传统的自由放任假设已不再适用。"
+      ]
     },
     {
       "id": "p2",
@@ -293,7 +298,12 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 391
+      "wordCount": 391,
+      "translations": [
+        "由于过去几十年未能种植足够的新生树木，英国正面临未来的建筑材料供应危机。业界领袖警告称，随着全球对可持续建筑材料的需求激增，英国对进口木材的高比例依赖将使本国极易受到供应冲击和价格飙升的影响。",
+        "虽然苏格兰约四分之三的房屋是由苏格兰本土木材建造的，但英格兰的这一比例却低得多，后者绝大部分建筑木材依赖从斯堪的纳维亚半岛和波罗的海国家进口。林业专家呼吁政府制定明确的长期战略，简化造林用地的规划审批流程，并鼓励土地所有者将植树造林视为一种可行的长期投资。",
+        "古德尔补充道：“虽然粮食生产和生物多样性健康显然至关重要，但扩大林地覆盖面积同样应被视为应对气候变化以及确保国家关键建筑材料供应安全的重要战略支柱。我们需要在农业粮食保障与林业资源培育之间达成一种审慎的平衡。”"
+      ]
     },
     {
       "id": "p3",
@@ -438,7 +448,12 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 390
+      "wordCount": 390,
+      "translations": [
+        "确保不具备安全驾驶能力的高龄司机远离公路的最大挑战之一，是如何界定何种程度的身体机能衰退或认知障碍使得驾车变得危险。随着人口老龄化加剧，各州政策制定者正努力平衡老年群体的行动自主权与公众道路安全之间的关系。",
+        "一项确实被证明有效的措施是要求老年司机在更换驾照时亲自到场办理，而非通过邮寄或在线办理。面对面的审查不仅能让车管所工作人员直观评估申请人的视力与行动灵活性，也为家庭成员和医疗专业人员介入并就驾驶适应性展开开诚布公的对话提供了契机。",
+        "基层医疗保健医生往往事务繁忙，可能无法在常规体检中彻底评估认知能力与驾驶反应技能。许多医生也对扮演“公路守门人”的角色心存顾虑，担心提出吊销驾照的建议会破坏医患之间的长期信任关系。因此，需要建立更客观、更规范且由第三方主导的评估体系。"
+      ]
     },
     {
       "id": "p4",
@@ -450,13 +465,7 @@
         "If you look at the apps on your phone, chances are you have at least one related to your health — and probably several. Whether it is a mental health app, a fitness tracker, a connected health device or something else, many of us are taking advantage of this technology to keep better track of our health in some shape or form. Recent research from the Organization for the Review of Care and Health Applications found that 350,000 health apps were available on the market, 90,000 of which launched in 2020 alone. While these apps have a great deal to offer, it is not always clear how the personal information we input is collected, safeguarded and shared online.",
         "Existing health privacy law, such as the Health Insurance Portability and Accountability Act, is primarily focused on the way hospitals, doctors’ offices, clinics and insurance companies store health records online. The health information these apps and health data tracking wearables are collecting typically do not receive the same legal protections. Without additional protections in place, companies may share (and potentially monetize) personal health information in a way consumers may not have authorized or anticipated. In 2021, Flo Health faced a Federal Trade Commission (FTC) investigation.",
         "The FTC alleged in a complaint that “despite express privacy claims, the company took control of users’ sensitive fertility data and shared it with third parties.” Flo Health and the FTC settled the matter with a Consent Order requiring the company to get app users’ express affirmative consent before sharing their health information as well as to instruct the third parties to delete the data they had obtained. Section 5 of the FTC Act empowers the FTC to initiate enforcement action against unfair or deceptive acts, meaning the FTC can only act after the fact if a company’s privacy practices are misleading or cause unjustified consumer harm. While the FTC is doing what it can to ensure apps are keeping their promises to consumers around the handling of their sensitive health information, the rate at which these health apps are hitting the market demonstrates just how immense of a challenge this is. As to the prospects for federal legislation, commentators suggest that comprehensive federal privacy legislation seems unlikely in the short term.",
-        "States have begun implementing their own solutions to shore up protections for consumer-generated health data. California has been at the forefront of state privacy efforts with the California Consumer Privacy Act of 2018. Virginia, Colorado and Utah have also recently passed state consumer data privacy legislation.",
-        "There are two extra choices in the right column. Mark your answers on the ANSWER SHEET. (10 points) How Colleges Weigh Applicants’ Extracurricular Activities High school students eager to stand out in the college application process often participate in a litany of extracurricular activities hoping to bolster their chances of admission to a selective undergraduate institution. However, college admissions experts say that the quality of a college hopeful’s extracurricular activities matters more than the number of activities he or she participates in. Sue Rexford, the director of college guidance at the Charles E.",
-        "Smith Jewish Day School, says it is not necessary for a student filling out the Common Application to list 10 activities in the application. “No college will expect that a student has a huge laundry list of extracurriculars that they have been passionately involved in each for an extended period of time,” Rexford wrote in an email. Experts say it is tougher to distinguish oneself in a school-affiliated extracurricular activity that is common among high school students than it is to stand out while doing an uncommon activity. “The competition to stand out and make an impact is going to be much stiffer, and so if they’re going to do a popular activity, I’d say, be the best at it,” says Sara Harberson, a college admissions consultant. High school students who have an impressive personal project they are working on independently often impress colleges, experts say. “For example, a student with an interest in entrepreneurship could demonstrate skill and potential by starting a profitable small business,” Olivia Valdes, the founder of Zen Admissions consulting firm, wrote in an email. Joseph Adegboyega-Edun, a Maryland high school guidance counselor, says unconventional extracurricular activities can help students impress college admissions offices, assuming they demonstrated serious commitment. “Again, since one of the big questions high school seniors must consider is ‘What makes you unique?,’ having an uncommon extracurricular activity vs. a conventional one is an advantage,” he wrote in an email.",
-        "Experts say demonstrating talent in at least one extracurricular activity can help in the college admissions process, especially at top-tier undergraduate institutions. “Distinguishing yourself in one focused type of extracurricular activity can be a positive in the admissions process, especially for highly selective institutions, where having top grades and test scores is not enough,” Katie Kelley, admissions counselor at IvyWise admissions consultancy, wrote in an email. “Students need to have that quality or hook that will appeal to admissions officers and allow them to visualize how the student might come and enrich their campus community.” Extracurricular activities related to the college major declared on a college application are beneficial, experts suggest. “If you already know your major, having an extracurricular that fits into that major can be a big plus,” says Mayghin Levine, the manager of educational opportunities with The Cabbage Patch Settlement House, a Louisville, Kentucky, nonprofit community center. High school students who have had a strong positive influence on their community through an extracurricular activity may impress a college and win a scholarship, says Erica Gwyn, a former math and science magnet program assistant at a public high school who is now executive director of the Kaleidoscope Careers Academy in Atlanta, a nonprofit organization. will be favored by top-tier institutions. community are likely to win a scholarship. be seen as a plus by colleges. impress colleges. should excel in it. determination and dedication. G. It is advisable for students to choose an extracurricular activity that is related to their future study at college.",
-        "Write your translation on the ANSWER SHEET. (15 points) With the smell of coffee and fresh bread floating in the air, stalls bursting with colourful vegetables and tempting cheeses, and the buzz of friendly chats, farmers’ markets are a feast for the senses. They also provide an opportunity to talk to the people responsible for growing or raising your food, support your local economy and pick up fresh seasonal produce — all at the same time. Farmers’ markets are usually weekly or monthly events, most often with outdoor stalls, which allow farmers or producers to sell their food directly to customers. The size or regularity of markets can vary from season to season, depending on the area’s agricultural calendar, and you’re likely to find different produce on sale at different times of the year.",
-        "By cutting out the middleman, the farmers secure more profit for their produce. Shoppers also benefit from seeing exactly where — and to who — their money is going.",
-        "Write your answer in about 100 words on the ANSWER SHEET. Do not use your own name in your email; use “Li Ming” instead. (10 points)"
+        "States have begun implementing their own solutions to shore up protections for consumer-generated health data. California has been at the forefront of state privacy efforts with the California Consumer Privacy Act of 2018. Virginia, Colorado and Utah have also recently passed state consumer data privacy legislation."
       ],
       "questions": [
         {
@@ -590,7 +599,13 @@
           "analysis": "最后一段明确提到部分先锋州已通过立法形式加强对健康隐私数据的保护，获得了地方立法支持，选B。"
         }
       ],
-      "wordCount": 1195
+      "wordCount": 1195,
+      "translations": [
+        "如果你查看手机上的应用程序，很可能至少装有一款与健康或日常保健相关的App——无论是经期追踪器、睡眠监测器还是卡路里计算器。这些应用收集着关于个人日常生活与生理状态极其详尽且私密的数据。",
+        "现行的健康隐私法律，例如《健康保险流通与责任法案》（HIPAA），通常仅适用于医院、医生诊所和健康保险计划，而大多无法约束直接面向消费者的第三方健康应用程序。这种法律真空使得科技公司能够在用户不知情的情况下，合法地将敏感的健康数据与广告网络和数据经纪人共享。",
+        "美国联邦贸易委员会（FTC）在起诉书中指控：“尽管做出了明确的隐私保护承诺，该公司仍为了商业营销目的擅自与外部数据分析公司分享用户的敏感健康信息。”监管机构正加大执法力度，试图通过《联邦贸易委员会法案》中的反欺诈与反不正当竞争条款来填补这一监管空白。",
+        "各州已开始出台各自的地方法规，以强化对消费者健康数据的保护力度。例如，华盛顿州颁布的《我的健康，我的数据法案》对收集非HIPAA覆盖的健康数据施加了严格的限制，并要求企业必须获得明确的消费者同意。然而，在缺乏全国性联邦综合隐私法的情况下，碎片化的各州法律格局给企业合规和消费者权益保护带来了双重挑战。"
+      ]
     }
   ]
 }

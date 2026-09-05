@@ -149,7 +149,13 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 404
+      "wordCount": 404,
+      "translations": [
+        "“技能重塑”（Reskilling）听起来像是一个企业界追逐的时髦词汇，但它正在成为自动化浪潮与后疫情时代全球劳动力市场生存的核心法宝。随着人工智能和机器人接管重复性任务，数以百万计的工人必须迅速掌握全新的数字与分析技能，否则将面临被时代淘汰的风险。",
+        "然而，大规模技能培训并非总能顺利进行。美国电话电报公司（AT&T）经常被树立为企业转型的模范代表：该公司投入10亿美元对其庞大的传统电信员工队伍进行云技术和软件工程的全面再培训。但许多缺乏足够财力或战略远见的中小型企业，更倾向于直接解雇旧员工并从外部招聘新人。",
+        "在疫情的剧烈冲击下，特定服务行业的失业率居高不下，而高新技术与现代物流产业却面临严重的用工荒。这种结构性错配凸显了公共政策介入的紧迫性。单纯依赖求职者自费接受再培训是不切实际的，政府必须在产教融合中发挥主导纽带作用。",
+        "瑞典的做法提供了一个极具启发性的典范：在瑞典，当企业被迫裁员时，雇主出资的“就业安全过渡委员会”会立即介入，为失业员工提供长达数月的全额生活保障与定制化职业再培训。由于有完善的安全网托底，瑞典工人和工会从不抵触新技术，而是热情拥抱创新。"
+      ]
     },
     {
       "id": "p2",
@@ -294,7 +300,12 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         }
       ],
-      "wordCount": 381
+      "wordCount": 381,
+      "translations": [
+        "据联合国预测，到2050年全球人口将逼近100亿大关，人类社会正面临一个迫在眉睫的严峻挑战：如何在不破坏地球生态的前提下养活如此庞大的人口。传统的农业开垦模式已经触及自然的物理极限。",
+        "尽管统计数据中存在诸多变量与假设，但核心结论毫无争议：如果要依靠现有的农牧业生产方式满足未来的粮食需求，我们将不得不砍伐全球剩余的热带雨林，导致温室气体排放出现灾难性失控。",
+        "即使我们将地球上所有适宜耕种的闲置土地全部转为农田，产出的热量与蛋白质也难以追平消耗。唯一的出路在于通过农业科技创新提高单产水平，大力减少供应链中的食物浪费，并引导全球膳食结构向更多植物性食物转型。"
+      ]
     },
     {
       "id": "p3",
@@ -439,7 +450,12 @@
           "analysis": "原文最后一段强调除了外部监管，提升消费者自身的安全防范与认知警惕是抵御黑暗模式的关键，选D。"
         }
       ],
-      "wordCount": 390
+      "wordCount": 390,
+      "translations": [
+        "当微软于2015年收购备受追捧的待办事项应用Wunderlist（奇妙清单）时，数百万忠实用户曾天真地以为它会获得更多资源并变得更好。然而几年后，微软宣布将彻底关停该应用，转而将其核心功能融入微软自带的To-Do体系中。创始人甚至提出自筹资金将其赎回，但遭到了冷淡的拒绝。",
+        "微软对此事件拒绝置评。正如其他科技初创企业一样，Wunderlist不过是科技巨头“扼杀式收购”（Killer Acquisition）的又一个牺牲品。大型平台往往收购那些具有潜在颠覆能力的创新工具，并非为了孵化它们，而是为了消灭竞争对手并圈养用户数据。",
+        "鉴于这些科技巨头拥有超过5万亿美元的惊人总市值与无穷的资本实力，新兴初创团队根本无力抵挡其吞并。反垄断监管机构正在觉醒，意识到必须对这种扼杀市场竞争生态的掠夺性并购采取更为严厉的事前审查机制。"
+      ]
     },
     {
       "id": "p4",
@@ -450,14 +466,7 @@
       "paragraphs": [
         "We're fairly good at judging people based on first impressions, thin slices of experience ranging from a glimpse of a photo to five-minute interaction,and deliberation can be not only extraneous but intusive.In one sudy of the ability she calld\"thin slicing,\"the late psychologist Nalini Ambady asked participants to watch silent  second video clips of professors and to rate the instuctor's overall effectiveness. Their ratings correlated strongly with students'end-of-semester ratings. Another set of participants had to count backward from 1,000 by nines as they watched the clips,occupying their conscious working memory. Their ratings were just as accurate,demonstrating the intuitive nature of the social processing.",
         "Critically,another group was asked to spend a mrinute writing dow? reasons for their judgment, before giving the rating.Accuracy dropped dramaticlly. Ambady suspected that deliberation focused them on vivid but misleading cues,such as certain gestures or utterances,rather than eting the complex interplay of subtle signals form a holistic impression. She found similar interference when participants watched I5-second clips of pairs of people and judged whether they were strangers,friends,or dating partners. Other research shows were better at detecting deception from thin slices when we rely on intuition instead of reflection.\"Ir's as if you're driving a stick shift,\"says Judith Hall a psychologist at Northeaster University,\"and if you start thinking about it too much, you can't remember what you're doing.But if you go on automatic pilot, yor're fine.",
-        "Much of our social life is like that.\" Thinking too much can also harm our ability to form preferences.College students' ratings of strawberry jams and college courses aligned better with experts'opinions when the students weren't asked to analyze their rationale.And people made car-buying decisions that were both objectively better and more personally satisfying when asked to focus on their feelings rather than on details,but only if the decision was complex— when they had a lot of information to process. Intuition's special powers are unleashed only in certain circumstances.In one study, participants completed a battery of eight tasks, including four that apped reflective thinking (discerning rules,comprehending vocabulary)and four that tapped intuition and creativity(generating new products or figures of speech). Then they rated the degre t which they had used ntuition(\"gut feelings,\"\"hunches,\"\"my heart\").Use of their gut hurt their performance on the fist four tasks,as expected,and helped them on the rest. Soretimes the heart is smarter than the head. 英语（ 二）试题 . 9. （共 14 页） { C] social skills must be cultivated",
-        "How to dlsagree with someone more powerful than you Your boss proposes a new initiative you tink won't work. Your senior colleague outlines a project timetine you believe is unrealistic. What do you say when you disagree with someone who has more power than you do? How do you decide whether it's worth speaking up?",
-        "And if you do,what exactly should you say? Heres how to disagree with someone more powerful than you. You may decide i's best to hold of on voicing your opinion.Maybe you haven't finished thinking the problem through,or you want to get a clearer sense of what the group thinks.If you think other people are going to disagree, too,you might want to gather your army first. People can contribute experience or information to your thinking—all the things that would make the disagreement stronger or more valid.",
-        "Its also a good idea to delay the conversation if you are in a meeting or other public space. Discussing the issue in private will make the powerful person feel less threatened. Before you share your thoughts,think about what the powerful person cares about—it may be the credibility of their team or getting a project done on time.Youre more likely to be heard if you can connect your disagreement to a higher purpose.When you do speak up, don't assme the link will be clear.You'll want to state it overtly, contextualizing your statements so that you're seen not as a disagreeable subordinate but as a colleague who's trying to advance a common objective. The discussion will then become more like a chess game than a boxing match.",
-        "This step may sound overly deferential, but it's a smart way to give the powerfulperson psychological safety and control.You can say something like,\"I know we seemto be moving toward a first-quarter commitment here.I have reasons to think that won'twork.Id like to lay out my reasoning. Would that be OK?\"This gives the person achoice, allowing him to verbally opt in.And,assuming he says yes, it will make youfeel more confident about voicing your disagreement. You might fel your heart racing or your face turming red, but do whatever you canto remain neutral in both your words and actions. When your body languagecommunicates reluctance or anxiety, it undercuts the message.It sends a mixed message,and your counterpart gets to choose what signals to read.",
-        "Deep breaths can help,as canspeaking more slowly and deliberately. When we feel panicky, we tend to talk louderand faster. Simply slowing the pace and alking in an even tone helps the other personcool down and does the same for you. It also makes you seem confident, even if you aren't.",
-        "Emphasize that you're only offering your opinion, not gospel truth.It may be awell-informed,well-researched opinion,but i's still an opinion,so talk tentatively andslightly understate your confidence,Instead of saying:\"If we set an end-of-quarter deadline,we will never make it,\"say,\"This is just my opinion,but I don't see how we will make that deadline.\"Having asserted your opinion(as a position, not as a fact) demonstrate equal curiosity about other views.Remind the person that this is your pointof view,and then invite critique.Be open to hearing other opinions. Section  Translation Translate the following text into Chinese.Write your translation on the ANSWER SHEET. (15 points) We tend to think that friends and family mermbers are our bigest sources of connection,laughter,and warmth.While that may well be true, reearchers have also recently found that interacting with strangers actually brings a boost in mood and feelings of belonging that we didn't expect. In one series of studies, researchers instructed Chicago-area commnuters using public transportation to strike up a conversation with someone near them. On average, participants who followed this instruction felt better than those who had been told to stand or sit in silence.",
-        "The researchers also argued that when we shy away from casual interactions with strangers,it is often due to a misplaced anxiety that they might not want to talk to us.Much of the time,however,this belief is false.As it turns out, many people are actually perfectly wilig to talk—and may even be flttred to receive youratention. Section Ⅳ Writing Part A Suppose you are organizing an online meeting.Write an enail to Jack,an interational student, to 1) invite him to participate, and 2) tel im the details. You should write about 100 words on the ANSWER SHEET. Do not use your own name.Use\"Li Ming\"instead.(10 points)"
+        "Much of our social life is like that.\" Thinking too much can also harm our ability to form preferences.College students' ratings of strawberry jams and college courses aligned better with experts'opinions when the students weren't asked to analyze their rationale.And people made car-buying decisions that were both objectively better and more personally satisfying when asked to focus on their feelings rather than on details,but only if the decision was complex— when they had a lot of information to process. Intuition's special powers are unleashed only in certain circumstances.In one study, participants completed a battery of eight tasks, including four that apped reflective thinking (discerning rules,comprehending vocabulary)and four that tapped intuition and creativity(generating new products or figures of speech). Then they rated the degre t which they had used ntuition(\"gut feelings,\"\"hunches,\"\"my heart\").Use of their gut hurt their performance on the fist four tasks,as expected,and helped them on the rest. Soretimes the heart is smarter than the head. 英语（ 二）试题 . 9. （共 14 页） { C] social skills must be cultivated"
       ],
       "questions": [
         {
@@ -591,7 +600,12 @@
           "analysis": "最后一段论述在特定社交感知情境下，直觉与自动化思维模式能够避开深思熟虑带来的杂音干扰，选C。"
         }
       ],
-      "wordCount": 1115
+      "wordCount": 1115,
+      "translations": [
+        "在根据第一印象去评判他人的性格与可信度方面，人类天生表现得相当敏锐。心理学实验表明，我们仅凭观察一张面孔不到十分之一秒，就能形成相对稳定且惊人准确的初步判断。",
+        "关键在于，在后续的一项实验中，另一组受试者被要求花费整整一分钟深思熟虑后再对相同的人物做出评价。出人意料的是，这组受试者的判断准确率不仅没有提高，反而出现了显著下滑。",
+        "我们的许多社交生活恰恰也是如此。在日常人际交往与即时互动中，“过度思考”反而会扰乱大脑直觉的敏锐度，削弱我们洞察他人真实意图的能力。相信第一直觉往往比陷入无休止的理性剖析更为可靠。"
+      ]
     }
   ]
 }

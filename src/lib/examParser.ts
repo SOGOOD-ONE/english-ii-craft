@@ -1,10 +1,8 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { PDFParse } from 'pdf-parse';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const _safeFilename = typeof __filename !== 'undefined' ? __filename : path.resolve(process.cwd(), 'src/lib/examParser.ts');
 
 export interface ParsedExamResult {
   year: number;

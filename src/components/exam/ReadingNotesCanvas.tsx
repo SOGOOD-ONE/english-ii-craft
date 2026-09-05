@@ -394,10 +394,8 @@ const ReadingNotesCanvas = forwardRef<ReadingNotesCanvasHandle, ReadingNotesCanv
 
   const handleClear = () => {
     if (strokes.length === 0) return;
-    if (window.confirm('确定要清空本篇阅读的所有画板批注吗？')) {
-      setStrokes([]);
-      setRedoStack([]);
-    }
+    setStrokes([]);
+    setRedoStack([]);
   };
 
   // Versioning actions
@@ -434,13 +432,11 @@ const ReadingNotesCanvas = forwardRef<ReadingNotesCanvasHandle, ReadingNotesCanv
       setRedoStack([]);
       return;
     }
-    if (window.confirm('确定要删除这份笔记记录吗？')) {
-      deletePassageNote(year, passageId, noteId);
-      const remaining = getAllPassageNotes(year, passageId);
-      setNoteList(remaining);
-      if (currentNoteId === noteId && remaining.length > 0) {
-        handleSwitchNote(remaining[0]);
-      }
+    deletePassageNote(year, passageId, noteId);
+    const remaining = getAllPassageNotes(year, passageId);
+    setNoteList(remaining);
+    if (currentNoteId === noteId && remaining.length > 0) {
+      handleSwitchNote(remaining[0]);
     }
   };
 

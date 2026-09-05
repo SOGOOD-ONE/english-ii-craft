@@ -149,7 +149,13 @@
           "analysis": "根据实验对比结果，大鼠在社交玩耍中表现出与人类儿童显著不同的特定行为模式，选C。"
         }
       ],
-      "wordCount": 503
+      "wordCount": 503,
+      "translations": [
+        "大鼠及其他群居动物必须对周围同伴的情绪与行为状态保持高度敏锐的感知。这种“社会感知能力”是哺乳动物在恶劣自然环境中结群自保、协同觅食以及规避捕食者的生存基石。",
+        "与此同时，在一项对照实验中，一只“反社会机器人”（仅能以固定路线机械前后移动）被置于鼠群之中。大鼠很快就对这个毫无社交反馈的机械物体失去了探究兴趣，将其完全视作普通的冰冷障碍物。",
+        "这促使大鼠更好地记住了曾经与具有社会反馈的互动对象相处的经历。神经影像学研究表明，当面对能够做出回应的伙伴时，大鼠大脑中与奖赏及社会记忆相关的多巴胺回路被强烈激活。",
+        "这一突破性发现揭示了大鼠对微妙的“社会线索”是何等敏感。即使是人造的机器实体，只要能展现出基础的情感协同与模仿行为，也能被高度敏锐的动物大脑接纳为社交群体的一员。"
+      ]
     },
     {
       "id": "p2",
@@ -296,7 +302,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 404
+      "wordCount": 404,
+      "translations": [
+        "不可否认，企业首席执行官（CEO）的薪酬确实一路飙升——顶级跨国公司的掌舵人一年的收入可能达到普通全职员工平均工资的数百倍之多。这种巨大的贫富差距自然在公众与政界引发了猛烈的抨击。",
+        "虽然说出来可能不太中听，但CEO薪酬暴涨的一个关键经济学原因在于现代企业规模的指数级膨胀。当一家企业的资产规模达到数千亿美元时，一个哪怕仅仅带来1%业绩提升的战略决策，其创造的绝对价值也是天文数字。",
+        "要在这样庞大而复杂的跨国系统中领航掌舵，需要具备极其罕见、高度不可替代的全球战略视野与危机驾驭能力。在高度竞争的高管人才市场上，符合这一极高门槛的人选凤毛麟角，推高其身价是必然的市场规律。",
+        "依照大多数指标衡量，现代企业的公司治理与薪酬委员会独立性相比几十年前已经大大提升，薪酬方案普遍与长期的股票收益与资本回报率深度绑定，而非盲目的利益输送。",
+        "而且，当企业宣布聘请一位公认具有非凡商业领袖魅力的明星CEO时，股票市场往往会报以热烈的积极上涨。这表明投资者坚信卓越的领导力不仅物有所值，更是决定现代企业生死存亡的关键护城河。"
+      ]
     },
     {
       "id": "p3",
@@ -443,7 +456,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [B]。"
         }
       ],
-      "wordCount": 399
+      "wordCount": 399,
+      "translations": [
+        "去年11月，马德里设立的低排放区曾被国际社会誉为欧洲城市公共卫生与环保事业的一座灯塔。通过严格限制高污染燃油私家车进入市中心核心区域，该市的空气二氧化氮浓度在短时间内骤降了近一半。",
+        "然而随着市政当局政党更迭与随之而来的激烈法律诉讼，该低排放区的未来命运变得扑朔迷离。新当选的保守派市长试图暂停该禁令，引发了数万环保抗议者上街游行并招致欧盟委员会的严正法律警告。",
+        "不仅在马德里，伦敦近期推出的全新“超低排放区”（ULEZ）同样引发了广泛热议。虽然这一举措有望每年挽救数百名因空气重度污染而早逝的市民生命，但也对依赖旧车通勤的小企业主与低收入家庭带来了沉重的换车经济负担。",
+        "低排放区在改善城市局部核心区的空气质量方面确实取得了立竿见影的显著成效。但批评人士指出，如果周边公共交通配套未能同步扩容，它往往只会把拥堵和尾气污染简单地转移至周边的欠发达贫困社区。",
+        "为了兼顾减排与民生，威尔士地区率先另辟蹊径：通过在主要交通要道设置特殊的低速限制来平抑车辆启停频率，在不强制淘汰旧车的情况下实现了氮氧化物排放量的实质性下降。"
+      ]
     },
     {
       "id": "p4",
@@ -456,21 +476,7 @@
         "If \"entitled\" is the most con皿on adjective, fairly or not, applied to millennials (those born between 1981 and 1995), the catchwords for Generation Z are practical and cautious. According to the career counselors and experts who study them, Generation Zs are clear-eyed, economic pragmatists. Despite graduating into the best economy in the past 50 years, Gen Zs know what an economic train wreck looks like. They were impressionable kids during the crash of 2008, when many of their parents lost their jobs or their life savings or both.",
         "They aren't interested in taking any chances. The booming economy seems to have done little to assuage this underlying g enerational sense of anxious urgency, especially for those who have college debt. College loan balances in the U.S. now stand at a record $1.5 trillion, according to the Federal Reserve. One survey from Accenture found that 88 percent of graduating seniors this year chose their major with a job in mind.",
         "In a 2019 survey of University of Georgia students, meanwhile, the career office found the most desirable trait in a future employer was the ability to offer secure employment (followed by professional development and training, and then inspiring purpose). Job security or stability was the second most important career goal(work-life balance was number one), followed by a sense of being dedicated to a cause or to feel good about serving the greater good. That's a big change from the previous generation. \"Millennials wanted more flexibility in their lives,\" notes Tanya Michelsen, Associate Director of Y outhSight, a UK-based brand manager that conducts .regular  day surveys of British youth, in findings that might just as well apply to American youth.",
-        "\"Generation Zs are looking for more certainty and stability, because of the rise of the gig economy. They have troubles seeing a financial future and they are quite risk averse.\" 3 7. Generation Zs are keenly aware .",
-        "There are two extra subheadings which you do not need to use. Mark your answers·on the ANSWER SHEET. (10 points) [E] Reveal, don't hide, information. [F] Slow down and listen. [G] Put yourselves in others' shoes. Five Ways to Win Over Everyone in the Office Is it possible to like everyone in your office? Think about how tough it is to get together 15 people, much less 50, who all get along perfectly.",
-        "But unlike in friendships, you need coworkers. You work with them every day, and you depend on them just as they depend on you. Here are some ways that you can get the whole office on your side. If you have a bone to pick with someone in your workplace, you may try to stay tight-lipped around them.",
-        "But you won't be helping either one of you. A Harvard Business School study found that observers consistently rated those who were upfront about themselves more highly, while those who hid lost trustworthiness. The lesson is not that you should make your personal life an open book, but rather, when given the option to offer up details about yourself or studiously stash them away, you should just be honest. Just as important as being honest about yourself is being receptive to others.",
-        "We often feel the need to tell others how we feel, whether it's a concern about a project, a stray thought, or a compliment. Those are all valid, but you need to take time to hear out your coworkers, too. In fact, rushing to get your own ideas out there can cause colleagues to feel you don't value their opinions. Do your best to engage coworkers m a genuine, back-and-forth conversation, rather than prioritizing your own thoughts.",
-        "It's con皿on to have a \"cubicle mate\" or special confidant in a work setting. But in addition to those trusted coworkers, you should expand your horizons and find out about all the people around you. Use your lunch and coffee breaks to meet up with colleagues you don't always see. Find out about their lives and interests beyond the job.",
-        "It requires minimal effort and goes a long way. This will help to grow your internal network, in addition to being a nice break in the work day. Positive feedback is important for anyone to hear. And you don't have to be someone's boss to tell them they did an exceptional job on a particular project.",
-        "This will help engender good will in others. But don't overdo it or be fake about it. One study found that people responded best to comments that shifted from negative to positive, possibly because it suggested they had won somebody over. This one may be a bit more difficult to pull off, but it can go a long way to achieving results.",
-        "Remember in dealing with any coworker what they appreciate from an interaction. Watch out for how they verbalize with others. Some people like small talk in a meeting before digging into important matters, while others are more straightforward. Jokes that work on one person won't necessarily land with another.",
-        "So, adapt your style accordingly to type. Consider the person that you're dealing with in advance and what will get you to your desired outcome.",
-        "People who do so probably live so cautiously that they go nowhere. Put simply, they're not really living at all. But, the wonderful thing about failure is that it's entirely up to us to decide how to look at it. We can choose to see failure as “the end of the world”.",
-        "Or, we can look at failure as the incredible learning experience that it often is. Every time we fail at something, we can choose to look for the lesson we’re meant to learn. These lessons are very important; they’re how we grow, and how we keep from making that same mistake again. Failures stop us only if we let them.",
-        "Failure can also teach us things about ourselves that we would never have learned otherwise. For instance, failure can help you discover how strong a person you are. Failing at something can help you discover your truest friends, or help you find unexpected motivation to succeed.",
-        "Write an email to 1) tell them about the site, and 2)give them some tips for the tour. Please write your answer on the ANSWER SHEET. Do not use your own name, use \"Li Ming\" instead. (10 points)",
-        "You should write about 150 words on the ANSWER SHEET. (15 points) 学习知识59.5% 某高校学生手机阅读目的调查"
+        "\"Generation Zs are looking for more certainty and stability, because of the rise of the gig economy. They have troubles seeing a financial future and they are quite risk averse.\" 3 7. Generation Zs are keenly aware ."
       ],
       "questions": [
         {
@@ -604,7 +610,14 @@
           "analysis": "根据Michelsen的评价，经历经济波动的Z世代在职业和金钱选择上比千禧一代更加务实求稳、不那么冒险（less adventurous），选B。"
         }
       ],
-      "wordCount": 1181
+      "wordCount": 1181,
+      "translations": [
+        "如今随着“Z世代”（通常指1995至2010年间出生的人群）开始大批告别大学校园步入职场，企业的人力资源经理们正忙于破译这一代职场新人的独特心理与工作诉求。",
+        "如果说“自视甚高”（entitled）是对上一代千禧一代员工最常见（且往往带有不公偏见）的评价，那么Z世代所呈现出的精神风貌则截然不同：他们经历了全球金融风暴的余波、生活成本飞涨以及疫情动荡，骨子里流淌着深刻的现实主义与危机意识。",
+        "他们对盲目的职业冒险丝毫不感兴趣。与上一代追求诗与远方、热衷于在初创企业频繁跳槽的员工不同，Z世代展现出对财务安全、固定薪资福利以及稳定晋升渠道的极度渴求。",
+        "佐治亚大学2019年对毕业生进行的一项权威问卷调查显示，薪酬待遇和医疗养老等基础保障连续多年被Z世代受访者列为寻找工作时最核心的考量指标，其权重甚至超过了工作本身的趣味性。",
+        "“Z世代在职场中苦苦追寻的是确定性与安全感，”一位资深职业生涯规划专家分析道。雇主如果希望留住这些年轻血液，必须摒弃那些花哨的办公室零食和团建游戏，提供更清晰明了的职业发展路径与实打实的经济保障。"
+      ]
     }
   ]
 }

@@ -65,25 +65,25 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen bg-zinc-100 text-zinc-900 font-sans text-xs antialiased selection:bg-zinc-900 selection:text-white">
         <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-xs border-b border-zinc-200 h-11 px-3 sm:px-4 flex items-center justify-between">
-          <div className="flex items-center space-x-3 sm:space-x-6">
+          <div className="flex items-center space-x-3 sm:space-x-6 w-full md:w-auto justify-between md:justify-start">
             {/* 品牌标识 / 主页快捷键 */}
             <button 
               onClick={() => handleTabChange('home')}
               className="flex items-center gap-2 hover:opacity-80 transition active:scale-95 cursor-pointer text-left"
               title="返回主页"
             >
-              <div className="w-6 h-6 rounded bg-zinc-900 text-white flex items-center justify-center font-bold text-xs shadow-xs">
+              <div className="w-6.5 h-6.5 rounded bg-zinc-900 text-white flex items-center justify-center font-bold text-xs shadow-xs">
                 <GraduationCap className="w-4 h-4" />
               </div>
               <div className="flex items-center gap-1.5">
-                <span className="font-bold tracking-tight text-sm text-zinc-900">
+                <span className="font-bold tracking-tight text-xs sm:text-sm text-zinc-900">
                   考研英语攻坚工坊
                 </span>
               </div>
             </button>
 
-            {/* 顶部主导航菜单 */}
-            <nav className="flex space-x-1 overflow-x-auto py-1 relative">
+            {/* 桌面/平板 顶部主导航菜单 */}
+            <nav className="hidden md:flex space-x-1 overflow-x-auto py-1 relative">
               {tabs.map(t => {
                 const Icon = t.icon;
                 const isActive = tab === t.id;
@@ -110,6 +110,12 @@ export default function App() {
                 );
               })}
             </nav>
+
+            {/* 移动端顶部状态指示器 */}
+            <div className="flex md:hidden items-center gap-1.5 text-zinc-400 font-mono text-[10px]">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>划词已激活</span>
+            </div>
           </div>
 
           <div className="hidden md:flex items-center gap-2 text-zinc-400 font-mono text-[11px]">
@@ -118,7 +124,7 @@ export default function App() {
           </div>
         </header>
 
-        <main className="max-w-7xl mx-auto p-3 overflow-hidden">
+        <main className="max-w-7xl mx-auto p-2.5 sm:p-3 md:p-4 pb-20 md:pb-4 overflow-x-hidden">
           <AnimatePresence mode="wait">
             <motion.div
               key={tab}
@@ -138,6 +144,28 @@ export default function App() {
             </motion.div>
           </AnimatePresence>
         </main>
+
+        {/* 移动端专属 底部导航栏 */}
+        <nav className="md:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-zinc-200/90 shadow-lg px-1 py-1 flex justify-around items-center">
+          {tabs.map(t => {
+            const Icon = t.icon;
+            const isActive = tab === t.id;
+            return (
+              <button
+                key={t.id}
+                onClick={() => handleTabChange(t.id)}
+                className={`flex-1 py-1 px-0.5 flex flex-col items-center justify-center gap-0.5 min-h-[44px] rounded-lg transition-colors active:scale-95 ${
+                  isActive ? 'text-zinc-900 font-semibold' : 'text-zinc-500 hover:text-zinc-700'
+                }`}
+              >
+                <div className={`p-1 rounded-md transition-all ${isActive ? 'bg-zinc-900 text-white shadow-xs' : ''}`}>
+                  <Icon className="w-4 h-4" />
+                </div>
+                <span className="text-[10px] leading-tight scale-90 sm:scale-100">{t.label}</span>
+              </button>
+            );
+          })}
+        </nav>
 
         <WordHoverTip />
       </div>

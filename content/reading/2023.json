@@ -149,7 +149,13 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         }
       ],
-      "wordCount": 397
+      "wordCount": 397,
+      "translations": [
+        "为了追求一尘不染的完美草坪，全美各地的房主正在走捷径：用合成的人造草皮取代天然草坪。虽然这种塑料草皮无需修剪、无需浇水且四季常青，但环保人士和园艺专家正对人造草坪的大肆蔓延敲响警钟。",
+        "英国皇家园艺学会（RHS）的埃德·霍恩表示：“我们去年启动了可持续发展战略，而人造草坪根本不适合可持续的花园生态。它剥夺了昆虫、鸟类和土壤微生物的自然栖息地，并在炎炎夏日加剧城市热岛效应。”",
+        "请愿活动分别征集到了7,276个和11,282个民众签名。然而，人造草坪的支持者辩称，在面临干旱和严格用水限制的干旱地区，它能够节约宝贵的水资源，并且消除了使用对环境有害的除草剂、杀虫剂以及污染严重的燃油割草机的需要。",
+        "针对去年关于全面禁止人造草坪的另一项引发广泛关注的请愿，政府官员表示目前尚无实施全国性禁令的计划，更倾向于通过提升公众对生物多样性的认知来引导消费选择，而非实行直接的行政干预。"
+      ]
     },
     {
       "id": "p2",
@@ -296,7 +302,14 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         }
       ],
-      "wordCount": 435
+      "wordCount": 435,
+      "translations": [
+        "将联邦政府为填补国家公园预算赤字而提出的种种构想（如大幅提高旺季门票或引入更多商业特许经营）斥为荒唐可笑固然容易，但公园管理部门所面临的财务危机却是无比严峻且迫在眉睫的现实。",
+        "在创纪录的庞大游客潮冲击下，国家公园内的道路、步道、洗手间、游客中心及其他基础设施正在不堪重负中崩塌瓦解。公园管理局累积了数十亿美元的递延维护项目积压，从黄石公园老旧的排污管道到大峡谷年久失修的供水系统，无一幸免。",
+        "真正的症结在于国家公园长期处于资金极度匮乏的状态。我们往往将它们视为自给自足的旅游胜地，却忘记了保护这些壮丽自然与历史瑰宝是一项不可推卸的国家公共使命。门票收入仅占其所需运营成本的极小一部分。",
+        "国家公园为美国居民提供了无与伦比的价值，它们不仅是人们远离现代生活压力、回归自然的心灵庇护所，也是野生动植物不可替代的重要栖息地。此外，它们还为周边乡村社区注入了巨大的旅游经济活力。",
+        "国会每年仅向国家公园系统拨款约30亿美元——与在其他领域的基础设施支出相比，这一数额显得微不足道。如果联邦立法者能够拿出政治意愿进行长期稳定的直接拨款，国家公园的维护危机本是可以迎刃而解的。"
+      ]
     },
     {
       "id": "p3",
@@ -442,7 +455,13 @@
           "analysis": "根据原文对应段落信息与逻辑关系，正确选项为 [A]。"
         }
       ],
-      "wordCount": 399
+      "wordCount": 399,
+      "translations": [
+        "互联网或许仅仅改变了我们记忆的内容，而不是我们进行记忆的认知能力。著名心理学家贝齐·斯帕罗及其同事的研究表明，面对浩瀚的在线搜索引擎，人类大脑正在将互联网作为一种外部的“交互记忆系统”来依赖。",
+        "在同一项实验中，受试者被要求同时记住某条事实信息以及该信息被存入的具体文件夹名称。令人惊讶的是，参与者在记住“信息存放在哪里”方面的表现显著优于记住“信息本身究竟是什么”。",
+        "例如，在传统家庭中，你的父亲可能从不记亲友的生日，因为你的母亲对此了如指掌；反之，母亲可能不记汽车保养细节，因为父亲全权负责。长久以来，人类一直依靠亲密的社交网络来分摊记忆负担；如今，互联网不过是成为了一个规模宏大、无所不知的新型社交记忆伙伴。",
+        "目前并没有确凿的实验证据表明这种转变会削弱我们进行深度思考或获取真正知识的能力。通过将琐碎事实的记忆外包给数字设备，人类大脑反而能够释放出宝贵的认知资源，专注于更具创造性的概念整合、逻辑推理与复杂问题解决。"
+      ]
     },
     {
       "id": "p4",
@@ -456,14 +475,7 @@
         "The new work emphasizes that adolescence is a time of opportunity as well as risk. The researchers studied “prosocial” and rebellious traits in more than 200 children and young adults, ranging from 11 to 28 years old. The participants filled out questionnaires about how often they did things that were altruistic and positive, like sacrificing their own interests to help a friend, or rebellious and negative, like getting drunk or staying out late. Other studies have shown that rebellious behavior increases as you become a teenager and then fades away as you grow older.",
         "But the new study shows that, interestingly, the same pattern holds for prosocial behavior. Teenagers were more likely than younger children or adults to report that they did things like unselfishly help a friend. Most significantly, there was a positive correlation between prosociality and rebelliousness. The teenagers who were more rebellious were also more likely to help others.",
         "The good and bad sides of adolescence seem to develop together. Is there some common factor that underlies these apparently contradictory developments? One idea is that teenage behavior is related to what researchers call “reward sensitivity.” Decision-making always involves balancing rewards and risks, benefits and costs. “Reward sensitivity” measures how much reward it takes to outweigh risk. Teenagers are particularly sensitive to social rewards — winning the game, impressing a new friend, getting that boy to notice you.",
-        "Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age. Somehow, when you hit 30, the chance that something exciting and new will happen at that party just doesn’t seem to outweigh the effort of getting up off the couch.",
-        "Mark your answers on the ANSWER SHEET. (10 points) Net-zero rules set to send cost of new homes and extensions soaring New building regulations aimed at improving energy efficiency are set to increase the price of new homes, as well as those of extensions and loft conversions on existing ones. The rules, which came into effect on Wednesday in England, are part of government plans to reduce the UK’s carbon emissions to net zero by 2050. They set new standards for ventilation, energy efficiency and heating, and state that new residential buildings must have charging points for electric vehicles. The moves are the most significant change to building regulations in years, and industry experts say they will inevitably lead to higher prices at a time when a shortage of materials and high labour costs are already driving up bills.",
-        "Brian Berry, chief executive of the Federation of Master Builders, says the measures will require new materials, testing methods, products and systems to be installed. “All this comes at an increased cost during a time when prices are already sky high. Inevitably, consumers will have to pay more,” he says. Gareth Belsham, of surveyors Naismiths, says people who are upgrading, or extending their home, will be directly affected. “The biggest changes relate to heating and insulation,” he explains. “There are new rules concerning the amount of glazing used in extensions, and any new windows or doors must be highly insulated.” Windows and doors will have to adhere to higher standards, while there are new limits on the amount of glazing you can have to reduce unwanted heat from the sun. Thomas Goodman, of MyJobQuote, says this will bring in new restrictions for extensions. “Glazing on windows, doors and roof lights must cover no more than 25% of the floor area to prevent heat loss,” he says.",
-        "As the rules came into effect last Wednesday, property developers were rushing to file plans just before the deadline. Any plans submitted before that date are considered to be under the previous rules, and can go ahead as long as work starts before 15th June next year. Builders which have costed projects, but have not filed the paperwork, may need to go back and submit fresh estimates, says Marcus Jefford of Build Aviator. Materials prices are already up 25% in the last two years.",
-        "How much overall prices will increase as a result of the rule changes is not clear. “Whilst admirable in their intentions, they will add to the cost of housebuilding at a time when many already feel that they are priced out of homeownership,” says Jonathan Rolande of the National Association of Property Buyers. “An average extension will probably see around £3,000 additional cost thanks to the new regs.” John Kelly, a construction lawyer at Freeths law firm, believes prices will eventually come down. But not in the immediate future. “As the marketplace adapts to the new requirements, and the technologies that support them, the scaling up of these technologies will eventually bring costs down, but in the short term, we will all have to pay the price of the necessary transition,” he says. However, the long-term effects of the changes will be more comfortable and energy- efficient homes, adds Andrew Mellor, of PRP architects. “Homeowners will probably recoup that cost over time in energy bill savings. It will obviously be very volatile at the moment, but they will have that benefit over time.” projects. heat loss. they can afford. include new windows or doors.",
-        "G. The rule changes will benefit homeowners eventually.",
-        "And he was one of the founders of a movement called Romanticism, which celebrated the wonders of the natural world. Poetry is powerful. Its energy and rhythm can capture a reader, transport them to another world and make them see things differently. Through carefully selected words and phrases, poems can be dramatic, funny, beautiful, moving and inspiring. No one knows for sure when poetry began but it has been around for thousands of years, even before people could write.",
-        "It was a way to tell stories and pass down history. It is closely related to song and even when written it is usually created to be performed out loud. Poems really come to life when they are recited. This can also help with understanding them too, because the rhythm and sounds of the words become clearer."
+        "Reward sensitivity, like prosocial behavior and risk-taking, seems to go up in adolescence and then down again as we age. Somehow, when you hit 30, the chance that something exciting and new will happen at that party just doesn’t seem to outweigh the effort of getting up off the couch."
       ],
       "questions": [
         {
@@ -597,7 +609,15 @@
           "analysis": "第四篇全文围绕青少年从家庭依附走向社会独立自主的发展机制展开论述，D选项最契合主旨。"
         }
       ],
-      "wordCount": 1144
+      "wordCount": 1144,
+      "translations": [
+        "青少年身上充满了矛盾。这是用一种温和而客观的措辞来表述每位父母凭借切身体会早已深知的事实：曾经乖巧懂事的孩子，在步入青春期后会突然展现出强烈的独立叛逆与情绪波动。",
+        "与此同时，他们对同龄人的评价变得极其敏感，往往愿意为了在同伴群体中获得认可而做出种种冒险或冲动的举动。这种行为长久以来被大众视作非理性或荷尔蒙失控的典型表征。",
+        "然而最新的神经科学研究强调，青春期既是一个充满风险的动荡期，也是一个蕴含无限机遇的发展窗口期。青少年的大脑正经历着大规模的神经回路重组与突触修剪，具备极高的神经可塑性与学习适应能力。",
+        "更有趣的是，这项新研究表明，这种对奖赏的高度敏感性同样适用于“亲社会行为”（prosocial behavior）。青少年不仅更容易被同伴激励去冒险，而且在为他人提供帮助、参与志愿服务以及捍卫公平正义方面同样展现出非凡的热情与慷慨。",
+        "青春期的积极面与消极面似乎是相伴相生的。是否存在某种深层的共同神经机制在驱动着这两种看似截然对立的行为倾向？",
+        "研究发现，青春期对奖赏的敏感度显著上升，这是由于大脑纹状体中多巴胺神经递质活性的增强所致。只要社会和家庭能够提供积极健康的表达渠道，青少年完全可以将这种旺盛的活力与奖赏追求导向积极的社会贡献与自我实现。"
+      ]
     }
   ]
 }
